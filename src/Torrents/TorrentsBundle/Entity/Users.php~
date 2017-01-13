@@ -1,0 +1,369 @@
+<?php
+
+namespace Torrents\TorrentsBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Users
+ *
+ * @ORM\Table(name="users", uniqueConstraints={@ORM\UniqueConstraint(name="username", columns={"username"})}, indexes={@ORM\Index(name="status_added", columns={"status", "added"}), @ORM\Index(name="ip", columns={"ip"}), @ORM\Index(name="uploaded", columns={"uploaded"}), @ORM\Index(name="downloaded", columns={"downloaded"}), @ORM\Index(name="country", columns={"country"})})
+ * @ORM\Entity
+ */
+class Users
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="username", type="string", length=40, nullable=false)
+     */
+    private $username = '';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="password", type="string", length=40, nullable=false)
+     */
+    private $password = '';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="secret", type="string", length=20, nullable=false)
+     */
+    private $secret = '';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="email", type="string", length=80, nullable=false)
+     */
+    private $email = '';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="status", type="string", nullable=false)
+     */
+    private $status = 'pending';
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="added", type="datetime", nullable=false)
+     */
+    private $added = '0000-00-00 00:00:00';
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="last_login", type="datetime", nullable=false)
+     */
+    private $lastLogin = '0000-00-00 00:00:00';
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="last_access", type="datetime", nullable=false)
+     */
+    private $lastAccess = '0000-00-00 00:00:00';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="editsecret", type="string", length=20, nullable=false)
+     */
+    private $editsecret = '';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="privacy", type="string", nullable=false)
+     */
+    private $privacy = 'normal';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="stylesheet", type="integer", nullable=true)
+     */
+    private $stylesheet = '1';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="language", type="string", length=20, nullable=false)
+     */
+    private $language = '1';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="info", type="text", length=65535, nullable=true)
+     */
+    private $info;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="acceptpms", type="string", nullable=false)
+     */
+    private $acceptpms = 'yes';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="ip", type="string", length=39, nullable=false)
+     */
+    private $ip = '';
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="class", type="boolean", nullable=false)
+     */
+    private $class = '1';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="avatar", type="string", length=100, nullable=false)
+     */
+    private $avatar = '';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="uploaded", type="bigint", nullable=false)
+     */
+    private $uploaded = '0';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="downloaded", type="bigint", nullable=false)
+     */
+    private $downloaded = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="title", type="string", length=30, nullable=false)
+     */
+    private $title = '';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="donated", type="integer", nullable=false)
+     */
+    private $donated = '0';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="country", type="integer", nullable=false)
+     */
+    private $country = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="notifs", type="string", length=100, nullable=false)
+     */
+    private $notifs = '';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="enabled", type="string", length=10, nullable=false)
+     */
+    private $enabled = 'yes';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="modcomment", type="text", length=65535, nullable=true)
+     */
+    private $modcomment;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="gender", type="string", length=6, nullable=false)
+     */
+    private $gender = '';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="client", type="string", length=25, nullable=false)
+     */
+    private $client = '';
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="age", type="date", nullable=false)
+     */
+    private $age = '0000-00-00';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="warned", type="string", length=3, nullable=false)
+     */
+    private $warned = 'no';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="signature", type="string", length=200, nullable=false)
+     */
+    private $signature = '';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="last_browse", type="integer", nullable=false)
+     */
+    private $lastBrowse = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="forumbanned", type="string", length=3, nullable=false)
+     */
+    private $forumbanned = 'no';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="invited_by", type="integer", nullable=false)
+     */
+    private $invitedBy = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="invitees", type="string", length=100, nullable=false)
+     */
+    private $invitees = '';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="invites", type="smallint", nullable=false)
+     */
+    private $invites = '0';
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="invitedate", type="datetime", nullable=false)
+     */
+    private $invitedate = '0000-00-00 00:00:00';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="commentpm", type="string", nullable=false)
+     */
+    private $commentpm = 'yes';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="passkey", type="string", length=32, nullable=false)
+     */
+    private $passkey = '';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="page", type="text", length=65535, nullable=true)
+     */
+    private $page;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="team", type="integer", nullable=false)
+     */
+    private $team = '0';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="tzoffset", type="integer", nullable=true)
+     */
+    private $tzoffset = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="hideshoutbox", type="string", nullable=false)
+     */
+    private $hideshoutbox = 'no';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="moods", type="integer", nullable=false)
+     */
+    private $moods = '1';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="comments", type="integer", nullable=false)
+     */
+    private $comments = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="banned", type="string", length=4, nullable=false)
+     */
+    private $banned = 'no';
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="atbf_date", type="date", nullable=true)
+     */
+    private $atbfDate = '0000-00-00';
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="atbf_date_locked", type="date", nullable=true)
+     */
+    private $atbfDateLocked = '0000-00-00';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="atbf_trials", type="integer", nullable=false)
+     */
+    private $atbfTrials = '0';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="atbf_islocked", type="integer", nullable=false)
+     */
+    private $atbfIslocked = '0';
+
+
+}
+

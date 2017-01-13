@@ -1,0 +1,75 @@
+<?php
+
+namespace Torrents\TorrentsBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * ForumForums
+ *
+ * @ORM\Table(name="forum_forums")
+ * @ORM\Entity
+ */
+class ForumForums
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="sort", type="boolean", nullable=false)
+     */
+    private $sort = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="name", type="string", length=60, nullable=false)
+     */
+    private $name = '';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="description", type="string", length=200, nullable=true)
+     */
+    private $description;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="minclassread", type="boolean", nullable=false)
+     */
+    private $minclassread = '1';
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="minclasswrite", type="boolean", nullable=false)
+     */
+    private $minclasswrite = '1';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="guest_read", type="string", nullable=true)
+     */
+    private $guestRead = 'yes';
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="category", type="boolean", nullable=false)
+     */
+    private $category = '0';
+
+
+}
+

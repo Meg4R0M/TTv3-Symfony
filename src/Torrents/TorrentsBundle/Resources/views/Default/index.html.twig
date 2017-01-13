@@ -1,0 +1,10 @@
+{% extends "::base.html.twig" %}
+
+{% block content %}
+    {{ render(controller('TorrentsBundle:Torrents:welcome')) }}
+    {{ render(controller('TorrentsBundle:Torrents:advertisements')) }}
+{% endblock %}
+
+{% block rightblocks %}
+    {{ render(controller('UtilisateursBundle:Default:login')) }}
+{% endblock %}

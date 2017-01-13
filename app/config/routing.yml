@@ -1,0 +1,7 @@
+torrents:
+    resource: "@TorrentsBundle/Resources/config/routing.yml"
+    prefix:   /
+
+utilisateurs:
+    resource: "@UtilisateursBundle/Resources/config/routing.yml"
+    prefix:   /

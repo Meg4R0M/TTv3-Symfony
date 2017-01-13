@@ -1,0 +1,47 @@
+<?php
+
+namespace Torrents\TorrentsBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Torrentlang
+ *
+ * @ORM\Table(name="torrentlang")
+ * @ORM\Entity
+ */
+class Torrentlang
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="name", type="string", length=30, nullable=false)
+     */
+    private $name = '';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="image", type="string", length=255, nullable=false)
+     */
+    private $image = '';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="sort_index", type="integer", nullable=false)
+     */
+    private $sortIndex = '0';
+
+
+}
+

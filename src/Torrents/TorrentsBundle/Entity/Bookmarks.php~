@@ -1,0 +1,40 @@
+<?php
+
+namespace Torrents\TorrentsBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Bookmarks
+ *
+ * @ORM\Table(name="bookmarks")
+ * @ORM\Entity
+ */
+class Bookmarks
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="userid", type="integer", nullable=false)
+     */
+    private $userid = '0';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="torrentid", type="integer", nullable=false)
+     */
+    private $torrentid = '0';
+
+
+}
+

@@ -1,0 +1,124 @@
+<?php
+
+namespace Torrents\TorrentsBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Peers
+ *
+ * @ORM\Table(name="peers", uniqueConstraints={@ORM\UniqueConstraint(name="torrent_peer_id", columns={"torrent", "peer_id"})}, indexes={@ORM\Index(name="torrent", columns={"torrent"}), @ORM\Index(name="torrent_seeder", columns={"torrent", "seeder"}), @ORM\Index(name="last_action", columns={"last_action"})})
+ * @ORM\Entity
+ */
+class Peers
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="torrent", type="integer", nullable=false)
+     */
+    private $torrent = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="peer_id", type="string", length=40, nullable=false)
+     */
+    private $peerId = '';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="ip", type="string", length=64, nullable=false)
+     */
+    private $ip = '';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="port", type="smallint", nullable=false)
+     */
+    private $port = '0';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="uploaded", type="bigint", nullable=false)
+     */
+    private $uploaded = '0';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="downloaded", type="bigint", nullable=false)
+     */
+    private $downloaded = '0';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="to_go", type="bigint", nullable=false)
+     */
+    private $toGo = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="seeder", type="string", nullable=false)
+     */
+    private $seeder = 'no';
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="started", type="datetime", nullable=false)
+     */
+    private $started = '0000-00-00 00:00:00';
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="last_action", type="datetime", nullable=false)
+     */
+    private $lastAction = '0000-00-00 00:00:00';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="connectable", type="string", nullable=false)
+     */
+    private $connectable = 'yes';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="client", type="string", length=60, nullable=false)
+     */
+    private $client = '';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="userid", type="string", length=32, nullable=false)
+     */
+    private $userid = '';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="passkey", type="string", length=32, nullable=false)
+     */
+    private $passkey = '';
+
+
+}
+

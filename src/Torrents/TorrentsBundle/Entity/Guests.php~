@@ -1,0 +1,33 @@
+<?php
+
+namespace Torrents\TorrentsBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Guests
+ *
+ * @ORM\Table(name="guests", uniqueConstraints={@ORM\UniqueConstraint(name="IP", columns={"ip"})})
+ * @ORM\Entity
+ */
+class Guests
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="ip", type="string", length=39, nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $ip = '';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="time", type="decimal", precision=20, scale=0, nullable=false)
+     */
+    private $time = '0';
+
+
+}
+

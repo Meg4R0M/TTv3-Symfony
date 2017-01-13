@@ -1,0 +1,54 @@
+<?php
+
+namespace Torrents\TorrentsBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Shoutbox
+ *
+ * @ORM\Table(name="shoutbox", uniqueConstraints={@ORM\UniqueConstraint(name="id", columns={"id"})})
+ * @ORM\Entity
+ */
+class Shoutbox
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="uid", type="integer", nullable=false)
+     */
+    private $uid;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="date", type="datetime", nullable=false)
+     */
+    private $date = '0000-00-00 00:00:00';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="name", type="text", length=255, nullable=false)
+     */
+    private $name;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="text", type="text", length=65535, nullable=false)
+     */
+    private $text;
+
+
+}
+

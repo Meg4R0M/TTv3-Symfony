@@ -1,0 +1,61 @@
+<?php
+
+namespace Torrents\TorrentsBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Bans
+ *
+ * @ORM\Table(name="bans", indexes={@ORM\Index(name="first_last", columns={"first", "last"})})
+ * @ORM\Entity
+ */
+class Bans
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="added", type="datetime", nullable=false)
+     */
+    private $added = '0000-00-00 00:00:00';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="addedby", type="integer", nullable=false)
+     */
+    private $addedby = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="comment", type="string", length=255, nullable=false)
+     */
+    private $comment = '';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="first", type="string", length=39, nullable=true)
+     */
+    private $first;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="last", type="string", length=39, nullable=true)
+     */
+    private $last;
+
+
+}
+

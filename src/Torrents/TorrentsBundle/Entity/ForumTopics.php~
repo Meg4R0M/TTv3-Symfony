@@ -1,0 +1,82 @@
+<?php
+
+namespace Torrents\TorrentsBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * ForumTopics
+ *
+ * @ORM\Table(name="forum_topics", indexes={@ORM\Index(name="userid", columns={"userid"}), @ORM\Index(name="subject", columns={"subject"}), @ORM\Index(name="lastpost", columns={"lastpost"})})
+ * @ORM\Entity
+ */
+class ForumTopics
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="userid", type="integer", nullable=false)
+     */
+    private $userid = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="subject", type="string", length=40, nullable=true)
+     */
+    private $subject;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="locked", type="string", nullable=false)
+     */
+    private $locked = 'no';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="forumid", type="integer", nullable=false)
+     */
+    private $forumid = '0';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="lastpost", type="integer", nullable=false)
+     */
+    private $lastpost = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="moved", type="string", nullable=false)
+     */
+    private $moved = 'no';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="sticky", type="string", nullable=false)
+     */
+    private $sticky = 'no';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="views", type="integer", nullable=false)
+     */
+    private $views = '0';
+
+
+}
+

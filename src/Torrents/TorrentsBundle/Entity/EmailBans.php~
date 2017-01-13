@@ -1,0 +1,61 @@
+<?php
+
+namespace Torrents\TorrentsBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * EmailBans
+ *
+ * @ORM\Table(name="email_bans")
+ * @ORM\Entity
+ */
+class EmailBans
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="userid", type="integer", nullable=true)
+     */
+    private $userid = '0';
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="added", type="datetime", nullable=false)
+     */
+    private $added = '0000-00-00 00:00:00';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="addedby", type="integer", nullable=false)
+     */
+    private $addedby = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="comment", type="string", length=255, nullable=false)
+     */
+    private $comment = '';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="mail_domain", type="string", length=255, nullable=true)
+     */
+    private $mailDomain;
+
+
+}
+

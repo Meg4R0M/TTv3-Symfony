@@ -1,0 +1,47 @@
+<?php
+
+namespace Torrents\TorrentsBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Pollanswers
+ *
+ * @ORM\Table(name="pollanswers", indexes={@ORM\Index(name="pollid", columns={"pollid"}), @ORM\Index(name="selection", columns={"selection"}), @ORM\Index(name="userid", columns={"userid"})})
+ * @ORM\Entity
+ */
+class Pollanswers
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $id;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="pollid", type="integer", nullable=false)
+     */
+    private $pollid = '0';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="userid", type="integer", nullable=false)
+     */
+    private $userid = '0';
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="selection", type="boolean", nullable=false)
+     */
+    private $selection = '0';
+
+
+}
+
