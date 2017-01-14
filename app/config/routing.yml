@@ -3,5 +3,9 @@ torrents:
     prefix:   /
 
 utilisateurs:
-    resource: "@UtilisateursBundle/Resources/config/routing.yml"
+    resource: "@UtilisateursBundle/Controller/"
+    type:     annotation
     prefix:   /
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"

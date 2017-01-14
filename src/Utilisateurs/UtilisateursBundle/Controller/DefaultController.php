@@ -3,11 +3,15 @@
 namespace Utilisateurs\UtilisateursBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
 class DefaultController extends Controller
 {
-    public function loginAction()
+    /**
+     * @Route("/")
+     */
+    public function indexAction()
     {
-        return $this->render('UtilisateursBundle:Default:login.html.twig');
+        return $this->render('UtilisateursBundle:Default:index.html.twig');
     }
 }
