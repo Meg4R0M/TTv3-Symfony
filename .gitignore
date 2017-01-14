@@ -38,7 +38,7 @@
 # Composer PHAR
 /composer.phar
 Supprimerait .idea/
-Supprimerait TTv3_Symfony.iml
+TTv3_Symfony.iml
 Supprimerait app/
 Supprimerait bin/
 Supprimerait composer.json
@@ -48,7 +48,7 @@ Supprimerait src/
 Supprimerait tests/
 Supprimerait var/
 Supprimerait web/
-Supprimerait .idea/composerJson.xml
+.idea/*
 Supprimerait .idea/inspectionProfiles/
 Supprimerait .idea/misc.xml
 Supprimerait .idea/modules.xml
