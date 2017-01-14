@@ -4,7 +4,6 @@
     <list default="true" id="0ab6ad49-e827-4831-8791-97f7314afa14" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Informations/InformationsBundle/Controller/InfosController.php" afterPath="$PROJECT_DIR$/src/Informations/InformationsBundle/Controller/InfosController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Informations/InformationsBundle/Resources/views/Frames/news.html.twig" afterPath="$PROJECT_DIR$/src/Informations/InformationsBundle/Resources/views/Frames/news.html.twig" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,25 +23,17 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="InfosController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="InfosController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Informations/InformationsBundle/Controller/InfosController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="97" lean-forward="true" selection-start-line="22" selection-start-column="97" selection-end-line="22" selection-end-column="97" />
+            <state relative-caret-position="234">
+              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
               <folding>
-                <element signature="e#560#585#1#PHP" expanded="true" />
-                <element signature="e#663#705#0#PHP" expanded="true" />
+                <element signature="e#308#343#1#PHP" expanded="true" />
+                <element signature="e#386#438#0#PHP" expanded="true" />
+                <element signature="e#748#773#1#PHP" expanded="true" />
+                <element signature="e#851#893#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="news.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Informations/InformationsBundle/Resources/views/Frames/news.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -103,8 +94,8 @@
         <option value="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Controller/TorrentsIndexController.php" />
         <option value="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Informations/InformationsBundle/Entity/News.php" />
-        <option value="$PROJECT_DIR$/src/Informations/InformationsBundle/Controller/InfosController.php" />
         <option value="$PROJECT_DIR$/src/Informations/InformationsBundle/Resources/views/Frames/news.html.twig" />
+        <option value="$PROJECT_DIR$/src/Informations/InformationsBundle/Controller/InfosController.php" />
       </list>
     </option>
   </component>
@@ -918,7 +909,7 @@
       <workItem from="1484320021771" duration="3687000" />
       <workItem from="1484329516235" duration="8151000" />
       <workItem from="1484391346689" duration="2623000" />
-      <workItem from="1484393976369" duration="18356000" />
+      <workItem from="1484393976369" duration="19000000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout de FOSUSerBundle">
       <created>1484397812682</created>
@@ -938,7 +929,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44510000" />
+    <option name="totallyTimeSpent" value="45154000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="0" width="1920" height="1040" extended-state="6" />
@@ -1356,22 +1347,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Informations/InformationsBundle/Controller/InfosController.php">
+    <entry file="file://$PROJECT_DIR$/src/Informations/InformationsBundle/Resources/views/Frames/news.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="97" lean-forward="true" selection-start-line="22" selection-start-column="97" selection-end-line="22" selection-end-column="97" />
-          <folding>
-            <element signature="e#560#585#1#PHP" expanded="true" />
-            <element signature="e#663#705#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="360">
+          <caret line="20" column="33" lean-forward="true" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Informations/InformationsBundle/Resources/views/Frames/news.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Informations/InformationsBundle/Controller/InfosController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="234">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <element signature="e#308#343#1#PHP" expanded="true" />
+            <element signature="e#386#438#0#PHP" expanded="true" />
+            <element signature="e#748#773#1#PHP" expanded="true" />
+            <element signature="e#851#893#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

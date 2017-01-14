@@ -8,7 +8,9 @@ class InfosController extends Controller
 {
     public function advertisementsAction()
     {
-        return $this->render('InformationsBundle:Frames:advertisements.html.twig');
+        $em = $this->getDoctrine()->getManager();
+        $advertisements = $em->getRepository('InformationsBundle:Advertisements')->findAll();
+        return $this->render('InformationsBundle:Frames:advertisements.html.twig', array('advertisements' => $advertisements));
     }
 
     public function disclaimerAction()
