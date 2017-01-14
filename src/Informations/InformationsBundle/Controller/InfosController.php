@@ -18,7 +18,9 @@ class InfosController extends Controller
 
     public function newsAction()
     {
-        return $this->render('InformationsBundle:Frames:news.html.twig');
+        $em = $this->getDoctrine()->getManager();
+        $news = $em->getRepository('InformationsBundle:News')->findBy(array(), array('added' => 'desc'), 3);
+        return $this->render('InformationsBundle:Frames:news.html.twig', array('news' => $news));
     }
 
     public function welcomeAction()

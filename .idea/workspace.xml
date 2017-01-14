@@ -2,171 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ab6ad49-e827-4831-8791-97f7314afa14" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Aggressive.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Alienated.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Amazed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Amused.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Angelic.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Angry.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Apelike.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Artistic.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Asleep.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Balanced.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Banhappy.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Bashful.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Bitching.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Blah.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Bookworm.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Bored.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Breezy.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Brooding.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Busy.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Buzzed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Chatty.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Cheeky.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Cheerful.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Cloud_9.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Cold.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Coldturkey.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Confused.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Cool.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Crappy.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Creative.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Curious.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Cynical.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Daring.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Dead.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Depressed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Devilish.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Disagree.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Doh.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Doubtful.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Dramaqueen.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Dreaming.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Drunk.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Elated.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Energetic.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Fiendish.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Fine.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Flirty.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Gloomy.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Goofy.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Grumpy.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Happy.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Horny.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Hot.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Hungover.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/In-Love.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Innocent.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Inpain.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Insomnious.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Inspired.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Lonely.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Lucky.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Lurking.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Mellow.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Mischievious.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Mondayblues.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Musical.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Nerdy.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Notamused.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Notworthy.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Paranoid.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Pensive.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Predatory.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Procrastinating.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Psychedelic.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Question.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Relaxed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Roflmao.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Sad.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Scared.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Scurvy.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Shocked.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Sick.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Sleepy.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Sluggish.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Sneaky.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Snobbish.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Spaced.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Spooky.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Sporty.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Starving.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Stressed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Sunshine.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Sweettooth.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Thinking.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Tired.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Torn.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Twisted.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Veggedout.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Volatile.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Woot.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Worried.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/moods/Yeehaw.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/themes/default/avatars/avatar_f_l.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/themes/default/avatars/avatar_f_m.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/themes/default/avatars/avatar_f_s.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/themes/default/avatars/avatar_l.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/themes/default/avatars/avatar_m.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/themes/default/avatars/avatar_m_l.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/themes/default/avatars/avatar_m_m.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/themes/default/avatars/avatar_m_s.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/themes/default/avatars/avatar_s.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/ChangePassword/change_password.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/ChangePassword/change_password_content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/edit.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/edit_content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/list.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/list_content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/new.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/new_content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/show.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/show_content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/edit.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/edit_content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/check_email.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/confirmed.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/email.txt.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/check_email.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/email.txt.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/request.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/request_content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/reset.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/reset_content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login_content.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Resources/views/Frames/shoutbox.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/config/routing.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/themes/default/avatars/index.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Controller/UtilisateursBlockController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Resources/config/services.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Resources/views/Default/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/UtilisateursBundle.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Resources/views/Frames/advertisements.html.twig" afterPath="$PROJECT_DIR$/src/Informations/InformationsBundle/Resources/views/Frames/advertisements.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Resources/views/Frames/disclaimer.html.twig" afterPath="$PROJECT_DIR$/src/Informations/InformationsBundle/Resources/views/Frames/disclaimer.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Resources/views/Frames/news.html.twig" afterPath="$PROJECT_DIR$/src/Informations/InformationsBundle/Resources/views/Frames/news.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Resources/views/Frames/welcome.html.twig" afterPath="$PROJECT_DIR$/src/Informations/InformationsBundle/Resources/views/Frames/welcome.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Entity/Utilisateurs.php" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Entity/Users.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Resources/views/Blocks/donateblock.html.twig" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Blocks/donateblock.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Resources/views/Blocks/loginblock.html.twig" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Blocks/loginblock.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Resources/views/Blocks/membersonline24block.html.twig" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Blocks/membersonline24block.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Resources/views/Blocks/membersonlineblock.html.twig" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Blocks/membersonlineblock.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Resources/views/Blocks/statsblock.html.twig" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Blocks/statsblock.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Controller/TorrentsController.php" afterPath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Controller/TorrentsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Controller/TorrentsIndexController.php" afterPath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Controller/TorrentsIndexController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Resources/views/Default/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Informations/InformationsBundle/Controller/InfosController.php" afterPath="$PROJECT_DIR$/src/Informations/InformationsBundle/Controller/InfosController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Informations/InformationsBundle/Resources/views/Frames/news.html.twig" afterPath="$PROJECT_DIR$/src/Informations/InformationsBundle/Resources/views/Frames/news.html.twig" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -186,66 +24,24 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TorrentsIndexController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Torrents/TorrentsBundle/Controller/TorrentsIndexController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-              <folding>
-                <element signature="e#236#278#1#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InfosController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="InfosController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Informations/InformationsBundle/Controller/InfosController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="396">
+              <caret line="22" column="97" lean-forward="true" selection-start-line="22" selection-start-column="97" selection-end-line="22" selection-end-column="97" />
               <folding>
-                <element signature="e#242#294#1#PHP" expanded="true" />
-                <element signature="e#378#426#1#PHP" expanded="true" />
-                <element signature="e#504#546#1#PHP" expanded="true" />
-                <element signature="e#627#672#1#PHP" expanded="true" />
+                <element signature="e#560#585#1#PHP" expanded="true" />
+                <element signature="e#663#705#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Torrents/TorrentsBundle/Resources/views/Default/index.html.twig">
+      <file leaf-file-name="news.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Informations/InformationsBundle/Resources/views/Frames/news.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-              <folding>
-                <element signature="e#12#28#0#Twig" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UsersBlockController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Controller/UsersBlockController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="73" lean-forward="true" selection-start-line="15" selection-start-column="73" selection-end-line="15" selection-end-column="73" />
-              <folding>
-                <element signature="e#224#265#0#PHP" expanded="true" />
-                <element signature="e#369#411#1#PHP" expanded="true" />
-                <element signature="e#490#531#1#PHP" expanded="true" />
-                <element signature="e#618#667#1#PHP" expanded="true" />
-                <element signature="e#756#807#1#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UsersBundle.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/UsersBundle.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+            <state relative-caret-position="90">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -306,7 +102,9 @@
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/UsersBundle.php" />
         <option value="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Controller/TorrentsIndexController.php" />
         <option value="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Resources/views/Default/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Informations/InformationsBundle/Entity/News.php" />
         <option value="$PROJECT_DIR$/src/Informations/InformationsBundle/Controller/InfosController.php" />
+        <option value="$PROJECT_DIR$/src/Informations/InformationsBundle/Resources/views/Frames/news.html.twig" />
       </list>
     </option>
   </component>
@@ -457,11 +255,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Users" />
+              <option name="myItemId" value="Informations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="UsersBundle" />
+              <option name="myItemId" value="InformationsBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TTv3-Symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TTv3-Symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Informations" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InformationsBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -473,7 +293,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Default" />
+              <option name="myItemId" value="Frames" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -491,11 +311,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Users" />
+              <option name="myItemId" value="Informations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="UsersBundle" />
+              <option name="myItemId" value="InformationsBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -521,19 +341,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Users" />
+              <option name="myItemId" value="Informations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="UsersBundle" />
+              <option name="myItemId" value="InformationsBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -551,273 +367,41 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Users" />
+              <option name="myItemId" value="Informations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="UsersBundle" />
+              <option name="myItemId" value="InformationsBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TTv3-Symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TTv3-Symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Informations" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InformationsBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Entity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UsersBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Torrents" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TorrentsBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Torrents" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TorrentsBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Frames" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Torrents" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TorrentsBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Torrents" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TorrentsBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Informations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InformationsBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Informations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InformationsBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Frames" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Informations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InformationsBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Informations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InformationsBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1334,7 +918,7 @@
       <workItem from="1484320021771" duration="3687000" />
       <workItem from="1484329516235" duration="8151000" />
       <workItem from="1484391346689" duration="2623000" />
-      <workItem from="1484393976369" duration="15313000" />
+      <workItem from="1484393976369" duration="18356000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout de FOSUSerBundle">
       <created>1484397812682</created>
@@ -1354,7 +938,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41467000" />
+    <option name="totallyTimeSpent" value="44510000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="0" width="1920" height="1040" extended-state="6" />
@@ -1371,7 +955,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19779006" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22541437" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19444445" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1410,14 +994,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Torrents/TorrentsBundle/Resources/views/Default/index2.html.twig" />
-    <entry file="file://$PROJECT_DIR$/src/Torrents/TorrentsBundle/Resources/public/css_original/menu.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="607">
-          <caret line="57" column="20" lean-forward="false" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/js/tt.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1556,9 +1132,9 @@
         <state relative-caret-position="594">
           <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
-            <element signature="e#170#193#0#Twig" expanded="true" />
-            <element signature="e#1254#1284#0#Twig" expanded="true" />
-            <element signature="e#1343#1369#0#Twig" expanded="true" />
+            <element signature="e#170#193#0#Twig" expanded="false" />
+            <element signature="e#1254#1284#0#Twig" expanded="false" />
+            <element signature="e#1343#1369#0#Twig" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1571,21 +1147,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Informations/InformationsBundle/Resources/views/Frames/news.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="8" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="14" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Torrents/TorrentsBundle/Resources/views/Frames/shoutbox.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
           <caret line="32" column="40" lean-forward="false" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#2;n#form#0;n#div#1;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#3;n#form#0;n#div#1;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#form#0;n#div#1;n#div#2;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#3;n#form#0;n#div#1;n#div#2;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1603,8 +1171,8 @@
         <state relative-caret-position="72">
           <caret line="4" column="17" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="8" selection-end-column="13" />
           <folding>
-            <element signature="e#1026#1050#0#Twig" expanded="true" />
-            <element signature="e#1989#2027#0#Twig" expanded="true" />
+            <element signature="e#1026#1050#0#Twig" expanded="false" />
+            <element signature="e#1989#2027#0#Twig" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1614,7 +1182,7 @@
         <state relative-caret-position="252">
           <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
           <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1717,25 +1285,7 @@
         <state relative-caret-position="468">
           <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
-            <element signature="e#131#173#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/UsersBundle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Torrents/TorrentsBundle/Controller/TorrentsIndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <element signature="e#236#278#1#PHP" expanded="true" />
+            <element signature="e#131#173#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1745,6 +1295,16 @@
         <state relative-caret-position="360">
           <caret line="21" column="51" lean-forward="false" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Torrents/TorrentsBundle/Controller/TorrentsIndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <element signature="e#236#278#1#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1772,16 +1332,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/UsersBundle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Informations/InformationsBundle/Repository/NewsRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Informations/InformationsBundle/Entity/News.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="45" column="6" lean-forward="true" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Informations/InformationsBundle/Controller/InfosController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="396">
+          <caret line="22" column="97" lean-forward="true" selection-start-line="22" selection-start-column="97" selection-end-line="22" selection-end-column="97" />
           <folding>
-            <element signature="e#242#294#1#PHP" expanded="true" />
-            <element signature="e#378#426#1#PHP" expanded="true" />
-            <element signature="e#504#546#1#PHP" expanded="true" />
-            <element signature="e#627#672#1#PHP" expanded="true" />
+            <element signature="e#560#585#1#PHP" expanded="true" />
+            <element signature="e#663#705#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Informations/InformationsBundle/Resources/views/Frames/news.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
