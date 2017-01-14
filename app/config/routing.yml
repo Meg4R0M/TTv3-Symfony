@@ -4,7 +4,6 @@ torrents:
 
 utilisateurs:
     resource: "@UtilisateursBundle/Controller/"
-    type:     annotation
     prefix:   /
 
 fos_user:

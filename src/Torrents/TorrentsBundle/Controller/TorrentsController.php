@@ -10,14 +10,4 @@ class TorrentsController extends Controller
     {
         return $this->render('TorrentsBundle:Default:index.html.twig');
     }
-
-    public function welcomeAction()
-    {
-        return $this->render('TorrentsBundle:Default:welcome.html.twig');
-    }
-
-    public function advertisementsAction()
-    {
-        return $this->render('TorrentsBundle:Default:advertisements.html.twig');
-    }
 }

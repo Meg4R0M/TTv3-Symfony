@@ -1,10 +1,20 @@
 {% extends "::base.html.twig" %}
 
 {% block content %}
-    {{ render(controller('TorrentsBundle:Torrents:welcome')) }}
-    {{ render(controller('TorrentsBundle:Torrents:advertisements')) }}
+    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+    {% else %}
+    {{ render(controller('TorrentsBundle:TorrentsIndex:welcome')) }}
+    {% endif %}
+    {{ render(controller('TorrentsBundle:TorrentsIndex:advertisements')) }}
+    {{ render(controller('TorrentsBundle:TorrentsIndex:news')) }}
+    {{ render(controller('TorrentsBundle:TorrentsIndex:shoutbox')) }}
+    {{ render(controller('TorrentsBundle:TorrentsIndex:disclaimer')) }}
 {% endblock %}
 
 {% block rightblocks %}
-{#{{ render(controller('UtilisateursBundle:Default:login')) }}#}
+    {{ render(controller('UtilisateursBundle:UtilisateursBlock:login')) }}
+    {{ render(controller('UtilisateursBundle:UtilisateursBlock:donate')) }}
+    {{ render(controller('UtilisateursBundle:UtilisateursBlock:stats')) }}
+    {{ render(controller('UtilisateursBundle:UtilisateursBlock:membersonline')) }}
+    {{ render(controller('UtilisateursBundle:UtilisateursBlock:membersonline24')) }}
 {% endblock %}

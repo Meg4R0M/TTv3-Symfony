@@ -1,0 +1,42 @@
+<div class="tableHeader">
+            <div class="row">
+                <div class="cell first">
+                    <div id="shoutboxUpdating">Updating...</div>Shoutbox {#  Ajax Shoutbox #}
+                </div>
+            </div>
+        </div>
+
+        <div class='clear'></div>
+<div class="widget">
+    <div id="shoutbox_list">
+        <div class="shoutbox">
+            <table class="shoutbox" id="outputList">
+                <tr>
+                    <td><div class="loader"></div></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="shoutboxButtons" id="shoutheader">
+        <form id="chatForm" name="chatForm" onsubmit="return false;">
+            <div class="frc">
+                <input type="hidden" name="name" id="name" value="$CURUSER['username']"/>
+                <input type="hidden" name="uid" id="uid" value="$CURUSER['id']"/>
+                <input type="text" maxlength="800" name="chatbarText" class="s" id="chatbarText" onblur="checkStatus('');" onfocus="checkStatus('active');"/>
+                <button onclick="sendComment();" type="submit" id="submit" name="submit" class="submit">SHOUT !</button>
+                <button class="submit" id="more_smilies"><i class="fa fa-smile-o" aria-hidden="true" title="smilies"></i></button>
+                <button onclick="purge(0)" class="submit"><i class="fa fa-trash" aria-hidden="true" title="Empty Shoutbox"></i></button>
+                <button onclick="Pophistory()" class="submit"><i class="fa fa-history" aria-hidden="true" title="History"></i></button>
+            </div>
+            <br/>
+            <div class="frsa">Liste des Smiley</div>
+            <div class="frsa">
+                <div style="display: none;" id="sextra">ShoutFun</div>
+            </div>
+            <div class="frsa">
+                <div style="display: none;" id="sextra1"><br/>SmileyExtra</div>
+            </div>
+        </form>
+    </div>
+</div>

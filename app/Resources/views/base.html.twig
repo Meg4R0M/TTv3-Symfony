@@ -53,6 +53,7 @@
             <a href="/index.php" title="TorrentTrader v3 | TTv3"><img src="{{ asset('themes/default/theme_images/logo.png') }}" alt="TorrentTrader v3 | TTv3" /></a>
         </div>
 
+        {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
         <div class="icons">
             <ul>
                 <li rel="globalSearchButton">
@@ -133,6 +134,7 @@
             </ul>
 
         </div>
+        {% endif %}
 
         <div class="clear"></div>
 
@@ -152,7 +154,10 @@
                 <ul id="menu">
                     <li class="nodrop"><a href="/index.php" class="link ">Home</a></li>
                     <li class="nodrop"><a href="/lounge.php" class="link "><span style="color: yellow">Shoutbox</span></a></li>
+                    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                    {% else %}
 					<li class="nodrop"><a href="/account-signup.php" class="link ">Sign-up</a></li>
+                    {% endif %}
                     <li class="">
                         <a href="javascript:void(0)" class="link drop">Forums</a>
                         <div class="dropdown_column">
@@ -180,6 +185,7 @@
                             </div>
                         </div>
                     </li>
+                    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                     <li class="">
                         <a href="/membercp.php" class="link drop">Member CP</a>
                         <div class="dropdown_column">
@@ -205,7 +211,9 @@
                     </li>
                     <li class="nodrop"><a href="#" class="link ">Market</a></li>
                     <li class="nodrop"><a href="/memberlist.php" class="link ">Members</a></li>
+                    {% endif %}
                     <li class="nodrop"><a href="/faq.php" class="link ">FAQ</a></li>
+                    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                     <li class="">
                         <a href="#" class="link drop">Contact</a>
                         <div class="dropdown_column">
@@ -216,6 +224,7 @@
                             </div>
                         </div>
                     </li>
+                    {% endif %}
                     <li class="nodrop"><a href="/staff.php" class="link ">Staff</a></li>
                 </ul>
 
@@ -229,7 +238,10 @@
                 <ul id="responsiveMenu" class="slimmenu">
                     <li><a href="/index.php">Home</a></li>
                     <li><a href="/lounge.php"><span style="color: yellow;">Shoutbox</span></a></li>
+                    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                    {% else %}
                     <li><a href="/account-signup.php">Sign-up</a></li>
+                    {% endif %}
                     <li>
                         <a href="javascript:void(0)">Forums</a>
                         <ul>
@@ -254,6 +266,7 @@
                         </ul>
 
                     </li>
+                    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                     <li><a href="/membercp.php">Member CP</a>
                         <ul>
                             <li><a href="/membercp.php">Personal Details</a></li>
@@ -276,8 +289,10 @@
                     </li>
                     <li><a href="#">Market</a></li>
                     <li><a href="/memberlist.php">Members</a></li>
+                    {% endif %}
                     <li><a href="/faq.php">FAQ</a></li>
                     <li><a href="#">Top 10</a></li>
+                    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                     <li><a href="#">Contact</a>
                         <ul>
                             <li><a href="#">Contact Staff</a></li>
@@ -285,33 +300,36 @@
                             <li><a href="#">IRC</a></li>
                         </ul>
                     </li>
+                    {% endif %}
                     <li><a href="/staff.php">Staff</a></li>
                 </ul>
             </div>
             <!-- end #menu -->
-
-            <!-- start #member_info_bar -->
-            <div id="member_info_bar">
-                <div class="showStats">
-                    <img src="{{ asset('themes/default/info_bar/uploaded.png') }}" alt="" title="Uploaded" /> 0
-                    <img src="{{ asset('themes/default/info_bar/downloaded.png') }}" alt="" title="Downloaded" /> 0
-                    <img src="{{ asset('themes/default/info_bar/buffer.png') }}" alt="" title="Buffer" /> 0
-                    <!-- CHANGER LES SPAN POUR LE RATIO COLOR -->
-                    <img src="{{ asset('themes/default/info_bar/ratio.png') }}" alt="" title="Ratio" /> <span class="ratioNull">0</span>
-                    <img src="{{ asset('themes/default/info_bar/slots.png') }}" alt="" title="Max.Slots" /> 0
-                    <img src="{{ asset('themes/default/info_bar/points.png') }}" alt="" title="Points" /> <a href="#">0</a>
-                    <img src="{{ asset('themes/default/info_bar/posts.png') }}" alt="" title="Total Posts" /> 0
-                    <img src="{{ asset('themes/default/info_bar/invites.png') }}" alt="" title="Total Invites" /> <a href="/invite.php">0</a>
-                    <img src="{{ asset('themes/default/info_bar/warns.png') }}" alt="" title="Total Warns" /> <span id="total_warns" class="clickable">0</span>
-                    <img src="{{ asset('themes/default/info_bar/hitrun.png') }}" alt="" title="Hit & Run Warns" /> <span id="hitrun_warns" class="clickable">0</span>
+            {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                <!-- start #member_info_bar -->
+                <div id="member_info_bar">
+                    <div class="showStats">
+                        <img src="{{ asset('themes/default/info_bar/uploaded.png') }}" alt="" title="Uploaded"/> 0
+                        <img src="{{ asset('themes/default/info_bar/downloaded.png') }}" alt="" title="Downloaded"/> 0
+                        <img src="{{ asset('themes/default/info_bar/buffer.png') }}" alt="" title="Buffer"/> 0
+                        <!-- CHANGER LES SPAN POUR LE RATIO COLOR -->
+                        <img src="{{ asset('themes/default/info_bar/ratio.png') }}" alt="" title="Ratio"/> <span class="ratioNull">0</span>
+                        <img src="{{ asset('themes/default/info_bar/slots.png') }}" alt="" title="Max.Slots"/> 0
+                        <img src="{{ asset('themes/default/info_bar/points.png') }}" alt="" title="Points"/> <a href="#">0</a>
+                        <img src="{{ asset('themes/default/info_bar/posts.png') }}" alt="" title="Total Posts"/> 0
+                        <img src="{{ asset('themes/default/info_bar/invites.png') }}" alt="" title="Total Invites"/> <a href="/invite.php">0</a>
+                        <img src="{{ asset('themes/default/info_bar/warns.png') }}" alt="" title="Total Warns"/> <span id="total_warns" class="clickable">0</span>
+                        <img src="{{ asset('themes/default/info_bar/hitrun.png') }}" alt="" title="Hit & Run Warns"/>
+                        <span id="hitrun_warns" class="clickable">0</span>
+                    </div>
                 </div>
-            </div>
-            <!-- end #member_info_bar -->
+                <!-- end #member_info_bar -->
+            {% endif %}
 
             <!-- start #breadcrumb -->
             <div class="rcrumbs" id="breadcrumbs">
                 <ul>
-                    <li><span class="divider">></span></li>
+                    <li>Home <span class="divider">></span></li>
                 </ul>
             </div>
             <!-- end #breadcrumb -->

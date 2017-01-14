@@ -1,0 +1,37 @@
+{% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+    <div class='widget'>
+        <h4>
+	        <span class='floatright'>
+		        <img src='{{ asset('themes/default/buttons/refresh.png') }}' alt='Refresh' title='Refresh' rel='refreshlogin' class='clickable middle' />
+		    </span>
+            <img src='{{ asset('themes/default/forums/mix/bullet_toggle_minus.png') }}' alt='' title='' rel='login' id='toggle' class='middle pointer' />
+            {{ app.user.username }}
+        </h4>
+
+        <div  id="logged" style="padding: 10px 5px 10px 0">
+            <div class="floatright">
+                <img src="{{ asset('themes/default/avatars/avatar_m.png') }}" alt="" title="" class="clickable avatar" id="member_info" memberid="1" width="96px"/>
+                <p style="text-align: center"><img src="{{ asset('images/moods/Amazed.gif') }}" alt='Amazed' title='Amazed]' style="margin-top: -100px"/></p>
+                [<span id="history_link" class="clickable">History</span>]<br />
+                [<a href="{{ path('fos_user_security_logout') }}">{{ 'layout.logout'|trans({}, 'FOSUserBundle') }}</a>]
+            </div>
+            <div class="floatleft">
+                <div id="ul_dl_stats" class="small">
+                    <b>Uploaded:</b> 100Gio <br />
+                    <b>Downloaded:</b> 20Gio<br />
+                    <b>Buffer:</b> 0<br />
+                    <b>Ratio:</b> <span class="ratioNull">5.00</span><br />
+                    <b>Max.Slots:</b> 3<br />
+                    <b>Points:</b> <a href="#">0</a><br />
+                    <b>Total Posts:</b> 0<br />
+                    <b>Total Invites:</b> <a href="#">0</a><br />
+                    <b>Total Warns:</b> <span id="total_warns" class="clickable">0</span><br />
+                    <b>Hit & Run Warns:</b> <span id="hitrun_warns" class="clickable">0</span><br />
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+{% else %}
+    {% include "FOSUserBundle:Security:login.html.twig" %}
+{% endif %}
