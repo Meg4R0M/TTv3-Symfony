@@ -2,70 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ab6ad49-e827-4831-8791-97f7314afa14" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Entity/Utilisateurs.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Entity/Announce.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Entity/Blocks.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Entity/Bookmarks.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Entity/Categories.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Entity/Comments.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Entity/Completed.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Entity/Faq.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Entity/Files.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Entity/ForumForums.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Entity/ForumPosts.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Entity/ForumReadposts.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Entity/ForumTopics.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Entity/Forumcats.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Entity/Languages.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Entity/Log.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Entity/Moods.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Entity/News.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Entity/Peers.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Entity/Pollanswers.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Entity/Polls.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Entity/Ratings.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Entity/Reports.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Entity/Rules.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Entity/Shoutannounce.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Entity/Shoutbox.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Entity/Sqlerr.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Entity/Stylesheets.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Entity/Tasks.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Entity/Torrentlang.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Entity/Torrents.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Entity/Warnings.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Controller/DefaultController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Entity/Bans.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Entity/Blocked.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Entity/Bookmarkuser.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Entity/Countries.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Entity/EmailBans.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Entity/Friends.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Entity/Groups.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Entity/Guests.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Entity/Messages.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Entity/Mostonline.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Entity/Teams.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Entity/Users.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Resources/config/routing.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Resources/config/services.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Resources/views/Default/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Resources/views/Default/login.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/UtilisateursBundle.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/cache/.gitkeep" afterPath="$PROJECT_DIR$/var/cache/.gitkeep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/logs/.gitkeep" afterPath="$PROJECT_DIR$/var/logs/.gitkeep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/sessions/.gitkeep" afterPath="$PROJECT_DIR$/var/sessions/.gitkeep" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TTv3_Symfony.iml" afterPath="$PROJECT_DIR$/TTv3_Symfony.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Resources/views/Default/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/SymfonyRequirements.php" afterPath="$PROJECT_DIR$/var/SymfonyRequirements.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/config.php" afterPath="$PROJECT_DIR$/web/config.php" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -838,12 +775,20 @@
       <workItem from="1484320021771" duration="3687000" />
       <workItem from="1484329516235" duration="8151000" />
       <workItem from="1484391346689" duration="2623000" />
-      <workItem from="1484393976369" duration="3108000" />
+      <workItem from="1484393976369" duration="3193000" />
     </task>
+    <task id="LOCAL-00001" summary="Ajout de FOSUSerBundle">
+      <created>1484397812682</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1484397812682</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29262000" />
+    <option name="totallyTimeSpent" value="29347000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="0" width="1920" height="1040" extended-state="6" />
@@ -885,6 +830,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Ajout de FOSUSerBundle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de FOSUSerBundle" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
