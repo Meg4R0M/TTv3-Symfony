@@ -6,20 +6,20 @@
  * Time: 13:04
  */
 
-namespace Utilisateurs\UtilisateursBundle\Entity;
+namespace Users\UsersBundle\Entity;
 
 use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Class Utilisateurs
+ * Class Users
  *
- * @package UtilisateursBundle\Entity
+ * @package UsersBundle\Entity
  *
  * @ORM\Entity
  * @ORM\Table(name="`users`")
  */
-class Utilisateurs extends BaseUser
+class Users extends BaseUser
 {
     /**
      * @var integer

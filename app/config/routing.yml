@@ -2,8 +2,12 @@ torrents:
     resource: "@TorrentsBundle/Resources/config/routing.yml"
     prefix:   /
 
+informations:
+    resource: "@InformationsBundle/Resources/config/routing.yml"
+    prefix:   /
+
 utilisateurs:
-    resource: "@UtilisateursBundle/Controller/"
+    resource: "@UsersBundle/Resources/config/routing.yml"
     prefix:   /
 
 fos_user:

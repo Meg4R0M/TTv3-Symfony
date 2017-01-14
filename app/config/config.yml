@@ -3,7 +3,8 @@ imports:
     - { resource: security.yml }
     - { resource: services.yml }
     - { resource: "@TorrentsBundle/Resources/config/services.yml" }
-    - { resource: "@UtilisateursBundle/Resources/config/services.yml" }
+    - { resource: "@UsersBundle/Resources/config/services.yml" }
+    - { resource: "@InformationsBundle/Resources/config/services.yml" }
 
 # Put parameters here that don't need to change on each machine where the app is deployed
 # http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
@@ -84,4 +85,4 @@ assetic:
 fos_user:
     db_driver: orm
     firewall_name: main
-    user_class: Utilisateurs\UtilisateursBundle\Entity\Utilisateurs
+    user_class: Users\UsersBundle\Entity\Users

@@ -18,7 +18,8 @@ class AppKernel extends Kernel
             new Torrents\TorrentsBundle\TorrentsBundle(),
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new FOS\UserBundle\FOSUserBundle(),
-            new Utilisateurs\UtilisateursBundle\UtilisateursBundle(),
+            new Users\UsersBundle\UsersBundle(),
+            new Informations\InformationsBundle\InformationsBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

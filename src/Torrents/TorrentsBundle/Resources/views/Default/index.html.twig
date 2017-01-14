@@ -3,18 +3,18 @@
 {% block content %}
     {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
     {% else %}
-    {{ render(controller('TorrentsBundle:TorrentsIndex:welcome')) }}
+    {{ render(controller('InformationsBundle:Infos:welcome')) }}
     {% endif %}
-    {{ render(controller('TorrentsBundle:TorrentsIndex:advertisements')) }}
-    {{ render(controller('TorrentsBundle:TorrentsIndex:news')) }}
+    {{ render(controller('InformationsBundle:Infos:advertisements')) }}
+    {{ render(controller('InformationsBundle:Infos:news')) }}
     {{ render(controller('TorrentsBundle:TorrentsIndex:shoutbox')) }}
-    {{ render(controller('TorrentsBundle:TorrentsIndex:disclaimer')) }}
+    {{ render(controller('InformationsBundle:Infos:disclaimer')) }}
 {% endblock %}
 
 {% block rightblocks %}
-    {{ render(controller('UtilisateursBundle:UtilisateursBlock:login')) }}
-    {{ render(controller('UtilisateursBundle:UtilisateursBlock:donate')) }}
-    {{ render(controller('UtilisateursBundle:UtilisateursBlock:stats')) }}
-    {{ render(controller('UtilisateursBundle:UtilisateursBlock:membersonline')) }}
-    {{ render(controller('UtilisateursBundle:UtilisateursBlock:membersonline24')) }}
+    {{ render(controller('UsersBundle:UsersBlock:login')) }}
+    {{ render(controller('UsersBundle:UsersBlock:donate')) }}
+    {{ render(controller('UsersBundle:UsersBlock:stats')) }}
+    {{ render(controller('UsersBundle:UsersBlock:membersonline')) }}
+    {{ render(controller('UsersBundle:UsersBlock:membersonline24')) }}
 {% endblock %}
