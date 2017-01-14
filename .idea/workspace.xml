@@ -3,12 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="0ab6ad49-e827-4831-8791-97f7314afa14" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Informations/InformationsBundle/DataFixtures/ORM/AdvertisementsData.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Informations/InformationsBundle/DataFixtures/ORM/NewsData.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TTv3_Symfony.iml" afterPath="$PROJECT_DIR$/TTv3_Symfony.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Informations/InformationsBundle/Entity/Advertisements.php" afterPath="$PROJECT_DIR$/src/Informations/InformationsBundle/Entity/Advertisements.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Informations/InformationsBundle/Entity/News.php" afterPath="$PROJECT_DIR$/src/Informations/InformationsBundle/Entity/News.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Informations/InformationsBundle/Resources/views/Frames/advertisements.html.twig" afterPath="$PROJECT_DIR$/src/Informations/InformationsBundle/Resources/views/Frames/advertisements.html.twig" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -44,7 +46,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="advertisements.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="advertisements.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Informations/InformationsBundle/Resources/views/Frames/advertisements.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
@@ -53,6 +55,28 @@
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewsData.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Informations/InformationsBundle/DataFixtures/ORM/NewsData.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+              <folding>
+                <element signature="e#68#117#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="News.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Informations/InformationsBundle/Entity/News.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="25" column="36" lean-forward="false" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -111,7 +135,6 @@
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/UsersBundle.php" />
         <option value="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Controller/TorrentsIndexController.php" />
         <option value="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Resources/views/Default/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/Informations/InformationsBundle/Entity/News.php" />
         <option value="$PROJECT_DIR$/src/Informations/InformationsBundle/Resources/views/Frames/news.html.twig" />
         <option value="$PROJECT_DIR$/src/Informations/InformationsBundle/Controller/InfosController.php" />
         <option value="$PROJECT_DIR$/composer.json" />
@@ -120,6 +143,8 @@
         <option value="$PROJECT_DIR$/src/Informations/DataFixtures/ORM/AdvertisementsData.php" />
         <option value="$PROJECT_DIR$/src/Informations/InformationsBundle/Entity/Advertisements.php" />
         <option value="$PROJECT_DIR$/src/Informations/InformationsBundle/Resources/views/Frames/advertisements.html.twig" />
+        <option value="$PROJECT_DIR$/src/Informations/InformationsBundle/Entity/News.php" />
+        <option value="$PROJECT_DIR$/src/Informations/InformationsBundle/DataFixtures/ORM/NewsData.php" />
       </list>
     </option>
   </component>
@@ -530,11 +555,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Informations/InformationsBundle/DataFixtures/ORM" />
       <recent name="$PROJECT_DIR$/src/Informations" />
       <recent name="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Resources/config" />
       <recent name="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Resources/views/Default" />
       <recent name="$PROJECT_DIR$/web/images" />
-      <recent name="$PROJECT_DIR$/web/themes/default" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/Informations/InformationsBundle" />
@@ -965,7 +990,7 @@
       <workItem from="1484320021771" duration="3687000" />
       <workItem from="1484329516235" duration="8151000" />
       <workItem from="1484391346689" duration="2623000" />
-      <workItem from="1484393976369" duration="23119000" />
+      <workItem from="1484393976369" duration="24437000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout de FOSUSerBundle">
       <created>1484397812682</created>
@@ -985,11 +1010,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49273000" />
+    <option name="totallyTimeSpent" value="50591000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="0" width="1920" height="1040" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1002,7 +1027,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3116022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3116022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19444445" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1041,14 +1066,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Torrents/TorrentsBundle/TorrentsBundle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Entity/Bans.php" />
     <entry file="file://$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Twig/Extension/login.php" />
     <entry file="file://$PROJECT_DIR$/src/Torrents/TorrentsBundle/Resources/public/css_original/style.css">
@@ -1357,14 +1374,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Informations/InformationsBundle/Entity/News.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="45" column="6" lean-forward="true" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Informations/InformationsBundle/Resources/views/Frames/news.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1427,6 +1436,24 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Informations/InformationsBundle/Entity/News.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="25" column="36" lean-forward="false" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Informations/InformationsBundle/DataFixtures/ORM/NewsData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          <folding>
+            <element signature="e#68#117#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

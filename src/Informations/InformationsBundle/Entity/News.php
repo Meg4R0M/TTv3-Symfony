@@ -23,9 +23,9 @@ class News
 
     /**
      * @ORM\ManyToOne(targetEntity="Users\UsersBundle\Entity\Users", inversedBy="news")
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\JoinColumn(nullable=true)
      */
-    private $userId;
+    private $user;
 
     /**
      * @var \DateTime
@@ -60,27 +60,27 @@ class News
     }
 
     /**
-     * Set userId
+     * Set user
      *
-     * @param integer $userId
+     * @param integer $user
      *
      * @return News
      */
-    public function setUserId($userId)
+    public function setUser($user)
     {
-        $this->userId = $userId;
+        $this->user = $user;
 
         return $this;
     }
 
     /**
-     * Get userId
+     * Get user
      *
      * @return int
      */
-    public function getUserId()
+    public function getUser()
     {
-        return $this->userId;
+        return $this->user;
     }
 
     /**
