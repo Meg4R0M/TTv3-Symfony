@@ -28,12 +28,19 @@ class Advertisements
      */
     private $title;
 
+    //**
+     //* @var int
+     //*
+     //* @ORM\Column(name="image_id", type="integer", nullable=true)
+     //*/
+    //private $imageId;
+
     /**
-     * @var int
+     * @var string
      *
-     * @ORM\Column(name="image_id", type="integer", nullable=true)
+     * @ORM\Column(name="image_path", type="string", length=255, nullable=true)
      */
-    private $imageId;
+    private $imagePath;
 
     /**
      * @var string
@@ -77,28 +84,52 @@ class Advertisements
         return $this->title;
     }
 
+    //**
+     //* Set imageId
+     //*
+     //* @param integer $imageId
+     //*
+     //* @return Advertisements
+     //*/
+    //public function setImageId($imageId)
+    //{
+        //$this->imageId = $imageId;
+
+        //return $this;
+    //}
+
     /**
-     * Set imageId
+     * Set imagePath
      *
-     * @param integer $imageId
+     * @param string $imagePath
      *
      * @return Advertisements
      */
-    public function setImageId($imageId)
+    public function setImagePath($imagePath)
     {
-        $this->imageId = $imageId;
+        $this->imagePath = $imagePath;
 
         return $this;
     }
 
+    ///**
+     //* Get imageId
+     //*
+     //* @return int
+     //*/
+    //public function getImageId()
+    //{
+        //return $this->imageId;
+    //}
+
     /**
-     * Get imageId
+     * Get imagePath
      *
-     * @return int
+     * @return string
      */
-    public function getImageId()
+    public function getImagePath()
     {
-        return $this->imageId;
+        return $this->imagePath;
     }
 
     /**
