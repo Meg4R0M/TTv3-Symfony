@@ -1,0 +1,297 @@
+{% extends "::base.html.twig" %}
+
+{% block infobar %}
+    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+        {{ render(controller('UsersBundle:Infos:infobar')) }}
+    {% endif %}
+{% endblock %}
+
+{% block breadcrumbs %}
+    {{ render(controller('UsersBundle:Infos:breadcrumbs', {'page': 'membercp' })) }}
+{% endblock %}
+
+{% block content %}
+    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+        {{ form_start(form) }}
+        {{ form_widget(form) }}
+        {{ form_end(form) }}
+<form id="membercp_form" action="">
+    <input type="hidden" name="action" value="personal_details" id="action" />
+
+    <div class="tableHeader">
+        <div class="row">
+            <div class="cell first">
+                USER: CURUSER[username] ACCOUNT_PROFILE
+            </div>
+        </div>
+    </div>
+
+    <div class="table">
+
+        <div class="row">
+            <div class="cell first">Gender</div>
+            <div class="cell second">
+                <input type="radio" name="memberinfo_gender" id="memberinfo_gender_male" value="Male" /> <label for="memberinfo_gender_male">MALE</label>
+                <input type="radio" name="memberinfo_gender" id="memberinfo_gender_female" value="Female" /> <label for="memberinfo_gender_female">FEMALE</label>
+                <input type="radio" name="memberinfo_gender" id="memberinfo_gender_unspecified" value="" checked='checked' /> <label for="memberinfo_gender_unspecified">(unspecified)</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="cell first">Date of Birth</div>
+            <div class="cell second">
+                <span rel="date_of_birth">$CURUSER["age"]</span>
+                <span rel="date_of_birth">16/06/1985</span>
+                <span class="small">Once your birthday has been entered, it cannot be changed. Please contact an administrator if it is incorrect.</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="cell first">Country</div>
+            <div class="cell second">
+                <img src="http://templateshares-ue.net/tsue/data/countryFlags/noFlag.png" alt="" title="" class="countryMember" />
+                <div id="countrySelect">
+                    <div class="close">&nbsp;</div>
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/Kosovo.png" alt="Kosovo" title="Kosovo" class="countryList" id="Kosovo" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/Scotland.png" alt="Scotland" title="Scotland" class="countryList" id="Scotland" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ad.png" alt="ad" title="ad" class="countryList" id="ad" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ae.png" alt="ae" title="ae" class="countryList" id="ae" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/af.png" alt="af" title="af" class="countryList" id="af" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ag.png" alt="ag" title="ag" class="countryList" id="ag" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/al.png" alt="al" title="al" class="countryList" id="al" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/am.png" alt="am" title="am" class="countryList" id="am" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ao.png" alt="ao" title="ao" class="countryList" id="ao" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ar.png" alt="ar" title="ar" class="countryList" id="ar" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/at.png" alt="at" title="at" class="countryList" id="at" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/au.png" alt="au" title="au" class="countryList" id="au" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/az.png" alt="az" title="az" class="countryList" id="az" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ba.png" alt="ba" title="ba" class="countryList" id="ba" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/bb.png" alt="bb" title="bb" class="countryList" id="bb" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/bd.png" alt="bd" title="bd" class="countryList" id="bd" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/be.png" alt="be" title="be" class="countryList" id="be" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/bf.png" alt="bf" title="bf" class="countryList" id="bf" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/bg.png" alt="bg" title="bg" class="countryList" id="bg" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/bh.png" alt="bh" title="bh" class="countryList" id="bh" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/bi.png" alt="bi" title="bi" class="countryList" id="bi" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/bj.png" alt="bj" title="bj" class="countryList" id="bj" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/bn.png" alt="bn" title="bn" class="countryList" id="bn" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/bo.png" alt="bo" title="bo" class="countryList" id="bo" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/br.png" alt="br" title="br" class="countryList" id="br" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/bs.png" alt="bs" title="bs" class="countryList" id="bs" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/bt.png" alt="bt" title="bt" class="countryList" id="bt" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/bw.png" alt="bw" title="bw" class="countryList" id="bw" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/by.png" alt="by" title="by" class="countryList" id="by" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/bz.png" alt="bz" title="bz" class="countryList" id="bz" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ca.png" alt="ca" title="ca" class="countryList" id="ca" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/cd.png" alt="cd" title="cd" class="countryList" id="cd" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/cf.png" alt="cf" title="cf" class="countryList" id="cf" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/cg.png" alt="cg" title="cg" class="countryList" id="cg" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ch.png" alt="ch" title="ch" class="countryList" id="ch" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ci.png" alt="ci" title="ci" class="countryList" id="ci" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/cl.png" alt="cl" title="cl" class="countryList" id="cl" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/cm.png" alt="cm" title="cm" class="countryList" id="cm" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/cn.png" alt="cn" title="cn" class="countryList" id="cn" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/co.png" alt="co" title="co" class="countryList" id="co" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/cr.png" alt="cr" title="cr" class="countryList" id="cr" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/cu.png" alt="cu" title="cu" class="countryList" id="cu" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/cv.png" alt="cv" title="cv" class="countryList" id="cv" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/cy.png" alt="cy" title="cy" class="countryList" id="cy" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/cz.png" alt="cz" title="cz" class="countryList" id="cz" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/de.png" alt="de" title="de" class="countryList" id="de" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/dj.png" alt="dj" title="dj" class="countryList" id="dj" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/dk.png" alt="dk" title="dk" class="countryList" id="dk" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/dm.png" alt="dm" title="dm" class="countryList" id="dm" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/do.png" alt="do" title="do" class="countryList" id="do" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/dz.png" alt="dz" title="dz" class="countryList" id="dz" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ec.png" alt="ec" title="ec" class="countryList" id="ec" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ee.png" alt="ee" title="ee" class="countryList" id="ee" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/eg.png" alt="eg" title="eg" class="countryList" id="eg" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/eh.png" alt="eh" title="eh" class="countryList" id="eh" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/er.png" alt="er" title="er" class="countryList" id="er" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/es.png" alt="es" title="es" class="countryList" id="es" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/et.png" alt="et" title="et" class="countryList" id="et" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/eu.png" alt="eu" title="eu" class="countryList" id="eu" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/fi.png" alt="fi" title="fi" class="countryList" id="fi" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/fj.png" alt="fj" title="fj" class="countryList" id="fj" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/fm.png" alt="fm" title="fm" class="countryList" id="fm" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/fr.png" alt="fr" title="fr" class="countryList" id="fr" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ga.png" alt="ga" title="ga" class="countryList" id="ga" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/gd.png" alt="gd" title="gd" class="countryList" id="gd" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ge.png" alt="ge" title="ge" class="countryList" id="ge" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/gh.png" alt="gh" title="gh" class="countryList" id="gh" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/gi.png" alt="gi" title="gi" class="countryList" id="gi" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/gl.png" alt="gl" title="gl" class="countryList" id="gl" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/gm.png" alt="gm" title="gm" class="countryList" id="gm" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/gn.png" alt="gn" title="gn" class="countryList" id="gn" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/gq.png" alt="gq" title="gq" class="countryList" id="gq" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/gr.png" alt="gr" title="gr" class="countryList" id="gr" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/gt.png" alt="gt" title="gt" class="countryList" id="gt" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/gw.png" alt="gw" title="gw" class="countryList" id="gw" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/gy.png" alt="gy" title="gy" class="countryList" id="gy" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/hk.png" alt="hk" title="hk" class="countryList" id="hk" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/hn.png" alt="hn" title="hn" class="countryList" id="hn" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/hr.png" alt="hr" title="hr" class="countryList" id="hr" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ht.png" alt="ht" title="ht" class="countryList" id="ht" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/hu.png" alt="hu" title="hu" class="countryList" id="hu" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/id.png" alt="id" title="id" class="countryList" id="id" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ie.png" alt="ie" title="ie" class="countryList" id="ie" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/il.png" alt="il" title="il" class="countryList" id="il" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/in.png" alt="in" title="in" class="countryList" id="in" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/iq.png" alt="iq" title="iq" class="countryList" id="iq" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ir.png" alt="ir" title="ir" class="countryList" id="ir" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/is.png" alt="is" title="is" class="countryList" id="is" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/it.png" alt="it" title="it" class="countryList" id="it" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/jm.png" alt="jm" title="jm" class="countryList" id="jm" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/jo.png" alt="jo" title="jo" class="countryList" id="jo" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/jp.png" alt="jp" title="jp" class="countryList" id="jp" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ke.png" alt="ke" title="ke" class="countryList" id="ke" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/kg.png" alt="kg" title="kg" class="countryList" id="kg" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/kh.png" alt="kh" title="kh" class="countryList" id="kh" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ki.png" alt="ki" title="ki" class="countryList" id="ki" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/km.png" alt="km" title="km" class="countryList" id="km" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/kn.png" alt="kn" title="kn" class="countryList" id="kn" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/kp.png" alt="kp" title="kp" class="countryList" id="kp" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/kr.png" alt="kr" title="kr" class="countryList" id="kr" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/kw.png" alt="kw" title="kw" class="countryList" id="kw" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/kz.png" alt="kz" title="kz" class="countryList" id="kz" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/la.png" alt="la" title="la" class="countryList" id="la" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/lb.png" alt="lb" title="lb" class="countryList" id="lb" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/lc.png" alt="lc" title="lc" class="countryList" id="lc" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/li.png" alt="li" title="li" class="countryList" id="li" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/lk.png" alt="lk" title="lk" class="countryList" id="lk" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/lr.png" alt="lr" title="lr" class="countryList" id="lr" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ls.png" alt="ls" title="ls" class="countryList" id="ls" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/lt.png" alt="lt" title="lt" class="countryList" id="lt" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/lu.png" alt="lu" title="lu" class="countryList" id="lu" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/lv.png" alt="lv" title="lv" class="countryList" id="lv" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ly.png" alt="ly" title="ly" class="countryList" id="ly" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ma.png" alt="ma" title="ma" class="countryList" id="ma" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/mc.png" alt="mc" title="mc" class="countryList" id="mc" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/md.png" alt="md" title="md" class="countryList" id="md" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/me.png" alt="me" title="me" class="countryList" id="me" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/mg.png" alt="mg" title="mg" class="countryList" id="mg" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/mh.png" alt="mh" title="mh" class="countryList" id="mh" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/mk.png" alt="mk" title="mk" class="countryList" id="mk" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ml.png" alt="ml" title="ml" class="countryList" id="ml" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/mm.png" alt="mm" title="mm" class="countryList" id="mm" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/mn.png" alt="mn" title="mn" class="countryList" id="mn" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/mo.png" alt="mo" title="mo" class="countryList" id="mo" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/mr.png" alt="mr" title="mr" class="countryList" id="mr" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/mt.png" alt="mt" title="mt" class="countryList" id="mt" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/mu.png" alt="mu" title="mu" class="countryList" id="mu" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/mv.png" alt="mv" title="mv" class="countryList" id="mv" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/mw.png" alt="mw" title="mw" class="countryList" id="mw" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/mx.png" alt="mx" title="mx" class="countryList" id="mx" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/my.png" alt="my" title="my" class="countryList" id="my" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/mz.png" alt="mz" title="mz" class="countryList" id="mz" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/na.png" alt="na" title="na" class="countryList" id="na" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ne.png" alt="ne" title="ne" class="countryList" id="ne" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ng.png" alt="ng" title="ng" class="countryList" id="ng" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ni.png" alt="ni" title="ni" class="countryList" id="ni" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/nl.png" alt="nl" title="nl" class="countryList" id="nl" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/no.png" alt="no" title="no" class="countryList" id="no" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/np.png" alt="np" title="np" class="countryList" id="np" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/nr.png" alt="nr" title="nr" class="countryList" id="nr" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/nz.png" alt="nz" title="nz" class="countryList" id="nz" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/om.png" alt="om" title="om" class="countryList" id="om" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/pa.png" alt="pa" title="pa" class="countryList" id="pa" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/pe.png" alt="pe" title="pe" class="countryList" id="pe" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/pg.png" alt="pg" title="pg" class="countryList" id="pg" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ph.png" alt="ph" title="ph" class="countryList" id="ph" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/pk.png" alt="pk" title="pk" class="countryList" id="pk" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/pl.png" alt="pl" title="pl" class="countryList" id="pl" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/pr.png" alt="pr" title="pr" class="countryList" id="pr" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ps.png" alt="ps" title="ps" class="countryList" id="ps" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/pt.png" alt="pt" title="pt" class="countryList" id="pt" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/pw.png" alt="pw" title="pw" class="countryList" id="pw" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/py.png" alt="py" title="py" class="countryList" id="py" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/qa.png" alt="qa" title="qa" class="countryList" id="qa" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ro.png" alt="ro" title="ro" class="countryList" id="ro" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/rs.png" alt="rs" title="rs" class="countryList" id="rs" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ru.png" alt="ru" title="ru" class="countryList" id="ru" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/rw.png" alt="rw" title="rw" class="countryList" id="rw" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/sa.png" alt="sa" title="sa" class="countryList" id="sa" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/sb.png" alt="sb" title="sb" class="countryList" id="sb" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/sc.png" alt="sc" title="sc" class="countryList" id="sc" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/sd.png" alt="sd" title="sd" class="countryList" id="sd" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/se.png" alt="se" title="se" class="countryList" id="se" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/sg.png" alt="sg" title="sg" class="countryList" id="sg" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/si.png" alt="si" title="si" class="countryList" id="si" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/sk.png" alt="sk" title="sk" class="countryList" id="sk" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/sl.png" alt="sl" title="sl" class="countryList" id="sl" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/sm.png" alt="sm" title="sm" class="countryList" id="sm" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/sn.png" alt="sn" title="sn" class="countryList" id="sn" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/so.png" alt="so" title="so" class="countryList" id="so" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/sr.png" alt="sr" title="sr" class="countryList" id="sr" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/st.png" alt="st" title="st" class="countryList" id="st" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/sv.png" alt="sv" title="sv" class="countryList" id="sv" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/sy.png" alt="sy" title="sy" class="countryList" id="sy" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/sz.png" alt="sz" title="sz" class="countryList" id="sz" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/td.png" alt="td" title="td" class="countryList" id="td" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/tg.png" alt="tg" title="tg" class="countryList" id="tg" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/th.png" alt="th" title="th" class="countryList" id="th" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/tj.png" alt="tj" title="tj" class="countryList" id="tj" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/tl.png" alt="tl" title="tl" class="countryList" id="tl" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/tm.png" alt="tm" title="tm" class="countryList" id="tm" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/tn.png" alt="tn" title="tn" class="countryList" id="tn" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/to.png" alt="to" title="to" class="countryList" id="to" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/tr.png" alt="tr" title="tr" class="countryList" id="tr" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/tt.png" alt="tt" title="tt" class="countryList" id="tt" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/tv.png" alt="tv" title="tv" class="countryList" id="tv" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/tw.png" alt="tw" title="tw" class="countryList" id="tw" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/tz.png" alt="tz" title="tz" class="countryList" id="tz" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ua.png" alt="ua" title="ua" class="countryList" id="ua" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ug.png" alt="ug" title="ug" class="countryList" id="ug" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/uk.png" alt="uk" title="uk" class="countryList" id="uk" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/us.png" alt="us" title="us" class="countryList" id="us" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/uy.png" alt="uy" title="uy" class="countryList" id="uy" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/uz.png" alt="uz" title="uz" class="countryList" id="uz" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/va.png" alt="va" title="va" class="countryList" id="va" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/vc.png" alt="vc" title="vc" class="countryList" id="vc" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ve.png" alt="ve" title="ve" class="countryList" id="ve" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/vn.png" alt="vn" title="vn" class="countryList" id="vn" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/vu.png" alt="vu" title="vu" class="countryList" id="vu" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ws.png" alt="ws" title="ws" class="countryList" id="ws" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/ye.png" alt="ye" title="ye" class="countryList" id="ye" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/za.png" alt="za" title="za" class="countryList" id="za" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/zm.png" alt="zm" title="zm" class="countryList" id="zm" />
+                    <img src="http://templateshares-ue.net/tsue/data/countryFlags/zw.png" alt="zw" title="zw" class="countryList" id="zw" />
+                </div>
+                <span>(click on the flag to change the country)</span>
+            </div>
+        </div>
+
+        <div class="row">
+        <div class="cell first">Custom Title</div>
+        <div class="cell second">
+            <input type="text" name="title" size="50" value="$CURUSER['title']" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="cell first">FaceMood</div>
+        <div class="cell second">
+            <select name="mood">'<option value='0'>--- MOOD SELECT ----</option></select>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="cell first"></div>
+        <div class="cell second">
+            <input type="submit" value="Save" class="submit" />
+            <input type="reset" value="Clear" class="submit" />
+        </div>
+    </div>
+
+    </div>
+</form>
+    {% endif %}
+{% endblock %}
+
+{% block rightblocks %}
+    {{ render(controller('UsersBundle:UsersBlock:login')) }}
+    {{ render(controller('UsersBundle:UsersBlock:donate')) }}
+    {{ render(controller('UsersBundle:UsersBlock:stats')) }}
+    {{ render(controller('UsersBundle:UsersBlock:membersonline')) }}
+    {{ render(controller('UsersBundle:UsersBlock:membersonline24')) }}
+{% endblock %}

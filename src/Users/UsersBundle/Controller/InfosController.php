@@ -10,4 +10,9 @@ class InfosController extends Controller
         $usr= $this->get('security.token_storage')->getToken()->getUser();
         return $this->render('UsersBundle:Infos:infobar.html.twig', array('user' => $usr));
     }
+
+    public function breadcrumbsAction($page = null)
+    {
+        return $this->render('UsersBundle:Infos:breadcrumbs.html.twig', array('page' => $page));
+    }
 }

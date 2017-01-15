@@ -6,6 +6,10 @@
     {% endif %}
 {% endblock %}
 
+{% block breadcrumbs %}
+    {{ render(controller('UsersBundle:Infos:breadcrumbs')) }}
+{% endblock %}
+
 {% block content %}
     {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
     {% else %}

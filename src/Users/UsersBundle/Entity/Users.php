@@ -126,6 +126,118 @@ class Users extends BaseUser
      */
     private $comments = '0';
 
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="stylesheet", type="integer", nullable=true, length=10)
+     */
+    private $stylesheet = 1;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="info", type="text", nullable=true)
+     */
+    private $info;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="avatar", type="string", length=100)
+     */
+    private $avatar;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="country", type="integer", length=10)
+     */
+    private $country = 0;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="language", type="string", length=20)
+     */
+    private $language = 1;
+
+    /**
+     * @var bool
+     *
+     * @ORM\Column(name="acceptpms", type="boolean", columnDefinition="enum('yes', 'no')")
+     */
+    private $acceptpms = "yes";
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="title", type="string", length=30)
+     */
+    private $title;
+
+    /**
+     * @var bool
+     *
+     * @ORM\Column(name="gender", type="boolean", columnDefinition="enum('Male', 'Female', 'Unknown')")
+     */
+    private $gender = "Unknown";
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="client", type="string", length=25)
+     */
+    private $client;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="age", type="datetime")
+     */
+    private $age = "0000-00-00";
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="signature", type="string", length=200)
+     */
+    private $signature;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="team", type="integer", length=10)
+     */
+    private $team;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="tzoffset", type="integer", length=4)
+     */
+    private $tzoffset;
+
+    /**
+     * @var bool
+     *
+     * @ORM\Column(name="hideshoutbox", type="boolean", columnDefinition="enum('yes', 'no')")
+     */
+    private $hideshoutbox = "no";
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="`moods`", type="integer", length=10)
+     */
+    private $moods = 0;
+
+    /**
+     * @var bool
+     *
+     * @ORM\Column(name="`privacy`", type="boolean", columnDefinition="enum('strong', 'normal', 'low')")
+     */
+    private $privacy = "normal";
+
     public function __construct()
     {
         parent::__construct();
@@ -441,5 +553,389 @@ class Users extends BaseUser
     public function getComments()
     {
         return $this->comments;
+    }
+
+    /**
+     * Set stylesheet
+     *
+     * @param integer $stylesheet
+     *
+     * @return Params
+     */
+    public function setStylesheet($stylesheet)
+    {
+        $this->stylesheet = $stylesheet;
+
+        return $this;
+    }
+
+    /**
+     * Get stylesheet
+     *
+     * @return int
+     */
+    public function getStylesheet()
+    {
+        return $this->stylesheet;
+    }
+
+    /**
+     * Set info
+     *
+     * @param string $info
+     *
+     * @return Params
+     */
+    public function setInfo($info)
+    {
+        $this->info = $info;
+
+        return $this;
+    }
+
+    /**
+     * Get info
+     *
+     * @return string
+     */
+    public function getInfo()
+    {
+        return $this->info;
+    }
+
+    /**
+     * Set avatar
+     *
+     * @param string $avatar
+     *
+     * @return Params
+     */
+    public function setAvatar($avatar)
+    {
+        $this->avatar = $avatar;
+
+        return $this;
+    }
+
+    /**
+     * Get avatar
+     *
+     * @return string
+     */
+    public function getAvatar()
+    {
+        return $this->avatar;
+    }
+
+    /**
+     * Set country
+     *
+     * @param integer $country
+     *
+     * @return Params
+     */
+    public function setCountry($country)
+    {
+        $this->country = $country;
+
+        return $this;
+    }
+
+    /**
+     * Get country
+     *
+     * @return int
+     */
+    public function getCountry()
+    {
+        return $this->country;
+    }
+
+    /**
+     * Set language
+     *
+     * @param string $language
+     *
+     * @return Params
+     */
+    public function setLanguage($language)
+    {
+        $this->language = $language;
+
+        return $this;
+    }
+
+    /**
+     * Get language
+     *
+     * @return string
+     */
+    public function getLanguage()
+    {
+        return $this->language;
+    }
+
+    /**
+     * Set acceptpms
+     *
+     * @param boolean $acceptpms
+     *
+     * @return Params
+     */
+    public function setAcceptpms($acceptpms)
+    {
+        $this->acceptpms = $acceptpms;
+
+        return $this;
+    }
+
+    /**
+     * Get acceptpms
+     *
+     * @return bool
+     */
+    public function getAcceptpms()
+    {
+        return $this->acceptpms;
+    }
+
+    /**
+     * Set title
+     *
+     * @param string $title
+     *
+     * @return Params
+     */
+    public function setTitle($title)
+    {
+        $this->title = $title;
+
+        return $this;
+    }
+
+    /**
+     * Get title
+     *
+     * @return string
+     */
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    /**
+     * Set gender
+     *
+     * @param boolean $gender
+     *
+     * @return Params
+     */
+    public function setGender($gender)
+    {
+        $this->gender = $gender;
+
+        return $this;
+    }
+
+    /**
+     * Get gender
+     *
+     * @return bool
+     */
+    public function getGender()
+    {
+        return $this->gender;
+    }
+
+    /**
+     * Set client
+     *
+     * @param string $client
+     *
+     * @return Params
+     */
+    public function setClient($client)
+    {
+        $this->client = $client;
+
+        return $this;
+    }
+
+    /**
+     * Get client
+     *
+     * @return string
+     */
+    public function getClient()
+    {
+        return $this->client;
+    }
+
+    /**
+     * Set age
+     *
+     * @param \DateTime $age
+     *
+     * @return Params
+     */
+    public function setAge($age)
+    {
+        $this->age = $age;
+
+        return $this;
+    }
+
+    /**
+     * Get age
+     *
+     * @return \DateTime
+     */
+    public function getAge()
+    {
+        return $this->age;
+    }
+
+    /**
+     * Set signature
+     *
+     * @param string $signature
+     *
+     * @return Params
+     */
+    public function setSignature($signature)
+    {
+        $this->signature = $signature;
+
+        return $this;
+    }
+
+    /**
+     * Get signature
+     *
+     * @return string
+     */
+    public function getSignature()
+    {
+        return $this->signature;
+    }
+
+    /**
+     * Set team
+     *
+     * @param integer $team
+     *
+     * @return Params
+     */
+    public function setTeam($team)
+    {
+        $this->team = $team;
+
+        return $this;
+    }
+
+    /**
+     * Get team
+     *
+     * @return int
+     */
+    public function getTeam()
+    {
+        return $this->team;
+    }
+
+    /**
+     * Set tzoffset
+     *
+     * @param integer $tzoffset
+     *
+     * @return Params
+     */
+    public function setTzoffset($tzoffset)
+    {
+        $this->tzoffset = $tzoffset;
+
+        return $this;
+    }
+
+    /**
+     * Get tzoffset
+     *
+     * @return int
+     */
+    public function getTzoffset()
+    {
+        return $this->tzoffset;
+    }
+
+    /**
+     * Set hideshoutbox
+     *
+     * @param boolean $hideshoutbox
+     *
+     * @return Params
+     */
+    public function setHideshoutbox($hideshoutbox)
+    {
+        $this->hideshoutbox = $hideshoutbox;
+
+        return $this;
+    }
+
+    /**
+     * Get hideshoutbox
+     *
+     * @return bool
+     */
+    public function getHideshoutbox()
+    {
+        return $this->hideshoutbox;
+    }
+
+    /**
+     * Set moods
+     *
+     * @param integer $moods
+     *
+     * @return Params
+     */
+    public function setMoods($moods)
+    {
+        $this->moods = $moods;
+
+        return $this;
+    }
+
+    /**
+     * Get moods
+     *
+     * @return int
+     */
+    public function getMoods()
+    {
+        return $this->moods;
+    }
+
+    /**
+     * Set privacy
+     *
+     * @param boolean $privacy
+     *
+     * @return Params
+     */
+    public function setPrivacy($privacy)
+    {
+        $this->privacy = $privacy;
+
+        return $this;
+    }
+
+    /**
+     * Get privacy
+     *
+     * @return bool
+     */
+    public function getPrivacy()
+    {
+        return $this->privacy;
     }
 }

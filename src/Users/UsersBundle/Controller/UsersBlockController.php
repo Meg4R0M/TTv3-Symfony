@@ -8,7 +8,13 @@ class UsersBlockController extends Controller
 {
     public function loginAction()
     {
-        return $this->render('UsersBundle:Blocks:loginblock.html.twig', array('error' => null));
+        $usr= $this->get('security.token_storage')->getToken()->getUser();
+        if ($usr == "anon."){
+            return $this->render('UsersBundle:Blocks:loginblock.html.twig', array('error' => null));
+        }else{
+            return $this->render('UsersBundle:Blocks:loginblock.html.twig', array('error' => null,
+                                                                                  'user' => $usr));
+        }
     }
 
     public function donateAction()

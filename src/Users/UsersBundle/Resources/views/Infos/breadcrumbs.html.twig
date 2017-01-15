@@ -1,0 +1,13 @@
+{% if page|length != 0 %}
+<div class="rcrumbs" id="breadcrumbs">
+    <ul>
+        <li>Home <span class="divider">></span> {{ page }}</li>
+    </ul>
+</div>
+{% else %}
+    <div class="rcrumbs" id="breadcrumbs">
+        <ul>
+            <li>Home <span class="divider">></span></li>
+        </ul>
+    </div>
+{% endif %}

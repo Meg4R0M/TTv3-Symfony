@@ -37,6 +37,14 @@ class UsersData extends AbstractFixture implements OrderedFixtureInterface, Cont
         $user->setDonated('0');
         $user->setNotifs('');
         $user->setPasskey('');
+        $user->setStylesheet(0);
+        $user->setAge(new \DateTime('0000-00-00'));
+        $user->setAvatar('');
+        $user->setTitle('');
+        $user->setClient('');
+        $user->setSignature('');
+        $user->setTeam('');
+        $user->setTzoffset('');
         $userManager->updateUser($user, true);
     }
 
