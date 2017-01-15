@@ -8,6 +8,11 @@ class TorrentsController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('TorrentsBundle:Default:index.html.twig');
+        $usr= $this->get('security.token_storage')->getToken()->getUser();
+        if ($usr == "anon."){
+            return $this->render('TorrentsBundle:Default:index.html.twig');
+        }else{
+            return $this->render('TorrentsBundle:Default:index.html.twig', array('user' => $usr));
+        }
     }
 }

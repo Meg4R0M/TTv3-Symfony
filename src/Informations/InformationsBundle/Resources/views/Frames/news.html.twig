@@ -13,7 +13,7 @@
         			    <span id="news_item_title_1">{{ new.title }}</span>
 		    	    </span><br />
                     <span>{{ new.body }}</span><br />
-                    <span class="small">Added at {{ new.added|date('d-m-Y') }}</span>
+                    <span class="small">Added at {{ new.added|date('d-m-Y') }} by {{ new.user }}</span>
                 </p>
             {% endfor %}
         {% endif %}

@@ -1,5 +1,11 @@
 {% extends "::base.html.twig" %}
 
+{% block infobar %}
+    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+        {{ render(controller('UsersBundle:Infos:infobar')) }}
+    {% endif %}
+{% endblock %}
+
 {% block content %}
     {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
     {% else %}

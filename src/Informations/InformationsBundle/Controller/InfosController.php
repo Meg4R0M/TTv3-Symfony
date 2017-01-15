@@ -3,6 +3,8 @@
 namespace Informations\InformationsBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Informations\InformationsBundle\Entity\News;
+use Users\UsersBundle\Entity\Users;
 
 class InfosController extends Controller
 {

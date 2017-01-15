@@ -305,26 +305,7 @@
                 </ul>
             </div>
             <!-- end #menu -->
-            {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-                <!-- start #member_info_bar -->
-                <div id="member_info_bar">
-                    <div class="showStats">
-                        <img src="{{ asset('themes/default/info_bar/uploaded.png') }}" alt="" title="Uploaded"/> 0
-                        <img src="{{ asset('themes/default/info_bar/downloaded.png') }}" alt="" title="Downloaded"/> 0
-                        <img src="{{ asset('themes/default/info_bar/buffer.png') }}" alt="" title="Buffer"/> 0
-                        <!-- CHANGER LES SPAN POUR LE RATIO COLOR -->
-                        <img src="{{ asset('themes/default/info_bar/ratio.png') }}" alt="" title="Ratio"/> <span class="ratioNull">0</span>
-                        <img src="{{ asset('themes/default/info_bar/slots.png') }}" alt="" title="Max.Slots"/> 0
-                        <img src="{{ asset('themes/default/info_bar/points.png') }}" alt="" title="Points"/> <a href="#">0</a>
-                        <img src="{{ asset('themes/default/info_bar/posts.png') }}" alt="" title="Total Posts"/> 0
-                        <img src="{{ asset('themes/default/info_bar/invites.png') }}" alt="" title="Total Invites"/> <a href="/invite.php">0</a>
-                        <img src="{{ asset('themes/default/info_bar/warns.png') }}" alt="" title="Total Warns"/> <span id="total_warns" class="clickable">0</span>
-                        <img src="{{ asset('themes/default/info_bar/hitrun.png') }}" alt="" title="Hit & Run Warns"/>
-                        <span id="hitrun_warns" class="clickable">0</span>
-                    </div>
-                </div>
-                <!-- end #member_info_bar -->
-            {% endif %}
+            {% block infobar %}{% endblock %}
 
             <!-- start #breadcrumb -->
             <div class="rcrumbs" id="breadcrumbs">

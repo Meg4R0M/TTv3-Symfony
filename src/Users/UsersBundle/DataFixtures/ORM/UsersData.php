@@ -2,12 +2,12 @@
 
 namespace Users\UsersBundle\DataFixtures\ORM;
 
-use Users\UsersBundle\Entity\Users;
 use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Users\UsersBundle\Entity\Users;
 
 class UsersData extends AbstractFixture implements OrderedFixtureInterface, ContainerAwareInterface
 {
@@ -16,7 +16,7 @@ class UsersData extends AbstractFixture implements OrderedFixtureInterface, Cont
      */
     private $container;
 
-    /**
+    /**        $user->se
      * Load data fixtures with the passed EntityManager
      * @param ObjectManager $manager
      */
@@ -25,13 +25,18 @@ class UsersData extends AbstractFixture implements OrderedFixtureInterface, Cont
     {
         $userManager = $this->container->get('fos_user.user_manager');
 
-        $user = $userManager->createUser();
+        $user = new Users();
         $user->setUsername('Admin');
         $user->setEmail('admin@domain.com');
         $user->setPlainPassword('password');
         $user->setEnabled(true);
         $user->addRole('ROLE_ADMIN');
         $this->addReference('user-admin', $user);
+        $user->setAdded(new \DateTime());
+        $user->setIp('::1');
+        $user->setDonated('0');
+        $user->setNotifs('');
+        $user->setPasskey('');
         $userManager->updateUser($user, true);
     }
 
