@@ -1,3 +1,7 @@
 users_membercp:
     path:     /membercp
     defaults: { _controller: UsersBundle:Membercp:membercp }
+
+users_membercp_contact:
+    path:     /membercp_contact
+    defaults: { _controller: UsersBundle:Membercp:membercpcontact }

@@ -1,0 +1,64 @@
+{% extends "::base.html.twig" %}
+
+{% block infobar %}
+    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+        {{ render(controller('UsersBundle:Infos:infobar')) }}
+    {% endif %}
+{% endblock %}
+
+{% block breadcrumbs %}
+    {{ render(controller('UsersBundle:Infos:breadcrumbs', {'page': 'membercp' })) }}
+{% endblock %}
+
+{% block content %}
+    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+
+        {% if flashmessage is defined %}
+            <div class="done" id="show_done">
+                <b>Your account is modified</b><br />
+                {{ flashmessage }}
+            </div>
+            <br />
+        {% endif %}
+
+        <div class="tableHeader">
+            <div class="row">
+                <div class="cell first">
+                    USER: username (EMAIL)
+                </div>
+            </div>
+        </div>
+        <div class="table">
+            {{ form_start(form) }}
+            <div class="row">
+                <div class="cell first">EMAIL</div>
+                <div class="cell second">
+                    {{ form_widget(form.email) }}<br />
+                    <i>REPLY_TO_CONFIRM_EMAIL</i>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="cell first">Team</div>
+                <div class="cell second">
+                    {{ form_widget(form.team) }}
+                    <select name="teams"><option value='0'>--- NONE_SELECTED ----</option></select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="cell first"></div>
+                <div class="cell second">
+                    {{ form_widget(form.submit, { 'attr': {'class': 'submit'} }) }}
+                    {{ form_widget(form.clear, { 'attr': {'class': 'submit'} }) }}
+                </div>
+            </div>
+
+        </div>
+        {{ form_end(form) }}
+    {% endif %}
+{% endblock %}
+
+{% block rightblocks %}
+    {{ render(controller('UsersBundle:UsersBlock:membercpmenu', {'url': 'membercpcontact'})) }}
+{% endblock %}

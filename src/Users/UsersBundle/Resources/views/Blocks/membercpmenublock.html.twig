@@ -9,7 +9,7 @@
     <div id='membercpmenu' class=''>
         <ul id="memberCPNavi" class="">
             <li><a href="{{ path('users_membercp') }}" {% if routename == 'membercp' %}class="active"{% endif %}>Personal Details</a></li>
-            <li><a href="/membercp.php?action=contact_details">Contact Details</a></li>
+            <li><a href="{{ path('users_membercp_contact') }}" {% if routename == 'membercpcontact' %}class="active"{% endif %}>Contact Details</a></li>
             <li><a href="/membercp.php?action=preferences">Preferences</a></li>
             <li><a href="/membercp.php?action=privacy">Privacy</a></li>
             <li><a href="/membercp.php?action=password">Password</a></li>

@@ -12,8 +12,16 @@
 
 {% block content %}
     {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-        {{ form_start(form) }}
 
+        {% if flashmessage is defined %}
+            <div class="done" id="show_done">
+                <b>Your account is modified</b><br />
+                {{ flashmessage }}
+            </div>
+            <br />
+        {% endif %}
+
+        {{ form_start(form) }}
     <div class="tableHeader">
         <div class="row">
             <div class="cell first">
