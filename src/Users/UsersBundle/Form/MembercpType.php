@@ -24,15 +24,14 @@ class MembercpType extends AbstractType
                     'Male' => 'Male',
                     'Female' => 'Female',
                     'Unknown' => 'Unknown'),
-                'choices_as_values' => true,
-                'multiple'=>false,
-                'expanded'=>true
+                'choices_as_values' => true,'multiple'=>false,'expanded'=>true,
+                'data'=> 'Unknown'
             ))
             ->add('age', DateType::class, array(
                 'required' => true,
                 'years' => $this->buildYearChoices()
             ))
-            ->add('country', CountryType::class, array('attr' => array('class' => 's')))
+            ->add('country', CountryType::class)
             ->add('title', TextType::class, array('required' => false,
                 'attr' => array('class' => 's')
             ))

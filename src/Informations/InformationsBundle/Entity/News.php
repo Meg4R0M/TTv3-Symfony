@@ -22,8 +22,9 @@ class News
     private $id;
 
     /**
-     * @ORM\OneToOne(targetEntity="Users\UsersBundle\Entity\Users")
-     * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
+     * @var int
+     *
+     * @ORM\Column(name="user", type="integer", length=11)
      */
     private $user;
 

@@ -12,6 +12,7 @@
 
 {% block content %}
     {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+        {{ dump(moods) }}
         {{ form_start(form) }}
 
     <div class="tableHeader">
@@ -286,7 +287,7 @@
     <div class="row">
         <div class="cell first">FaceMood</div>
         <div class="cell second">
-            {{ form_widget(form.moods) }}
+        {{ form_widget(form.moods, {choices: 'test'}) }}
             <select name="mood"><option value='0'>--- MOOD SELECT ----</option></select>
         </div>
     </div>

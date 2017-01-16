@@ -15,6 +15,7 @@ class NewsData extends AbstractFixture implements OrderedFixtureInterface
         $news1->setAdded(new \DateTime());
         $news1->setTitle('Welcome to TTv3 Symfony Edition');
         $news1->setBody('Welcome to Torrent Trader v3 Symfony Edition | This site is currently under developpement. Please be Patient...');
+        $news1->setUser(1);
         $manager->persist($news1);
 
         $manager->flush();
@@ -25,6 +26,6 @@ class NewsData extends AbstractFixture implements OrderedFixtureInterface
 
     public function getOrder()
     {
-        return 2;
+        return 3;
     }
 }

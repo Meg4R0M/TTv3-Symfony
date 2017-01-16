@@ -10,6 +10,7 @@ namespace Users\UsersBundle\Entity;
 
 use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Class Users
@@ -31,16 +32,11 @@ class Users extends BaseUser
     protected $id;
 
     /**
-     * @ORM\OneToOne(targetEntity="Informations\InformationsBundle\Entity\News", mappedBy="user")
-     */
-    private $news;
-
-    /**
      * @var \DateTime
      *
-     * @ORM\Column(name="added", type="datetime")
+     * @ORM\Column(name="added", type="datetime", options={"default"="CURRENT_TIMESTAMP"})
      */
-    private $added = '0000-00-00 00:00:00';
+    private $added;
 
     /**
      * @var string
@@ -87,7 +83,7 @@ class Users extends BaseUser
     /**
      * @var bool
      *
-     * @ORM\Column(name="warned", type="boolean", columnDefinition="enum('yes', 'no')")
+     * @ORM\Column(name="warned", type="string", columnDefinition="enum('yes', 'no')")
      */
     private $warned = 'no';
 
@@ -101,14 +97,14 @@ class Users extends BaseUser
     /**
      * @var bool
      *
-     * @ORM\Column(name="forumbanned", type="boolean", columnDefinition="enum('yes', 'no')")
+     * @ORM\Column(name="forumbanned", type="string", columnDefinition="enum('yes', 'no')")
      */
     private $forumbanned = 'no';
 
     /**
      * @var bool
      *
-     * @ORM\Column(name="commentpm", type="boolean", columnDefinition="enum('yes', 'no')")
+     * @ORM\Column(name="commentpm", type="string", columnDefinition="enum('yes', 'no')")
      */
     private $commentpm = 'yes';
 
@@ -164,7 +160,7 @@ class Users extends BaseUser
     /**
      * @var bool
      *
-     * @ORM\Column(name="acceptpms", type="boolean", columnDefinition="enum('yes', 'no')")
+     * @ORM\Column(name="acceptpms", type="string", columnDefinition="enum('yes', 'no')")
      */
     private $acceptpms = "yes";
 
@@ -192,9 +188,9 @@ class Users extends BaseUser
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="age", type="datetime")
+     * @ORM\Column(name="age", type="date")
      */
-    private $age = "0000-00-00";
+    private $age;
 
     /**
      * @var string
@@ -220,27 +216,41 @@ class Users extends BaseUser
     /**
      * @var bool
      *
-     * @ORM\Column(name="hideshoutbox", type="boolean", columnDefinition="enum('yes', 'no')")
+     * @ORM\Column(name="hideshoutbox", type="string", columnDefinition="enum('yes', 'no')")
      */
     private $hideshoutbox = "no";
 
     /**
      * @var int
      *
-     * @ORM\Column(name="`moods`", type="integer", length=10)
+     * @ORM\Column(name="moods", type="integer", length=11)
      */
-    private $moods = 0;
+    private $moods;
 
     /**
      * @var bool
      *
-     * @ORM\Column(name="`privacy`", type="boolean", columnDefinition="enum('strong', 'normal', 'low')")
+     * @ORM\Column(name="`privacy`", type="string", columnDefinition="enum('strong', 'normal', 'low')")
      */
     private $privacy = "normal";
 
     public function __construct()
     {
+        $request = Request::createFromGlobals();
         parent::__construct();
+        $this->added = new \DateTime('NOW');
+        $this->ip = $request->getClientIp();
+        $this->donated = 0;
+        $this->notifs = '';
+        $this->passkey = sha1($this->ip . $this->username . time(), '');
+        $this->avatar = '';
+        $this->title = '';
+        $this->client = '';
+        $this->age = new \DateTime('1970-01-01');
+        $this->signature = '';
+        $this->team = '';
+        $this->tzoffset = '1';
+        $this->moods = 1;
     }
 
     /**
@@ -252,8 +262,11 @@ class Users extends BaseUser
      */
     public function setAdded($added)
     {
-        $this->added = $added;
-
+        if(!$added){
+            $this->added = new \DateTime();
+        } else {
+            $this->added = $added;
+        }
         return $this;
     }
 
@@ -780,7 +793,11 @@ class Users extends BaseUser
      */
     public function setAge($age)
     {
-        $this->age = $age;
+        if(!$age){
+            $this->age = new \DateTime("1970-01-01");
+        } else {
+            $this->age = $age;
+        }
 
         return $this;
     }

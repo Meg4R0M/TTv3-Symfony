@@ -5,6 +5,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Users\UsersBundle\Entity\Users;
 use Users\UsersBundle\Form\MembercpType;
+use Users\UsersBundle\Entity\Moods;
 
 class MembercpController extends Controller
 {
@@ -17,9 +18,17 @@ class MembercpController extends Controller
             $id = $user->getId();
             $em = $this->getDoctrine()->getManager();
             $entity = $em->getRepository('UsersBundle:Users')->find($id);
+            $moods = $em->getRepository('UsersBundle:Moods')->findAll();
+            $moodchoicename = array();
+            $i = 0;
+            foreach ($moods as $mood){
+                $moodchoicename[$i] = $mood;
+                $i++;
+            }
             $editForm = $this->createEditForm($entity);
             return $this->render('UsersBundle:Membercp:membercp.html.twig', array(
                 'entity' => $entity,
+                'moods' => $moodchoicename,
                 'form' => $editForm->createView()));
         }
     }

@@ -8,6 +8,7 @@ use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Users\UsersBundle\Entity\Users;
+use Users\UsersBundle\Entity\Moods;
 
 class UsersData extends AbstractFixture implements OrderedFixtureInterface, ContainerAwareInterface
 {
@@ -45,6 +46,7 @@ class UsersData extends AbstractFixture implements OrderedFixtureInterface, Cont
         $user->setSignature('');
         $user->setTeam('');
         $user->setTzoffset('');
+        $user->setMoods(1);
         $userManager->updateUser($user, true);
     }
 
@@ -59,6 +61,6 @@ class UsersData extends AbstractFixture implements OrderedFixtureInterface, Cont
 
     public function getOrder()
     {
-        return 3;
+        return 2;
     }
 }

@@ -187,7 +187,7 @@
                     </li>
                     {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                     <li class="">
-                        <a href="/membercp.php" class="link drop">Member CP</a>
+                        <a href="{{ path('users_membercp') }}" class="link drop">Member CP</a>
                         <div class="dropdown_column">
                             <div class="column">
                                 <a href="/membercp.php">Personal Details</a>
@@ -236,7 +236,7 @@
             <!-- start #menu -->
             <div id="responsiveMenuHider">
                 <ul id="responsiveMenu" class="slimmenu">
-                    <li><a href="/index.php">Home</a></li>
+                    <li><a href="{{ path('torrents') }}">Home</a></li>
                     <li><a href="/lounge.php"><span style="color: yellow;">Shoutbox</span></a></li>
                     {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                     {% else %}
@@ -267,7 +267,7 @@
 
                     </li>
                     {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-                    <li><a href="/membercp.php">Member CP</a>
+                    <li><a href="{{ path('users_membercp') }}">Member CP</a>
                         <ul>
                             <li><a href="/membercp.php">Personal Details</a></li>
                             <li><a href="/membercp.php?action=contact_details">Contact Details</a></li>
