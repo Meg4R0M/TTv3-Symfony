@@ -45,7 +45,7 @@ class UsersType extends AbstractType
             ->add('privacy')
         ;
     }
-    
+
     /**
      * {@inheritdoc}
      */

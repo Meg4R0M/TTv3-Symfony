@@ -13,15 +13,11 @@
 {% block content %}
     {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
         {{ form_start(form) }}
-        {{ form_widget(form) }}
-        {{ form_end(form) }}
-<form id="membercp_form" action="">
-    <input type="hidden" name="action" value="personal_details" id="action" />
 
     <div class="tableHeader">
         <div class="row">
             <div class="cell first">
-                USER: CURUSER[username] ACCOUNT_PROFILE
+                USER: {{ entity.username }} ACCOUNT_PROFILE
             </div>
         </div>
     </div>
@@ -31,16 +27,34 @@
         <div class="row">
             <div class="cell first">Gender</div>
             <div class="cell second">
-                <input type="radio" name="memberinfo_gender" id="memberinfo_gender_male" value="Male" /> <label for="memberinfo_gender_male">MALE</label>
-                <input type="radio" name="memberinfo_gender" id="memberinfo_gender_female" value="Female" /> <label for="memberinfo_gender_female">FEMALE</label>
-                <input type="radio" name="memberinfo_gender" id="memberinfo_gender_unspecified" value="" checked='checked' /> <label for="memberinfo_gender_unspecified">(unspecified)</label>
+                {% if entity.gender == 'Male' %}
+                    {{ form_widget(form.gender.0, { 'attr' : { 'checked': 'checked' }} ) }}
+                    {{ form_label(form.gender.0) }}
+                {% else %}
+                    {{ form_widget(form.gender.0) }}
+                    {{ form_label(form.gender.0) }}
+                {% endif %}
+                {% if entity.gender == 'Female' %}
+                    {{ form_widget(form.gender.1, { 'attr' : { 'checked': 'checked' }} ) }}
+                    {{ form_label(form.gender.1) }}
+                {% else %}
+                    {{ form_widget(form.gender.1) }}
+                    {{ form_label(form.gender.1) }}
+                {% endif %}
+                {% if entity.gender == 'Unknown' %}
+                    {{ form_widget(form.gender.2, { 'attr' : { 'checked': 'checked' }} ) }}
+                    {{ form_label(form.gender.2) }}
+                {% else %}
+                    {{ form_widget(form.gender.2) }}
+                    {{ form_label(form.gender.2) }}
+                {% endif %}
             </div>
         </div>
 
         <div class="row">
             <div class="cell first">Date of Birth</div>
             <div class="cell second">
-                <span rel="date_of_birth">$CURUSER["age"]</span>
+                <span rel="date_of_birth">{{ form_widget(form.age) }}</span>
                 <span rel="date_of_birth">16/06/1985</span>
                 <span class="small">Once your birthday has been entered, it cannot be changed. Please contact an administrator if it is incorrect.</span>
             </div>
@@ -49,6 +63,7 @@
         <div class="row">
             <div class="cell first">Country</div>
             <div class="cell second">
+                {{ form_widget(form.country) }}
                 <img src="http://templateshares-ue.net/tsue/data/countryFlags/noFlag.png" alt="" title="" class="countryMember" />
                 <div id="countrySelect">
                     <div class="close">&nbsp;</div>
@@ -264,27 +279,28 @@
         <div class="row">
         <div class="cell first">Custom Title</div>
         <div class="cell second">
-            <input type="text" name="title" size="50" value="$CURUSER['title']" />
+            {{ form_widget(form.title) }}
         </div>
     </div>
 
     <div class="row">
         <div class="cell first">FaceMood</div>
         <div class="cell second">
-            <select name="mood">'<option value='0'>--- MOOD SELECT ----</option></select>
+            {{ form_widget(form.moods) }}
+            <select name="mood"><option value='0'>--- MOOD SELECT ----</option></select>
         </div>
     </div>
 
     <div class="row">
         <div class="cell first"></div>
         <div class="cell second">
-            <input type="submit" value="Save" class="submit" />
-            <input type="reset" value="Clear" class="submit" />
+            {{ form_widget(form.submit, { 'attr': {'class': 'submit'} }) }}
+            {{ form_widget(form.clear, { 'attr': {'class': 'submit'} }) }}
         </div>
     </div>
 
     </div>
-</form>
+        {{ form_end(form) }}
     {% endif %}
 {% endblock %}
 

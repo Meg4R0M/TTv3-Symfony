@@ -10,13 +10,18 @@ class MembercpController extends Controller
 {
     public function membercpAction()
     {
-        $id= $this->get('security.token_storage')->getToken()->getUser()->getId();
-        $em = $this->getDoctrine()->getManager();
-        $entity = $em->getRepository('UsersBundle:Users')->find($id);
-        $editForm = $this->createEditForm($entity);
-        return $this->render('UsersBundle:Membercp:membercp.html.twig', array(
-            'entity' => $entity,
-            'form'   => $editForm->createView()));
+        $user = $this->get('security.token_storage')->getToken()->getUser();
+        if ($user == "anon."){
+            return $this->redirectToRoute('fos_user_security_login');
+        }else {
+            $id = $user->getId();
+            $em = $this->getDoctrine()->getManager();
+            $entity = $em->getRepository('UsersBundle:Users')->find($id);
+            $editForm = $this->createEditForm($entity);
+            return $this->render('UsersBundle:Membercp:membercp.html.twig', array(
+                'entity' => $entity,
+                'form' => $editForm->createView()));
+        }
     }
 
     /**

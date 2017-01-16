@@ -178,7 +178,7 @@ class Users extends BaseUser
     /**
      * @var bool
      *
-     * @ORM\Column(name="gender", type="boolean", columnDefinition="enum('Male', 'Female', 'Unknown')")
+     * @ORM\Column(name="gender", type="string", columnDefinition="enum('Male', 'Female', 'Unknown')")
      */
     private $gender = "Unknown";
 
