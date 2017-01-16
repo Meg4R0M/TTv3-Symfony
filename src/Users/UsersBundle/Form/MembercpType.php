@@ -2,6 +2,7 @@
 
 namespace Users\UsersBundle\Form;
 
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\CountryType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
@@ -24,8 +25,9 @@ class MembercpType extends AbstractType
                     'Male' => 'Male',
                     'Female' => 'Female',
                     'Unknown' => 'Unknown'),
-                'choices_as_values' => true,'multiple'=>false,'expanded'=>true,
-                'data'=> 'Unknown'
+                'choices_as_values' => true,
+                'multiple'=>false,
+                'expanded'=>true
             ))
             ->add('age', DateType::class, array(
                 'required' => true,
@@ -35,7 +37,9 @@ class MembercpType extends AbstractType
             ->add('title', TextType::class, array('required' => false,
                 'attr' => array('class' => 's')
             ))
-            ->add('moods', ChoiceType::class, array('attr' => array('class' => 's')))
+            ->add('moods', EntityType::class, array(
+                'class' => 'UsersBundle:Moods'
+            ))
             ->add('clear', ResetType::class)
         ;
     }

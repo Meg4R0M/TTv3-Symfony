@@ -93,5 +93,10 @@ class Moods
     {
         return $this->moodpic;
     }
+
+    public function __toString()
+    {
+        return $this->getName();
+    }
 }
 

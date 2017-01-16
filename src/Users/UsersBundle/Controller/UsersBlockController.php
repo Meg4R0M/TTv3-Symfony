@@ -3,6 +3,7 @@
 namespace Users\UsersBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
 
 class UsersBlockController extends Controller
 {
@@ -35,5 +36,11 @@ class UsersBlockController extends Controller
     public function membersonline24Action()
     {
         return $this->render('UsersBundle:Blocks:membersonline24block.html.twig');
+    }
+
+    public function membercpmenuAction($url)
+    {
+        $routeName = $url;
+        return $this->render('UsersBundle:Blocks:membercpmenublock.html.twig', array('routename' => $routeName));
     }
 }

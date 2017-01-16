@@ -12,13 +12,12 @@
 
 {% block content %}
     {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-        {{ dump(moods) }}
         {{ form_start(form) }}
 
     <div class="tableHeader">
         <div class="row">
             <div class="cell first">
-                USER: {{ entity.username }} ACCOUNT_PROFILE
+                USER: {{ user.username }} ACCOUNT_PROFILE
             </div>
         </div>
     </div>
@@ -28,21 +27,21 @@
         <div class="row">
             <div class="cell first">Gender</div>
             <div class="cell second">
-                {% if entity.gender == 'Male' %}
+                {% if user.gender == 'Male' %}
                     {{ form_widget(form.gender.0, { 'attr' : { 'checked': 'checked' }} ) }}
                     {{ form_label(form.gender.0) }}
                 {% else %}
                     {{ form_widget(form.gender.0) }}
                     {{ form_label(form.gender.0) }}
                 {% endif %}
-                {% if entity.gender == 'Female' %}
+                {% if user.gender == 'Female' %}
                     {{ form_widget(form.gender.1, { 'attr' : { 'checked': 'checked' }} ) }}
                     {{ form_label(form.gender.1) }}
                 {% else %}
                     {{ form_widget(form.gender.1) }}
                     {{ form_label(form.gender.1) }}
                 {% endif %}
-                {% if entity.gender == 'Unknown' %}
+                {% if user.gender == 'Unknown' %}
                     {{ form_widget(form.gender.2, { 'attr' : { 'checked': 'checked' }} ) }}
                     {{ form_label(form.gender.2) }}
                 {% else %}
@@ -64,7 +63,7 @@
         <div class="row">
             <div class="cell first">Country</div>
             <div class="cell second">
-                {{ form_widget(form.country) }}
+                {{ form_widget(form.country, { 'attr': {'class': 's'} }) }}
                 <img src="http://templateshares-ue.net/tsue/data/countryFlags/noFlag.png" alt="" title="" class="countryMember" />
                 <div id="countrySelect">
                     <div class="close">&nbsp;</div>
@@ -287,8 +286,7 @@
     <div class="row">
         <div class="cell first">FaceMood</div>
         <div class="cell second">
-        {{ form_widget(form.moods, {choices: 'test'}) }}
-            <select name="mood"><option value='0'>--- MOOD SELECT ----</option></select>
+            {{ form_widget(form.moods, { 'attr': {'class': 's'} }) }}
         </div>
     </div>
 
@@ -306,9 +304,5 @@
 {% endblock %}
 
 {% block rightblocks %}
-    {{ render(controller('UsersBundle:UsersBlock:login')) }}
-    {{ render(controller('UsersBundle:UsersBlock:donate')) }}
-    {{ render(controller('UsersBundle:UsersBlock:stats')) }}
-    {{ render(controller('UsersBundle:UsersBlock:membersonline')) }}
-    {{ render(controller('UsersBundle:UsersBlock:membersonline24')) }}
+    {{ render(controller('UsersBundle:UsersBlock:membercpmenu', {'url': 'membercp'})) }}
 {% endblock %}
