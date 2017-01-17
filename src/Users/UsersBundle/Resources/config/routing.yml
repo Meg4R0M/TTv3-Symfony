@@ -9,3 +9,7 @@ users_membercp_contact:
 users_membercp_preferences:
     path:     /membercp_preferences
     defaults: { _controller: UsersBundle:Membercp:membercppreferences }
+
+users_membercp_privacy:
+    path:     /membercp_privacy
+    defaults: { _controller: UsersBundle:Membercp:membercpprivacy }

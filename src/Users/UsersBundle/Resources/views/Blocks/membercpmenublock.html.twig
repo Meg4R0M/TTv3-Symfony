@@ -11,7 +11,7 @@
             <li><a href="{{ path('users_membercp') }}" {% if routename == 'membercp' %}class="active"{% endif %}>Personal Details</a></li>
             <li><a href="{{ path('users_membercp_contact') }}" {% if routename == 'membercpcontact' %}class="active"{% endif %}>Contact Details</a></li>
             <li><a href="{{ path('users_membercp_preferences') }}" {% if routename == 'membercppreferences' %}class="active"{% endif %}>Preferences</a></li>
-            <li><a href="/membercp.php?action=privacy">Privacy</a></li>
+            <li><a href="{{ path('users_membercp_privacy') }}" {% if routename == 'membercpprivacy' %}class="active"{% endif %}>Privacy</a></li>
             <li><a href="/membercp.php?action=password">Password</a></li>
             <li><a href="/membercp.php?action=signature">Signature</a></li>
             <li><a href="/membercp.php?action=avatar">Avatar</a></li>

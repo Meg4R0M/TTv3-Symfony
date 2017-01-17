@@ -97,6 +97,10 @@ class MembercpController extends Controller
         ));
     }
 
+    public function membercpprivacyAction() {
+        return $this->render('UsersBundle:Membercp:membercpprivacy.html.twig');
+    }
+
     /**
      * Creates a form to edit a Produits entity.
      *
