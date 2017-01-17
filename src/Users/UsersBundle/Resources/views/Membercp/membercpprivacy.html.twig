@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block breadcrumbs %}
-    {{ render(controller('UsersBundle:Infos:breadcrumbs', {'page': 'membercp', 'section': 'Privacy' })) }}
+    {{ render(controller('UsersBundle:Infos:breadcrumbs', {'page': { 'name': 'membercp', 'address': 'users_membercp'}, 'section': {'name': 'Privacy', 'address': 'users_membercp_privacy'} })) }}
 {% endblock %}
 
 {% block content %}
@@ -35,6 +35,14 @@
             <div class="table">
 
                 <div class="row">
+                    <div class="cell first"><label for="ACCOUNT_PRIVACY_LVL">ACCOUNT_PRIVACY_LVL</label></div>
+                    <div class="cell second">
+                        priv("normal", T_("NORMAL")) priv("low", T_("LOW")) priv("strong", T_("STRONG"))<br />
+                        <span class="small"><label for="ACCOUNT_PRIVACY_LVL">ACCOUNT_PRIVACY_LVL_MSG</label></span>
+                    </div>
+                </div>
+
+                <div class="row">
                     <div class="cell first"><label for="visible">Show your online status</label></div>
                     <div class="cell second">
                         <input type="checkbox" name="visible" id="visible" accesskey="v" value="1" checked="checked" />
@@ -47,6 +55,15 @@
                     <div class="cell second">
                         <input type="checkbox" name="receive_admin_email" id="receive_admin_email" accesskey="r" value="1" checked="checked" />
                         <span class="small"><label for="receive_admin_email">You will receive a copy of emails sent by the administrator to all members of the site.</label></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="cell first"><label for="ACCEPT_PMS">ACCEPT_PMS</label></div>
+                    <div class="cell second">
+                        <input type="radio" name="acceptpms" checked="checked" value="yes" />FROM_ALL
+                        <input type="radio" name="acceptpms" checked="checked" value="no" />FROM_STAFF_ONLY<br />
+                        <span class="small"><label for="ACCEPT_PMS">ACCEPTPM_WHICH_USERS</label></span>
                     </div>
                 </div>
 
@@ -89,8 +106,6 @@
             </div>
 
         </form>
-
-
     {% endif %}
 {% endblock %}
 

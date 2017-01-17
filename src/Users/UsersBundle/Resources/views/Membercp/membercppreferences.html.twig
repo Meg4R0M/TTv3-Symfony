@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block breadcrumbs %}
-    {{ render(controller('UsersBundle:Infos:breadcrumbs', {'page': 'membercp', 'section': 'Preferences'})) }}
+    {{ render(controller('UsersBundle:Infos:breadcrumbs', {'page': { 'name': 'membercp', 'address': 'users_membercp'}, 'section': {'name': 'Preferences', 'address': 'users_membercp_preferences'} })) }}
 {% endblock %}
 
 {% block content %}

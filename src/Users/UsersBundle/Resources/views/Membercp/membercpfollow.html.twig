@@ -1,0 +1,40 @@
+{% extends "::base.html.twig" %}
+
+{% block infobar %}
+    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+        {{ render(controller('UsersBundle:Infos:infobar')) }}
+    {% endif %}
+{% endblock %}
+
+{% block breadcrumbs %}
+    {{ render(controller('UsersBundle:Infos:breadcrumbs', {'page': { 'name': 'membercp', 'address': 'users_membercp'}, 'section': {'name': 'People You Follow', 'address': 'users_membercp_follow'} })) }}
+{% endblock %}
+
+{% block content %}
+    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+
+        {% if flashmessage is defined %}
+            <div class="done" id="show_done">
+                <b>Your account is modified</b><br />
+                {{ flashmessage }}
+            </div>
+            <br />
+        {% endif %}
+
+        <div class="tableHeader">
+            <div class="row">
+                <div class="cell first">
+                    USER: username (EMAIL)
+                </div>
+            </div>
+        </div>
+        <div class="error" id="show_error">
+            <b>Nothing found.</b><br />
+            You don't follow anyone...
+        </div>
+    {% endif %}
+{% endblock %}
+
+{% block rightblocks %}
+    {{ render(controller('UsersBundle:UsersBlock:membercpmenu', {'url': 'membercpfollow'})) }}
+{% endblock %}

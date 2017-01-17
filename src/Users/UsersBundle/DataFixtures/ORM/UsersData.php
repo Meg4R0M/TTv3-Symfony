@@ -46,7 +46,7 @@ class UsersData extends AbstractFixture implements OrderedFixtureInterface, Cont
         $user->setSignature('');
         $user->setTeam('');
         $user->setTzoffset('');
-        $user->setMoods(1);
+        $user->setMoods('Aggressive');
         $userManager->updateUser($user, true);
     }
 

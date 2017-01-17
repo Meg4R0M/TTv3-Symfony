@@ -1,0 +1,46 @@
+{% extends "::base.html.twig" %}
+
+{% block infobar %}
+    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+        {{ render(controller('UsersBundle:Infos:infobar')) }}
+    {% endif %}
+{% endblock %}
+
+{% block breadcrumbs %}
+    {{ render(controller('UsersBundle:Infos:breadcrumbs', {'page': { 'name': 'membercp', 'address': 'users_membercp'}, 'section': {'name': 'Open Port Check Tool', 'address': 'users_membercp_portcheck'} })) }}
+{% endblock %}
+
+{% block content %}
+    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+
+        {% if flashmessage is defined %}
+            <div class="done" id="show_done">
+                <b>Your account is modified</b><br />
+                {{ flashmessage }}
+            </div>
+            <br />
+        {% endif %}
+
+        <div class="information" id="show_information">
+            The open port checker is a tool you can use to check your external IP address and detect open ports on your connection. This tool is useful for finding out if your port forwarding is setup correctly or if your server applications are being blocked by a firewall. This tool may also be used as a port scanner to scan your network for ports that are commonly forwarded. It is important to note that some ports, such as port 25, are often blocked at the ISP level in an attempt to prevent malicious activity.
+            <p>For more a comprehensive list of TCP and UDP ports, check out <a href="http://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers" target="_blank">this Wikipedia article</a>.</p>
+            Need help? Try this: <a href="http://portforward.com/help/start_here.htm" target="_blank">Port Forwarding</a>.
+        </div>
+
+        <div class="comment-box">
+
+            <h3>Your IP: '.getip().'</h3>
+
+            <form method="post" action="" name="scanPort" id="scanPort">
+                Port Number:
+                <input type="text" name="port" id="port" class="s" accesskey="p" value="" />
+                <input type="submit" value="Check" class="submit" />
+            </form>
+
+        </div>
+    {% endif %}
+{% endblock %}
+
+{% block rightblocks %}
+    {{ render(controller('UsersBundle:UsersBlock:membercpmenu', {'url': 'membercpportcheck'})) }}
+{% endblock %}

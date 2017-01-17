@@ -43,7 +43,7 @@ class MembercpController extends Controller
         ));
     }
 
-    public function membercpcontactAction(Request $request)
+    public function membercpContactAction(Request $request)
     {
         $userinfo = $this->get('security.token_storage')->getToken()->getUser();
         if ($userinfo == "anon.") {
@@ -77,7 +77,7 @@ class MembercpController extends Controller
         ));
     }
 
-    public function membercppreferencesAction(Request $request)
+    public function membercpPreferencesAction(Request $request)
     {
         $userinfo = $this->get('security.token_storage')->getToken()->getUser();
         if ($userinfo == "anon.") {
@@ -110,8 +110,52 @@ class MembercpController extends Controller
         ));
     }
 
-    public function membercpprivacyAction() {
+    public function membercpPrivacyAction() {
         return $this->render('UsersBundle:Membercp:membercpprivacy.html.twig');
+    }
+
+    public function membercpPasswordAction() {
+        return $this->render('UsersBundle:Membercp:membercppassword.html.twig');
+    }
+
+    public function membercpSignatureAction() {
+        return $this->render('UsersBundle:Membercp:membercpsignature.html.twig');
+    }
+
+    public function membercpAvatarAction() {
+        return $this->render('UsersBundle:Membercp:membercpavatar.html.twig');
+    }
+
+    public function membercpInviteAction() {
+        return $this->render('UsersBundle:Membercp:membercpinvite.html.twig');
+    }
+
+    public function membercpUpgradeAction() {
+        return $this->render('UsersBundle:Membercp:membercpupgrade.html.twig');
+    }
+
+    public function membercpFollowAction() {
+        return $this->render('UsersBundle:Membercp:membercpfollow.html.twig');
+    }
+
+    public function membercpGalleryAction() {
+        return $this->render('UsersBundle:Membercp:membercpgallery.html.twig');
+    }
+
+    public function membercpPerformanceAction() {
+        return $this->render('UsersBundle:Membercp:membercpperformance.html.twig');
+    }
+
+    public function membercpSubscribedAction() {
+        return $this->render('UsersBundle:Membercp:membercpsubscribed.html.twig');
+    }
+
+    public function membercpPortcheckAction() {
+        return $this->render('UsersBundle:Membercp:membercpportcheck.html.twig');
+    }
+
+    public function membercpAlertsAction() {
+        return $this->render('UsersBundle:Membercp:membercpalerts.html.twig');
     }
 
     /**
@@ -131,7 +175,7 @@ class MembercpController extends Controller
             $form = $this->createForm(MembercpPreferencesType::class, $user);
         }
 
-        $form->add('submit', SubmitType::class, array('label' => 'Mettre à jour', 'attr' => array('class' => 'button is-success is-outlined')));
+        $form->add('submit', SubmitType::class, array('label' => 'Update'));
 
         return $form;
     }

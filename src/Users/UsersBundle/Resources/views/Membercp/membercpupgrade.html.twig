@@ -1,0 +1,73 @@
+{% extends "::base.html.twig" %}
+
+{% block infobar %}
+    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+        {{ render(controller('UsersBundle:Infos:infobar')) }}
+    {% endif %}
+{% endblock %}
+
+{% block breadcrumbs %}
+    {{ render(controller('UsersBundle:Infos:breadcrumbs', {'page': { 'name': 'membercp', 'address': 'users_membercp'}, 'section': {'name': 'Upgrade Account', 'address': 'users_membercp_upgrade'} })) }}
+{% endblock %}
+
+{% block content %}
+    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+
+        {% if flashmessage is defined %}
+            <div class="done" id="show_done">
+                <b>Your account is modified</b><br />
+                {{ flashmessage }}
+            </div>
+            <br />
+        {% endif %}
+
+        <div id="upgrade">
+            <strong class="newIndicator"><span></span>6 Months VIP Membership</strong>
+
+            <div><p>6 Months of full VIP Membership!</p></div>
+
+            <div class="small promotions">
+                Your account will be upgraded to <span class="membernameVIP">VIP Members</span> group.<br />
+                You will earn <b>+750</b> points.<br />
+                You will earn <b>+10</b> invites.<br />
+                You will earn <b>+10 GB</b> upload amount.
+            </div>
+
+            <div class="submit small price">
+                <img src="/themes/default/market/eur.png" title="Price & Length" class="middle" />
+                40.00 EUR for 6 Months
+            </div>
+
+            <div class="submit small purchase" rel="purchase" id="5">
+                <img src="/themes/default/market/paypal.png" class="middle" alt="" title="" /> Purchase Now
+            </div>
+
+        </div>
+        <div id="upgrade">
+            <strong class="newIndicator"><span></span>1 Year VIP Membership</strong>
+
+            <div><p>This is most popular Account Upgrade option available right now! Purchase this to have 1 year VIP membership!</p></div>
+
+            <div class="small promotions">
+                Your account will be upgraded to <span class="membernameVIP">VIP Members</span> group.<br />
+                You will earn <b>+500</b> points.<br />
+                You will earn <b>+300</b> invites.<br />
+                You will earn <b>+50 GB</b> upload amount.
+            </div>
+
+            <div class="submit small price">
+                <img src="/themes/default/market/eur.png" title="Price & Length" class="middle" />
+                64.99 EUR for 1 Year
+            </div>
+
+            <div class="submit small purchase" rel="purchase" id="4">
+                <img src="/themes/default/market/paypal.png" class="middle" alt="" title="" /> Purchase Now
+            </div>
+
+        </div>
+    {% endif %}
+{% endblock %}
+
+{% block rightblocks %}
+    {{ render(controller('UsersBundle:UsersBlock:membercpmenu', {'url': 'membercpupgrade'})) }}
+{% endblock %}

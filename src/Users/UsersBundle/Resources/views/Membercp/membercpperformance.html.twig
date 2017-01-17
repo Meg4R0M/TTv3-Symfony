@@ -1,0 +1,75 @@
+{% extends "::base.html.twig" %}
+
+{% block infobar %}
+    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+        {{ render(controller('UsersBundle:Infos:infobar')) }}
+    {% endif %}
+{% endblock %}
+
+{% block breadcrumbs %}
+    {{ render(controller('UsersBundle:Infos:breadcrumbs', {'page': { 'name': 'membercp', 'address': 'users_membercp'}, 'section': {'name': 'Performance', 'address': 'users_membercp_performance'} })) }}
+{% endblock %}
+
+{% block content %}
+    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+
+        {% if flashmessage is defined %}
+            <div class="done" id="show_done">
+                <b>Your account is modified</b><br />
+                {{ flashmessage }}
+            </div>
+            <br />
+        {% endif %}
+
+        <form id="membercp_form" action="">
+            <input type="hidden" name="action" value="performance" id="action" />
+
+            <div class="tableHeader">
+                <div class="row">
+                    <div class="cell first">Member CP - Performance</div>
+                </div>
+            </div>
+
+            <div class="table">
+
+                <div class="row">
+                    <div class="cell first"><label for="shoutbox_enabled">HIDE_SHOUT</label></div>
+                    <div class="cell second">
+                        <input type="checkbox" name="shoutbox_enabled" id="shoutbox_enabled" accesskey="v" value="1" checked="checked" />
+                        <span class="small"><label for="shoutbox_enabled">HIDE_SHOUT_TEXT</label></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="cell first"><label for="irtm_enabled">IRTM Enabled</label></div>
+                    <div class="cell second">
+                        <input type="checkbox" name="irtm_enabled" id="irtm_enabled" accesskey="v" value="1" checked="checked" />
+                        <span class="small"><label for="irtm_enabled">Uncheck this box to disable The instants real time private messaging system.</label></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="cell first"><label for="alerts_enabled">Alerts Enabled</label></div>
+                    <div class="cell second">
+                        <input type="checkbox" name="alerts_enabled" id="alerts_enabled" accesskey="v" value="1" checked="checked" />
+                        <span class="small"><label for="alerts_enabled">Uncheck this box to disable The instants real time alert system globally.</label></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="cell first"></div>
+                    <div class="cell second">
+                        <input type="submit" value="Save" class="submit" />
+                        <input type="reset" value="Clear" class="submit" />
+                    </div>
+                </div>
+
+            </div>
+
+        </form>
+    {% endif %}
+{% endblock %}
+
+{% block rightblocks %}
+    {{ render(controller('UsersBundle:UsersBlock:membercpmenu', {'url': 'membercpperformance'})) }}
+{% endblock %}

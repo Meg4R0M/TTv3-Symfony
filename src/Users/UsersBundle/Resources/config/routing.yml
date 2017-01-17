@@ -4,12 +4,56 @@ users_membercp:
 
 users_membercp_contact:
     path:     /membercp_contact
-    defaults: { _controller: UsersBundle:Membercp:membercpcontact }
+    defaults: { _controller: UsersBundle:Membercp:membercpContact }
 
 users_membercp_preferences:
     path:     /membercp_preferences
-    defaults: { _controller: UsersBundle:Membercp:membercppreferences }
+    defaults: { _controller: UsersBundle:Membercp:membercpPreferences }
 
 users_membercp_privacy:
     path:     /membercp_privacy
-    defaults: { _controller: UsersBundle:Membercp:membercpprivacy }
+    defaults: { _controller: UsersBundle:Membercp:membercpPrivacy }
+
+users_membercp_password:
+    path:     /membercp_password
+    defaults: { _controller: UsersBundle:Membercp:membercpPassword }
+
+users_membercp_signature:
+    path:     /membercp_signature
+    defaults: { _controller: UsersBundle:Membercp:membercpSignature }
+
+users_membercp_avatar:
+    path:     /membercp_avatar
+    defaults: { _controller: UsersBundle:Membercp:membercpAvatar }
+
+users_membercp_invite:
+    path:     /membercp_invite
+    defaults: { _controller: UsersBundle:Membercp:membercpInvite }
+
+users_membercp_upgrade:
+    path:     /membercp_upgrade
+    defaults: { _controller: UsersBundle:Membercp:membercpUpgrade }
+
+users_membercp_follow:
+    path:     /membercp_follow
+    defaults: { _controller: UsersBundle:Membercp:membercpFollow }
+
+users_membercp_gallery:
+    path:     /membercp_gallery
+    defaults: { _controller: UsersBundle:Membercp:membercpGallery }
+
+users_membercp_performance:
+    path:     /membercp_performance
+    defaults: { _controller: UsersBundle:Membercp:membercpPerformance }
+
+users_membercp_subscribed:
+    path:     /membercp_subscribed
+    defaults: { _controller: UsersBundle:Membercp:membercpSubscribed }
+
+users_membercp_portcheck:
+    path:     /membercp_portcheck
+    defaults: { _controller: UsersBundle:Membercp:membercpPortcheck }
+
+users_membercp_alerts:
+    path:     /membercp_alerts
+    defaults: { _controller: UsersBundle:Membercp:membercpAlerts }
