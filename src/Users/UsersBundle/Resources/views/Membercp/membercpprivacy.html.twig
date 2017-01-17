@@ -21,39 +21,75 @@
             <br />
         {% endif %}
 
-        <div class="tableHeader">
-            <div class="row">
-                <div class="cell first">
-                    USER: username (EMAIL)
-                </div>
-            </div>
-        </div>
-        <div class="table">
+        <form id="membercp_form" action="">
+            <input type="hidden" name="action" value="privacy" id="action" />
 
-            <div class="row">
-                <div class="cell first">EMAIL</div>
-                <div class="cell second">
-                    <br />
-                    <i>REPLY_TO_CONFIRM_EMAIL</i>
+            <div class="tableHeader">
+                <div class="row">
+                    <div class="cell first">
+                        Member CP - Privacy
+                    </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="cell first">Team</div>
-                <div class="cell second">
+            <div class="table">
 
-                    <select name="teams"><option value='0'>--- NONE_SELECTED ----</option></select>
+                <div class="row">
+                    <div class="cell first"><label for="visible">Show your online status</label></div>
+                    <div class="cell second">
+                        <input type="checkbox" name="visible" id="visible" accesskey="v" value="1" checked="checked" />
+                        <span class="small"><label for="visible">This will allow other people to see what page you are currently viewing.</label></span>
+                    </div>
                 </div>
+
+                <div class="row">
+                    <div class="cell first"><label for="receive_admin_email">Receive site mailings</label></div>
+                    <div class="cell second">
+                        <input type="checkbox" name="receive_admin_email" id="receive_admin_email" accesskey="r" value="1" checked="checked" />
+                        <span class="small"><label for="receive_admin_email">You will receive a copy of emails sent by the administrator to all members of the site.</label></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="cell first"><label for="receive_pm_email">Receive PM mailings</label></div>
+                    <div class="cell second">
+                        <input type="checkbox" name="receive_pm_email" id="receive_pm_email" accesskey="r" value="1" />
+                        <span class="small"><label for="receive_pm_email">Receive Email Notification of New Private Message</label></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="cell first"><label for="show_your_age">Show your age</label></div>
+                    <div class="cell second">
+                        <input type="checkbox" name="show_your_age" id="show_your_age" accesskey="r" value="1" checked="checked" />
+                        <span class="small"><label for="show_your_age">This will allow other people to see how old are you.</label></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="cell first"><label for="cat_content">View your details on your profile page</label></div>
+                    <div class="cell second">
+                        <select name="allow_view_profile" id="cat_content">
+                            <option value="everyone">All Visitors</option>
+                            <option value="members" selected="selected">Members Only</option>
+                            <option value="followed">People You Follow Only</option>
+                            <option value="none">None</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="cell first"></div>
+                    <div class="cell second">
+                        <input type="submit" value="Save" class="submit" />
+                        <input type="reset" value="Clear" class="submit" />
+                    </div>
+                </div>
+
             </div>
 
-            <div class="row">
-                <div class="cell first"></div>
-                <div class="cell second">
+        </form>
 
-                </div>
-            </div>
-
-        </div>
 
     {% endif %}
 {% endblock %}

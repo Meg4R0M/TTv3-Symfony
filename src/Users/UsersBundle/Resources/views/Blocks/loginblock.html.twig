@@ -2,7 +2,7 @@
     <div class='widget'>
         <h4>
 	        <span class='floatright'>
-		        <img src='{{ asset('themes/default/buttons/refresh.png') }}' alt='Refresh' title='Refresh' rel='refreshlogin' class='clickable middle' />
+                <img src='{{ asset('themes/default/buttons/refresh.png') }}' alt='Refresh' title='Refresh' rel='refreshlogin' class='clickable middle'/>
 		    </span>
             <img src='{{ asset('themes/default/forums/mix/bullet_toggle_minus.png') }}' alt='' title='' rel='login' id='toggle' class='middle pointer' />
             {{ user.username }}
@@ -11,7 +11,7 @@
         <div  id="logged" style="padding: 10px 5px 10px 0">
             <div class="floatright">
                 <img src="{{ asset('themes/default/avatars/avatar_m.png') }}" alt="" title="" class="clickable avatar" id="member_info" memberid="{{ user.id }}" width="96px"/>
-                <p style="text-align: center"><img src="{{ asset('images/moods/Amazed.gif') }}" alt='Amazed' title='Amazed]' style="margin-top: -100px"/></p>
+                <p style="text-align: center"><img src="{{ asset('images/moods/' ~ user.moods ~ '.gif') }}" alt='{{ user.moods }}' title='{{ user.moods }}' style="margin-top: -100px"/></p>
                 [<span id="history_link" class="clickable">History</span>]<br />
                 [<a href="{{ path('fos_user_security_logout') }}">{{ 'layout.logout'|trans({}, 'FOSUserBundle') }}</a>]
             </div>

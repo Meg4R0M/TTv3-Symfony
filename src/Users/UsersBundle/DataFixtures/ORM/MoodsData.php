@@ -24,8 +24,8 @@ class MoodsData extends AbstractFixture implements OrderedFixtureInterface, Cont
     public function load(ObjectManager $manager)
     {
         $news1 = new Moods();
-        $news1->setName('Agressive');
-        $news1->setMoodpic('Agressive.gif');
+        $news1->setName('Aggressive');
+        $news1->setMoodpic('Aggressive.gif');
         $manager->persist($news1);
 
         $news2 = new Moods();

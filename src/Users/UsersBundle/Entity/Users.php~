@@ -222,9 +222,9 @@ class Users extends BaseUser
     private $hideshoutbox = "no";
 
     /**
-     * @var string
+     * @var int
      *
-     * @ORM\Column(name="moods", type="string", length=55)
+     * @ORM\Column(name="moods", type="integer", length=11)
      */
     private $moods;
 
@@ -236,7 +236,7 @@ class Users extends BaseUser
     private $privacy = "normal";
 
     /**
-     * @ORM\OneToMany(targetEntity="Informations\InformationsBundle\Entity\News", mappedBy="user")
+     * @ORM\OneToMany(targetEntity="Informations\InformationsBundle\Entity\News", mappedBy="users")
      */
     private $news;
 
@@ -918,7 +918,7 @@ class Users extends BaseUser
     /**
      * Set moods
      *
-     * @param string $moods
+     * @param integer $moods
      *
      * @return Params
      */
@@ -932,7 +932,7 @@ class Users extends BaseUser
     /**
      * Get moods
      *
-     * @return string
+     * @return int
      */
     public function getMoods()
     {
@@ -961,39 +961,5 @@ class Users extends BaseUser
     public function getPrivacy()
     {
         return $this->privacy;
-    }
-
-    /**
-     * Add news
-     *
-     * @param \Informations\InformationsBundle\Entity\News $news
-     *
-     * @return Users
-     */
-    public function addNews(\Informations\InformationsBundle\Entity\News $news)
-    {
-        $this->news[] = $news;
-
-        return $this;
-    }
-
-    /**
-     * Remove news
-     *
-     * @param \Informations\InformationsBundle\Entity\News $news
-     */
-    public function removeNews(\Informations\InformationsBundle\Entity\News $news)
-    {
-        $this->news->removeElement($news);
-    }
-
-    /**
-     * Get news
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getNews()
-    {
-        return $this->news;
     }
 }

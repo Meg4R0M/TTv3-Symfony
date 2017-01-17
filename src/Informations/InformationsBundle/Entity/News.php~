@@ -22,7 +22,7 @@ class News
     private $id;
 
     /**
-     * @ORM\OneToOne(targetEntity="Users\UsersBundle\Entity\Users")
+     * @ORM\ManyToOne(targetEntity="Users\UsersBundle\Entity\Users", inversedBy="news")
      * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
      */
     private $user;

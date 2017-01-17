@@ -13,6 +13,11 @@ class MembercpController extends Controller
 {
     public function membercpAction(Request $request)
     {
+        $userinfo = $this->get('security.token_storage')->getToken()->getUser();
+        if ($userinfo == "anon.") {
+            return $this->redirectToRoute('fos_user_security_login');
+        }
+        $em = $this->getDoctrine()->getManager();
         $user = $this->getCurrentUserId();
 
         $editForm = $this->createEditForm($user, $type = 'membercp');
@@ -20,7 +25,6 @@ class MembercpController extends Controller
 
         if ($editForm->isSubmitted()) {
             if ($editForm->isValid()) {
-                $em = $this->getDoctrine()->getManager();
                 $em->flush();
                 $flashmessage = 'Successfull Edit !';
                 return $this->render('UsersBundle:Membercp:membercp.html.twig', array(
@@ -41,6 +45,11 @@ class MembercpController extends Controller
 
     public function membercpcontactAction(Request $request)
     {
+        $userinfo = $this->get('security.token_storage')->getToken()->getUser();
+        if ($userinfo == "anon.") {
+            return $this->redirectToRoute('fos_user_security_login');
+        }
+        $em = $this->getDoctrine()->getManager();
         $user = $this->getCurrentUserId();
 
         $editContactForm = $this->createEditForm($user, $type = 'contact');
@@ -48,7 +57,7 @@ class MembercpController extends Controller
 
         if ($editContactForm->isSubmitted()) {
             if ($editContactForm->isValid()) {
-                $em = $this->getDoctrine()->getManager();
+
                 $em->flush();
                 $flashmessage = 'Successfull Edit !';
 
@@ -70,6 +79,10 @@ class MembercpController extends Controller
 
     public function membercppreferencesAction(Request $request)
     {
+        $userinfo = $this->get('security.token_storage')->getToken()->getUser();
+        if ($userinfo == "anon.") {
+            return $this->redirectToRoute('fos_user_security_login');
+        }
         $user = $this->getCurrentUserId();
 
         $editPreferencesForm = $this->createEditForm($user, $type = 'preferences');

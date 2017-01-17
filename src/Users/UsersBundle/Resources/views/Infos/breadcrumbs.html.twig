@@ -1,6 +1,6 @@
 <div class="rcrumbs" id="breadcrumbs">
     <ul>
         <li>
-            Home <span class="divider">></span> {% if page is defined %}{{ page }}{% endif %}{% if section is defined %} <span class="divider">></span> {{ section }}{% endif %}</li>
+            Home <span class="divider">></span> {% if page is defined %}{{ page }}{% endif %}{% if section is defined and section|length != 0 %} <span class="divider">></span> {{ section }}{% endif %}</li>
     </ul>
 </div>

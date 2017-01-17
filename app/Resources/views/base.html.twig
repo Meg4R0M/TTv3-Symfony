@@ -152,11 +152,11 @@
             <!-- start #menu -->
             <nav>
                 <ul id="menu">
-                    <li class="nodrop"><a href="/index.php" class="link ">Home</a></li>
+                    <li class="nodrop"><a href="{{ path('torrents') }}" class="link ">Home</a></li>
                     <li class="nodrop"><a href="/lounge.php" class="link "><span style="color: yellow">Shoutbox</span></a></li>
                     {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                     {% else %}
-					<li class="nodrop"><a href="/account-signup.php" class="link ">Sign-up</a></li>
+					<li class="nodrop"><a href="{{ path('fos_user_registration_register') }}" class="link ">Sign-up</a></li>
                     {% endif %}
                     <li class="">
                         <a href="javascript:void(0)" class="link drop">Forums</a>
@@ -190,10 +190,10 @@
                         <a href="{{ path('users_membercp') }}" class="link drop">Member CP</a>
                         <div class="dropdown_column">
                             <div class="column">
-                                <a href="/membercp.php">Personal Details</a>
-                                <a href="/membercp.php?action=contact_details">Contact Details</a>
-                                <a href="/membercp.php?action=preferences">Preferences</a>
-                                <a href="/membercp.php?action=privacy">Privacy</a>
+                                <a href="{{ path('users_membercp') }}">Personal Details</a>
+                                <a href="{{ path('users_membercp_contact') }}">Contact Details</a>
+                                <a href="{{ path('users_membercp_preferences') }}">Preferences</a>
+                                <a href="{{ path('users_membercp_privacy') }}">Privacy</a>
                                 <a href="/membercp.php?action=password">Password</a>
                                 <a href="/membercp.php?action=signature">Signature</a>
                                 <a href="/membercp.php?action=avatar">Avatar</a>
@@ -240,7 +240,7 @@
                     <li><a href="/lounge.php"><span style="color: yellow;">Shoutbox</span></a></li>
                     {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                     {% else %}
-                    <li><a href="/account-signup.php">Sign-up</a></li>
+                    <li><a href="{{ path('fos_user_registration_register') }}">Sign-up</a></li>
                     {% endif %}
                     <li>
                         <a href="javascript:void(0)">Forums</a>
@@ -269,10 +269,10 @@
                     {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                     <li><a href="{{ path('users_membercp') }}">Member CP</a>
                         <ul>
-                            <li><a href="/membercp.php">Personal Details</a></li>
-                            <li><a href="/membercp.php?action=contact_details">Contact Details</a></li>
-                            <li><a href="/membercp.php?action=preferences">Preferences</a></li>
-                            <li><a href="/membercp.php?action=privacy">Privacy</a></li>
+                            <li><a href="{{ path('users_membercp') }}">Personal Details</a></li>
+                            <li><a href="{{ path('users_membercp_contact') }}">Contact Details</a></li>
+                            <li><a href="{{ path('users_membercp_preferences') }}">Preferences</a></li>
+                            <li><a href="{{ path('users_membercp_privacy') }}">Privacy</a></li>
                             <li><a href="/membercp.php?action=password">Password</a></li>
                             <li><a href="/membercp.php?action=signature">Signature</a></li>
                             <li><a href="/membercp.php?action=avatar">Avatar</a></li>

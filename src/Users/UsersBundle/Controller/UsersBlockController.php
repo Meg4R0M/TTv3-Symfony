@@ -3,7 +3,6 @@
 namespace Users\UsersBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\HttpFoundation\Request;
 
 class UsersBlockController extends Controller
 {
@@ -11,10 +10,12 @@ class UsersBlockController extends Controller
     {
         $usr= $this->get('security.token_storage')->getToken()->getUser();
         if ($usr == "anon."){
-            return $this->render('UsersBundle:Blocks:loginblock.html.twig', array('error' => null));
+            return $this->render('UsersBundle:Blocks:loginblock.html.twig', array(
+                'error' => null));
         }else{
-            return $this->render('UsersBundle:Blocks:loginblock.html.twig', array('error' => null,
-                                                                                  'user' => $usr));
+            return $this->render('UsersBundle:Blocks:loginblock.html.twig', array(
+                'error' => null,
+                'user' => $usr));
         }
     }
 
