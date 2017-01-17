@@ -1,0 +1,143 @@
+{% extends "::base.html.twig" %}
+
+{% block infobar %}
+    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+        {{ render(controller('UsersBundle:Infos:infobar')) }}
+    {% endif %}
+{% endblock %}
+
+{% block breadcrumbs %}
+    {{ render(controller('UsersBundle:Infos:breadcrumbs', {'page': 'membercp - Preferences' })) }}
+{% endblock %}
+
+{% block content %}
+    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+
+        {% if flashmessage is defined %}
+            <div class="done" id="show_done">
+                <b>Your account is modified</b><br />
+                {{ flashmessage }}
+            </div>
+            <br />
+        {% endif %}
+
+        <form id="membercp_form" action="">
+            <input type="hidden" name="action" value="preferences" id="action" />
+
+            <div class="tableHeader">
+                <div class="row">
+                    <div class="cell first">
+                        Member CP - Preferences
+                    </div>
+                </div>
+            </div>
+
+            <div class="table">
+
+                <div class="row">
+                    <div class="cell first">Style</div>
+                    <div class="cell second">
+                        <select name="themeid" id="cat_content"><option value="1" selected="selected">Default</option></select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="cell first">Torrent Listing</div>
+                    <div class="cell second">
+                        <select name="torrentStyle" id="cat_content">
+                            <option value="1" selected="selected">Modern</option>
+                            <option value="2">Classic</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="cell first">Preferred Client</div>
+                    <div class="cell second">
+                        <input type="text" size="20" maxlength="20" name="client" value="client" class="s"/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="cell first">Language</div>
+                    <div class="cell second">
+                        <select name="languageid" id="cat_content"><option value="1" selected="selected">English</option></select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="cell first">Time zone</div>
+                    <div class="cell second">
+                        <select name="timezone" id="cat_content"><option value="key">val</option></select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="cell first">CATEGORIES</div>
+                    <div class="cell second">
+                        <table width="100%" align="left" cellpadding="5" cellspacing="0" id="torrentCategoriesCheckboxes">
+                            <tr></tr>
+                            <tr class="hidden">
+                                <td colspan="2" class="hidden"></td>
+                            </tr>
+                            <tr>
+                                <td valign="top"></td>
+                            </tr>
+                            <tr class="hidden">
+                                <td colspan="2" class="hidden"></td>
+                            </tr>
+                            <tr>
+                                <td valign="top">
+                                    <img src="/images/categories/image" style="max-width: 24px;" class="middle" />
+                                    <input type="checkbox" rel="main" id="category_id" name="cid[]" />
+                                    <span class="strong"><a href="../browse/?cat=id">parent_cat</a></span>
+                                    <div style="padding-left: 26px;">
+                                        <table cellpadding="3" cellspacing="0" border="0" align="left">
+                                            <tr>
+                                                <td valign="top">
+                                                    <img src="/images/categories/image" style="max-width: 24px;" class="middle" alt=""/>
+                                                    <input type="checkbox" rel="category_id" id="category_id" name="cid[]" />
+                                                    <span class="small"><a href="../browse/?cat='id">name</a></span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="cell first"><label for="accountParked">Park Account</label></div>
+                    <div class="cell second">
+                        <input type="checkbox" name="accountParked" id="accountParked" accesskey="p" value="1" />
+                        <span class="small"><label for="accountParked">Check this box to park your account.<br />You can park your account to prevent it from being deleted because of inactivity if you go away on for example a vacation. When the account has been parked limits are put on the account, for example you cannot browse some of the pages.</label></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="cell first"><label for="RESET_PASSKEY">RESET_PASSKEY</label></div>
+                    <div class="cell second">
+                        <input type="checkbox" name="resetpasskey" value="1" />&nbsp;<i>RESET_PASSKEY_MSG</i>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="cell first"></div>
+                    <div class="cell second">
+                        <input type="submit" value="Save" class="submit" />
+                        <input type="reset" value="Clear" class="submit" />
+                    </div>
+                </div>
+
+            </div>
+
+        </form>
+
+    {% endif %}
+{% endblock %}
+
+{% block rightblocks %}
+    {{ render(controller('UsersBundle:UsersBlock:membercpmenu', {'url': 'membercppreferences'})) }}
+{% endblock %}

@@ -80,6 +80,10 @@ class MembercpController extends Controller
         }
     }
 
+    public function membercppreferencesAction(Request $request){
+        return $this->render('UsersBundle:Membercp:membercppreferences.html.twig');
+    }
+
     /**
      * Creates a form to edit a Produits entity.
      *
