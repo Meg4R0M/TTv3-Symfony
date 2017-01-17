@@ -11,8 +11,11 @@ class InfosController extends Controller
         return $this->render('UsersBundle:Infos:infobar.html.twig', array('user' => $usr));
     }
 
-    public function breadcrumbsAction($page = null)
+    public function breadcrumbsAction($page = null, $section = null)
     {
-        return $this->render('UsersBundle:Infos:breadcrumbs.html.twig', array('page' => $page));
+        return $this->render('UsersBundle:Infos:breadcrumbs.html.twig', array(
+            'page' => $page,
+            'section' => $section
+        ));
     }
 }

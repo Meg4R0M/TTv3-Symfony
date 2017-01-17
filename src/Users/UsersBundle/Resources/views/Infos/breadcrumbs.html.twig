@@ -1,13 +1,6 @@
-{% if page|length != 0 %}
 <div class="rcrumbs" id="breadcrumbs">
     <ul>
-        <li>Home <span class="divider">></span> {{ page }}</li>
+        <li>
+            Home <span class="divider">></span> {% if page is defined %}{{ page }}{% endif %}{% if section is defined %} <span class="divider">></span> {{ section }}{% endif %}</li>
     </ul>
 </div>
-{% else %}
-    <div class="rcrumbs" id="breadcrumbs">
-        <ul>
-            <li>Home <span class="divider">></span></li>
-        </ul>
-    </div>
-{% endif %}

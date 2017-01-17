@@ -6,113 +6,134 @@ use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\HttpFoundation\Request;
 use Users\UsersBundle\Entity\Users;
 use Users\UsersBundle\Form\MembercpContactType;
+use Users\UsersBundle\Form\MembercpPreferencesType;
 use Users\UsersBundle\Form\MembercpType;
 
 class MembercpController extends Controller
 {
     public function membercpAction(Request $request)
     {
-        $userinfo = $this->get('security.token_storage')->getToken()->getUser();
-        if ($userinfo == "anon."){
-            return $this->redirectToRoute('fos_user_security_login');
-        }else {
-            $id = $userinfo->getId();
-            $em = $this->getDoctrine()->getManager();
-            $user = $em->getRepository('UsersBundle:Users')->find($id);
+        $user = $this->getCurrentUserId();
 
-            $editForm = $this->createEditForm($user);
-            $editForm->handleRequest($request);
+        $editForm = $this->createEditForm($user, $type = 'membercp');
+        $editForm->handleRequest($request);
 
-            if ($editForm->isSubmitted()) {
-                if ($editForm->isValid()) {
-                    $em->flush();
-                    $flashmessage = 'Successfull Edit !';
-                    return $this->render('UsersBundle:Membercp:membercp.html.twig', array(
-                        'user' => $user,
-                        'form' => $editForm->createView(),
-                        'flashmessage' => $flashmessage
-                    ));
-                }else{
-                    throw new \Exception('Something went wrong!');
-                }
+        if ($editForm->isSubmitted()) {
+            if ($editForm->isValid()) {
+                $em = $this->getDoctrine()->getManager();
+                $em->flush();
+                $flashmessage = 'Successfull Edit !';
+                return $this->render('UsersBundle:Membercp:membercp.html.twig', array(
+                    'user' => $user,
+                    'form' => $editForm->createView(),
+                    'flashmessage' => $flashmessage
+                ));
+            } else {
+                throw new \Exception('Something went wrong!');
             }
-
-            return $this->render('UsersBundle:Membercp:membercp.html.twig', array(
-                'user' => $user,
-                'form' => $editForm->createView()
-            ));
         }
+
+        return $this->render('UsersBundle:Membercp:membercp.html.twig', array(
+            'user' => $user,
+            'form' => $editForm->createView()
+        ));
     }
 
     public function membercpcontactAction(Request $request)
     {
+        $user = $this->getCurrentUserId();
+
+        $editContactForm = $this->createEditForm($user, $type = 'contact');
+        $editContactForm->handleRequest($request);
+
+        if ($editContactForm->isSubmitted()) {
+            if ($editContactForm->isValid()) {
+                $em = $this->getDoctrine()->getManager();
+                $em->flush();
+                $flashmessage = 'Successfull Edit !';
+
+                return $this->render('UsersBundle:Membercp:membercpcontact.html.twig', array(
+                    'user' => $user,
+                    'form' => $editContactForm->createView(),
+                    'flashmessage' => $flashmessage
+                ));
+            } else {
+                throw new \Exception('Something went wrong!');
+            }
+        }
+
+        return $this->render('UsersBundle:Membercp:membercpcontact.html.twig', array(
+            'user' => $user,
+            'form' => $editContactForm->createView()
+        ));
+    }
+
+    public function membercppreferencesAction(Request $request)
+    {
+        $user = $this->getCurrentUserId();
+
+        $editPreferencesForm = $this->createEditForm($user, $type = 'preferences');
+        $editPreferencesForm->handleRequest($request);
+
+        if ($editPreferencesForm->isSubmitted()) {
+            if ($editPreferencesForm->isValid()) {
+                $em = $this->getDoctrine()->getManager();
+                $em->flush();
+                $flashmessage = 'Successfull Edit !';
+
+                return $this->render('UsersBundle:Membercp:membercppreferences.html.twig', array(
+                    'user' => $user,
+                    'form' => $editPreferencesForm->createView(),
+                    'flashmessage' => $flashmessage
+                ));
+            } else {
+                throw new \Exception('Something went wrong!');
+            }
+        }
+
+        return $this->render('UsersBundle:Membercp:membercppreferences.html.twig', array(
+            'user' => $user,
+            'form' => $editPreferencesForm->createView()
+        ));
+    }
+
+    /**
+     * Creates a form to edit a Produits entity.
+     *
+     * @param Users $user The user entity
+     *
+     * @return \Symfony\Component\Form\Form The form
+     */
+    private function createEditForm(Users $user, $type)
+    {
+        if ($type == 'membercp') {
+            $form = $this->createForm(MembercpType::class, $user);
+        } elseif ($type == 'contact') {
+            $form = $this->createForm(MembercpContactType::class, $user);
+        } elseif ($type == 'preferences') {
+            $form = $this->createForm(MembercpPreferencesType::class, $user);
+        }
+
+        $form->add('submit', SubmitType::class, array('label' => 'Mettre à jour', 'attr' => array('class' => 'button is-success is-outlined')));
+
+        return $form;
+    }
+
+    /**
+     * Get cuurent user ID or redirect to login page
+     *
+     * @return null|object|\Symfony\Component\HttpFoundation\RedirectResponse|Users
+     */
+    private function getCurrentUserId()
+    {
         $userinfo = $this->get('security.token_storage')->getToken()->getUser();
-        if ($userinfo == "anon."){
+        if ($userinfo == "anon.") {
             return $this->redirectToRoute('fos_user_security_login');
-        }else {
+        } else {
             $id = $userinfo->getId();
             $em = $this->getDoctrine()->getManager();
             $user = $em->getRepository('UsersBundle:Users')->find($id);
-
-            $editContactForm = $this->createEditContactForm($user);
-            $editContactForm->handleRequest($request);
-
-            if ($editContactForm->isSubmitted()) {
-                if ($editContactForm->isValid()) {
-                    $em->flush();
-                    $flashmessage = 'Successfull Edit !';
-
-                    return $this->render('UsersBundle:Membercp:membercpcontact.html.twig', array(
-                        'user' => $user,
-                        'form' => $editContactForm->createView(),
-                        'flashmessage' => $flashmessage
-                    ));
-                }else{
-                    throw new \Exception('Something went wrong!');
-                }
-            }
-
-            return $this->render('UsersBundle:Membercp:membercpcontact.html.twig', array(
-                'user' => $user,
-                'form' => $editContactForm->createView()
-            ));
-
+            return $user;
         }
-    }
-
-    public function membercppreferencesAction(Request $request){
-        return $this->render('UsersBundle:Membercp:membercppreferences.html.twig');
-    }
-
-    /**
-     * Creates a form to edit a Produits entity.
-     *
-     * @param Users $entity The entity
-     *
-     * @return \Symfony\Component\Form\Form The form
-     */
-    private function createEditForm(Users $user)
-    {
-        $form = $this->createForm(MembercpType::class, $user);
-
-        $form->add('submit', SubmitType::class, array('label' => 'Mettre à jour', 'attr'=> array('class'=>'button is-success is-outlined')));
-
-        return $form;
-    }
-
-    /**
-     * Creates a form to edit a Produits entity.
-     *
-     * @param Users $entity The entity
-     *
-     * @return \Symfony\Component\Form\Form The form
-     */
-    private function createEditContactForm(Users $user)
-    {
-        $form = $this->createForm(MembercpContactType::class, $user);
-
-        $form->add('submit', SubmitType::class, array('label' => 'Mettre à jour', 'attr'=> array('class'=>'button is-success is-outlined')));
-
-        return $form;
     }
 }

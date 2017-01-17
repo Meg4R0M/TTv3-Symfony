@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ab6ad49-e827-4831-8791-97f7314afa14" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercppreferences.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Form/MembercpPreferencesType.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Users/UsersBundle/Controller/InfosController.php" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Controller/InfosController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Users/UsersBundle/Controller/MembercpController.php" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Controller/MembercpController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Blocks/membercpmenublock.html.twig" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Blocks/membercpmenublock.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Infos/breadcrumbs.html.twig" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Infos/breadcrumbs.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpcontact.html.twig" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpcontact.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercppreferences.html.twig" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercppreferences.html.twig" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,57 +28,17 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Users.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Entity/Users.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="225" column="58" lean-forward="false" selection-start-line="225" selection-start-column="58" selection-end-line="225" selection-end-column="58" />
-              <folding>
-                <element signature="e#131#173#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MembercpController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MembercpController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Controller/MembercpController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="86" column="7" lean-forward="false" selection-start-line="86" selection-start-column="7" selection-end-line="86" selection-end-column="7" />
+            <state relative-caret-position="1566">
+              <caret line="126" column="39" lean-forward="true" selection-start-line="126" selection-start-column="39" selection-end-line="126" selection-end-column="39" />
               <folding>
                 <element signature="e#47#104#0#PHP" expanded="true" />
-                <element signature="e#1518#1559#0#PHP" expanded="true" />
-                <element signature="e#1908#1933#1#PHP" expanded="true" />
-                <element signature="e#2083#2102#1#PHP" expanded="true" />
-                <element signature="e#2477#2525#0#PHP" expanded="true" />
-                <element signature="e#2877#2925#0#PHP" expanded="true" />
-                <element signature="e#3152#3204#1#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="membercppreferences.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercppreferences.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-              <folding>
-                <element signature="e#3616#3640#0#HTML" expanded="true" />
-                <element signature="e#3910#3937#0#HTML" expanded="true" />
-                <element signature="e#4246#4270#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MembercpType.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Form/MembercpType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="42" column="22" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="44" />
-              <folding>
-                <element signature="e#42#91#0#PHP" expanded="true" />
+                <element signature="e#2979#3031#0#PHP" expanded="true" />
+                <element signature="e#3353#3405#0#PHP" expanded="true" />
+                <element signature="e#4644#4669#1#PHP" expanded="true" />
+                <element signature="e#4820#4839#1#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,9 +50,9 @@
             <state relative-caret-position="252">
               <caret line="14" column="73" lean-forward="false" selection-start-line="14" selection-start-column="73" selection-end-line="14" selection-end-column="73" />
               <folding>
-                <element signature="e#509#523#0#Twig" expanded="true" />
-                <element signature="e#648#670#0#Twig" expanded="true" />
-                <element signature="e#801#827#0#Twig" expanded="true" />
+                <element signature="e#509#523#0#Twig" expanded="false" />
+                <element signature="e#648#670#0#Twig" expanded="false" />
+                <element signature="e#801#827#0#Twig" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -102,18 +64,6 @@
             <state relative-caret-position="180">
               <caret line="10" column="67" lean-forward="false" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="membercp.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercp.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="17" column="32" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="21" selection-end-column="19" />
-              <folding>
-                <element signature="e#12#28#0#Twig" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -136,7 +86,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Resources/views/Default/disclaimer.html.twig" />
         <option value="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Resources/views/Default/donateblock.html.twig" />
         <option value="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Resources/views/Default/statsblock.html.twig" />
@@ -166,9 +115,7 @@
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/DataFixtures/ORM/UsersData.~php" />
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Blocks/loginblock.html.twig" />
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/Entity/Params.php" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Infos/breadcrumbs.html.twig" />
         <option value="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Resources/views/Default/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Controller/InfosController.php" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/Form/UsersType.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
@@ -182,11 +129,14 @@
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/Controller/UsersBlockController.php" />
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/Form/MembercpContactType.php" />
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercp.html.twig" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpcontact.html.twig" />
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Controller/MembercpController.php" />
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Blocks/membercpmenublock.html.twig" />
+        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Infos/breadcrumbs.html.twig" />
+        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Controller/InfosController.php" />
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercppreferences.html.twig" />
+        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpcontact.html.twig" />
+        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Form/MembercpPreferencesType.php" />
+        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Controller/MembercpController.php" />
       </list>
     </option>
   </component>
@@ -240,9 +190,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1680" />
+    <option name="x" value="1920" />
     <option name="width" value="1920" />
-    <option name="height" value="1040" />
+    <option name="height" value="1035" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -262,6 +212,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1082,9 +1033,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1101,19 +1051,19 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp" />
-      <recent name="$PROJECT_DIR$/src/Users/UsersBundle/Form" />
-      <recent name="$PROJECT_DIR$/src/Users/UsersBundle" />
-      <recent name="$PROJECT_DIR$/src/Informations/InformationsBundle/DataFixtures/ORM" />
-      <recent name="$PROJECT_DIR$/src/Informations" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/Informations/InformationsBundle" />
       <recent name="$PROJECT_DIR$/src/Informations/InformationsBundle/Resources/views/Frames" />
       <recent name="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Resources/views/Blocks" />
       <recent name="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Resources/views/Frame" />
       <recent name="$PROJECT_DIR$/app/Resources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Users/UsersBundle/Form" />
+      <recent name="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp" />
+      <recent name="$PROJECT_DIR$/src/Users/UsersBundle" />
+      <recent name="$PROJECT_DIR$/src/Informations/InformationsBundle/DataFixtures/ORM" />
+      <recent name="$PROJECT_DIR$/src/Informations" />
     </key>
   </component>
   <component name="RunManager">
@@ -1281,6 +1231,12 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
       <method />
     </configuration>
     <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
@@ -1451,6 +1407,40 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -1520,6 +1510,23 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
+    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
+      <method />
+    </configuration>
   </component>
   <component name="SbtLocalSettings">
     <option name="externalProjectsViewState">
@@ -1553,6 +1560,8 @@
       <workItem from="1484558687626" duration="21646000" />
       <workItem from="1484586657489" duration="8146000" />
       <workItem from="1484598737624" duration="7858000" />
+      <workItem from="1484637119488" duration="1942000" />
+      <workItem from="1484639486693" duration="3196000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout de FOSUSerBundle">
       <created>1484397812682</created>
@@ -1572,10 +1581,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117651000" />
+    <option name="totallyTimeSpent" value="122789000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1680" y="0" width="1920" height="1040" extended-state="6" />
+    <frame x="1920" y="0" width="1920" height="1035" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1586,20 +1595,20 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3116022" sideWeight="0.50213677" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3127072" sideWeight="0.49786323" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3130531" sideWeight="0.49786323" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20940171" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21474358" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1630,13 +1639,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Informations/InformationsBundle/Resources/views/Frames/disclaimer.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Blocks/donateblock.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -1808,24 +1810,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Infos/breadcrumbs.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="56" lean-forward="false" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Controller/InfosController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding>
-            <element signature="e#295#332#0#PHP" expanded="false" />
-            <element signature="e#452#493#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1837,7 +1821,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="54" column="29" lean-forward="false" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1854,13 +1837,6 @@
         <state relative-caret-position="162">
           <caret line="107" column="31" lean-forward="false" selection-start-line="107" selection-start-column="8" selection-end-line="107" selection-end-column="31" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="189" column="61" lean-forward="false" selection-start-line="189" selection-start-column="61" selection-end-line="189" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -1928,17 +1904,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="79">
           <caret line="9" column="56" lean-forward="false" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Entity/Users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="225" column="58" lean-forward="false" selection-start-line="225" selection-start-column="58" selection-end-line="225" selection-end-column="58" />
-          <folding>
-            <element signature="e#131#173#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1947,26 +1912,8 @@
         <state relative-caret-position="475">
           <caret line="42" column="26" lean-forward="false" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
           <folding>
-            <element signature="e#48#105#0#PHP" expanded="true" />
-            <element signature="e#1303#1351#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpcontact.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercp.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="17" column="32" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="21" selection-end-column="19" />
-          <folding>
-            <element signature="e#12#28#0#Twig" expanded="false" />
+            <element signature="e#48#105#0#PHP" expanded="false" />
+            <element signature="e#1303#1351#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1981,13 +1928,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Form/MembercpType.php">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="42" column="22" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="44" />
+        <state relative-caret-position="44">
+          <caret line="189" column="61" lean-forward="false" selection-start-line="189" selection-start-column="61" selection-end-line="189" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Infos/breadcrumbs.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="58" lean-forward="false" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Entity/Users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="225" column="58" lean-forward="false" selection-start-line="225" selection-start-column="58" selection-end-line="225" selection-end-column="58" />
           <folding>
-            <element signature="e#42#91#0#PHP" expanded="true" />
+            <element signature="e#131#173#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Controller/InfosController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercp.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="32" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="21" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1999,19 +1978,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Controller/MembercpController.php">
+    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpcontact.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="86" column="7" lean-forward="false" selection-start-line="86" selection-start-column="7" selection-end-line="86" selection-end-column="7" />
-          <folding>
-            <element signature="e#47#104#0#PHP" expanded="true" />
-            <element signature="e#1518#1559#0#PHP" expanded="true" />
-            <element signature="e#1908#1933#1#PHP" expanded="true" />
-            <element signature="e#2083#2102#1#PHP" expanded="true" />
-            <element signature="e#2477#2525#0#PHP" expanded="true" />
-            <element signature="e#2877#2925#0#PHP" expanded="true" />
-            <element signature="e#3152#3204#1#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="162">
+          <caret line="9" column="98" lean-forward="false" selection-start-line="9" selection-start-column="98" selection-end-line="9" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercppreferences.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="85" lean-forward="true" selection-start-line="9" selection-start-column="85" selection-end-line="9" selection-end-column="85" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2020,21 +1999,43 @@
         <state relative-caret-position="252">
           <caret line="14" column="73" lean-forward="false" selection-start-line="14" selection-start-column="73" selection-end-line="14" selection-end-column="73" />
           <folding>
-            <element signature="e#509#523#0#Twig" expanded="true" />
-            <element signature="e#648#670#0#Twig" expanded="true" />
-            <element signature="e#801#827#0#Twig" expanded="true" />
+            <element signature="e#509#523#0#Twig" expanded="false" />
+            <element signature="e#648#670#0#Twig" expanded="false" />
+            <element signature="e#801#827#0#Twig" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercppreferences.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Form/MembercpType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+        <state relative-caret-position="486">
+          <caret line="42" column="44" lean-forward="true" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
           <folding>
-            <element signature="e#3616#3640#0#HTML" expanded="true" />
-            <element signature="e#3910#3937#0#HTML" expanded="true" />
-            <element signature="e#4246#4270#0#HTML" expanded="true" />
+            <element signature="e#42#91#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Form/MembercpPreferencesType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <element signature="e#42#82#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Controller/MembercpController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1566">
+          <caret line="126" column="39" lean-forward="true" selection-start-line="126" selection-start-column="39" selection-end-line="126" selection-end-column="39" />
+          <folding>
+            <element signature="e#47#104#0#PHP" expanded="true" />
+            <element signature="e#2979#3031#0#PHP" expanded="true" />
+            <element signature="e#3353#3405#0#PHP" expanded="true" />
+            <element signature="e#4644#4669#1#PHP" expanded="true" />
+            <element signature="e#4820#4839#1#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
