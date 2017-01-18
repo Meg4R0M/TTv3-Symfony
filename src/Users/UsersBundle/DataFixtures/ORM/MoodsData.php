@@ -512,6 +512,6 @@ class MoodsData extends AbstractFixture implements OrderedFixtureInterface, Cont
 
     public function getOrder()
     {
-        return 4;
+        return 2;
     }
 }

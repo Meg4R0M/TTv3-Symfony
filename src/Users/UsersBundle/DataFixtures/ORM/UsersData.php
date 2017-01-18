@@ -45,7 +45,9 @@ class UsersData extends AbstractFixture implements OrderedFixtureInterface, Cont
         $user->setSignature('');
         $user->setTeam('');
         $user->setTzoffset('');
-        $user->setMoods('Aggressive');
+        $em = $this->container->get('Doctrine')->getManager();
+        $mood = $em->getRepository('UsersBundle:Moods')->findOneBy(array('id' => 1));
+        $user->setMoods($mood);
         $userManager->updateUser($user, true);
     }
 
@@ -60,6 +62,6 @@ class UsersData extends AbstractFixture implements OrderedFixtureInterface, Cont
 
     public function getOrder()
     {
-        return 2;
+        return 3;
     }
 }

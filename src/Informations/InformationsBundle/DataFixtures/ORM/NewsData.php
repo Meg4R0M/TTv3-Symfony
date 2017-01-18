@@ -40,6 +40,6 @@ class NewsData extends AbstractFixture implements OrderedFixtureInterface, Conta
 
     public function getOrder()
     {
-        return 3;
+        return 4;
     }
 }

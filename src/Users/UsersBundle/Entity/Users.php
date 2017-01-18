@@ -227,9 +227,8 @@ class Users extends BaseUser
     private $hideshoutbox = "no";
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="moods", type="string", length=55)
+     * @ORM\ManyToOne(targetEntity="Users\UsersBundle\Entity\Moods")
+     * @ORM\JoinColumn(nullable=false)
      */
     private $moods;
 
@@ -922,11 +921,11 @@ class Users extends BaseUser
     /**
      * Set moods
      *
-     * @param string $moods
+     * @param \Users\UsersBundle\Entity\Moods $moods
      *
-     * @return Params
+     * @return Users
      */
-    public function setMoods($moods)
+    public function setMoods(Moods $moods)
     {
         $this->moods = $moods;
 
