@@ -21,7 +21,7 @@
             <br />
         {% endif %}
 
-        <form id="membercp_form" action="">
+        {{ form_start(form) }}
             <input type="hidden" name="action" value="invite" id="action" />
 
             <div class="tableHeader">
@@ -33,38 +33,39 @@
             <div class="table">
 
                 <div class="row">
-                    <div class="cell first"><label for="invite_friend_name">Friend Name</label></div>
+                    <div class="cell first"><label for="invite_friend_name">{{ form_label(form.Friend_Name) }}</label></div>
                     <div class="cell second">
-                        <input type="text" name="invite_friend_name" id="invite_friend_name" class="s" accesskey="n" value="" />
+                        {{ form_widget(form.Friend_Name, { 'attr': { 'id': 'invite_friend_name', 'class': 's', 'accesskey': 'n' } } ) }}
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="cell first"><label for="invite_friend_email">Friend Email</label></div>
+                    <div class="cell first"><label for="invite_friend_email">{{ form_label(form.Friend_Email) }}</label></div>
                     <div class="cell second">
-                        <input type="text" name="invite_friend_email" id="invite_friend_email" class="s" accesskey="e" value="" />
+                        {{ form_widget(form.Friend_Email, { 'attr': { 'id': 'invite_friend_email', 'class': 's', 'accesskey': 'e' } } ) }}
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="cell first"><label for="invite_friend_message">Message</label></div>
+                    <div class="cell first"><label for="invite_friend_message">{{ form_label(form.Message) }}</label></div>
                     <div class="cell second">
-                        <textarea name="invite_friend_message" id="cat_content_small" class="s" accesskey="m" title="Enter a message to include in the email (optional)"></textarea>
+                        {{ form_widget(form.Message, { 'attr': { 'id': 'cat_content_small', 'class': 's', 'accesskey': 'm', 'title': 'Enter a message to include in the email (optional)' } } ) }}
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="cell first"></div>
                     <div class="cell second">
-                        <input type="submit" value="Send Invite" class="submit" />
-                        <input type="reset" value="Clear" class="submit" />
+                        {{ form_widget(form.save, { 'attr': { 'class': 'submit' } } ) }}
+                        {{ form_widget(form.clear, { 'attr': { 'class': 'submit' } } ) }}
                     </div>
                 </div>
 
             </div>
 
-        </form>
+        {{ form_end(form) }}
         <br />
+        {% if flashmessage is defined %}{{ dump(flashmessage) }}{% endif %}
         <div class="information">Invite your friends to earn free Upload Amount and/of Bonus Points<br /></div><br />
         <div class="tableHeader" id="inviteListHeader">
             <div class="row">

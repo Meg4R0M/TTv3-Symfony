@@ -35,6 +35,7 @@ class UsersData extends AbstractFixture implements OrderedFixtureInterface, Cont
         $this->addReference('user-admin', $user);
         $user->setAdded(new \DateTime());
         $user->setIp('::1');
+        $user->setSecret('');
         $user->setDonated('0');
         $user->setNotifs('');
         $user->setPasskey('');

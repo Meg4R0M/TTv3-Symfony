@@ -47,6 +47,13 @@ class Users extends BaseUser
     private $ip;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="secret", type="string", length=20)
+     */
+    private $secret;
+
+    /**
      * @var int
      *
      * @ORM\Column(name="uploaded", type="bigint")
@@ -312,6 +319,30 @@ class Users extends BaseUser
     public function getIp()
     {
         return $this->ip;
+    }
+
+    /**
+     * Set secret
+     *
+     * @param string $secret
+     *
+     * @return Users
+     */
+    public function setSecret($secret)
+    {
+        $this->secret = $secret;
+
+        return $this;
+    }
+
+    /**
+     * Get secret
+     *
+     * @return string
+     */
+    public function getSecret()
+    {
+        return $this->secret;
     }
 
     /**

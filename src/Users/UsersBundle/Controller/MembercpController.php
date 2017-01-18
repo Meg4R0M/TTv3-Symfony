@@ -2,7 +2,11 @@
 namespace Users\UsersBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\Form\Extension\Core\Type\EmailType;
+use Symfony\Component\Form\Extension\Core\Type\ResetType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\HttpFoundation\Request;
 use Users\UsersBundle\Entity\Users;
 use Users\UsersBundle\Form\MembercpContactType;
@@ -275,8 +279,61 @@ class MembercpController extends Controller
         ));
     }
 
-    public function membercpInviteAction() {
-        return $this->render('UsersBundle:Membercp:membercpinvite.html.twig');
+    public function membercpInviteAction(Request $request) {
+        $form = $this->createFormBuilder()
+            ->add('Friend_Name', TextType::class)
+            ->add('Friend_Email', EmailType::class)
+            ->add('Message', TextareaType::class)
+            ->add('save', SubmitType::class, array('label' => 'Send Invite'))
+            ->add('clear', ResetType::class, array('label' => 'Clear'))
+            ->getForm();
+
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            // Need to verify CURUSER INVITE
+            // Need to check if invited email exist in DB
+            $task = $form->getData();
+            $secret = $this->mksecret();
+            $username = "invite_".$secret;
+
+            $em = $this->container->get('Doctrine')->getManager();
+
+            $userManager = $this->container->get('fos_user.user_manager');
+
+            $user = new Users();
+            $user->setUsername($username);
+            $user->setEmail($task['Friend_Email']);
+            $user->setPlainPassword('password');
+            $user->setEnabled(false);
+            $user->addRole('ROLE_USER');
+            $user->setAdded(new \DateTime());
+            $user->setIp('::1');
+            $user->setSecret($secret);
+            $user->setDonated('0');
+            $user->setNotifs('');
+            $user->setPasskey('');
+            $user->setStylesheet(0);
+            $user->setAge(new \DateTime('1970-00-00'));
+            $user->setTitle('');
+            $user->setClient('');
+            $user->setSignature('');
+            $user->setTeam('');
+            $user->setTzoffset('');
+            $mood = $em->getRepository('UsersBundle:Moods')->findOneBy(array('id' => 1));
+            $user->setMoods($mood);
+            $userManager->updateUser($user, true);
+            $flashmessage = 'Invite Successfull !';
+
+            return $this->render('UsersBundle:Membercp:membercpinvite.html.twig', array(
+                'form' => $form->createView(),
+                'flashmessage' => $flashmessage
+            ));
+        }
+
+        return $this->render('UsersBundle:Membercp:membercpinvite.html.twig', array(
+            'form' => $form->createView()
+        ));
     }
 
     public function membercpUpgradeAction() {
@@ -354,5 +411,17 @@ class MembercpController extends Controller
             $user = $em->getRepository('UsersBundle:Users')->find($id);
             return $user;
         }
+    }
+
+    private function mksecret($len = 20) {
+        $chars = array_merge(range(0, 9), range("A", "Z"), range("a", "z"));
+        shuffle($chars);
+        $x = count($chars) - 1;
+        $str = '';
+        for ($i = 1; $i <= $len; $i++) {
+            $number = mt_rand(0, $x);
+            $str .= $chars[$number];
+        }
+        return $str;
     }
 }
