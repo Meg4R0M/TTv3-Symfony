@@ -29,8 +29,8 @@
         <link rel="stylesheet" href="{{ asset('themes/default/css/responsive.css') }}" type="text/css" media="screen" />
         <link rel="stylesheet" href="http://templateshares-ue.net/tsue/style.php?lv=2.3&l=fancybox" type="text/css" media="screen" />
         {% stylesheets
-        '@TorrentsBundle/Resources/public/css_original/style.css'
-        '@TorrentsBundle/Resources/public/css_original/menu.css'
+        '@CMSBundle/Resources/public/css_original/style.css'
+        '@CMSBundle/Resources/public/css_original/menu.css'
         filter="cssrewrite" %}
         <link href="{{ asset_url }}" rel="stylesheet" type="text/css" />
         {% endstylesheets %}
@@ -50,7 +50,7 @@
     <div id="header">
 
         <div class="logo">
-            <a href="/index.php" title="TorrentTrader v3 | TTv3"><img src="{{ asset('themes/default/theme_images/logo.png') }}" alt="TorrentTrader v3 | TTv3" /></a>
+            <a href="{{ path('cms') }}" title="TorrentTrader v3 | TTv3"><img src="{{ asset('themes/default/theme_images/logo.png') }}" alt="TorrentTrader v3 | TTv3" /></a>
         </div>
 
         {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
@@ -152,7 +152,7 @@
             <!-- start #menu -->
             <nav>
                 <ul id="menu">
-                    <li class="nodrop"><a href="{{ path('torrents') }}" class="link ">Home</a></li>
+                    <li class="nodrop"><a href="{{ path('cms') }}" class="link ">Home</a></li>
                     <li class="nodrop"><a href="/lounge.php" class="link "><span style="color: yellow">Shoutbox</span></a></li>
                     {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                     {% else %}
@@ -236,7 +236,7 @@
             <!-- start #menu -->
             <div id="responsiveMenuHider">
                 <ul id="responsiveMenu" class="slimmenu">
-                    <li><a href="{{ path('torrents') }}">Home</a></li>
+                    <li><a href="{{ path('cms') }}">Home</a></li>
                     <li><a href="/lounge.php"><span style="color: yellow;">Shoutbox</span></a></li>
                     {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                     {% else %}

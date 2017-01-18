@@ -1,0 +1,3 @@
+cms:
+    path:     /
+    defaults: { _controller: CMSBundle:CMS:index }

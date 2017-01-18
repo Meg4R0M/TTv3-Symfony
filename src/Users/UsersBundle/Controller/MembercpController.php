@@ -299,8 +299,11 @@ class MembercpController extends Controller
         return $this->render('UsersBundle:Membercp:membercpsubscribed.html.twig');
     }
 
-    public function membercpPortcheckAction() {
-        return $this->render('UsersBundle:Membercp:membercpportcheck.html.twig');
+    public function membercpPortcheckAction(Request $request) {
+        $ip = $request->getClientIp();
+        return $this->render('UsersBundle:Membercp:membercpportcheck.html.twig', array(
+            'ip' => $ip
+        ));
     }
 
     public function membercpAlertsAction() {

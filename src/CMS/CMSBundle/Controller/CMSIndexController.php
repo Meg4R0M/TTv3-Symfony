@@ -1,15 +1,15 @@
 <?php
 
-namespace Torrents\TorrentsBundle\Controller;
+namespace CMS\CMSBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 
-class TorrentsIndexController extends Controller
+class CMSIndexController extends Controller
 {
     public function shoutboxAction()
     {
-        return $this->render('TorrentsBundle:Frames:shoutbox.html.twig');
+        return $this->render('CMSBundle:Frames:shoutbox.html.twig');
     }
 
     public function fullpageLoginAction()

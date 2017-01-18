@@ -1,3 +1,0 @@
-torrents:
-    path:     /
-    defaults: { _controller: TorrentsBundle:Torrents:index }

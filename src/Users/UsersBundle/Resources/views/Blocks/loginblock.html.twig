@@ -8,7 +8,7 @@
             {{ user.username }}
         </h4>
 
-        <div  id="logged" style="padding: 10px 5px 10px 0">
+        <div  id="login" style="padding: 10px 5px 10px 0">
             <div class="floatright">
                 {% if user.avatar is defined and user.avatar is not null %}
                     <img src="{{ asset('uploads/avatars/' ~ avatar) }}" alt="" title="" class="clickable avatar" id="member_info" memberid="{{ user.id }}" width="96px"/>

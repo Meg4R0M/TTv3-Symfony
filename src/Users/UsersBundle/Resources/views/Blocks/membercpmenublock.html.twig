@@ -8,21 +8,21 @@
 
     <div id='membercpmenu' class=''>
         <ul id="memberCPNavi" class="">
-            <li><a href="{{ path('users_membercp') }}" {% if routename == 'membercp' %}class="active"{% endif %}>Personal Details</a></li>
-            <li><a href="{{ path('users_membercp_contact') }}" {% if routename == 'membercpcontact' %}class="active"{% endif %}>Contact Details</a></li>
-            <li><a href="{{ path('users_membercp_preferences') }}" {% if routename == 'membercppreferences' %}class="active"{% endif %}>Preferences</a></li>
-            <li><a href="{{ path('users_membercp_privacy') }}" {% if routename == 'membercpprivacy' %}class="active"{% endif %}>Privacy</a></li>
-            <li><a href="{{ path('users_membercp_password') }}" {% if routename == 'membercppassword' %}class="active"{% endif %}>Password</a></li>
-            <li><a href="{{ path('users_membercp_signature') }}" {% if routename == 'membercpsignature' %}class="active"{% endif %}>Signature</a></li>
-            <li><a href="{{ path('users_membercp_avatar') }}" {% if routename == 'membercpavatar' %}class="active"{% endif %}>Avatar</a></li>
-            <li><a href="{{ path('users_membercp_invite') }}" {% if routename == 'membercpinvite' %}class="active"{% endif %}>Invite Friends</a></li>
-            <li><a href="{{ path('users_membercp_upgrade') }}" {% if routename == 'membercpupgrade' %}class="active"{% endif %}>Upgrade Account</a></li>
-            <li><a href="{{ path('users_membercp_follow') }}" {% if routename == 'membercpfollow' %}class="active"{% endif %}>People You Follow</a></li>
-            <li><a href="{{ path('users_membercp_gallery') }}" {% if routename == 'membercpgallery' %}class="active"{% endif %}>Image Gallery</a></li>
-            <li><a href="{{ path('users_membercp_performance') }}" {% if routename == 'membercpperformance' %}class="active"{% endif %}>Performance</a></li>
-            <li><a href="{{ path('users_membercp_subscribed') }}" {% if routename == 'membercpsubscribed' %}class="active"{% endif %}>Subscribed Threads</a></li>
-            <li><a href="{{ path('users_membercp_portcheck') }}" {% if routename == 'membercpportcheck' %}class="active"{% endif %}>Open Port Check Tool</a></li>
-            <li><a href="{{ path('users_membercp_alerts') }}" {% if routename == 'membercpalerts' %}class="active"{% endif %}>Recent Alerts</a></li>
+            <li><a href="{{ path('users_membercp') }}" {% if routename == 'membercp' %}class="active"{% endif %}>{{ 'Personal Details'|trans }}</a></li>
+            <li><a href="{{ path('users_membercp_contact') }}" {% if routename == 'membercpcontact' %}class="active"{% endif %}>{{ 'Contact Details'|trans }}</a></li>
+            <li><a href="{{ path('users_membercp_preferences') }}" {% if routename == 'membercppreferences' %}class="active"{% endif %}>{{ 'Preferences'|trans }}</a></li>
+            <li><a href="{{ path('users_membercp_privacy') }}" {% if routename == 'membercpprivacy' %}class="active"{% endif %}>{{ 'Privacy'|trans }}</a></li>
+            <li><a href="{{ path('users_membercp_password') }}" {% if routename == 'membercppassword' %}class="active"{% endif %}>{{ 'Password'|trans }}</a></li>
+            <li><a href="{{ path('users_membercp_signature') }}" {% if routename == 'membercpsignature' %}class="active"{% endif %}>{{ 'Signature'|trans }}</a></li>
+            <li><a href="{{ path('users_membercp_avatar') }}" {% if routename == 'membercpavatar' %}class="active"{% endif %}>{{ 'Avatar'|trans }}</a></li>
+            <li><a href="{{ path('users_membercp_invite') }}" {% if routename == 'membercpinvite' %}class="active"{% endif %}>{{ 'Invite Friends'|trans }}</a></li>
+            <li><a href="{{ path('users_membercp_upgrade') }}" {% if routename == 'membercpupgrade' %}class="active"{% endif %}>{{ 'Upgrade Account'|trans }}</a></li>
+            <li><a href="{{ path('users_membercp_follow') }}" {% if routename == 'membercpfollow' %}class="active"{% endif %}>{{ 'People You Follow'|trans }}</a></li>
+            <li><a href="{{ path('users_membercp_gallery') }}" {% if routename == 'membercpgallery' %}class="active"{% endif %}>{{ 'Image Gallery'|trans }}</a></li>
+            <li><a href="{{ path('users_membercp_performance') }}" {% if routename == 'membercpperformance' %}class="active"{% endif %}>{{ 'Performance'|trans }}</a></li>
+            <li><a href="{{ path('users_membercp_subscribed') }}" {% if routename == 'membercpsubscribed' %}class="active"{% endif %}>{{ 'Subscribed Threads'|trans }}</a></li>
+            <li><a href="{{ path('users_membercp_portcheck') }}" {% if routename == 'membercpportcheck' %}class="active"{% endif %}>{{ 'Open Port Check Tool'|trans }}</a></li>
+            <li><a href="{{ path('users_membercp_alerts') }}" {% if routename == 'membercpalerts' %}class="active"{% endif %}>{{ 'Recent Alerts'|trans }}</a></li>
             <li><a href="/mailbox.php">Messages</a></li>
         </ul>
     </div>

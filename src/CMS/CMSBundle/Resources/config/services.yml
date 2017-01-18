@@ -1,4 +1,4 @@
 services:
-#    torrents.example:
-#        class: Torrents\TorrentsBundle\Example
+#    cms.example:
+#        class: CMS\CMSBundle\Example
 #        arguments: ["@service_id", "plain_value", "%parameter%"]

@@ -1,5 +1,5 @@
 torrents:
-    resource: "@TorrentsBundle/Resources/config/routing.yml"
+    resource: "@CMSBundle/Resources/config/routing.yml"
     prefix:   /
 
 informations:

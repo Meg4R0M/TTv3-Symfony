@@ -2,7 +2,7 @@ imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
     - { resource: services.yml }
-    - { resource: "@TorrentsBundle/Resources/config/services.yml" }
+    - { resource: "@CMSBundle/Resources/config/services.yml" }
     - { resource: "@UsersBundle/Resources/config/services.yml" }
     - { resource: "@InformationsBundle/Resources/config/services.yml" }
 
@@ -80,7 +80,7 @@ assetic:
     use_controller: '%kernel.debug%'
     filters:
         cssrewrite: ~
-    bundles: [TorrentsBundle]
+    bundles: [CMSBundle]
 
 # FOSUserBundle Configuration
 fos_user:

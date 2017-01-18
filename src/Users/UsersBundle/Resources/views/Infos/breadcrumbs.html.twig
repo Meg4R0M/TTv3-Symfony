@@ -1,7 +1,7 @@
 <div class="rcrumbs" id="breadcrumbs">
     <ul>
         <li>
-            <a href="{{ path('torrents') }}">Home</a> <span class="divider">></span>
+            <a href="{{ path('cms') }}">Home</a> <span class="divider">></span>
             {% if page is defined %}{% if page.address is defined %}<a href="{{ path(page.address) }}">{{ page.name }}</a>{% endif %}{% endif %}
             {% if section is defined and section|length != 0 %} <span class="divider">></span> <a href="{{ path(section.address) }}">{{ section.name }}</a>{% endif %}
         </li>
