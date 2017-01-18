@@ -13,9 +13,19 @@ class UsersBlockController extends Controller
             return $this->render('UsersBundle:Blocks:loginblock.html.twig', array(
                 'error' => null));
         }else{
+            $avatarstr= $this->get('security.token_storage')->getToken()->getUser()->getAvatar();
+            if ($avatarstr != '') {
+                $avatarId = $avatarstr->getId();
+                $em = $this->getDoctrine()->getManager();
+                $avatarrow = $em->getRepository('UsersBundle:Avatar')->find($avatarId);
+                $avatar = $avatarrow->getPath();
+            } else {
+                $avatar = 'default';
+            }
             return $this->render('UsersBundle:Blocks:loginblock.html.twig', array(
                 'error' => null,
-                'user' => $usr));
+                'user' => $usr,
+                'avatar' => $avatar));
         }
     }
 

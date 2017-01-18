@@ -10,7 +10,11 @@
 
         <div  id="logged" style="padding: 10px 5px 10px 0">
             <div class="floatright">
-                <img src="{{ asset('themes/default/avatars/avatar_m.png') }}" alt="" title="" class="clickable avatar" id="member_info" memberid="{{ user.id }}" width="96px"/>
+                {% if user.avatar is defined and user.avatar is not null %}
+                    <img src="{{ asset('uploads/avatars/' ~ avatar) }}" alt="" title="" class="clickable avatar" id="member_info" memberid="{{ user.id }}" width="96px"/>
+                {% else %}
+                    <img src="{{ asset('themes/default/avatars/avatar_m.png') }}" alt="" title="" class="clickable avatar" id="member_info" memberid="{{ user.id }}" width="96px"/>
+                {% endif %}
                 <p style="text-align: center"><img src="{{ asset('images/moods/' ~ user.moods ~ '.gif') }}" alt='{{ user.moods }}' title='{{ user.moods }}' style="margin-top: -100px"/></p>
                 [<span id="history_link" class="clickable">History</span>]<br />
                 [<a href="{{ path('fos_user_security_logout') }}">{{ 'layout.logout'|trans({}, 'FOSUserBundle') }}</a>]
