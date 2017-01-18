@@ -32,7 +32,14 @@
             </div>
 
             <div class="table">
-
+                {% if user.avatar.path is defined %}
+                    <div class="row">
+                        <div class="cell first">Current Avatar</div>
+                        <div class="cell second">
+                            <img src="{{ asset('/uploads/avatars/' ~ user.avatar.path) }}" alt="{{ user.avatar.path }}">
+                        </div>
+                    </div>
+                {% endif %}
                 <div class="row">
                     <div class="cell first">{{ form_label(form.avatar) }}</div>
                     <div class="cell second">

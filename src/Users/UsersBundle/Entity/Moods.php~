@@ -35,7 +35,6 @@ class Moods
      */
     private $moodpic;
 
-
     /**
      * Get id
      *
@@ -99,4 +98,3 @@ class Moods
         return $this->getName();
     }
 }
-

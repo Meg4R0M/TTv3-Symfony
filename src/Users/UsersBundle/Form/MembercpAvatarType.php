@@ -4,7 +4,6 @@ namespace Users\UsersBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ResetType;
-use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -16,8 +15,8 @@ class MembercpAvatarType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('avatar', TextType::class, array(
-                'label' => 'Avatar URL'
+            ->add('avatar', AvatarType::class, array(
+                'label' => 'Select and Upload a new Custom Avatar'
             ))
             ->add('clear', ResetType::class)
         ;

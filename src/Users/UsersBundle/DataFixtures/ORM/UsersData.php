@@ -8,7 +8,7 @@ use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Users\UsersBundle\Entity\Users;
-use Users\UsersBundle\Entity\Moods;
+use Users\UsersBundle\Entity\Avatar;
 
 class UsersData extends AbstractFixture implements OrderedFixtureInterface, ContainerAwareInterface
 {
@@ -40,7 +40,6 @@ class UsersData extends AbstractFixture implements OrderedFixtureInterface, Cont
         $user->setPasskey('');
         $user->setStylesheet(0);
         $user->setAge(new \DateTime('1970-00-00'));
-        $user->setAvatar('');
         $user->setTitle('');
         $user->setClient('');
         $user->setSignature('');

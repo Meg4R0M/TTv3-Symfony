@@ -138,10 +138,15 @@ class Users extends BaseUser
     private $info;
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="avatar", type="string", length=100)
+     * @ORM\OneToOne(targetEntity="Users\UsersBundle\Entity\Avatar", cascade={"persist","remove"})
+     * @ORM\JoinColumn(nullable=true)
      */
+    //* @Assert\Image(
+    //*     maxSize = "1024k",
+    //*     mimeTypes = {"image/png", "image/jpg", "image/bmp"},
+    //*     mimeTypesMessage = "Please upload a valid Image"
+    //* )
+    //*/
     private $avatar;
 
     /**
@@ -249,7 +254,6 @@ class Users extends BaseUser
         $this->donated = 0;
         $this->notifs = '';
         $this->passkey = sha1($this->ip . $this->username . time(), '');
-        $this->avatar = '';
         $this->title = '';
         $this->client = '';
         $this->age = new \DateTime('1970-01-01');
@@ -626,11 +630,11 @@ class Users extends BaseUser
     /**
      * Set avatar
      *
-     * @param string $avatar
+     * @param \Users\UsersBundle\Entity\Avatar $avatar
      *
-     * @return Params
+     * @return Users
      */
-    public function setAvatar($avatar)
+    public function setAvatar(Avatar $avatar)
     {
         $this->avatar = $avatar;
 
@@ -640,7 +644,7 @@ class Users extends BaseUser
     /**
      * Get avatar
      *
-     * @return string
+     * @return \Users\UsersBundle\Entity\Avatar
      */
     public function getAvatar()
     {
