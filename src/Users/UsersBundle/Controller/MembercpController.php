@@ -10,6 +10,7 @@ use Users\UsersBundle\Form\MembercpPreferencesType;
 use Users\UsersBundle\Form\MembercpType;
 use Users\UsersBundle\Form\MembercpPrivacyType;
 use Users\UsersBundle\Form\MembercpSignatureType;
+use Users\UsersBundle\Form\MembercpAvatarType;
 use FOS\UserBundle\Event\FilterUserResponseEvent;
 use FOS\UserBundle\Event\FormEvent;
 use FOS\UserBundle\Event\GetResponseUserEvent;
@@ -242,8 +243,36 @@ class MembercpController extends Controller
         ));
     }
 
-    public function membercpAvatarAction() {
-        return $this->render('UsersBundle:Membercp:membercpavatar.html.twig');
+    public function membercpAvatarAction(Request $request) {
+        $userinfo = $this->get('security.token_storage')->getToken()->getUser();
+        if ($userinfo == "anon.") {
+            return $this->redirectToRoute('fos_user_security_login');
+        }
+        $user = $this->getCurrentUserId();
+
+        $editAvatarForm = $this->createEditForm($user, $type = 'avatar');
+        $editAvatarForm->handleRequest($request);
+
+        if ($editAvatarForm->isSubmitted()) {
+            if ($editAvatarForm->isValid()) {
+                $em = $this->getDoctrine()->getManager();
+                $em->flush();
+                $flashmessage = 'Successfull Edit !';
+
+                return $this->render('UsersBundle:Membercp:membercpavatar.html.twig', array(
+                    'user' => $user,
+                    'form' => $editAvatarForm->createView(),
+                    'flashmessage' => $flashmessage
+                ));
+            } else {
+                throw new \Exception('Something went wrong!');
+            }
+        }
+
+        return $this->render('UsersBundle:Membercp:membercpavatar.html.twig', array(
+            'user' => $user,
+            'form' => $editAvatarForm->createView()
+        ));
     }
 
     public function membercpInviteAction() {
@@ -297,6 +326,8 @@ class MembercpController extends Controller
             $form = $this->createForm(MembercpPrivacyType::class, $user);
         } elseif ($type == 'signature') {
             $form = $this->createForm(MembercpSignatureType::class, $user);
+        } elseif ($type == 'avatar') {
+            $form = $this->createForm(MembercpAvatarType::class, $user);
         }
 
         $form->add('submit', SubmitType::class, array('label' => 'Update'));

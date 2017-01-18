@@ -21,9 +21,7 @@
             <br />
         {% endif %}
 
-        <form id="membercp_avatar_form" method="post" action="" enctype="multipart/form-data">
-            <input type="hidden" name="action" value="avatar" id="action" />
-            <input type="hidden" name="securitytoken" value="618-1476003530-80c06e73493d964ffdfd4a9ed8147b3bd209c507" />
+        {{ form_start(form) }}
 
             <div class="tableHeader">
                 <div class="row">
@@ -36,22 +34,30 @@
             <div class="table">
 
                 <div class="row">
-                    <div class="cell first">Avatar url</div>
+                    <div class="cell first">{{ form_label(form.avatar) }}</div>
                     <div class="cell second">
-                        <input type="text" name="avatar" size="50" value="avatar" />
+                        {{ form_widget(form.avatar, { 'attr': { 'class': 's' } }) }}
                     </div>
                 </div>
 
-                <div class="row">
+                <!--<div class="row">
                     <div class="cell first">Select and Upload a new Custom Avatar</div>
                     <div class="cell second">
                         <input type="file" name="avatar" /> <input type="submit" value="Upload" class="submit" id="avatar_submit" />
+                    </div>
+                </div>-->
+
+                <div class="row">
+                    <div class="cell first"></div>
+                    <div class="cell second">
+                        {{ form_widget(form.submit, { 'attr': {'class': 'submit'} }) }}
+                        {{ form_widget(form.clear, { 'attr': {'class': 'submit'} }) }}
                     </div>
                 </div>
 
             </div>
 
-        </form>
+        {{ form_end(form) }}
     {% endif %}
 {% endblock %}
 
