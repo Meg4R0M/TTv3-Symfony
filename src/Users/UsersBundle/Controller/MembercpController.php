@@ -8,6 +8,7 @@ use Users\UsersBundle\Entity\Users;
 use Users\UsersBundle\Form\MembercpContactType;
 use Users\UsersBundle\Form\MembercpPreferencesType;
 use Users\UsersBundle\Form\MembercpType;
+use Users\UsersBundle\Form\MembercpPrivacyType;
 
 class MembercpController extends Controller
 {
@@ -110,8 +111,36 @@ class MembercpController extends Controller
         ));
     }
 
-    public function membercpPrivacyAction() {
-        return $this->render('UsersBundle:Membercp:membercpprivacy.html.twig');
+    public function membercpPrivacyAction(Request $request) {
+        $userinfo = $this->get('security.token_storage')->getToken()->getUser();
+        if ($userinfo == "anon.") {
+            return $this->redirectToRoute('fos_user_security_login');
+        }
+        $user = $this->getCurrentUserId();
+
+        $editPrivacyForm = $this->createEditForm($user, $type = 'privacy');
+        $editPrivacyForm->handleRequest($request);
+
+        if ($editPrivacyForm->isSubmitted()) {
+            if ($editPrivacyForm->isValid()) {
+                $em = $this->getDoctrine()->getManager();
+                $em->flush();
+                $flashmessage = 'Successfull Edit !';
+
+                return $this->render('UsersBundle:Membercp:membercpprivacy.html.twig', array(
+                    'user' => $user,
+                    'form' => $editPrivacyForm->createView(),
+                    'flashmessage' => $flashmessage
+                ));
+            } else {
+                throw new \Exception('Something went wrong!');
+            }
+        }
+
+        return $this->render('UsersBundle:Membercp:membercpprivacy.html.twig', array(
+            'user' => $user,
+            'form' => $editPrivacyForm->createView()
+        ));
     }
 
     public function membercpPasswordAction() {
@@ -173,6 +202,8 @@ class MembercpController extends Controller
             $form = $this->createForm(MembercpContactType::class, $user);
         } elseif ($type == 'preferences') {
             $form = $this->createForm(MembercpPreferencesType::class, $user);
+        } elseif ($type == 'privacy') {
+            $form = $this->createForm(MembercpPrivacyType::class, $user);
         }
 
         $form->add('submit', SubmitType::class, array('label' => 'Update'));

@@ -21,7 +21,7 @@
             <br />
         {% endif %}
 
-        <form id="membercp_form" action="">
+        {{ form_start(form) }}
             <input type="hidden" name="action" value="privacy" id="action" />
 
             <div class="tableHeader">
@@ -35,9 +35,30 @@
             <div class="table">
 
                 <div class="row">
-                    <div class="cell first"><label for="ACCOUNT_PRIVACY_LVL">ACCOUNT_PRIVACY_LVL</label></div>
+                    <div class="cell first"><label for="ACCOUNT_PRIVACY_LVL">{{ form_label(form.privacy) }}</label></div>
                     <div class="cell second">
-                        priv("normal", T_("NORMAL")) priv("low", T_("LOW")) priv("strong", T_("STRONG"))<br />
+                        {% if user.privacy == 'low' %}
+                            {{ form_widget(form.privacy.2, {'attr' : { 'checked': 'checked'}} ) }}
+                            {{ form_label(form.privacy.2) }}
+                        {% else %}
+                            {{ form_widget(form.privacy.2) }}
+                            {{ form_label(form.privacy.2) }}
+                        {% endif %}
+                        {% if user.privacy == 'normal' %}
+                            {{ form_widget(form.privacy.1, {'attr' : { 'checked': 'checked'}} ) }}
+                            {{ form_label(form.privacy.1) }}
+                        {% else %}
+                            {{ form_widget(form.privacy.1) }}
+                            {{ form_label(form.privacy.1) }}
+                        {% endif %}
+                        {% if user.privacy == 'strong' %}
+                            {{ form_widget(form.privacy.0, {'attr' : { 'checked': 'checked'}} ) }}
+                            {{ form_label(form.privacy.0) }}
+                        {% else %}
+                            {{ form_widget(form.privacy.0) }}
+                            {{ form_label(form.privacy.0) }}
+                        {% endif %}
+                        <br />
                         <span class="small"><label for="ACCOUNT_PRIVACY_LVL">ACCOUNT_PRIVACY_LVL_MSG</label></span>
                     </div>
                 </div>
@@ -59,10 +80,9 @@
                 </div>
 
                 <div class="row">
-                    <div class="cell first"><label for="ACCEPT_PMS">ACCEPT_PMS</label></div>
+                    <div class="cell first"><label for="ACCEPT_PMS">{{ form_label(form.acceptpms) }}</label></div>
                     <div class="cell second">
-                        <input type="radio" name="acceptpms" checked="checked" value="yes" />FROM_ALL
-                        <input type="radio" name="acceptpms" checked="checked" value="no" />FROM_STAFF_ONLY<br />
+                        {{ form_widget(form.acceptpms) }}
                         <span class="small"><label for="ACCEPT_PMS">ACCEPTPM_WHICH_USERS</label></span>
                     </div>
                 </div>
@@ -98,14 +118,14 @@
                 <div class="row">
                     <div class="cell first"></div>
                     <div class="cell second">
-                        <input type="submit" value="Save" class="submit" />
-                        <input type="reset" value="Clear" class="submit" />
+                        {{ form_widget(form.submit) }}
+                        {{ form_widget(form.clear) }}
                     </div>
                 </div>
 
             </div>
 
-        </form>
+        {{ form_end(form) }}
     {% endif %}
 {% endblock %}
 
