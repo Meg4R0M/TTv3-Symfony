@@ -13,7 +13,13 @@
                 {% if user.avatar is defined and user.avatar is not null %}
                     <img src="{{ asset('uploads/avatars/' ~ avatar) }}" alt="" title="" class="clickable avatar" id="member_info" memberid="{{ user.id }}" width="96px"/>
                 {% else %}
-                    <img src="{{ asset('themes/default/avatars/avatar_m.png') }}" alt="" title="" class="clickable avatar" id="member_info" memberid="{{ user.id }}" width="96px"/>
+                    {% if user.gender == 'Female' %}
+                        <img src="{{ asset('themes/default/avatars/avatar_f_m.png') }}" alt="" title="" class="clickable avatar" id="member_info" memberid="{{ user.id }}" width="96px"/>
+                    {% elseif user.gender == 'Male' %}
+                        <img src="{{ asset('themes/default/avatars/avatar_m_m.png') }}" alt="" title="" class="clickable avatar" id="member_info" memberid="{{ user.id }}" width="96px"/>
+                    {% else %}
+                        <img src="{{ asset('themes/default/avatars/avatar_m.png') }}" alt="" title="" class="clickable avatar" id="member_info" memberid="{{ user.id }}" width="96px"/>
+                    {% endif %}
                 {% endif %}
                 <p style="text-align: center"><img src="{{ asset('images/moods/' ~ user.moods ~ '.gif') }}" alt='{{ user.moods }}' title='{{ user.moods }}' style="margin-top: -100px"/></p>
                 [<span id="history_link" class="clickable">History</span>]<br />
