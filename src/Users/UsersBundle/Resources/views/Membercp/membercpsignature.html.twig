@@ -21,8 +21,7 @@
             <br />
         {% endif %}
 
-        <form id="membercp_form" action="">
-            <input type="hidden" name="action" value="signature" id="action" />
+        {{ form_start(form) }}
 
             <div class="tableHeader">
                 <div class="row">
@@ -34,7 +33,8 @@
 
                 <div class="row">
                     <div class="cell footer">
-                        <textarea name="signature" id="tinymce_autoload" class="tinymce">signature</textarea>
+                        {{ form_widget(form.signature, { 'attr': { 'style': 'width: 99%; height: 200px; margin-bottom: 10px;' } }) }}
+                        <!--<textarea name="signature" id="tinymce_autoload" class="tinymce"></textarea>-->
                     </div>
                 </div>
 
@@ -44,14 +44,14 @@
 
                 <div class="row">
                     <div class="cell footer">
-                        <input type="submit" value="Save" class="submit" />
-                        <input type="reset" value="Clear" class="submit" />
+                        {{ form_widget(form.submit, { 'attr': { 'class': 'submit' } }) }}
+                        {{ form_widget(form.clear, { 'attr': { 'class': 'submit' } }) }}
                     </div>
                 </div>
 
             </div>
 
-        </form>
+        {{ form_end(form) }}
     {% endif %}
 {% endblock %}
 

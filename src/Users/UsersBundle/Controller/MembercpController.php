@@ -9,6 +9,7 @@ use Users\UsersBundle\Form\MembercpContactType;
 use Users\UsersBundle\Form\MembercpPreferencesType;
 use Users\UsersBundle\Form\MembercpType;
 use Users\UsersBundle\Form\MembercpPrivacyType;
+use Users\UsersBundle\Form\MembercpSignatureType;
 use FOS\UserBundle\Event\FilterUserResponseEvent;
 use FOS\UserBundle\Event\FormEvent;
 use FOS\UserBundle\Event\GetResponseUserEvent;
@@ -209,8 +210,36 @@ class MembercpController extends Controller
         ));
     }
 
-    public function membercpSignatureAction() {
-        return $this->render('UsersBundle:Membercp:membercpsignature.html.twig');
+    public function membercpSignatureAction(Request $request) {
+        $userinfo = $this->get('security.token_storage')->getToken()->getUser();
+        if ($userinfo == "anon.") {
+            return $this->redirectToRoute('fos_user_security_login');
+        }
+        $user = $this->getCurrentUserId();
+
+        $editSignatureForm = $this->createEditForm($user, $type = 'signature');
+        $editSignatureForm->handleRequest($request);
+
+        if ($editSignatureForm->isSubmitted()) {
+            if ($editSignatureForm->isValid()) {
+                $em = $this->getDoctrine()->getManager();
+                $em->flush();
+                $flashmessage = 'Successfull Edit !';
+
+                return $this->render('UsersBundle:Membercp:membercpsignature.html.twig', array(
+                    'user' => $user,
+                    'form' => $editSignatureForm->createView(),
+                    'flashmessage' => $flashmessage
+                ));
+            } else {
+                throw new \Exception('Something went wrong!');
+            }
+        }
+
+        return $this->render('UsersBundle:Membercp:membercpsignature.html.twig', array(
+            'user' => $user,
+            'form' => $editSignatureForm->createView()
+        ));
     }
 
     public function membercpAvatarAction() {
@@ -266,6 +295,8 @@ class MembercpController extends Controller
             $form = $this->createForm(MembercpPreferencesType::class, $user);
         } elseif ($type == 'privacy') {
             $form = $this->createForm(MembercpPrivacyType::class, $user);
+        } elseif ($type == 'signature') {
+            $form = $this->createForm(MembercpSignatureType::class, $user);
         }
 
         $form->add('submit', SubmitType::class, array('label' => 'Update'));
