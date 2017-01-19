@@ -15,8 +15,8 @@
 
         {% if flashmessage is defined %}
             <div class="{{ flashmessage.messagetype }}" id="show_{{ flashmessage.messagetype }}">
-                <b>{{ flashmessage.title }}</b><br />
-                {{ flashmessage.message }}
+                <b>{{ flashmessage.title|trans }}</b><br />
+                {{ flashmessage.message|trans }}
             </div>
             <br />
         {% endif %}
@@ -26,7 +26,7 @@
 
             <div class="tableHeader">
                 <div class="row">
-                    <div class="cell first">Send Invite</div>
+                    <div class="cell first">{{ 'Invite Friends'|trans }}</div>
                 </div>
             </div>
 
@@ -65,11 +65,11 @@
 
         {{ form_end(form) }}
         <br />
-        <div class="information">Invite your friends to earn free Upload Amount and/of Bonus Points<br /></div><br />
+        <div class="information">{{ 'Invite your friends to earn free Upload Amount and/of Bonus Points'|trans }}<br /></div><br />
         <div class="tableHeader" id="inviteListHeader">
             <div class="row">
                 <div class="cell first">
-                    Invited Friends
+                    {{ 'Invited Friends'|trans }}
                 </div>
             </div>
         </div>

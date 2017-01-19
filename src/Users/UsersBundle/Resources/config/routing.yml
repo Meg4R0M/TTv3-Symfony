@@ -30,6 +30,10 @@ users_membercp_invite:
     path:     /membercp_invite
     defaults: { _controller: UsersBundle:Membercp:membercpInvite }
 
+users_membercp_confirm:
+    path:     /invite_confirm/{id}/{secret}
+    defaults: { _controller: UsersBundle:Membercp:membercpInviteConfirm }
+
 users_membercp_upgrade:
     path:     /membercp_upgrade
     defaults: { _controller: UsersBundle:Membercp:membercpUpgrade }

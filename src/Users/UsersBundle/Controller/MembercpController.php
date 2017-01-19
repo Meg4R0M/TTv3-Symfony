@@ -3,6 +3,7 @@ namespace Users\UsersBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
+use Symfony\Component\Form\Extension\Core\Type\HiddenType;
 use Symfony\Component\Form\Extension\Core\Type\ResetType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
@@ -15,6 +16,7 @@ use Users\UsersBundle\Form\MembercpType;
 use Users\UsersBundle\Form\MembercpPrivacyType;
 use Users\UsersBundle\Form\MembercpSignatureType;
 use Users\UsersBundle\Form\MembercpAvatarType;
+use Users\UsersBundle\Form\SignupType;
 use FOS\UserBundle\Event\FilterUserResponseEvent;
 use FOS\UserBundle\Event\FormEvent;
 use FOS\UserBundle\Event\GetResponseUserEvent;
@@ -396,6 +398,42 @@ class MembercpController extends Controller
             ));
         }else{
             return $this->render('UsersBundle:Membercp:membercpinvite.html.twig', array(
+                'form' => $form->createView()
+            ));
+        }
+    }
+
+    public function membercpInviteConfirmAction(Request $request, $id, $secret) {
+        $secret = htmlspecialchars($secret);
+        $form = $this->createForm(SignupType::class);
+
+        $form->add('submit', SubmitType::class, array('label' => 'Signup'))
+            ->add('invite_hash', HiddenType::class, array(
+                'attr' => array(
+                    'value' => $id,
+                )
+            ))
+            ->add('a_hash', HiddenType::class, array(
+                'attr' => array(
+                    'value' => $secret,
+                )
+            ));
+
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $task = $form->getData();
+            $em = $this->container->get('Doctrine')->getManager();
+            $userWantSign = $em->getRepository('UsersBundle:Users')->findOneBy(array('id' => $task['invite_hash']));
+
+            var_dump($userWantSign->getUsername());
+            die('test');
+        }else{
+            return $this->render('CMSBundle:Default:invitedUser.html.twig', array(
+                'info' => array(
+                    'id' => $id,
+                    'secret' => $secret
+                ),
                 'form' => $form->createView()
             ));
         }

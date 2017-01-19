@@ -1,0 +1,154 @@
+{% extends "::base.html.twig" %}
+
+{% block breadcrumbs %}
+    {{ render(controller('UsersBundle:Infos:breadcrumbs')) }}
+{% endblock %}
+
+{% block content %}
+    {{ form_start(form) }}
+
+        <div class="tableHeader">
+            <div class="row">
+                <div class="cell first">
+                <span class="floatright">
+                    <img src="{{ asset('themes/default/social/facebook.png') }}" alt="Signing up through facebook will make the signup process very easy! It will give us access to you email, profile picture and other information that will help us to help you!" title="Signing up through facebook will make the signup process very easy! It will give us access to you email, profile picture and other information that will help us to help you!" class="middle" /> <a href="#" title="Signing up through facebook will make the signup process very easy! It will give us access to you email, profile picture and other information that will help us to help you!">Sign up through Facebook</a>
+                </span>
+                    {{ 'Sign up Form'|trans }}
+                </div>
+            </div>
+        </div>
+
+        <div class="table">
+
+            <div class="row">
+                <div class="cell"><label for="signupbox_membername">{{ form_label(form.username) }}</label></div>
+                <div class="cell"><label for="signupbox_date_of_birth">{{ form_label(form.age) }}</label></div>
+            </div>
+
+            <div class="row">
+                <div class="cell">
+                    {{ form_widget(form.username, { 'attr': { 'id': 'signupbox_membername', 'class': 's', 'accesskey': 'm', 'title': 'Must be between 3-20 characters. Allowed characters: a-z A-Z 0-9' } } ) }}
+                </div>
+                <div class="cell">
+                    {{ form_widget(form.age.day, { 'attr': { 'id': 'signupbox_date_of_birth', 'class': 's', 'accesskey': 'd', 'title': 'Please select your birth of day. Example: 22/03/1980', 'style': 'width: 60px;' } } ) }}
+                    {{ form_widget(form.age.month, { 'attr': { 'id': 'signupbox_date_of_birth', 'class': 's', 'accesskey': 'd', 'title': 'Please select your birth of day. Example: 22/03/1980', 'style': 'width: 115px;' } } ) }}
+                    {{ form_widget(form.age.year, { 'attr': { 'id': 'signupbox_date_of_birth', 'class': 's', 'accesskey': 'd', 'title': 'Please select your birth of day. Example: 22/03/1980', 'style': 'width: 80px;' } } ) }}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="cell"><label for="signupbox_email">{{ form_label(form.email) }}</label></div>
+                <div class="cell"><label for="signupbox_email2">{{ form_label(form.email_confirm) }}</label></div>
+            </div>
+
+            <div class="row">
+                <div class="cell">
+                    {{ form_widget(form.email, { 'attr': { 'id': 'signupbox_email', 'class': 's', 'accesskey': 'e', 'title': 'Please enter a valid Email Address. We won\'t send you any marketing material.' } } ) }}
+                </div>
+                <div class="cell">
+                    {{ form_widget(form.email_confirm, { 'attr': { 'id': 'signupbox_email2', 'class': 's', 'accesskey': 'f', 'title': 'Enter your Email Address again.' } } ) }}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="cell"><label for="signupbox_password">{{ form_label(form.password) }}</label></div>
+                <div class="cell"><label for="signupbox_password2">{{ form_label(form.password_confirm) }}</label></div>
+            </div>
+
+            <div class="row">
+                <div class="cell">
+                    <div class="passwordStrength">
+                        <div class="score"><span><b></b></span></div>
+                        {{ form_widget(form.password, { 'attr': { 'id': 'signupbox_password', 'class': 's', 'accesskey': 'p', 'title': 'Try to make it hard to guess. Must be at least 5 characters.' } } ) }}
+                    </div>
+                </div>
+                <div class="cell">
+                    {{ form_widget(form.password_confirm, { 'attr': { 'id': 'signupbox_password2', 'class': 's', 'accesskey': 'c', 'title': 'Enter your Password again.' } } ) }}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="cell"><label for="signupbox_country">{{ form_label(form.country) }}</label></div>
+                <div class="cell"><label for="signupbox_prefbitclient">{{ form_label(form.client) }}</label></div>
+            </div>
+
+            <div class="row">
+                <div class="cell">
+                    {{ form_widget(form.country, { 'attr': { 'id': 'signupbox_country', 'class': 's', 'accesskey': 's' } } ) }}
+                </div>
+                <div class="cell">
+                    {{ form_widget(form.client, { 'attr': { 'id': 'signupbox_prefbitclient', 'class': 's', 'accesskey': 'c', 'title': 'Enter your Prefered Bittorrent Client.' } } ) }}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="cell">{{ form_label(form.gender) }}</div>
+                <div class="cell"><label for="signupbox_timezone">{{ form_label(form.tzoffset) }}</label></div>
+            </div>
+
+            <div class="row">
+                <div class="cell">
+                    {{ form_widget(form.gender.0, { 'attr': { 'id': 'memberinfo_gender_female'} } ) }}
+                    <label for="memberinfo_gender_female">{{ form_label(form.gender.0) }}</label>
+                    {{ form_widget(form.gender.1, { 'attr': { 'id': 'memberinfo_gender_male'} } ) }}
+                    <label for="memberinfo_gender_male">{{ form_label(form.gender.1) }}</label>
+                    {{ form_widget(form.gender.2, { 'attr': { 'id': 'memberinfo_gender_unspecified'} } ) }}
+                    <label for="memberinfo_gender_unspecified">{{ form_label(form.gender.2) }}</label>
+                </div>
+                <div class="cell">
+                    {{ form_widget(form.tzoffset, { 'attr': { 'id': 'signupbox_timezone', 'class': 's' } } ) }}
+                </div>
+            </div>
+        </div>
+
+        {#<div class="tableFooter">
+            <div class="row">
+                <div class="cell">
+                    <div id="recaptcha_widget">
+                        <div class="captcha_field1">
+                            <div>Verification:</div>
+                            <div id="recaptcha_image"></div>
+                            <div class="recaptcha_only_if_incorrect_sol"></div>
+                        </div>
+
+                        <span class="recaptcha_only_if_image"></span>
+                        <span class="recaptcha_only_if_audio"></span>
+
+                        <div class="captcha_field2">
+                            <div>Enter both words</div>
+                            <input type="text" id="recaptcha_response_field" name="recaptcha_response_field" class="s" />
+
+                            <div class="recaptcha_only_if_image"><a href="javascript:Recaptcha.reload()">Reload</a> or <a href="javascript:Recaptcha.switch_type(\'audio\')">listen to audio</a>. By reCAPTCHA&#8482;</div>
+                            <div class="recaptcha_only_if_audio"><a href="javascript:Recaptcha.reload()">Reload</a> or <a href="javascript:Recaptcha.switch_type(\'image\')">go back to text</a>. By reCAPTCHA&#8482;</div>
+                        </div>
+
+                        <div class="clear"></div>
+                    </div>
+
+                    <div id="recaptcha_loading">
+                        <img src="http://templateshares-ue.net/tsue/styles/default/ajax/fb_ajax-loader.gif" alt="" title="" class="middle" /> ReCAPTCHA verification is loading. Please refresh the page if it does not load.
+                    </div>
+                </div>
+            </div>
+        </div>#}
+
+
+        <div class="tableFooter">
+            <div class="row">
+                <div class="cell">
+                    {{ form_widget(form.submit, { 'attr': { 'class': 'submit' } } ) }}
+                    {{ form_widget(form.clear, { 'attr': { 'class': 'submit', 'id': 'signup-buttons' } } ) }}
+                </div>
+            </div>
+        </div>
+
+    {{ form_end(form) }}
+{% endblock %}
+
+{% block rightblocks %}
+    {{ render(controller('UsersBundle:UsersBlock:login')) }}
+    {{ render(controller('UsersBundle:UsersBlock:donate')) }}
+    {{ render(controller('UsersBundle:UsersBlock:stats')) }}
+    {{ render(controller('UsersBundle:UsersBlock:membersonline')) }}
+    {{ render(controller('UsersBundle:UsersBlock:membersonline24')) }}
+{% endblock %}

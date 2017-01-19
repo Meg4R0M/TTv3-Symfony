@@ -1,3 +1,24 @@
+# traduction inscription
+Sign up Form: Formulaire d'inscription
+Username: Nom d'utilisateur
+Age: Age
+'Must be between 3-20 characters. Allowed characters: a-z A-Z 0-9': 'Doit avoir entre 3 et 20 caractères. Caractères autorisés: a-z A-Z 0-9'
+'Please select your birth of day. Example: 22/03/1980': 'Veuillez sélectionner votre naissance du jour. Exemple: 22/03/1980'
+Email: Email
+Email confirm: Confirmation Email
+Please enter a valid Email Address. We won't send you any marketing material.: Veuillez entrer une adresse email valide. Nous ne vous enverrons aucun mail de marketing.
+Enter your Email Address again.: Entrez de nouveau votre adresse e-mail.
+Password confirm: Confirmer le mot de passe
+Try to make it hard to guess. Must be at least 5 characters.: Essayez de le rendre difficile à deviner. Doit contenir au moins 5 caractères.
+Enter your Password again.: Entrez de nouveau votre mot de passe.
+Country: Pays
+Client: Client
+Enter your Prefered Bittorrent Client.: Entrez votre client Bittorrent préféré.
+Gender: Genre
+Tzoffset: Fuseau horaire
+(unspecified): (non spécifié)
+Signup: S'inscrire
+
 # traduction memberCP Menu
 Personal Details: Détails personnels
 Contact Details: Infos de contact
@@ -34,3 +55,13 @@ Friend email: Email de l'ami
 Message: Message
 Enter a message to include in the email (optional): Entrez un message à inclure dans l'e-mail (facultatif)
 Send Invite: Envoyer l'invitation
+Invitation sent successfully: Invitation envoyée avec succès
+You have no invites left. Please search on forums to find how do you get more invites.: Vous n'avez pas/plus d'invitations. Veuillez chercher sur le forum comment obtenir des invitations.
+An invitation has already been sent to this email address: Une invitation a déjà été envoyée à cette adresse e-mail
+Your invitation has just been sent to the email address provided: Votre invitation vient d'être envoyée à l'adresse électronique fournie
+Invite your friends to earn free Upload Amount and/of Bonus Points: Invitez vos amis et gagnez un montant d'Upload gratuit et/ou des points bonus
+Invited Friends: Ami(s) invité(s)
+
+# traduction Generale
+An error has occurred: Une erreur est survenue
+

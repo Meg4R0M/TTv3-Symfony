@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ab6ad49-e827-4831-8791-97f7314afa14" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Default/SwiftLayout/inviteMail.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/themes/default/social/facebook.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CMS/CMSBundle/Resources/views/Default/invitedUser.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Form/SignupType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/themes/default/social/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/parameters.yml.dist" afterPath="$PROJECT_DIR$/app/config/parameters.yml.dist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Users/UsersBundle/Controller/MembercpController.php" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Controller/MembercpController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Users/UsersBundle/Entity/Users.php" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Entity/Users.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/translations/messages.fr.yml" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/translations/messages.fr.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpinvite.html.twig" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpinvite.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpportcheck.html.twig" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpportcheck.html.twig" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,43 +54,56 @@
       <file leaf-file-name="MembercpController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Controller/MembercpController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1030">
-              <caret line="441" column="0" lean-forward="false" selection-start-line="441" selection-start-column="0" selection-end-line="441" selection-end-column="0" />
+            <state relative-caret-position="378">
+              <caret line="428" column="49" lean-forward="false" selection-start-line="428" selection-start-column="49" selection-end-line="428" selection-end-column="49" />
               <folding>
-                <element signature="e#1356#2512#0#PHP" expanded="false" />
-                <element signature="e#2518#3738#0#PHP" expanded="false" />
-                <element signature="e#3744#5011#0#PHP" expanded="false" />
-                <element signature="e#5017#6240#0#PHP" expanded="false" />
-                <element signature="e#6246#6355#0#PHP" expanded="false" />
-                <element signature="e#6360#8112#0#PHP" expanded="false" />
-                <element signature="e#8118#9361#0#PHP" expanded="false" />
-                <element signature="e#9367#10580#0#PHP" expanded="false" />
-                <element signature="e#14427#14481#0#PHP" expanded="true" />
-                <element signature="e#15975#16022#0#PHP" expanded="true" />
-                <element signature="e#16190#16237#0#PHP" expanded="true" />
-                <element signature="e#16329#16456#0#PHP" expanded="false" />
-                <element signature="e#16462#16587#0#PHP" expanded="false" />
-                <element signature="e#16593#16720#0#PHP" expanded="false" />
-                <element signature="e#16726#16861#0#PHP" expanded="false" />
-                <element signature="e#16867#17000#0#PHP" expanded="false" />
-                <element signature="e#17006#17234#0#PHP" expanded="false" />
-                <element signature="e#17240#17365#0#PHP" expanded="false" />
-                <element signature="e#17371#17540#0#PHP" expanded="false" />
-                <element signature="e#17545#18401#0#PHP" expanded="false" />
-                <element signature="e#18407#18562#0#PHP" expanded="false" />
-                <element signature="e#18567#19018#0#PHP" expanded="false" />
-                <element signature="e#18944#18963#1#PHP" expanded="true" />
-                <element signature="e#19024#19368#0#PHP" expanded="false" />
+                <element signature="e#47#104#0#PHP" expanded="true" />
+                <element signature="e#1454#2610#0#PHP" expanded="false" />
+                <element signature="e#2616#3836#0#PHP" expanded="false" />
+                <element signature="e#3842#5109#0#PHP" expanded="false" />
+                <element signature="e#5115#6338#0#PHP" expanded="false" />
+                <element signature="e#6344#6453#0#PHP" expanded="false" />
+                <element signature="e#6458#8210#0#PHP" expanded="false" />
+                <element signature="e#8216#9459#0#PHP" expanded="false" />
+                <element signature="e#9465#10678#0#PHP" expanded="false" />
+                <element signature="e#14525#14579#0#PHP" expanded="true" />
+                <element signature="e#16073#16120#0#PHP" expanded="true" />
+                <element signature="e#16288#16335#0#PHP" expanded="true" />
+                <element signature="e#17449#17490#0#PHP" expanded="true" />
+                <element signature="e#17707#17834#0#PHP" expanded="false" />
+                <element signature="e#17840#17965#0#PHP" expanded="false" />
+                <element signature="e#17971#18098#0#PHP" expanded="false" />
+                <element signature="e#18104#18239#0#PHP" expanded="false" />
+                <element signature="e#18245#18378#0#PHP" expanded="false" />
+                <element signature="e#18384#18612#0#PHP" expanded="false" />
+                <element signature="e#18618#18743#0#PHP" expanded="false" />
+                <element signature="e#18749#18918#0#PHP" expanded="false" />
+                <element signature="e#19785#19940#0#PHP" expanded="false" />
+                <element signature="e#19945#20396#0#PHP" expanded="false" />
+                <element signature="e#20322#20341#1#PHP" expanded="true" />
+                <element signature="e#20402#20746#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <file leaf-file-name="SignupType.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Form/SignupType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="37" />
+            <state relative-caret-position="198">
+              <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+              <folding>
+                <element signature="e#42#82#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="invitedUser.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CMS/CMSBundle/Resources/views/Default/invitedUser.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1189">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -98,43 +112,13 @@
       <file leaf-file-name="inviteMail.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Default/SwiftLayout/inviteMail.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="55" column="14" lean-forward="true" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+            <state relative-caret-position="211">
+              <caret line="55" column="14" lean-forward="false" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <marker date="1484819885796" expanded="true" signature="702:785" ph="..." />
                 <marker date="1484819885796" expanded="true" signature="714:773" ph="{...}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parameters.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="30" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="11" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parameters.yml.dist" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="messages.fr.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/translations/messages.fr.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="36" lean-forward="false" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -152,8 +136,28 @@
       <file leaf-file-name="membercpinvite.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpinvite.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+            <state relative-caret-position="468">
+              <caret line="71" column="40" lean-forward="false" selection-start-line="71" selection-start-column="40" selection-end-line="71" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="messages.fr.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/translations/messages.fr.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="34" column="73" lean-forward="false" selection-start-line="34" selection-start-column="73" selection-end-line="34" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -177,9 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpcontact.html.twig" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpfollow.html.twig" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpgallery.html.twig" />
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpperformance.html.twig" />
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercppreferences.html.twig" />
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpsubscribed.html.twig" />
@@ -219,15 +220,18 @@
         <option value="$PROJECT_DIR$/src/Informations/InformationsBundle/Controller/InfosController.php" />
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpportcheck.html.twig" />
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/DataFixtures/ORM/UsersData.php" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/translations/messages.fr.yml" />
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/Entity/Users.php" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpinvite.html.twig" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml.dist" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Controller/MembercpController.php" />
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Default/SwiftLayout/inviteMail.html.twig" />
+        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpinvite.html.twig" />
+        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/translations/messages.fr.yml" />
+        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Form/SignupType.php" />
+        <option value="$PROJECT_DIR$/src/CMS/CMSBundle/Resources/views/Default/invitedUser.html.twig" />
+        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Controller/MembercpController.php" />
       </list>
     </option>
   </component>
@@ -236,6 +240,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
     <include_path>
@@ -1311,11 +1318,11 @@
       <recent name="$PROJECT_DIR$/app/Resources" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Users/UsersBundle/Form" />
+      <recent name="$PROJECT_DIR$/web/themes/default" />
+      <recent name="$PROJECT_DIR$/src/CMS/CMSBundle/Resources/views/Default" />
       <recent name="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Default" />
       <recent name="$PROJECT_DIR$/src/Users/UsersBundle/DataFixtures/ORM" />
-      <recent name="$PROJECT_DIR$/src/Users/UsersBundle/Form" />
-      <recent name="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp" />
-      <recent name="$PROJECT_DIR$/src/Users/UsersBundle/Repository" />
     </key>
   </component>
   <component name="RunManager">
@@ -1823,7 +1830,7 @@
       <workItem from="1484751079292" duration="2537000" />
       <workItem from="1484759179484" duration="175000" />
       <workItem from="1484759391947" duration="8917000" />
-      <workItem from="1484810883524" duration="9815000" />
+      <workItem from="1484810883524" duration="21788000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout de FOSUSerBundle">
       <created>1484397812682</created>
@@ -1843,7 +1850,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="201689000" />
+    <option name="totallyTimeSpent" value="213662000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1856,7 +1863,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1920" height="1035" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1869,7 +1876,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22345133" sideWeight="0.49786323" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22345133" sideWeight="0.49786323" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19711539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1910,40 +1917,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Form/MembercpPrivacyType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-          <folding>
-            <element signature="e#42#82#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpsignature.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="47" column="88" lean-forward="false" selection-start-line="47" selection-start-column="88" selection-end-line="47" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Form/MembercpSignatureType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="50" lean-forward="false" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
-          <folding>
-            <element signature="e#42#82#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpcontact.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="50" column="28" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="54" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/DataFixtures/ORM/AvatarData.php" />
     <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Entity/Avatar.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -2019,13 +1992,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CMS/CMSBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -2197,14 +2163,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Informations/InformationsBundle/Controller/InfosController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="402">
@@ -2220,10 +2178,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpinvite.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="71" column="40" lean-forward="false" selection-start-line="71" selection-start-column="40" selection-end-line="71" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="34" column="73" lean-forward="false" selection-start-line="34" selection-start-column="73" selection-end-line="34" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CMS/CMSBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/themes/default/social/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Form/MembercpType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="25" column="41" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="30" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Default/SwiftLayout/inviteMail.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="55" column="14" lean-forward="false" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1484819885796" expanded="true" signature="702:785" ph="..." />
+            <marker date="1484819885796" expanded="true" signature="714:773" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/translations/messages.fr.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="36" lean-forward="false" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+        <state relative-caret-position="342">
+          <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -2236,79 +2270,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpinvite.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Form/SignupType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="11" column="30" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="11" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Default/SwiftLayout/inviteMail.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="55" column="14" lean-forward="true" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+          <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
           <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1484819885796" expanded="true" signature="702:785" ph="..." />
-            <marker date="1484819885796" expanded="true" signature="714:773" ph="{...}" />
+            <element signature="e#42#82#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+    <entry file="file://$PROJECT_DIR$/src/CMS/CMSBundle/Resources/views/Default/invitedUser.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="37" />
+        <state relative-caret-position="-1189">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Controller/MembercpController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1030">
-          <caret line="441" column="0" lean-forward="false" selection-start-line="441" selection-start-column="0" selection-end-line="441" selection-end-column="0" />
+        <state relative-caret-position="378">
+          <caret line="428" column="49" lean-forward="false" selection-start-line="428" selection-start-column="49" selection-end-line="428" selection-end-column="49" />
           <folding>
-            <element signature="e#1356#2512#0#PHP" expanded="false" />
-            <element signature="e#2518#3738#0#PHP" expanded="false" />
-            <element signature="e#3744#5011#0#PHP" expanded="false" />
-            <element signature="e#5017#6240#0#PHP" expanded="false" />
-            <element signature="e#6246#6355#0#PHP" expanded="false" />
-            <element signature="e#6360#8112#0#PHP" expanded="false" />
-            <element signature="e#8118#9361#0#PHP" expanded="false" />
-            <element signature="e#9367#10580#0#PHP" expanded="false" />
-            <element signature="e#14427#14481#0#PHP" expanded="true" />
-            <element signature="e#15975#16022#0#PHP" expanded="true" />
-            <element signature="e#16190#16237#0#PHP" expanded="true" />
-            <element signature="e#16329#16456#0#PHP" expanded="false" />
-            <element signature="e#16462#16587#0#PHP" expanded="false" />
-            <element signature="e#16593#16720#0#PHP" expanded="false" />
-            <element signature="e#16726#16861#0#PHP" expanded="false" />
-            <element signature="e#16867#17000#0#PHP" expanded="false" />
-            <element signature="e#17006#17234#0#PHP" expanded="false" />
-            <element signature="e#17240#17365#0#PHP" expanded="false" />
-            <element signature="e#17371#17540#0#PHP" expanded="false" />
-            <element signature="e#17545#18401#0#PHP" expanded="false" />
-            <element signature="e#18407#18562#0#PHP" expanded="false" />
-            <element signature="e#18567#19018#0#PHP" expanded="false" />
-            <element signature="e#18944#18963#1#PHP" expanded="true" />
-            <element signature="e#19024#19368#0#PHP" expanded="false" />
+            <element signature="e#47#104#0#PHP" expanded="true" />
+            <element signature="e#1454#2610#0#PHP" expanded="false" />
+            <element signature="e#2616#3836#0#PHP" expanded="false" />
+            <element signature="e#3842#5109#0#PHP" expanded="false" />
+            <element signature="e#5115#6338#0#PHP" expanded="false" />
+            <element signature="e#6344#6453#0#PHP" expanded="false" />
+            <element signature="e#6458#8210#0#PHP" expanded="false" />
+            <element signature="e#8216#9459#0#PHP" expanded="false" />
+            <element signature="e#9465#10678#0#PHP" expanded="false" />
+            <element signature="e#14525#14579#0#PHP" expanded="true" />
+            <element signature="e#16073#16120#0#PHP" expanded="true" />
+            <element signature="e#16288#16335#0#PHP" expanded="true" />
+            <element signature="e#17449#17490#0#PHP" expanded="true" />
+            <element signature="e#17707#17834#0#PHP" expanded="false" />
+            <element signature="e#17840#17965#0#PHP" expanded="false" />
+            <element signature="e#17971#18098#0#PHP" expanded="false" />
+            <element signature="e#18104#18239#0#PHP" expanded="false" />
+            <element signature="e#18245#18378#0#PHP" expanded="false" />
+            <element signature="e#18384#18612#0#PHP" expanded="false" />
+            <element signature="e#18618#18743#0#PHP" expanded="false" />
+            <element signature="e#18749#18918#0#PHP" expanded="false" />
+            <element signature="e#19785#19940#0#PHP" expanded="false" />
+            <element signature="e#19945#20396#0#PHP" expanded="false" />
+            <element signature="e#20322#20341#1#PHP" expanded="true" />
+            <element signature="e#20402#20746#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
