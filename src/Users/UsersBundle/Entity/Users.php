@@ -138,6 +138,34 @@ class Users extends BaseUser
     private $stylesheet = 1;
 
     /**
+     * @var int
+     *
+     * @ORM\Column(name="invited_by", type="integer", length=10)
+     */
+    private $invitedBy;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="invitees", type="string", length=100)
+     */
+    private $invitees;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="invites", type="integer", length=5)
+     */
+    private $invites;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="invite_date", type="datetime", options={"default"="CURRENT_TIMESTAMP"})
+     */
+    private $inviteDate;
+
+    /**
      * @var string
      *
      * @ORM\Column(name="info", type="text", nullable=true)
@@ -268,6 +296,10 @@ class Users extends BaseUser
         $this->tzoffset = '1';
         $this->moods = 1;
         $this->news = new ArrayCollection();
+        $this->invitedBy = 0;
+        $this->invitees = '';
+        $this->invites = 0;
+        $this->inviteDate = new \DateTime('0000-00-00 00:00:00');
     }
 
     /**
@@ -1029,5 +1061,101 @@ class Users extends BaseUser
     public function getNews()
     {
         return $this->news;
+    }
+
+    /**
+     * Set invitedBy
+     *
+     * @param integer $invitedBy
+     *
+     * @return Users
+     */
+    public function setInvitedBy($invitedBy)
+    {
+        $this->invitedBy = $invitedBy;
+
+        return $this;
+    }
+
+    /**
+     * Get invitedBy
+     *
+     * @return integer
+     */
+    public function getInvitedBy()
+    {
+        return $this->invitedBy;
+    }
+
+    /**
+     * Set invitees
+     *
+     * @param string $invitees
+     *
+     * @return Users
+     */
+    public function setInvitees($invitees)
+    {
+        $this->invitees = $invitees;
+
+        return $this;
+    }
+
+    /**
+     * Get invitees
+     *
+     * @return string
+     */
+    public function getInvitees()
+    {
+        return $this->invitees;
+    }
+
+    /**
+     * Set invites
+     *
+     * @param integer $invites
+     *
+     * @return Users
+     */
+    public function setInvites($invites)
+    {
+        $this->invites = $invites;
+
+        return $this;
+    }
+
+    /**
+     * Get invites
+     *
+     * @return integer
+     */
+    public function getInvites()
+    {
+        return $this->invites;
+    }
+
+    /**
+     * Set inviteDate
+     *
+     * @param \DateTime $inviteDate
+     *
+     * @return Users
+     */
+    public function setInviteDate($inviteDate)
+    {
+        $this->inviteDate = $inviteDate;
+
+        return $this;
+    }
+
+    /**
+     * Get inviteDate
+     *
+     * @return \DateTime
+     */
+    public function getInviteDate()
+    {
+        return $this->inviteDate;
     }
 }

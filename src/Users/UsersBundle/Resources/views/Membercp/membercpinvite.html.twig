@@ -14,9 +14,9 @@
     {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
 
         {% if flashmessage is defined %}
-            <div class="done" id="show_done">
-                <b>Your account is modified</b><br />
-                {{ flashmessage }}
+            <div class="{{ flashmessage.messagetype }}" id="show_{{ flashmessage.messagetype }}">
+                <b>{{ flashmessage.title }}</b><br />
+                {{ flashmessage.message }}
             </div>
             <br />
         {% endif %}
@@ -65,7 +65,6 @@
 
         {{ form_end(form) }}
         <br />
-        {% if flashmessage is defined %}{{ dump(flashmessage) }}{% endif %}
         <div class="information">Invite your friends to earn free Upload Amount and/of Bonus Points<br /></div><br />
         <div class="tableHeader" id="inviteListHeader">
             <div class="row">

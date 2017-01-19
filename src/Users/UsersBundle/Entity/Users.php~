@@ -47,6 +47,13 @@ class Users extends BaseUser
     private $ip;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="secret", type="string", length=20)
+     */
+    private $secret;
+
+    /**
      * @var int
      *
      * @ORM\Column(name="uploaded", type="bigint")
@@ -129,6 +136,34 @@ class Users extends BaseUser
      * @ORM\Column(name="stylesheet", type="integer", nullable=true, length=10)
      */
     private $stylesheet = 1;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="invited_by", type="integer", length=10)
+     */
+    private $invitedBy;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="invitees", type="string", length=100)
+     */
+    private $invitees;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="invites", type="integer", length=5)
+     */
+    private $invites;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="invite_date", type="datetime", options={"default"="CURRENT_TIMESTAMP"})
+     */
+    private $inviteDate;
 
     /**
      * @var string
@@ -227,9 +262,8 @@ class Users extends BaseUser
     private $hideshoutbox = "no";
 
     /**
-     * @var string
-     *
-     * @ORM\Column(name="moods", type="string", length=55)
+     * @ORM\ManyToOne(targetEntity="Users\UsersBundle\Entity\Moods")
+     * @ORM\JoinColumn(nullable=false)
      */
     private $moods;
 
@@ -313,6 +347,30 @@ class Users extends BaseUser
     public function getIp()
     {
         return $this->ip;
+    }
+
+    /**
+     * Set secret
+     *
+     * @param string $secret
+     *
+     * @return Users
+     */
+    public function setSecret($secret)
+    {
+        $this->secret = $secret;
+
+        return $this;
+    }
+
+    /**
+     * Get secret
+     *
+     * @return string
+     */
+    public function getSecret()
+    {
+        return $this->secret;
     }
 
     /**
@@ -630,11 +688,11 @@ class Users extends BaseUser
     /**
      * Set avatar
      *
-     * @param string $avatar
+     * @param \Users\UsersBundle\Entity\Avatar $avatar
      *
-     * @return Params
+     * @return Users
      */
-    public function setAvatar($avatar)
+    public function setAvatar(Avatar $avatar)
     {
         $this->avatar = $avatar;
 
@@ -644,7 +702,7 @@ class Users extends BaseUser
     /**
      * Get avatar
      *
-     * @return string
+     * @return \Users\UsersBundle\Entity\Avatar
      */
     public function getAvatar()
     {
@@ -922,11 +980,11 @@ class Users extends BaseUser
     /**
      * Set moods
      *
-     * @param string $moods
+     * @param \Users\UsersBundle\Entity\Moods $moods
      *
-     * @return Params
+     * @return Users
      */
-    public function setMoods($moods)
+    public function setMoods(Moods $moods)
     {
         $this->moods = $moods;
 

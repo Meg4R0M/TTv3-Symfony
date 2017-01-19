@@ -39,12 +39,6 @@ class Avatar
     }
 
     /**
-     * @ORM\Column(name="name",type="string",length=255)
-     * @Assert\NotBlank()
-     */
-    private $name;
-
-    /**
      * @ORM\Column(type="string",length=255, nullable=true)
      */
     private $path;
@@ -128,11 +122,6 @@ class Avatar
         return $this->path;
     }
 
-    public function getName()
-    {
-        return $this->name;
-    }
-
     public function getFile()
     {
         return $this->file;
@@ -163,23 +152,11 @@ class Avatar
     }
 
     /**
-     * Set name
-     *
-     * @param string $name
-     * @return String
-     */
-    public function setName($name)
-    {
-        $this->name = $name;
-        return $this;
-    }
-
-    /**
      * Set updateAt
      *
      * @param \DateTime $updateAt
      *
-     * @return Avatar
+     * @return Media
      */
     public function setUpdateAt($updateAt)
     {

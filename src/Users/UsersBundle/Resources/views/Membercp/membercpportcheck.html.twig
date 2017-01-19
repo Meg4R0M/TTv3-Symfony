@@ -37,6 +37,11 @@
                 <input type="submit" value="Check" class="submit" />
             </form>
 
+            {{ form_start(form) }}
+            {{ form_widget(form) }}
+            {{ form_end(form) }}
+
+            {% if result is defined %}{{ result }}{% endif %}
         </div>
     {% endif %}
 {% endblock %}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title>{{ mailTitle }}</title>
+
+    <!-- Web Font / @font-face : BEGIN -->
+
+    <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>
+    <style>
+        * {
+            font-family: sans-serif !important;
+        }
+    </style>
+    <![endif]-->
+
+    <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <![endif]-->
+
+    <!-- Web Font / @font-face : END -->
+
+    <!-- CSS Reset -->
+    <style>
+
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        /* What it does: Stops email clients resizing small text. */
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+    </style>
+
+
+</head>
+<body width="100%" bgcolor="#222222" style="margin: 0; mso-line-height-rule: exactly;">
+Hi {{ invitedUser.name }},<br />
+You have been invited to <a href="{{ site.url }}/rules">{{ site.name }}</a> by {{ invitedUser.invitedBy }}. They have specified this address ({{ invitedUser.email }}) as your email.<br />
+If you do not know this person, please ignore this email. Please do not reply.<br />
+<br />
+Message:<br />
+-------------------------------------------------------------------------------<br />
+$mess<br />
+-------------------------------------------------------------------------------<br />
+<br />
+This is a private site and you must agree to the rules before you can enter:<br />
+<br />
+<a href="{{ site.url }}/rules"> >>> RULES <<< </a> - <a href="{{ site.url }}/faq"> >>> FAQ <<< </a><br />
+<br />
+<br />
+To confirm your invitation, you have to follow this link:<br />
+<br />
+    <a href="{{ site.url }}/signup/invite=$id&secret=$psecret">Confirm your invitation</a><br />
+<br />
+After you do this, you will be able to use your new account. If you fail to
+do this, your account will be deleted within a few days. We urge you to read
+the RULES and FAQ before you start using {{ site.name }}.
+</body>
+</html>

@@ -298,15 +298,23 @@ class MembercpController extends Controller
             // Need to verify CURUSER INVITE
             $em = $this->container->get('Doctrine')->getManager();
             $currentUser = $this->getCurrentUserId();
+            $currentUserId = $currentUser->getId();
+            $currentUserUsername = $currentUser->getUsername();
+
             // Need to add invites and invited_by to DB
             $nbInvites = $currentUser->getInvites();
 
             if ($nbInvites != 0) {
                 $task = $form->getData();
+                $emailRequest = $task['Friend_Email'];
+                $friendName = $task['Friend_Name'];
                 // Need to check if invited email exist in DB
-                $requestEmailCheck = $em->getRepository('UsersBundle:Users')->findBy(array('email_cannonical' => $task['Friend_Email']));
-                if ($requestEmailCheck == ''){
-                    $flashmessage = 'An invitation has already been sent to this email address';
+                $requestEmailCheck = $em->getRepository('UsersBundle:Users')->findOneByEmailCanonical($emailRequest);
+                if ($requestEmailCheck != ''){
+                    $flashMessage = array(
+                        'messagetype' => 'error',
+                        'title' => 'An error has occurred',
+                        'message' => 'An invitation has already been sent to this email address');
                 }else{
                     $secret = $this->mksecret();
                     $username = "invite_" . $secret;
@@ -315,7 +323,7 @@ class MembercpController extends Controller
 
                     $user = new Users();
                     $user->setUsername($username);
-                    $user->setEmail($task['Friend_Email']);
+                    $user->setEmail($emailRequest);
                     $user->setPlainPassword('password');
                     $user->setEnabled(false);
                     $user->addRole('ROLE_USER');
@@ -326,7 +334,7 @@ class MembercpController extends Controller
                     $user->setNotifs('');
                     $user->setPasskey('');
                     $user->setStylesheet(0);
-                    $user->setAge(new \DateTime('1970-00-00'));
+                    $user->setAge(new \DateTime('1970-01-01'));
                     $user->setTitle('');
                     $user->setClient('');
                     $user->setSignature('');
@@ -334,21 +342,63 @@ class MembercpController extends Controller
                     $user->setTzoffset('');
                     $mood = $em->getRepository('UsersBundle:Moods')->findOneBy(array('id' => 1));
                     $user->setMoods($mood);
+                    $user->setInvitedBy($currentUserId);
+                    $user->setInviteDate(new \DateTime('NOW'));
                     $userManager->updateUser($user, true);
-                    $flashmessage = 'Your invitation has been sent, Thank you !';
+
+                    // validation Mail
+                    $ownerEmail = $this->getParameter('owner_email');
+                    $siteName = $this->getParameter('site_name');
+                    $siteUrl = $this->getParameter('site_url');
+
+                    $message = \Swift_Message::newInstance()
+                        ->setSubject('A friend invites you on '.$siteName)
+                        ->setFrom(array($ownerEmail => $siteName))
+                        ->setTo($emailRequest)
+                        ->setCharset('utf-8')
+                        ->setContentType('text/html')
+                        ->setBody($this->renderView('UsersBundle:Default:SwiftLayout/inviteMail.html.twig',array(
+                            'invitedUser' => array(
+                                'name' => $friendName,
+                                'email' => $emailRequest,
+                                'invitedBy' => $currentUserUsername
+                            ),
+                            'mailTitle' => 'A friend invites you on '.$siteName,
+                            'site' => array(
+                                'url' => $siteUrl,
+                                'name' => $siteName
+                            )
+                        )));
+                    $this->get('mailer')->send($message);
+
+                    $currentUserInvite = $currentUser->getInvites();
+                    $currentUser->setInvites($currentUserInvite - 1);
+                    $em->persist($currentUser);
+                    $em->flush();
+
+                    $flashMessage = array(
+                        'messagetype' => 'done',
+                        'title' => 'Invitation sent successfully',
+                        'message' => 'Your invitation has just been sent to the email address provided'
+                    );
                 }
             }else{
-                $flashmessage = 'You have no invites left. Please search on forums to find how do you get more invites.';
+                $flashMessage = array(
+                    'messagetype' => 'error',
+                    'title' => 'An error has occurred',
+                    'message' => 'You have no invites left. Please search on forums to find how do you get more invites.'
+                );
             }
+
             return $this->render('UsersBundle:Membercp:membercpinvite.html.twig', array(
                 'form' => $form->createView(),
-                'flashmessage' => $flashmessage
+                'flashmessage' => $flashMessage
+            ));
+        }else{
+            return $this->render('UsersBundle:Membercp:membercpinvite.html.twig', array(
+                'form' => $form->createView()
             ));
         }
-
-        return $this->render('UsersBundle:Membercp:membercpinvite.html.twig', array(
-            'form' => $form->createView()
-        ));
     }
 
     public function membercpUpgradeAction() {
