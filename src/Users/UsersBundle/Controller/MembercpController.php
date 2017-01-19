@@ -280,6 +280,10 @@ class MembercpController extends Controller
     }
 
     public function membercpInviteAction(Request $request) {
+        $userinfo = $this->get('security.token_storage')->getToken()->getUser();
+        if ($userinfo == "anon.") {
+            return $this->redirectToRoute('fos_user_security_login');
+        }
         $form = $this->createFormBuilder()
             ->add('Friend_Name', TextType::class)
             ->add('Friend_Email', EmailType::class)
@@ -292,39 +296,50 @@ class MembercpController extends Controller
 
         if ($form->isSubmitted() && $form->isValid()) {
             // Need to verify CURUSER INVITE
-            // Need to check if invited email exist in DB
-            $task = $form->getData();
-            $secret = $this->mksecret();
-            $username = "invite_".$secret;
-
             $em = $this->container->get('Doctrine')->getManager();
+            $currentUser = $this->getCurrentUserId();
+            // Need to add invites and invited_by to DB
+            $nbInvites = $currentUser->getInvites();
 
-            $userManager = $this->container->get('fos_user.user_manager');
+            if ($nbInvites != 0) {
+                $task = $form->getData();
+                // Need to check if invited email exist in DB
+                $requestEmailCheck = $em->getRepository('UsersBundle:Users')->findBy(array('email_cannonical' => $task['Friend_Email']));
+                if ($requestEmailCheck == ''){
+                    $flashmessage = 'An invitation has already been sent to this email address';
+                }else{
+                    $secret = $this->mksecret();
+                    $username = "invite_" . $secret;
 
-            $user = new Users();
-            $user->setUsername($username);
-            $user->setEmail($task['Friend_Email']);
-            $user->setPlainPassword('password');
-            $user->setEnabled(false);
-            $user->addRole('ROLE_USER');
-            $user->setAdded(new \DateTime());
-            $user->setIp('::1');
-            $user->setSecret($secret);
-            $user->setDonated('0');
-            $user->setNotifs('');
-            $user->setPasskey('');
-            $user->setStylesheet(0);
-            $user->setAge(new \DateTime('1970-00-00'));
-            $user->setTitle('');
-            $user->setClient('');
-            $user->setSignature('');
-            $user->setTeam('');
-            $user->setTzoffset('');
-            $mood = $em->getRepository('UsersBundle:Moods')->findOneBy(array('id' => 1));
-            $user->setMoods($mood);
-            $userManager->updateUser($user, true);
-            $flashmessage = 'Invite Successfull !';
+                    $userManager = $this->container->get('fos_user.user_manager');
 
+                    $user = new Users();
+                    $user->setUsername($username);
+                    $user->setEmail($task['Friend_Email']);
+                    $user->setPlainPassword('password');
+                    $user->setEnabled(false);
+                    $user->addRole('ROLE_USER');
+                    $user->setAdded(new \DateTime());
+                    $user->setIp('::1');
+                    $user->setSecret($secret);
+                    $user->setDonated('0');
+                    $user->setNotifs('');
+                    $user->setPasskey('');
+                    $user->setStylesheet(0);
+                    $user->setAge(new \DateTime('1970-00-00'));
+                    $user->setTitle('');
+                    $user->setClient('');
+                    $user->setSignature('');
+                    $user->setTeam('');
+                    $user->setTzoffset('');
+                    $mood = $em->getRepository('UsersBundle:Moods')->findOneBy(array('id' => 1));
+                    $user->setMoods($mood);
+                    $userManager->updateUser($user, true);
+                    $flashmessage = 'Your invitation has been sent, Thank you !';
+                }
+            }else{
+                $flashmessage = 'You have no invites left. Please search on forums to find how do you get more invites.';
+            }
             return $this->render('UsersBundle:Membercp:membercpinvite.html.twig', array(
                 'form' => $form->createView(),
                 'flashmessage' => $flashmessage
