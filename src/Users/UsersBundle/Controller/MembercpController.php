@@ -426,9 +426,6 @@ class MembercpController extends Controller
             $em = $this->container->get('Doctrine')->getManager();
             $userWantSign = $em->getRepository('UsersBundle:Users')->findOneBy(array('id' => $task['invite_hash']));
 
-            var_dump($task);
-            die('test');
-
             if($userWantSign->getSecret() == $task['a_hash']){
                 //Verify form
                 if ($task['email'] != $task['email_confirm']){
