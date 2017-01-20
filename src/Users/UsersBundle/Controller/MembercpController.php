@@ -426,8 +426,59 @@ class MembercpController extends Controller
             $em = $this->container->get('Doctrine')->getManager();
             $userWantSign = $em->getRepository('UsersBundle:Users')->findOneBy(array('id' => $task['invite_hash']));
 
-            var_dump($userWantSign->getUsername());
+            var_dump($task);
             die('test');
+
+            if($userWantSign->getSecret() == $task['a_hash']){
+                //Verify form
+                if ($task['email'] != $task['email_confirm']){
+                    $error = 'Email addresses do not match';
+                }
+                if ($task['password'] != $task['password_confirm']){
+                    $error = 'Passwords do not match';
+                }
+
+                //ALL ok ? go set all data
+                if (!$error){
+                    $userWantSign->setUsername($task['username']);
+                    $userWantSign->setEmail($task['email']);
+                    $userWantSign->setPlainPassword($task['password']);
+                    $userWantSign->setEnabled(true);
+                    $userWantSign->addRole('ROLE_USER');
+                    $userWantSign->setAdded(new \DateTime('1970-01-01'));
+                    $userWantSign->setIp('::1');
+                    $userWantSign->setSecret($task['a_hash']);
+                    $userWantSign->setDonated('0');
+                    $userWantSign->setNotifs('');
+                    $userWantSign->setPasskey('');
+                    $userWantSign->setStylesheet(0);
+                    $userWantSign->setAge($task['age']);
+                    $userWantSign->setTitle('');
+                    $userWantSign->setClient($task['client']);
+                    $userWantSign->setSignature('');
+                    $userWantSign->setTeam('');
+                    $userWantSign->setTzoffset($task['tzoffset']);
+                    $mood = $em->getRepository('UsersBundle:Moods')->findOneBy(array('id' => 1));
+                    $userWantSign->setMoods($mood);
+                    // insert those data in DB
+                    $em->persist($userWantSign);
+                    $em->flush();
+
+                    $notif = 'Thank you for registering, you can sign in now.';
+                }else{
+                    return $this->render('CMSBundle:Default:invitedUser.html.twig', array(
+                        'info' => array(
+                            'id' => $id,
+                            'secret' => $secret,
+                            'error' => $error
+                        ),
+                        'form' => $form->createView()
+                    ));
+                }
+
+            }else{
+                return $this->redirectToRoute('fos_user_registration_register');
+            }
         }else{
             return $this->render('CMSBundle:Default:invitedUser.html.twig', array(
                 'info' => array(
