@@ -428,7 +428,12 @@ class MembercpController extends Controller
 
             if($userWantSign->getSecret() == $task['a_hash']){
                 //Verify form
-                if ($task['email'] != $task['email_confirm']){
+                $usernameVerify = $em->getRepository('UsersBundle:Users')->findOneBy(array('username' => strtolower($task['username'])));
+                $error = '';
+                if ($usernameVerify != null){
+                    $error = 'This username is already used';
+                }
+                if ($task['email'] != $task['email_confirm']) {
                     $error = 'Email addresses do not match';
                 }
                 if ($task['password'] != $task['password_confirm']){
@@ -442,9 +447,9 @@ class MembercpController extends Controller
                     $userWantSign->setPlainPassword($task['password']);
                     $userWantSign->setEnabled(true);
                     $userWantSign->addRole('ROLE_USER');
-                    $userWantSign->setAdded(new \DateTime('1970-01-01'));
+                    $userWantSign->setAdded(new \DateTime('NOW'));
                     $userWantSign->setIp('::1');
-                    $userWantSign->setSecret($task['a_hash']);
+                    $userWantSign->setSecret('');
                     $userWantSign->setDonated('0');
                     $userWantSign->setNotifs('');
                     $userWantSign->setPasskey('');
@@ -462,6 +467,9 @@ class MembercpController extends Controller
                     $em->flush();
 
                     $notif = 'Thank you for registering, you can sign in now.';
+                    return $this->render('UsersBundle:Default:login.html.twig', array(
+                        'notif' => $notif
+                    ));
                 }else{
                     return $this->render('CMSBundle:Default:invitedUser.html.twig', array(
                         'info' => array(
@@ -474,7 +482,9 @@ class MembercpController extends Controller
                 }
 
             }else{
-                return $this->redirectToRoute('fos_user_registration_register');
+                return $this->render('FOSUserBundle:Registration:register.html.twig', array(
+                    'error' => 'This invitation has expired and/or does not exist'
+                ));
             }
         }else{
             return $this->render('CMSBundle:Default:invitedUser.html.twig', array(

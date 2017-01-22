@@ -1,5 +1,13 @@
 {% trans_default_domain 'FOSUserBundle' %}
 
+{% if error is defined %}
+    <div class="error" id="show_error">
+        <b>{{ 'An error has occurred'|trans }}</b><br />
+        {{ error|trans }}
+    </div>
+    <br />
+{% endif %}
+
 {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
     {{ form_widget(form) }}
     <div>

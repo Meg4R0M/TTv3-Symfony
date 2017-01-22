@@ -18,6 +18,9 @@ Gender: Genre
 Tzoffset: Fuseau horaire
 (unspecified): (non spécifié)
 Signup: S'inscrire
+This username is already used: Ce nom d'utilisateur est déjà utilisé
+Email addresses do not match: Les adresses e-mail ne correspondent pas
+Passwords do not match: Les mots de passe ne correspondent pas
 
 # traduction memberCP Menu
 Personal Details: Détails personnels

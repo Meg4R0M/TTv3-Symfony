@@ -5,6 +5,15 @@
 {% endblock %}
 
 {% block content %}
+
+    {% if info.error is defined %}
+        <div class="error" id="show_error">
+            <b>{{ 'An error has occurred'|trans }}</b><br />
+            {{ info.error|trans }}
+        </div>
+        <br />
+    {% endif %}
+
     {{ form_start(form) }}
 
         <div class="tableHeader">

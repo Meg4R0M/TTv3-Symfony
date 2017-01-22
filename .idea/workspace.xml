@@ -2,8 +2,372 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ab6ad49-e827-4831-8791-97f7314afa14" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Resources/public/css_original/menu/alerts.png" afterPath="$PROJECT_DIR$/web/Resources/public/css_original/menu/alerts.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Resources/public/css_original/menu/drop.png" afterPath="$PROJECT_DIR$/web/Resources/public/css_original/menu/drop.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Resources/public/css_original/menu/messages.png" afterPath="$PROJECT_DIR$/web/Resources/public/css_original/menu/messages.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Resources/public/css_original/theme_images/header.png" afterPath="$PROJECT_DIR$/web/Resources/public/css_original/theme_images/header.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Resources/public/css_original/theme_images/logo.png" afterPath="$PROJECT_DIR$/web/Resources/public/css_original/theme_images/logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Resources/public/css_original/theme_images/nav.wrap.png" afterPath="$PROJECT_DIR$/web/Resources/public/css_original/theme_images/nav.wrap.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Resources/public/css_original/theme_images/navigation-hover.png" afterPath="$PROJECT_DIR$/web/Resources/public/css_original/theme_images/navigation-hover.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Resources/public/css_original/theme_images/navigation.png" afterPath="$PROJECT_DIR$/web/Resources/public/css_original/theme_images/navigation.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Resources/public/css_original/theme_images/simple.header.png" afterPath="$PROJECT_DIR$/web/Resources/public/css_original/theme_images/simple.header.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/apple-touch-icon.png" afterPath="$PROJECT_DIR$/web/apple-touch-icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/favicon.ico" afterPath="$PROJECT_DIR$/web/favicon.ico" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Aggressive.gif" afterPath="$PROJECT_DIR$/web/images/moods/Aggressive.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Alienated.gif" afterPath="$PROJECT_DIR$/web/images/moods/Alienated.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Amazed.gif" afterPath="$PROJECT_DIR$/web/images/moods/Amazed.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Amused.gif" afterPath="$PROJECT_DIR$/web/images/moods/Amused.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Angelic.gif" afterPath="$PROJECT_DIR$/web/images/moods/Angelic.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Angry.gif" afterPath="$PROJECT_DIR$/web/images/moods/Angry.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Apelike.gif" afterPath="$PROJECT_DIR$/web/images/moods/Apelike.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Artistic.gif" afterPath="$PROJECT_DIR$/web/images/moods/Artistic.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Asleep.gif" afterPath="$PROJECT_DIR$/web/images/moods/Asleep.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Balanced.gif" afterPath="$PROJECT_DIR$/web/images/moods/Balanced.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Banhappy.gif" afterPath="$PROJECT_DIR$/web/images/moods/Banhappy.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Bashful.gif" afterPath="$PROJECT_DIR$/web/images/moods/Bashful.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Bitching.gif" afterPath="$PROJECT_DIR$/web/images/moods/Bitching.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Blah.gif" afterPath="$PROJECT_DIR$/web/images/moods/Blah.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Bookworm.gif" afterPath="$PROJECT_DIR$/web/images/moods/Bookworm.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Bored.gif" afterPath="$PROJECT_DIR$/web/images/moods/Bored.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Breezy.gif" afterPath="$PROJECT_DIR$/web/images/moods/Breezy.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Brooding.gif" afterPath="$PROJECT_DIR$/web/images/moods/Brooding.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Busy.gif" afterPath="$PROJECT_DIR$/web/images/moods/Busy.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Buzzed.gif" afterPath="$PROJECT_DIR$/web/images/moods/Buzzed.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Chatty.gif" afterPath="$PROJECT_DIR$/web/images/moods/Chatty.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Cheeky.gif" afterPath="$PROJECT_DIR$/web/images/moods/Cheeky.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Cheerful.gif" afterPath="$PROJECT_DIR$/web/images/moods/Cheerful.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Cloud_9.gif" afterPath="$PROJECT_DIR$/web/images/moods/Cloud_9.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Cold.gif" afterPath="$PROJECT_DIR$/web/images/moods/Cold.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Coldturkey.gif" afterPath="$PROJECT_DIR$/web/images/moods/Coldturkey.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Confused.gif" afterPath="$PROJECT_DIR$/web/images/moods/Confused.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Cool.gif" afterPath="$PROJECT_DIR$/web/images/moods/Cool.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Crappy.gif" afterPath="$PROJECT_DIR$/web/images/moods/Crappy.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Creative.gif" afterPath="$PROJECT_DIR$/web/images/moods/Creative.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Curious.gif" afterPath="$PROJECT_DIR$/web/images/moods/Curious.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Cynical.gif" afterPath="$PROJECT_DIR$/web/images/moods/Cynical.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Daring.gif" afterPath="$PROJECT_DIR$/web/images/moods/Daring.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Dead.gif" afterPath="$PROJECT_DIR$/web/images/moods/Dead.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Depressed.gif" afterPath="$PROJECT_DIR$/web/images/moods/Depressed.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Devilish.gif" afterPath="$PROJECT_DIR$/web/images/moods/Devilish.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Disagree.gif" afterPath="$PROJECT_DIR$/web/images/moods/Disagree.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Doh.gif" afterPath="$PROJECT_DIR$/web/images/moods/Doh.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Doubtful.gif" afterPath="$PROJECT_DIR$/web/images/moods/Doubtful.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Dramaqueen.gif" afterPath="$PROJECT_DIR$/web/images/moods/Dramaqueen.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Dreaming.gif" afterPath="$PROJECT_DIR$/web/images/moods/Dreaming.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Drunk.gif" afterPath="$PROJECT_DIR$/web/images/moods/Drunk.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Elated.gif" afterPath="$PROJECT_DIR$/web/images/moods/Elated.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Energetic.gif" afterPath="$PROJECT_DIR$/web/images/moods/Energetic.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Fiendish.gif" afterPath="$PROJECT_DIR$/web/images/moods/Fiendish.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Fine.gif" afterPath="$PROJECT_DIR$/web/images/moods/Fine.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Flirty.gif" afterPath="$PROJECT_DIR$/web/images/moods/Flirty.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Gloomy.gif" afterPath="$PROJECT_DIR$/web/images/moods/Gloomy.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Goofy.gif" afterPath="$PROJECT_DIR$/web/images/moods/Goofy.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Grumpy.gif" afterPath="$PROJECT_DIR$/web/images/moods/Grumpy.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Happy.gif" afterPath="$PROJECT_DIR$/web/images/moods/Happy.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Horny.gif" afterPath="$PROJECT_DIR$/web/images/moods/Horny.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Hot.gif" afterPath="$PROJECT_DIR$/web/images/moods/Hot.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Hungover.gif" afterPath="$PROJECT_DIR$/web/images/moods/Hungover.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/In-Love.gif" afterPath="$PROJECT_DIR$/web/images/moods/In-Love.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Innocent.gif" afterPath="$PROJECT_DIR$/web/images/moods/Innocent.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Inpain.gif" afterPath="$PROJECT_DIR$/web/images/moods/Inpain.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Insomnious.gif" afterPath="$PROJECT_DIR$/web/images/moods/Insomnious.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Inspired.gif" afterPath="$PROJECT_DIR$/web/images/moods/Inspired.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Lonely.gif" afterPath="$PROJECT_DIR$/web/images/moods/Lonely.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Lucky.gif" afterPath="$PROJECT_DIR$/web/images/moods/Lucky.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Lurking.gif" afterPath="$PROJECT_DIR$/web/images/moods/Lurking.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Mellow.gif" afterPath="$PROJECT_DIR$/web/images/moods/Mellow.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Mischievious.gif" afterPath="$PROJECT_DIR$/web/images/moods/Mischievious.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Mondayblues.gif" afterPath="$PROJECT_DIR$/web/images/moods/Mondayblues.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Musical.gif" afterPath="$PROJECT_DIR$/web/images/moods/Musical.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Nerdy.gif" afterPath="$PROJECT_DIR$/web/images/moods/Nerdy.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Notamused.gif" afterPath="$PROJECT_DIR$/web/images/moods/Notamused.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Notworthy.gif" afterPath="$PROJECT_DIR$/web/images/moods/Notworthy.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Paranoid.gif" afterPath="$PROJECT_DIR$/web/images/moods/Paranoid.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Pensive.gif" afterPath="$PROJECT_DIR$/web/images/moods/Pensive.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Predatory.gif" afterPath="$PROJECT_DIR$/web/images/moods/Predatory.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Procrastinating.gif" afterPath="$PROJECT_DIR$/web/images/moods/Procrastinating.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Psychedelic.gif" afterPath="$PROJECT_DIR$/web/images/moods/Psychedelic.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Question.gif" afterPath="$PROJECT_DIR$/web/images/moods/Question.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Relaxed.gif" afterPath="$PROJECT_DIR$/web/images/moods/Relaxed.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Roflmao.gif" afterPath="$PROJECT_DIR$/web/images/moods/Roflmao.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Sad.gif" afterPath="$PROJECT_DIR$/web/images/moods/Sad.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Scared.gif" afterPath="$PROJECT_DIR$/web/images/moods/Scared.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Scurvy.gif" afterPath="$PROJECT_DIR$/web/images/moods/Scurvy.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Shocked.gif" afterPath="$PROJECT_DIR$/web/images/moods/Shocked.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Sick.gif" afterPath="$PROJECT_DIR$/web/images/moods/Sick.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Sleepy.gif" afterPath="$PROJECT_DIR$/web/images/moods/Sleepy.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Sluggish.gif" afterPath="$PROJECT_DIR$/web/images/moods/Sluggish.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Sneaky.gif" afterPath="$PROJECT_DIR$/web/images/moods/Sneaky.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Snobbish.gif" afterPath="$PROJECT_DIR$/web/images/moods/Snobbish.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Spaced.gif" afterPath="$PROJECT_DIR$/web/images/moods/Spaced.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Spooky.gif" afterPath="$PROJECT_DIR$/web/images/moods/Spooky.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Sporty.gif" afterPath="$PROJECT_DIR$/web/images/moods/Sporty.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Starving.gif" afterPath="$PROJECT_DIR$/web/images/moods/Starving.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Stressed.gif" afterPath="$PROJECT_DIR$/web/images/moods/Stressed.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Sunshine.gif" afterPath="$PROJECT_DIR$/web/images/moods/Sunshine.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Sweettooth.gif" afterPath="$PROJECT_DIR$/web/images/moods/Sweettooth.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Thinking.gif" afterPath="$PROJECT_DIR$/web/images/moods/Thinking.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Thumbs.db" afterPath="$PROJECT_DIR$/web/images/moods/Thumbs.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Tired.gif" afterPath="$PROJECT_DIR$/web/images/moods/Tired.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Torn.gif" afterPath="$PROJECT_DIR$/web/images/moods/Torn.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Twisted.gif" afterPath="$PROJECT_DIR$/web/images/moods/Twisted.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Veggedout.gif" afterPath="$PROJECT_DIR$/web/images/moods/Veggedout.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Volatile.gif" afterPath="$PROJECT_DIR$/web/images/moods/Volatile.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Woot.gif" afterPath="$PROJECT_DIR$/web/images/moods/Woot.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Worried.gif" afterPath="$PROJECT_DIR$/web/images/moods/Worried.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/images/moods/Yeehaw.gif" afterPath="$PROJECT_DIR$/web/images/moods/Yeehaw.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/img/smiley-cool.gif" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/img/smiley-cool.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/img/smiley-cry.gif" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/img/smiley-cry.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/img/smiley-embarassed.gif" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/img/smiley-embarassed.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/img/smiley-foot-in-mouth.gif" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/img/smiley-foot-in-mouth.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/img/smiley-frown.gif" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/img/smiley-frown.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/img/smiley-innocent.gif" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/img/smiley-innocent.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/img/smiley-kiss.gif" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/img/smiley-kiss.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/img/smiley-laughing.gif" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/img/smiley-laughing.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/img/smiley-money-mouth.gif" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/img/smiley-money-mouth.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/img/smiley-sealed.gif" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/img/smiley-sealed.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/img/smiley-smile.gif" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/img/smiley-smile.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/img/smiley-surprised.gif" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/img/smiley-surprised.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/img/smiley-tongue-out.gif" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/img/smiley-tongue-out.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/img/smiley-undecided.gif" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/img/smiley-undecided.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/img/smiley-wink.gif" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/img/smiley-wink.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/img/smiley-yell.gif" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/img/smiley-yell.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/inlinepopups/skins/clearlooks2/img/alert.gif" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/inlinepopups/skins/clearlooks2/img/alert.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/inlinepopups/skins/clearlooks2/img/button.gif" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/inlinepopups/skins/clearlooks2/img/button.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/inlinepopups/skins/clearlooks2/img/buttons.gif" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/inlinepopups/skins/clearlooks2/img/buttons.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/inlinepopups/skins/clearlooks2/img/confirm.gif" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/inlinepopups/skins/clearlooks2/img/confirm.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/inlinepopups/skins/clearlooks2/img/corners.gif" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/inlinepopups/skins/clearlooks2/img/corners.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/inlinepopups/skins/clearlooks2/img/horizontal.gif" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/inlinepopups/skins/clearlooks2/img/horizontal.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/inlinepopups/skins/clearlooks2/img/vertical.gif" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/inlinepopups/skins/clearlooks2/img/vertical.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/media/moxieplayer.swf" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/media/moxieplayer.swf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/skins/lightgray/fonts/tinymce-small.eot" afterPath="$PROJECT_DIR$/web/js/tinymce/skins/lightgray/fonts/tinymce-small.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/skins/lightgray/fonts/tinymce-small.ttf" afterPath="$PROJECT_DIR$/web/js/tinymce/skins/lightgray/fonts/tinymce-small.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/skins/lightgray/fonts/tinymce-small.woff" afterPath="$PROJECT_DIR$/web/js/tinymce/skins/lightgray/fonts/tinymce-small.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/skins/lightgray/fonts/tinymce.eot" afterPath="$PROJECT_DIR$/web/js/tinymce/skins/lightgray/fonts/tinymce.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/skins/lightgray/fonts/tinymce.ttf" afterPath="$PROJECT_DIR$/web/js/tinymce/skins/lightgray/fonts/tinymce.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/skins/lightgray/fonts/tinymce.woff" afterPath="$PROJECT_DIR$/web/js/tinymce/skins/lightgray/fonts/tinymce.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/skins/lightgray/img/anchor.gif" afterPath="$PROJECT_DIR$/web/js/tinymce/skins/lightgray/img/anchor.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/skins/lightgray/img/loader.gif" afterPath="$PROJECT_DIR$/web/js/tinymce/skins/lightgray/img/loader.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/skins/lightgray/img/object.gif" afterPath="$PROJECT_DIR$/web/js/tinymce/skins/lightgray/img/object.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/skins/lightgray/img/trans.gif" afterPath="$PROJECT_DIR$/web/js/tinymce/skins/lightgray/img/trans.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/ajax/fb_ajax-loader.gif" afterPath="$PROJECT_DIR$/web/themes/default/ajax/fb_ajax-loader.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/avatars/avatar_f_l.png" afterPath="$PROJECT_DIR$/web/themes/default/avatars/avatar_f_l.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/avatars/avatar_f_m.png" afterPath="$PROJECT_DIR$/web/themes/default/avatars/avatar_f_m.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/avatars/avatar_f_s.png" afterPath="$PROJECT_DIR$/web/themes/default/avatars/avatar_f_s.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/avatars/avatar_l.png" afterPath="$PROJECT_DIR$/web/themes/default/avatars/avatar_l.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/avatars/avatar_m.png" afterPath="$PROJECT_DIR$/web/themes/default/avatars/avatar_m.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/avatars/avatar_m_l.png" afterPath="$PROJECT_DIR$/web/themes/default/avatars/avatar_m_l.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/avatars/avatar_m_m.png" afterPath="$PROJECT_DIR$/web/themes/default/avatars/avatar_m_m.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/avatars/avatar_m_s.png" afterPath="$PROJECT_DIR$/web/themes/default/avatars/avatar_m_s.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/avatars/avatar_s.png" afterPath="$PROJECT_DIR$/web/themes/default/avatars/avatar_s.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/buttons/delete.png" afterPath="$PROJECT_DIR$/web/themes/default/buttons/delete.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/buttons/manage.png" afterPath="$PROJECT_DIR$/web/themes/default/buttons/manage.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/buttons/manageAccount.png" afterPath="$PROJECT_DIR$/web/themes/default/buttons/manageAccount.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/buttons/refresh.png" afterPath="$PROJECT_DIR$/web/themes/default/buttons/refresh.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/buttons/rss.png" afterPath="$PROJECT_DIR$/web/themes/default/buttons/rss.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/buttons/search-btn.png" afterPath="$PROJECT_DIR$/web/themes/default/buttons/search-btn.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/buttons/up.png" afterPath="$PROJECT_DIR$/web/themes/default/buttons/up.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/By-Design.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/By-Design.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/Thumbs.db" afterPath="$PROJECT_DIR$/web/themes/default/forums/Thumbs.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/button_locked.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/button_locked.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/button_new_post.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/button_new_post.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/button_new_topic.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/button_new_topic.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/button_reply.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/button_reply.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/folder.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/folder.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/folder_locked-10.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/folder_locked-10.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/folder_locked.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/folder_locked.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/folder_locked_new-09.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/folder_locked_new-09.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/folder_locked_new.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/folder_locked_new.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/folder_new.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/folder_new.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/folder_sticky.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/folder_sticky.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/folder_sticky_new.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/folder_sticky_new.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/folder_unlocked.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/folder_unlocked.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/folder_unlocked_new.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/folder_unlocked_new.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/icon_aim.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/icon_aim.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/icon_delete.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/icon_delete.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/icon_edit.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/icon_edit.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/icon_email.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/icon_email.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/icon_icq.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/icon_icq.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/icon_ip.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/icon_ip.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/icon_msnm.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/icon_msnm.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/icon_pm.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/icon_pm.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/icon_profile.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/icon_profile.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/icon_quote.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/icon_quote.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/icon_search.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/icon_search.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/icon_www.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/icon_www.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/icons/locked.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/icons/locked.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/icons/poll.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/icons/poll.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/icons/sticky.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/icons/sticky.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/mix/bullet_green.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/mix/bullet_green.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/mix/bullet_toggle_minus.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/mix/bullet_toggle_minus.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/mix/bullet_toggle_plus.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/mix/bullet_toggle_plus.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/p_delete.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/p_delete.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/p_edit.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/p_edit.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/p_offline.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/p_offline.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/p_online.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/p_online.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/p_pm.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/p_pm.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/p_quote.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/p_quote.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/p_reply.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/p_reply.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/p_report.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/p_report.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/p_up.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/p_up.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/topic_delete.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/topic_delete.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/topic_lock.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/topic_lock.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/topic_unlock.png" afterPath="$PROJECT_DIR$/web/themes/default/forums/topic_unlock.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/info_bar/buffer.png" afterPath="$PROJECT_DIR$/web/themes/default/info_bar/buffer.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/info_bar/downloaded.png" afterPath="$PROJECT_DIR$/web/themes/default/info_bar/downloaded.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/info_bar/hitrun.png" afterPath="$PROJECT_DIR$/web/themes/default/info_bar/hitrun.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/info_bar/invites.png" afterPath="$PROJECT_DIR$/web/themes/default/info_bar/invites.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/info_bar/points.png" afterPath="$PROJECT_DIR$/web/themes/default/info_bar/points.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/info_bar/posts.png" afterPath="$PROJECT_DIR$/web/themes/default/info_bar/posts.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/info_bar/ratio.png" afterPath="$PROJECT_DIR$/web/themes/default/info_bar/ratio.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/info_bar/slots.png" afterPath="$PROJECT_DIR$/web/themes/default/info_bar/slots.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/info_bar/uploaded.png" afterPath="$PROJECT_DIR$/web/themes/default/info_bar/uploaded.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/info_bar/warns.png" afterPath="$PROJECT_DIR$/web/themes/default/info_bar/warns.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/theme_images/header.png" afterPath="$PROJECT_DIR$/web/themes/default/theme_images/header.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/theme_images/logo.png" afterPath="$PROJECT_DIR$/web/themes/default/theme_images/logo.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/console" afterPath="$PROJECT_DIR$/bin/console" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/symfony_requirements" afterPath="$PROJECT_DIR$/bin/symfony_requirements" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CMS/CMSBundle/Resources/views/Default/invitedUser.html.twig" afterPath="$PROJECT_DIR$/src/CMS/CMSBundle/Resources/views/Default/invitedUser.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Informations/InformationsBundle/DataFixtures/ORM/AdvertisementsData.php" afterPath="$PROJECT_DIR$/src/Informations/InformationsBundle/DataFixtures/ORM/AdvertisementsData.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Informations/InformationsBundle/DataFixtures/ORM/NewsData.php" afterPath="$PROJECT_DIR$/src/Informations/InformationsBundle/DataFixtures/ORM/NewsData.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Users/UsersBundle/Controller/MembercpController.php" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Controller/MembercpController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Users/UsersBundle/DataFixtures/ORM/MoodsData.php" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/DataFixtures/ORM/MoodsData.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Users/UsersBundle/DataFixtures/ORM/UsersData.php" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/DataFixtures/ORM/UsersData.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/translations/messages.fr.yml" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/translations/messages.fr.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Default/SwiftLayout/inviteMail.html.twig" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Default/SwiftLayout/inviteMail.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Default/login.html.twig" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Default/login.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Infos/infobar.html.twig" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Infos/infobar.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/.htaccess" afterPath="$PROJECT_DIR$/web/.htaccess" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Resources/public/css_original/menu/index.html" afterPath="$PROJECT_DIR$/web/Resources/public/css_original/menu/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/Resources/public/css_original/theme_images/index.html" afterPath="$PROJECT_DIR$/web/Resources/public/css_original/theme_images/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app.php" afterPath="$PROJECT_DIR$/web/app.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app_dev.php" afterPath="$PROJECT_DIR$/web/app_dev.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/cleditor.js" afterPath="$PROJECT_DIR$/web/js/cleditor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/comments.js" afterPath="$PROJECT_DIR$/web/js/comments.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/datatables.js" afterPath="$PROJECT_DIR$/web/js/datatables.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/donate.js" afterPath="$PROJECT_DIR$/web/js/donate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/elfinder.js" afterPath="$PROJECT_DIR$/web/js/elfinder.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/faq.js" afterPath="$PROJECT_DIR$/web/js/faq.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/flot.js" afterPath="$PROJECT_DIR$/web/js/flot.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/forgot_password.js" afterPath="$PROJECT_DIR$/web/js/forgot_password.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/functions.js" afterPath="$PROJECT_DIR$/web/js/functions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/inputs.js" afterPath="$PROJECT_DIR$/web/js/inputs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/jquery-ui.js" afterPath="$PROJECT_DIR$/web/js/jquery-ui.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/jquery.js" afterPath="$PROJECT_DIR$/web/js/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/login.js" afterPath="$PROJECT_DIR$/web/js/login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/membercp.js" afterPath="$PROJECT_DIR$/web/js/membercp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/messages.js" afterPath="$PROJECT_DIR$/web/js/messages.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/minicolors.js" afterPath="$PROJECT_DIR$/web/js/minicolors.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/news.js" afterPath="$PROJECT_DIR$/web/js/news.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/overlib.js" afterPath="$PROJECT_DIR$/web/js/overlib.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/poll.js" afterPath="$PROJECT_DIR$/web/js/poll.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/profile.js" afterPath="$PROJECT_DIR$/web/js/profile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/scrollable.js" afterPath="$PROJECT_DIR$/web/js/scrollable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/shoutbox.js" afterPath="$PROJECT_DIR$/web/js/shoutbox.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/shoutbox.js.bak" afterPath="$PROJECT_DIR$/web/js/shoutbox.js.bak" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/shoutbox2.js" afterPath="$PROJECT_DIR$/web/js/shoutbox2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/signup.js" afterPath="$PROJECT_DIR$/web/js/signup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/jquery.tinymce.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/jquery.tinymce.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/langs/readme.md" afterPath="$PROJECT_DIR$/web/js/tinymce/langs/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/license.txt" afterPath="$PROJECT_DIR$/web/js/tinymce/license.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/advlist/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/advlist/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/anchor/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/anchor/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/autolink/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/autolink/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/autoresize/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/autoresize/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/autosave/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/autosave/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/bbcode/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/bbcode/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/charmap/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/charmap/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/code/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/code/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/codesample/css/prism.css" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/codesample/css/prism.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/codesample/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/codesample/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/colorpicker/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/colorpicker/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/contextmenu/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/contextmenu/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/directionality/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/directionality/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/emoticons/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/example/dialog.html" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/example/dialog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/example/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/example/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/example_dependency/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/example_dependency/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/fullpage/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/fullpage/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/fullscreen/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/fullscreen/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/hr/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/hr/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/image/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/image/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/imagetools/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/imagetools/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/importcss/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/importcss/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/inlinepopups/editor_plugin.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/inlinepopups/editor_plugin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/inlinepopups/skins/clearlooks2/window.css" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/inlinepopups/skins/clearlooks2/window.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/inlinepopups/template.htm" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/inlinepopups/template.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/insertdatetime/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/insertdatetime/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/layer/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/layer/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/legacyoutput/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/legacyoutput/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/link/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/link/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/lists/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/lists/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/media/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/media/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/nonbreaking/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/nonbreaking/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/noneditable/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/noneditable/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/pagebreak/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/pagebreak/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/paste/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/paste/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/preview/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/preview/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/print/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/print/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/save/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/save/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/searchreplace/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/searchreplace/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/spellchecker/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/spellchecker/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/tabfocus/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/tabfocus/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/table/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/table/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/template/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/template/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/textcolor/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/textcolor/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/textpattern/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/textpattern/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/visualblocks/css/visualblocks.css" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/visualblocks/css/visualblocks.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/visualblocks/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/visualblocks/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/visualchars/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/visualchars/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/plugins/wordcount/plugin.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/plugins/wordcount/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/skins/lightgray/content.inline.min.css" afterPath="$PROJECT_DIR$/web/js/tinymce/skins/lightgray/content.inline.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/skins/lightgray/content.min.css" afterPath="$PROJECT_DIR$/web/js/tinymce/skins/lightgray/content.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/skins/lightgray/fonts/tinymce-small.svg" afterPath="$PROJECT_DIR$/web/js/tinymce/skins/lightgray/fonts/tinymce-small.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/skins/lightgray/fonts/tinymce.svg" afterPath="$PROJECT_DIR$/web/js/tinymce/skins/lightgray/fonts/tinymce.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/skins/lightgray/skin.ie7.min.css" afterPath="$PROJECT_DIR$/web/js/tinymce/skins/lightgray/skin.ie7.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/skins/lightgray/skin.min.css" afterPath="$PROJECT_DIR$/web/js/tinymce/skins/lightgray/skin.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/themes/inlite/theme.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/themes/inlite/theme.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/themes/modern/theme.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/themes/modern/theme.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tinymce/tinymce.min.js" afterPath="$PROJECT_DIR$/web/js/tinymce/tinymce.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/torrents.js" afterPath="$PROJECT_DIR$/web/js/torrents.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tt.js" afterPath="$PROJECT_DIR$/web/js/tt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/robots.txt" afterPath="$PROJECT_DIR$/web/robots.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/ajax/index.html" afterPath="$PROJECT_DIR$/web/themes/default/ajax/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/avatars/index.html" afterPath="$PROJECT_DIR$/web/themes/default/avatars/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/buttons/index.html" afterPath="$PROJECT_DIR$/web/themes/default/buttons/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/css/ajax.css" afterPath="$PROJECT_DIR$/web/themes/default/css/ajax.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/css/comments.css" afterPath="$PROJECT_DIR$/web/themes/default/css/comments.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/css/donations.css" afterPath="$PROJECT_DIR$/web/themes/default/css/donations.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/css/downloads.css" afterPath="$PROJECT_DIR$/web/themes/default/css/downloads.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/css/extra.css" afterPath="$PROJECT_DIR$/web/themes/default/css/extra.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/css/fancybox.css" afterPath="$PROJECT_DIR$/web/themes/default/css/fancybox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/css/fileuploader.css" afterPath="$PROJECT_DIR$/web/themes/default/css/fileuploader.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/css/fls.css" afterPath="$PROJECT_DIR$/web/themes/default/css/fls.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/css/forums.css" afterPath="$PROJECT_DIR$/web/themes/default/css/forums.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/css/image_gallery.css" afterPath="$PROJECT_DIR$/web/themes/default/css/image_gallery.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/css/index.html" afterPath="$PROJECT_DIR$/web/themes/default/css/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/css/jqueryTools.css" afterPath="$PROJECT_DIR$/web/themes/default/css/jqueryTools.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/css/memberCard.css" afterPath="$PROJECT_DIR$/web/themes/default/css/memberCard.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/css/members.css" afterPath="$PROJECT_DIR$/web/themes/default/css/members.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/css/mixed.css" afterPath="$PROJECT_DIR$/web/themes/default/css/mixed.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/css/oneStepUpload.css" afterPath="$PROJECT_DIR$/web/themes/default/css/oneStepUpload.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/css/plugin_torrent_categories.css" afterPath="$PROJECT_DIR$/web/themes/default/css/plugin_torrent_categories.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/css/responsive.css" afterPath="$PROJECT_DIR$/web/themes/default/css/responsive.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/css/shoutbox.css" afterPath="$PROJECT_DIR$/web/themes/default/css/shoutbox.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/css/staffDropDownMenu.css" afterPath="$PROJECT_DIR$/web/themes/default/css/staffDropDownMenu.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/css/staffOnlineNow.css" afterPath="$PROJECT_DIR$/web/themes/default/css/staffOnlineNow.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/css/subtitles.css" afterPath="$PROJECT_DIR$/web/themes/default/css/subtitles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/css/thread_prefixes.css" afterPath="$PROJECT_DIR$/web/themes/default/css/thread_prefixes.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/css/tinymce_ui.css" afterPath="$PROJECT_DIR$/web/themes/default/css/tinymce_ui.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/css/topDonors.css" afterPath="$PROJECT_DIR$/web/themes/default/css/topDonors.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/css/upcomingReleases.css" afterPath="$PROJECT_DIR$/web/themes/default/css/upcomingReleases.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/icons/index.html" afterPath="$PROJECT_DIR$/web/themes/default/forums/icons/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/index.html" afterPath="$PROJECT_DIR$/web/themes/default/forums/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/forums/mix/index.html" afterPath="$PROJECT_DIR$/web/themes/default/forums/mix/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/info_bar/index.html" afterPath="$PROJECT_DIR$/web/themes/default/info_bar/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/themes/default/theme_images/index.html" afterPath="$PROJECT_DIR$/web/themes/default/theme_images/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,6 +391,86 @@
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="ttv3-symfony@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="ttv3-symfony@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="users" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="ttv3-symfony@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="news" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="ttv3-symfony@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="moods" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="ttv3-symfony@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="avatar" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="ttv3-symfony@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="advertisements" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -34,24 +478,92 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MembercpController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MembercpController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Controller/MembercpController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="426" column="116" lean-forward="false" selection-start-line="426" selection-start-column="116" selection-end-line="426" selection-end-column="116" />
+            <state relative-caret-position="504">
+              <caret line="484" column="83" lean-forward="false" selection-start-line="484" selection-start-column="83" selection-end-line="484" selection-end-column="83" />
               <folding>
-                <element signature="e#22625#22644#1#PHP" expanded="true" />
+                <element signature="e#1668#1693#1#PHP" expanded="true" />
+                <element signature="e#2116#2157#0#PHP" expanded="true" />
+                <element signature="e#2468#2509#0#PHP" expanded="true" />
+                <element signature="e#2837#2862#1#PHP" expanded="true" />
+                <element signature="e#3314#3362#0#PHP" expanded="true" />
+                <element signature="e#3680#3728#0#PHP" expanded="true" />
+                <element signature="e#4067#4092#1#PHP" expanded="true" />
+                <element signature="e#4571#4623#0#PHP" expanded="true" />
+                <element signature="e#4945#4997#0#PHP" expanded="true" />
+                <element signature="e#5332#5357#1#PHP" expanded="true" />
+                <element signature="e#5816#5864#0#PHP" expanded="true" />
+                <element signature="e#6182#6230#0#PHP" expanded="true" />
+                <element signature="e#7790#7813#1#PHP" expanded="true" />
+                <element signature="e#8092#8141#0#PHP" expanded="true" />
+                <element signature="e#8435#8460#1#PHP" expanded="true" />
+                <element signature="e#8929#8979#0#PHP" expanded="true" />
+                <element signature="e#9299#9349#0#PHP" expanded="true" />
+                <element signature="e#9681#9706#1#PHP" expanded="true" />
+                <element signature="e#10160#10207#0#PHP" expanded="true" />
+                <element signature="e#10524#10571#0#PHP" expanded="true" />
+                <element signature="e#10900#10925#1#PHP" expanded="true" />
+                <element signature="e#14525#14579#0#PHP" expanded="true" />
+                <element signature="e#16073#16120#0#PHP" expanded="true" />
+                <element signature="e#16288#16335#0#PHP" expanded="true" />
+                <element signature="e#19497#19534#0#PHP" expanded="true" />
+                <element signature="e#19673#19714#0#PHP" expanded="true" />
+                <element signature="e#20080#20127#0#PHP" expanded="true" />
+                <element signature="e#20301#20342#0#PHP" expanded="true" />
+                <element signature="e#20630#20678#1#PHP" expanded="true" />
+                <element signature="e#20762#20809#1#PHP" expanded="true" />
+                <element signature="e#20894#20942#1#PHP" expanded="true" />
+                <element signature="e#21031#21083#1#PHP" expanded="true" />
+                <element signature="e#21171#21222#1#PHP" expanded="true" />
+                <element signature="e#21364#21414#0#PHP" expanded="true" />
+                <element signature="e#21540#21587#1#PHP" expanded="true" />
+                <element signature="e#22998#23023#1#PHP" expanded="true" />
+                <element signature="e#23174#23193#1#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SignupType.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Form/SignupType.php">
+      <file leaf-file-name="register_content.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+            <state relative-caret-position="126">
+              <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Default/login.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="792">
+              <caret line="44" column="58" lean-forward="false" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMSIndexController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CMS/CMSBundle/Controller/CMSIndexController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="16" column="62" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="65" />
+              <folding>
+                <element signature="e#44#101#0#PHP" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,37 +572,17 @@
         <entry file="file://$PROJECT_DIR$/src/CMS/CMSBundle/Resources/views/Default/invitedUser.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="14" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inviteMail.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Default/SwiftLayout/inviteMail.html.twig">
+      <file leaf-file-name="infobar.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Infos/infobar.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
-              <caret line="55" column="14" lean-forward="false" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Users.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Entity/Users.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5274">
-              <caret line="301" column="62" lean-forward="false" selection-start-line="301" selection-start-column="62" selection-end-line="301" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="membercpinvite.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpinvite.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1278">
-              <caret line="71" column="40" lean-forward="false" selection-start-line="71" selection-start-column="40" selection-end-line="71" selection-end-column="40" />
+            <state relative-caret-position="360">
+              <caret line="20" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -99,18 +591,8 @@
       <file leaf-file-name="messages.fr.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/translations/messages.fr.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/config/routing.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="34" column="73" lean-forward="false" selection-start-line="34" selection-start-column="73" selection-end-line="34" selection-end-column="73" />
+            <state relative-caret-position="360">
+              <caret line="20" column="68" lean-forward="false" selection-start-line="20" selection-start-column="68" selection-end-line="20" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -134,12 +616,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpperformance.html.twig" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercppreferences.html.twig" />
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpsubscribed.html.twig" />
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpupgrade.html.twig" />
         <option value="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Controller/TorrentsIndexController.php" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Default/login.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/translations/FOSUserBundle.yml" />
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/Form/MembercpPrivacyType.php" />
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpprivacy.html.twig" />
@@ -180,11 +659,14 @@
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Default/SwiftLayout/inviteMail.html.twig" />
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpinvite.html.twig" />
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/translations/messages.fr.yml" />
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/Form/SignupType.php" />
+        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/translations/messages.fr.yml" />
         <option value="$PROJECT_DIR$/src/CMS/CMSBundle/Resources/views/Default/invitedUser.html.twig" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Infos/infobar.html.twig" />
+        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Default/login.html.twig" />
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/Controller/MembercpController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig" />
       </list>
     </option>
   </component>
@@ -241,8 +723,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="1680" />
+    <option name="y" value="-10" />
     <option name="width" value="1920" />
-    <option name="height" value="1040" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -278,9 +762,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -406,38 +888,8 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UsersBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Default" />
+              <option name="myItemId" value="Infos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -472,10 +924,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SwiftLayout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1195,6 +1643,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Registration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TTv3-Symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TTv3-Symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FOSUserBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="ChangePassword" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1245,12 +1723,14 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="SensioLabs.Insight" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="nodejs_interpreter_path" value="/usr/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
@@ -1262,19 +1742,19 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Default" />
+      <recent name="$PROJECT_DIR$/src/Users/UsersBundle/Form" />
+      <recent name="$PROJECT_DIR$/web/themes/default" />
+      <recent name="$PROJECT_DIR$/src/CMS/CMSBundle/Resources/views/Default" />
+      <recent name="$PROJECT_DIR$/src/Users/UsersBundle/DataFixtures/ORM" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/Informations/InformationsBundle" />
       <recent name="$PROJECT_DIR$/src/Informations/InformationsBundle/Resources/views/Frames" />
       <recent name="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Resources/views/Blocks" />
       <recent name="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Resources/views/Frame" />
       <recent name="$PROJECT_DIR$/app/Resources" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Users/UsersBundle/Form" />
-      <recent name="$PROJECT_DIR$/web/themes/default" />
-      <recent name="$PROJECT_DIR$/src/CMS/CMSBundle/Resources/views/Default" />
-      <recent name="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Default" />
-      <recent name="$PROJECT_DIR$/src/Users/UsersBundle/DataFixtures/ORM" />
     </key>
   </component>
   <component name="RunManager">
@@ -1785,7 +2265,14 @@
       <workItem from="1484933944042" duration="3470000" />
       <workItem from="1484948178617" duration="53000" />
       <workItem from="1484948249380" duration="152000" />
-      <workItem from="1484948419316" duration="188000" />
+      <workItem from="1484948419316" duration="6034000" />
+      <workItem from="1485026614432" duration="85000" />
+      <workItem from="1485026715177" duration="254000" />
+      <workItem from="1485028092568" duration="710000" />
+      <workItem from="1485087788495" duration="231000" />
+      <workItem from="1485088044826" duration="1027000" />
+      <workItem from="1485089100769" duration="1001000" />
+      <workItem from="1485110733137" duration="1984000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout de FOSUSerBundle">
       <created>1484397812682</created>
@@ -1805,7 +2292,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="219908000" />
+    <option name="totallyTimeSpent" value="231046000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1817,7 +2304,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1040" extended-state="6" />
+    <frame x="1680" y="-10" width="1920" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1826,16 +2313,16 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3116022" sideWeight="0.50213677" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13976164" sideWeight="0.50416666" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6383208" sideWeight="0.49786323" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13826367" sideWeight="0.49583334" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.104166664" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19166666" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12604167" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1872,42 +2359,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/DataFixtures/ORM/AvatarData.php" />
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Entity/Avatar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1579">
-          <caret line="62" column="32" lean-forward="false" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Repository/AvatarRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpavatar.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="38" column="115" lean-forward="false" selection-start-line="38" selection-start-column="115" selection-end-line="38" selection-end-column="115" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Form/AvatarType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Form/MembercpAvatarType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="65" lean-forward="false" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/DataFixtures/ORM/MoodsData.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="487">
@@ -2014,13 +2465,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CMS/CMSBundle/Controller/CMSIndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/dc6156ba-2554-4363-ba95-e575315b6d37/console.sql" />
     <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpportcheck.html.twig">
       <provider selected="true" editor-type-id="text-editor">
@@ -2085,13 +2529,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Default/login.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2103,13 +2540,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="402">
           <caret line="23" column="108" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="44" column="55" lean-forward="true" selection-start-line="44" selection-start-column="55" selection-end-line="44" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -2131,15 +2561,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1278">
           <caret line="71" column="40" lean-forward="false" selection-start-line="71" selection-start-column="40" selection-end-line="71" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="34" column="73" lean-forward="false" selection-start-line="34" selection-start-column="73" selection-end-line="34" selection-end-column="73" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2164,27 +2585,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Default/SwiftLayout/inviteMail.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="55" column="14" lean-forward="false" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/translations/messages.fr.yml">
+    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Default/SwiftLayout/inviteMail.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="403">
+          <caret line="55" column="14" lean-forward="false" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Entity/Users.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5274">
+        <state relative-caret-position="813">
           <caret line="301" column="62" lean-forward="false" selection-start-line="301" selection-start-column="62" selection-end-line="301" selection-end-column="62" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="34" column="73" lean-forward="false" selection-start-line="34" selection-start-column="73" selection-end-line="34" selection-end-column="73" />
         </state>
       </provider>
     </entry>
@@ -2192,32 +2617,133 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpalerts.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="20" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/36366700-ad8b-44a7-ba8d-7fd7d479b64e/console.sql" />
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Infos/infobar.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/translations/messages.fr.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="360">
+          <caret line="20" column="68" lean-forward="false" selection-start-line="20" selection-start-column="68" selection-end-line="20" selection-end-column="68" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CMS/CMSBundle/Resources/views/Default/invitedUser.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="792">
+          <caret line="44" column="58" lean-forward="false" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CMS/CMSBundle/Controller/CMSIndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="16" column="62" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="65" />
+          <folding>
+            <element signature="e#44#101#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Default/login.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Default/signup.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Controller/MembercpController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="426" column="116" lean-forward="false" selection-start-line="426" selection-start-column="116" selection-end-line="426" selection-end-column="116" />
+        <state relative-caret-position="504">
+          <caret line="484" column="83" lean-forward="false" selection-start-line="484" selection-start-column="83" selection-end-line="484" selection-end-column="83" />
           <folding>
-            <element signature="e#22625#22644#1#PHP" expanded="true" />
+            <element signature="e#1668#1693#1#PHP" expanded="true" />
+            <element signature="e#2116#2157#0#PHP" expanded="true" />
+            <element signature="e#2468#2509#0#PHP" expanded="true" />
+            <element signature="e#2837#2862#1#PHP" expanded="true" />
+            <element signature="e#3314#3362#0#PHP" expanded="true" />
+            <element signature="e#3680#3728#0#PHP" expanded="true" />
+            <element signature="e#4067#4092#1#PHP" expanded="true" />
+            <element signature="e#4571#4623#0#PHP" expanded="true" />
+            <element signature="e#4945#4997#0#PHP" expanded="true" />
+            <element signature="e#5332#5357#1#PHP" expanded="true" />
+            <element signature="e#5816#5864#0#PHP" expanded="true" />
+            <element signature="e#6182#6230#0#PHP" expanded="true" />
+            <element signature="e#7790#7813#1#PHP" expanded="true" />
+            <element signature="e#8092#8141#0#PHP" expanded="true" />
+            <element signature="e#8435#8460#1#PHP" expanded="true" />
+            <element signature="e#8929#8979#0#PHP" expanded="true" />
+            <element signature="e#9299#9349#0#PHP" expanded="true" />
+            <element signature="e#9681#9706#1#PHP" expanded="true" />
+            <element signature="e#10160#10207#0#PHP" expanded="true" />
+            <element signature="e#10524#10571#0#PHP" expanded="true" />
+            <element signature="e#10900#10925#1#PHP" expanded="true" />
+            <element signature="e#14525#14579#0#PHP" expanded="true" />
+            <element signature="e#16073#16120#0#PHP" expanded="true" />
+            <element signature="e#16288#16335#0#PHP" expanded="true" />
+            <element signature="e#19497#19534#0#PHP" expanded="true" />
+            <element signature="e#19673#19714#0#PHP" expanded="true" />
+            <element signature="e#20080#20127#0#PHP" expanded="true" />
+            <element signature="e#20301#20342#0#PHP" expanded="true" />
+            <element signature="e#20630#20678#1#PHP" expanded="true" />
+            <element signature="e#20762#20809#1#PHP" expanded="true" />
+            <element signature="e#20894#20942#1#PHP" expanded="true" />
+            <element signature="e#21031#21083#1#PHP" expanded="true" />
+            <element signature="e#21171#21222#1#PHP" expanded="true" />
+            <element signature="e#21364#21414#0#PHP" expanded="true" />
+            <element signature="e#21540#21587#1#PHP" expanded="true" />
+            <element signature="e#22998#23023#1#PHP" expanded="true" />
+            <element signature="e#23174#23193#1#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CMS/CMSBundle/Resources/views/Default/invitedUser.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="14" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>

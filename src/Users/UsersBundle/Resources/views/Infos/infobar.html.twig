@@ -5,11 +5,11 @@
         <img src="{{ asset('themes/default/info_bar/buffer.png') }}" alt="" title="Buffer"/> 0
         <!-- CHANGER LES SPAN POUR LE RATIO COLOR -->
         {% if user.downloaded != 0 %}
-            {% set ratio = user.uploaded / user.downloaded %}
+            {% set ratio = (user.uploaded / user.downloaded)|round(2, 'floor') %}
         {% else %}
             {% set ratio = "---" %}
         {% endif %}
-        <img src="{{ asset('themes/default/info_bar/ratio.png') }}" alt="" title="Ratio"/> <span class="ratioNull">{{ ratio|round(2, 'floor') }}</span>
+        <img src="{{ asset('themes/default/info_bar/ratio.png') }}" alt="" title="Ratio"/> <span class="ratioNull">{{ ratio }}</span>
         <img src="{{ asset('themes/default/info_bar/slots.png') }}" alt="" title="Max.Slots"/> 0
         <img src="{{ asset('themes/default/info_bar/points.png') }}" alt="" title="Points"/> <a href="#">0</a>
         <img src="{{ asset('themes/default/info_bar/posts.png') }}" alt="" title="Total Posts"/> 0

@@ -6,6 +6,12 @@
     <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
 {% endif %}
 
+{% if notif is defined %}
+    <div class="done" id="show_done">
+        {{ notif|trans }}
+    </div>
+    <br />
+{% endif %}
 <form action="{{ path("fos_user_security_check") }}" method="post"><!-- id="loginbox_form" for ajax -->
     <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}" />
 
