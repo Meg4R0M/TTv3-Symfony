@@ -9,8 +9,9 @@
 namespace Users\UsersBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
-use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
+use FOS\MessageBundle\Model\ParticipantInterface;
+use FOS\UserBundle\Model\User as BaseUser;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
@@ -21,7 +22,7 @@ use Symfony\Component\HttpFoundation\Request;
  * @ORM\Entity
  * @ORM\Table(name="`users`")
  */
-class Users extends BaseUser
+class Users extends BaseUser implements ParticipantInterface
 {
     /**
      * @var integer

@@ -18,6 +18,7 @@ class AppKernel extends Kernel
             new CMS\CMSBundle\CMSBundle(),
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new FOS\UserBundle\FOSUserBundle(),
+            new FOS\MessageBundle\FOSMessageBundle(),
             new Users\UsersBundle\UsersBundle(),
             new Informations\InformationsBundle\InformationsBundle(),
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),

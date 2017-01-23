@@ -88,3 +88,8 @@ fos_user:
     db_driver: orm
     firewall_name: main
     user_class: Users\UsersBundle\Entity\Users
+
+fos_message:
+    db_driver: orm
+    thread_class: Users\UsersBundle\Entity\Thread
+    message_class: Users\UsersBundle\Entity\Message
