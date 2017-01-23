@@ -23,7 +23,7 @@
             <li><a href="{{ path('users_membercp_subscribed') }}" {% if routename == 'membercpsubscribed' %}class="active"{% endif %}>{{ 'Subscribed Threads'|trans }}</a></li>
             <li><a href="{{ path('users_membercp_portcheck') }}" {% if routename == 'membercpportcheck' %}class="active"{% endif %}>{{ 'Open Port Check Tool'|trans }}</a></li>
             <li><a href="{{ path('users_membercp_alerts') }}" {% if routename == 'membercpalerts' %}class="active"{% endif %}>{{ 'Recent Alerts'|trans }}</a></li>
-            <li><a href="/mailbox.php">Messages</a></li>
+            <li><a href="{{ path('fos_message_inbox') }}" {% if routename == 'messages' %}class="active"{% endif %}>{{ 'Messages'|trans }}</a></li>
         </ul>
     </div>
     <div class='clear'></div>

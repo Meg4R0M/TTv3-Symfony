@@ -264,7 +264,7 @@ class Users extends BaseUser implements ParticipantInterface
 
     /**
      * @ORM\ManyToOne(targetEntity="Users\UsersBundle\Entity\Moods")
-     * @ORM\JoinColumn(nullable=false)
+     * @ORM\JoinColumn(nullable=true)
      */
     private $moods;
 
@@ -295,8 +295,8 @@ class Users extends BaseUser implements ParticipantInterface
         $this->signature = '';
         $this->team = '';
         $this->tzoffset = '1';
-        $this->moods = 1;
         $this->news = new ArrayCollection();
+        $this->secret = '';
         $this->invitedBy = 0;
         $this->invitees = '';
         $this->invites = 0;

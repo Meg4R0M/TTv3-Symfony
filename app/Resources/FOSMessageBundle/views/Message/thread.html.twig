@@ -1,0 +1,57 @@
+{% extends 'FOSMessageBundle::layout.html.twig' %}
+
+{% block fos_message_content %}
+
+    <h2>{{ thread.subject }}</h2>
+    <div id="messageTools">
+        <div class="toolsMenu">
+            <dl class="dropdown">
+                <dt><a href="javascript:void(0);"></a></dt>
+                <dd>
+                    <ul id="ulglobal">
+                        <li><a href="#" id="pm_markAsUnread" rel="9925">Mark as Unread</a></li>
+                        <li><a href="#" id="pm_DeleteMessage" rel="9925">Delete Message</a></li>
+                        <li><a href="#" id="pm_forwardMessage" rel="9925">Forward Message</a></li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+{% for message in thread.messages %}
+    <div id="message_id_{{ message.id }}">
+        <div class="comments" id="reply_15353">
+            <div class="cAvatar"><img src="http://templateshares-ue.net/tsue/styles/default/avatars/avatar_m_s.png?1485176889" alt="" title="" class="clickable avatar" id="member_info" memberid="618" /></div>
+
+            <div class="commentHolder">
+                <div class="cMessage" id="cMessage_15353">{{ message.body }}</div>
+
+                <div class="commentDate">
+                    <div class="cLinks">
+                        &nbsp;&nbsp;&nbsp;<a href="#" id="replyMessage" reply_id="15353" message_id="{{ message.id }}">Reply</a>
+                    </div>
+                    <span id="member_info" memberid="618" class="clickable"><span style="color: #6d6c6c; font-weight: bold;">{{ message.sender|e }}</span></span>  {{ message.createdAt|date }}
+                </div>
+
+                <div class="clear"></div>
+            </div>
+
+            <div class="clear"></div>
+
+        </div>
+    </div>
+{% endfor %}
+    <div id="messageData"><input type="hidden" name="last_reply_id" id="last_reply_id" value="15353" /></div>
+
+    <div id="fetchNewMessages"></div>
+
+    <div id="messages_post_reply"></div>
+<h3>{% trans from 'FOSMessageBundle' %}reply{% endtrans %}</h3>
+
+<form action="{{ url('fos_message_thread_view', {'threadId': thread.id}) }}" method="post">
+    {{ form_widget(form) }}
+
+    <input type="submit" />
+</form>
+
+{% endblock %}

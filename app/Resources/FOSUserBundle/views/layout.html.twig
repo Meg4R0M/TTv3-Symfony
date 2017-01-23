@@ -1,4 +1,4 @@
-{% if app.request.pathInfo == '/_fragment' %}
+{#{% if app.request.pathInfo == '/_fragment' %}#}
     <div class='widget'>
         {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
             <h4>
@@ -41,6 +41,6 @@
         </div>
         <div class='clear'></div>
     </div>
-{% else %}
+{#{% else %}
     {{ render(controller('CMSBundle:CMSIndex:fullpageLogin')) }}
-{% endif %}
+{% endif %}#}
