@@ -64,6 +64,21 @@ An invitation has already been sent to this email address: Une invitation a déj
 Your invitation has just been sent to the email address provided: Votre invitation vient d'être envoyée à l'adresse électronique fournie
 Invite your friends to earn free Upload Amount and/of Bonus Points: Invitez vos amis et gagnez un montant d'Upload gratuit et/ou des points bonus
 Invited Friends: Ami(s) invité(s)
+The open port checker is a tool you can use to check your external IP address and detect open ports on your connection.: Le vérificateur de ports ouverts est un outil que vous pouvez utiliser pour vérifier votre adresse IP externe et détecter les ports ouverts sur votre connexion.
+This tool is useful for finding out if your port forwarding is setup correctly or if your server applications are being blocked by a firewall.: Cet outil est utile pour savoir si votre redirection de port est configurée correctement ou si vos applications serveur sont bloquées par un pare-feu.
+This tool may also be used as a port scanner to scan your network for ports that are commonly forwarded.: Cet outil peut également être utilisé comme un scanner de ports pour analyser votre réseau pour les ports qui sont communément transmis.
+It is important to note that some ports, such as port 25, are often blocked at the ISP level in an attempt to prevent malicious activity.: Il est important de noter que certains ports, tels que le port 25, sont souvent bloqués au niveau du FAI pour tenter de prévenir une activité malveillante.
+For more a comprehensive list of TCP and UDP ports, check out: Pour plus d'une liste complète des ports TCP et UDP, consultez
+this Wikipedia article: cet article de Wikipedia
+Need help?: Besoin d'aide?
+Try this: Essayez ça
+Port Forwarding: Port Forwarding
+Your IP: Votre IP
+Port Number: Numéro de port
+Check: Vérifier
+is closed on: est fermé sur
+is open on: est ouvert sur
+
 
 # traduction Generale
 An error has occurred: Une erreur est survenue

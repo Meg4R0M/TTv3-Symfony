@@ -22,26 +22,32 @@
         {% endif %}
 
         <div class="information" id="show_information">
-            The open port checker is a tool you can use to check your external IP address and detect open ports on your connection. This tool is useful for finding out if your port forwarding is setup correctly or if your server applications are being blocked by a firewall. This tool may also be used as a port scanner to scan your network for ports that are commonly forwarded. It is important to note that some ports, such as port 25, are often blocked at the ISP level in an attempt to prevent malicious activity.
-            <p>For more a comprehensive list of TCP and UDP ports, check out <a href="http://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers" target="_blank">this Wikipedia article</a>.</p>
-            Need help? Try this: <a href="http://portforward.com/help/start_here.htm" target="_blank">Port Forwarding</a>.
+            {{ 'The open port checker is a tool you can use to check your external IP address and detect open ports on your connection.'|trans }} {{ 'This tool is useful for finding out if your port forwarding is setup correctly or if your server applications are being blocked by a firewall.'|trans }} {{ 'This tool may also be used as a port scanner to scan your network for ports that are commonly forwarded.'|trans }} {{ 'It is important to note that some ports, such as port 25, are often blocked at the ISP level in an attempt to prevent malicious activity.'|trans }}
+            <p>{{ 'For more a comprehensive list of TCP and UDP ports, check out'|trans }} <a href="http://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers" target="_blank">{{ 'this Wikipedia article'|trans }}</a>.</p>
+            {{ 'Need help?'|trans }} {{ 'Try this'|trans }}: <a href="http://portforward.com/help/start_here.htm" target="_blank">{{ 'Port Forwarding'|trans }}</a>.
         </div>
 
         <div class="comment-box">
 
-            <h3>Your IP: {{ ip }}</h3>
+            <h3>{{ 'Your IP'|trans }}: {{ ip }}</h3>
 
-            <form method="post" action="" name="scanPort" id="scanPort">
-                Port Number:
-                <input type="text" name="port" id="port" class="s" accesskey="p" value="" />
-                <input type="submit" value="Check" class="submit" />
-            </form>
-
-            {{ form_start(form) }}
-            {{ form_widget(form) }}
+            {{ form_start(form) }}{# , { 'attr': { 'id': 'scanPort' } }  #}
+            {{ form_label(form.Port) }}
+            {{ form_widget(form.Port, { 'attr': { 'id': 'port', 'class': 's', 'accesskey': 'p' } } ) }}
+            {{ form_widget(form.test, { 'attr': { 'class': 'submit' } } ) }}
             {{ form_end(form) }}
 
-            {% if result is defined %}{{ result }}{% endif %}
+            {% if result is defined %}
+                <br /><br />
+                <div class="{{ result.Type }}" id="show_{{ result.Type }}">
+                    {% if result.Type == 'error' %}
+                        Port {{ result.Port }} {{ 'is closed on'|trans }} {{ result.Host }}
+                    {% else %}
+                        Port {{ result.Port }} {{ 'is open on'|trans }} {{ result.Host }} {{ result.PortType }}
+                    {% endif %}
+                </div>
+                <br />
+            {% endif %}
         </div>
     {% endif %}
 {% endblock %}

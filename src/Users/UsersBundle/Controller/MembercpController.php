@@ -519,8 +519,48 @@ class MembercpController extends Controller
 
     public function membercpPortcheckAction(Request $request) {
         $ip = $request->getClientIp();
+        $form = $this->createFormBuilder()
+            ->add('Port', TextType::class, array('label' => 'Port Number'))
+            ->add('test', SubmitType::class, array('label' => 'Check'))
+            ->getForm();
+
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $task = $form->getData();
+            if ($ip == '::1'){
+                $host = '127.0.0.1';
+            } else {
+                $host = $ip;
+            }
+
+            $testPort = @fsockopen($host, $task['Port']);
+            $resultPort = $task['Port'];
+            $resultHost = $host;
+
+            if (is_resource($testPort)){
+                $resultPortType = getservbyport($task['Port'], 'tcp');
+                $resultType = 'done';
+                fclose($testPort);
+            } else {
+                $resultPortType = '';
+                $resultType = 'error';
+            }
+
+            return $this->render('UsersBundle:Membercp:membercpportcheck.html.twig', array(
+                'ip' => $ip,
+                'form' => $form->createView(),
+                'result' => array(
+                    'Port' => $resultPort,
+                    'Host' => $resultHost,
+                    'PortType' => '('.$resultPortType.')',
+                    'Type' => $resultType
+                )
+            ));
+        }
         return $this->render('UsersBundle:Membercp:membercpportcheck.html.twig', array(
-            'ip' => $ip
+            'ip' => $ip,
+            'form' => $form->createView()
         ));
     }
 
