@@ -1,13 +1,48 @@
-{% extends 'FOSMessageBundle::layout.html.twig' %}
+{% extends 'MessageBundle::layout.html.twig' %}
 
 {% block fos_message_content %}
 
-<h2>{% trans from 'FOSMessageBundle' %}send_new{% endtrans %}</h2>
+{#<h2>{% trans from 'FOSMessageBundle' %}send_new{% endtrans %}</h2>#}
+{#<form action="{{ url('fos_message_thread_new') }}" method="post">#}
+    <br /><br />
+    {% if not form_errors(form.recipient) == '' %}
+        <div class="error" id="show_error">
+            {{ form_errors(form.recipient) }}
+        </div>
+        <br />
+    {% endif %}
 
-<form action="{{ url('fos_message_thread_new') }}" method="post">
-    {{ form_widget(form) }}
+    {{ form_start(form) }}
+    <div class="table" id="messages_post_new_message">
+        <div class="row">
+            <div class="cell first"><label for="receiver_membername">{{ form_label(form.recipient) }}</label></div>
+            <div class="cell second">
+                {{ form_widget(form.recipient, { 'attr': { 'id': 'receiver_membername', 'class': 's ajaxInputText ajaxTextareaToInput' } } ) }}
+                <div></div>
+            </div>
+        </div>
 
-    <input type="submit" />
-</form>
+        <div class="row">
+            <div class="cell first"><label for="subject">{{ form_label(form.subject) }}</label></div>
+            <div class="cell second">
+                {{ form_widget(form.subject, { 'attr': { 'id': 'subject', 'class': 's ajaxInputText ajaxTextareaToInput' } } ) }}
+            </div>
+        </div>
 
+        <div class="row">
+            <div class="cell first"><label for="message">{{ form_label(form.body) }}</label></div>
+            <div class="cell second">
+                {{ form_widget(form.body, { 'attr': { 'id': 'inline_editor', 'class': 's ajaxTextarea', 'aria-hidden': 'true' } } ) }}
+            </div>
+	    </div>
+
+	    <div class="row">
+		    <div class="cell first"></div>
+		    <div class="cell second">
+			    <input value="{{ 'Send'|trans }}Send" class="submit" type="submit">
+			    <input id="message_cancel" class="submit" value="{{ 'Cancel'|trans }}" onclick="$.TSUE.closedialog();return false;" type="button">
+		    </div>
+	    </div>
+        {{ form_end(form) }}
+    </div>
 {% endblock %}

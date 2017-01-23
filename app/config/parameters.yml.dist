@@ -22,4 +22,4 @@ parameters:
     # Your parameters
     owner_email: your_email
     site_name:   site_name
-    site_url: ~
+    site_url: http://yoursite.com/

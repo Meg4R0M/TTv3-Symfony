@@ -19,14 +19,10 @@
         <input type="button" name="messages_new_message" value="New Message" id="messages_new_message" class="submit" />
         <input type="button" name="messages_view_all" value="See All Messages" id="messages_view_all" class="submit" />
 
-
-
-        <span class="floatleft">
-            <a href="{{ url('fos_message_inbox') }}" class="submit">{% trans from 'FOSMessageBundle' %}inbox{% endtrans %}</a>
-            <a href="{{ url('fos_message_thread_new' )}}" class="submit">{% trans from 'FOSMessageBundle' %}send_new{% endtrans %}</a>
-            <a href="{{ url('fos_message_sent') }}" class="submit">{% trans from 'FOSMessageBundle' %}sent{% endtrans %}</a>
-            <a href="{{ url('fos_message_deleted') }}" class="submit">{% trans from 'FOSMessageBundle' %}deleted{% endtrans %}</a>
-        </span>
+            <a href="{{ url('message_inbox') }}" class="submit">{% trans from 'FOSMessageBundle' %}inbox{% endtrans %}</a>
+            <a href="{{ url('message_newThread' )}}" class="submit">{% trans from 'FOSMessageBundle' %}send_new{% endtrans %}</a>
+            <a href="{{ url('message_sent') }}" class="submit">{% trans from 'FOSMessageBundle' %}sent{% endtrans %}</a>
+            <a href="{{ url('message_deleted') }}" class="submit">{% trans from 'FOSMessageBundle' %}deleted{% endtrans %}</a>
 
         {% block fos_message_content %}{% endblock %}
 

@@ -3,6 +3,7 @@
 namespace Message\MessageBundle\Controller;
 
 use FOS\MessageBundle\Controller\MessageController as BaseController;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 
 class MessageController extends BaseController
 {
@@ -14,20 +15,9 @@ class MessageController extends BaseController
     public function inboxAction()
     {
         $threads = $this->getProvider()->getInboxThreads();
-        $user = $threads[0]->getCreatedBy()->getId();
-        $em = $this->container->get('Doctrine')->getManager();
-        $userInfo = $em->getRepository('UsersBundle:Users')->findOneById($user);
-        $userId = $userInfo->getId();
-        $userAvatar = $userInfo->getAvatar();
-        $userGender = $userInfo->getGender();
 
         return $this->container->get('templating')->renderResponse('MessageBundle:Message:inbox.html.twig', array(
-            'threads' => $threads,
-            'userInfo' => array(
-                'id' => $userId,
-                'avatar' => $userAvatar,
-                'gender' => $userGender
-            )
+            'threads' => $threads
         ));
     }
 
@@ -73,7 +63,7 @@ class MessageController extends BaseController
         $formHandler = $this->container->get('fos_message.reply_form.handler');
 
         if ($message = $formHandler->process($form)) {
-            return new RedirectResponse($this->container->get('router')->generate('fos_message_thread_view', array(
+            return new RedirectResponse($this->container->get('router')->generate('message_thread_view', array(
                 'threadId' => $message->getThread()->getId(),
             )));
         }
@@ -95,7 +85,7 @@ class MessageController extends BaseController
         $formHandler = $this->container->get('fos_message.new_thread_form.handler');
 
         if ($message = $formHandler->process($form)) {
-            return new RedirectResponse($this->container->get('router')->generate('fos_message_thread_view', array(
+            return new RedirectResponse($this->container->get('router')->generate('message_thread_view', array(
                 'threadId' => $message->getThread()->getId(),
             )));
         }

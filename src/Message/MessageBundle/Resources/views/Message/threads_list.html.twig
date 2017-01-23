@@ -12,20 +12,19 @@
     </thead>
 
     <tbody>#}
-
     {% if threads %}
-        {% for thread in threads %}
+    {% for thread in threads %}
 
             <div id="show_message_9925" class="comment-box">
-                {% if not userInfo.avatar == '' %}
-                    <img src="{{ asset('uploads/avatars/' ~ userInfo.avatar) }}" alt="" title="" class="clickable avatar" id="member_info" memberid="{{ userInfo.id }}" />
+                {% if not thread.createdBy.avatar == '' %}
+                    <img src="{{ asset('uploads/avatars/' ~ thread.createdBy.avatar) }}" alt="" title="" class="clickable avatar" id="member_info" memberid="{{ thread.createdBy.id }}" />
                 {% else %}
-                    {% if userInfo.gender == 'Male' %}
-                        <img src="{{ asset('themes/default/avatars/avatar_m_s.png') }}" alt="" title="" class="clickable avatar" id="member_info" memberid="{{ userInfo.id }}" />
-                    {% elseif userInfo.gender == 'Female' %}
-                        <img src="{{ asset('themes/default/avatars/avatar_f_s.png') }}" alt="" title="" class="clickable avatar" id="member_info" memberid="{{ userInfo.id }}" />
+                    {% if thread.createdBy.gender == 'Male' %}
+                        <img src="{{ asset('themes/default/avatars/avatar_m_s.png') }}" alt="" title="" class="clickable avatar" id="member_info" memberid="{{ thread.createdBy.id }}" />
+                    {% elseif thread.createdBy.gender == 'Female' %}
+                        <img src="{{ asset('themes/default/avatars/avatar_f_s.png') }}" alt="" title="" class="clickable avatar" id="member_info" memberid="{{ thread.createdBy.id }}" />
                     {% else %}
-                        <img src="{{ asset('themes/default/avatars/avatar_s.png') }}" alt="" title="" class="clickable avatar" id="member_info" memberid="{{ userInfo.id }}" />
+                        <img src="{{ asset('themes/default/avatars/avatar_s.png') }}" alt="" title="" class="clickable avatar" id="member_info" memberid="{{ thread.createdBy.id }}" />
                     {% endif %}
                 {% endif %}
 
@@ -34,8 +33,8 @@
                     <label><input type="checkbox" name="deleteMessages[]" value="9925" id="deleteMessages" /></label>
                 </div>
 
-                <div><span id="member_info" memberid="{{ userInfo.id }}" class="clickable"><span style="color: #6d6c6c; font-weight: bold;">{{ thread.createdBy }}</span></span></div>
-                <div><a href="{{ url('fos_message_thread_view', {'threadId': thread.id}) }}">{{ thread.subject }}</a></div>
+                <div><span id="member_info" memberid="{{ thread.createdBy.id }}" class="clickable"><span style="color: #6d6c6c; font-weight: bold;">{{ thread.createdBy }}</span></span></div>
+                <div><a href="{{ url('message_thread_view', {'threadId': thread.id}) }}">{{ thread.subject }}</a></div>
                 <div class="smalldate">{{ thread.createdAt|date }}</div>
             </div>
 
@@ -87,11 +86,11 @@
             </tr>#}
         {% endfor %}
     {% else %}
-        <tr>
-            <td colspan="6">
-                {% trans from 'FOSMessageBundle' %}no_thread{% endtrans %}.
-            </td>
-        </tr>
+        <br /><br />
+        <div class="error" id="show_error">
+            {% trans from 'FOSMessageBundle' %}no_thread{% endtrans %}.
+        </div>
+        <br />
     {% endif %}
 
     {#</tbody>

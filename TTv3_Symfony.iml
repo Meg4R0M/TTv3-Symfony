@@ -73,7 +73,6 @@
           <root url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/lexer" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/orm" />
-          <root url="file://$MODULE_DIR$/vendor/friendsofsymfony/message-bundle" />
           <root url="file://$MODULE_DIR$/vendor/friendsofsymfony/user-bundle" />
           <root url="file://$MODULE_DIR$/vendor/incenteev/composer-parameter-handler" />
           <root url="file://$MODULE_DIR$/vendor/jdorn/sql-formatter" />
@@ -116,7 +115,6 @@
           <root url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/lexer" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/orm" />
-          <root url="file://$MODULE_DIR$/vendor/friendsofsymfony/message-bundle" />
           <root url="file://$MODULE_DIR$/vendor/friendsofsymfony/user-bundle" />
           <root url="file://$MODULE_DIR$/vendor/incenteev/composer-parameter-handler" />
           <root url="file://$MODULE_DIR$/vendor/jdorn/sql-formatter" />

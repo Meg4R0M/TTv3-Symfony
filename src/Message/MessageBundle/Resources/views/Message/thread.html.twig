@@ -1,4 +1,4 @@
-{% extends 'FOSMessageBundle::layout.html.twig' %}
+{% extends 'MessageBundle::layout.html.twig' %}
 
 {% block fos_message_content %}
 
@@ -9,49 +9,62 @@
                 <dt><a href="javascript:void(0);"></a></dt>
                 <dd>
                     <ul id="ulglobal">
-                        <li><a href="#" id="pm_markAsUnread" rel="9925">Mark as Unread</a></li>
-                        <li><a href="#" id="pm_DeleteMessage" rel="9925">Delete Message</a></li>
-                        <li><a href="#" id="pm_forwardMessage" rel="9925">Forward Message</a></li>
+                        <li><a href="#" id="pm_markAsUnread" rel="{{ thread.id }}">Mark as Unread</a></li>
+                        <li><a href="#" id="pm_DeleteMessage" rel="{{ thread.id }}">Delete Message</a></li>
+                        <li><a href="#" id="pm_forwardMessage" rel="{{ thread.id }}">Forward Message</a></li>
                     </ul>
                 </dd>
             </dl>
         </div>
     </div>
 
-{% for message in thread.messages %}
-    <div id="message_id_{{ message.id }}">
-        <div class="comments" id="reply_15353">
-            <div class="cAvatar"><img src="http://templateshares-ue.net/tsue/styles/default/avatars/avatar_m_s.png?1485176889" alt="" title="" class="clickable avatar" id="member_info" memberid="618" /></div>
+    {% for message in thread.messages %}
+        <div id="message_id_{{ message.thread.id }}">
+            <div class="comments" id="reply_{{ message.id }}">
+                <div class="cAvatar">
+                    {% if not message.sender.avatar == '' %}
+                        <img src="{{ asset('uploads/avatars/' ~ message.sender.avatar) }}" alt="" title="" class="clickable avatar" id="member_info" memberid="{{ message.sender.id }}" />
+                    {% else %}
+                        {% if message.sender.gender == 'Male' %}
+                            <img src="{{ asset('themes/default/avatars/avatar_m_s.png') }}" alt="" title="" class="clickable avatar" id="member_info" memberid="{{ message.sender.id }}" />
+                        {% elseif message.sender.gender == 'Female' %}
+                            <img src="{{ asset('themes/default/avatars/avatar_f_s.png') }}" alt="" title="" class="clickable avatar" id="member_info" memberid="{{ message.sender.id }}" />
+                        {% else %}
+                            <img src="{{ asset('themes/default/avatars/avatar_s.png') }}" alt="" title="" class="clickable avatar" id="member_info" memberid="{{ message.sender.id }}" />
+                        {% endif %}
+                    {% endif %}
+                </div>
 
-            <div class="commentHolder">
-                <div class="cMessage" id="cMessage_15353">{{ message.body }}</div>
-
-                <div class="commentDate">
-                    <div class="cLinks">
-                        &nbsp;&nbsp;&nbsp;<a href="#" id="replyMessage" reply_id="15353" message_id="{{ message.id }}">Reply</a>
+                <div class="commentHolder">
+                    <div class="cMessage" id="cMessage_{{ message.id }}">{{ message.body }}</div>
+                    <div class="commentDate">
+                        <div class="cLinks">
+                            &nbsp;&nbsp;&nbsp;<a href="#" id="replyMessage" reply_id="{{ message.id }}" message_id="{{ message.thread.id }}">Reply</a>
+                        </div>
+                        <span id="member_info" memberid="{{ message.sender.id }}" class="clickable"><span style="color: #6d6c6c; font-weight: bold;">{{ message.sender|e }}</span></span>  {{ message.createdAt|date }}
                     </div>
-                    <span id="member_info" memberid="618" class="clickable"><span style="color: #6d6c6c; font-weight: bold;">{{ message.sender|e }}</span></span>  {{ message.createdAt|date }}
+                    <div class="clear"></div>
                 </div>
 
                 <div class="clear"></div>
             </div>
-
-            <div class="clear"></div>
-
         </div>
-    </div>
-{% endfor %}
-    <div id="messageData"><input type="hidden" name="last_reply_id" id="last_reply_id" value="15353" /></div>
+        <div id="messageData"><input type="hidden" name="last_reply_id" id="last_reply_id" value="{{ message.id }}" /></div>
+    {% endfor %}
 
     <div id="fetchNewMessages"></div>
-
     <div id="messages_post_reply"></div>
-<h3>{% trans from 'FOSMessageBundle' %}reply{% endtrans %}</h3>
+    {#<h3>{% trans from 'FOSMessageBundle' %}reply{% endtrans %}</h3>#}
 
-<form action="{{ url('fos_message_thread_view', {'threadId': thread.id}) }}" method="post">
-    {{ form_widget(form) }}
-
-    <input type="submit" />
-</form>
+    {#<form action="{{ url('fos_message_thread_view', {'threadId': thread.id}) }}" method="post">#}
+    {{ form_start(form) }}
+        <div class="row">
+            <div class="cell first"><label for="message">{{ form_label(form.body) }}</label></div>
+            <div class="cell second">
+                {{ form_widget(form.body, { 'attr': { 'id': 'inline_editor', 'class': 's ajaxTextarea', 'aria-hidden': 'true' } } ) }}
+            </div>
+        </div>
+        <input value="{{ 'Send'|trans }}" class="submit" type="submit">
+    {{ form_end(form) }}
 
 {% endblock %}

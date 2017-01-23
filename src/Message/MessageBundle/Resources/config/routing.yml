@@ -4,19 +4,19 @@ message_inbox:
 
 message_sent:
     path:     /sent
-    defaults: { _controller: FOSMessageBundle:Message:sent }
+    defaults: { _controller: MessageBundle:Message:sent }
 
 message_deleted:
     path:     /deleted
-    defaults: { _controller: FOSMessageBundle:Message:deleted }
+    defaults: { _controller: MessageBundle:Message:deleted }
 
 message_search:
     path:     /search
-    defaults: { _controller: FOSMessageBundle:Message:search }
+    defaults: { _controller: MessageBundle:Message:search }
 
 message_newThread:
     path:     /new
-    defaults: { _controller: FOSMessageBundle:Message:newThread }
+    defaults: { _controller: MessageBundle:Message:newThread }
 
 message_delete:
     path:     /{threadId}/delete
@@ -30,4 +30,4 @@ message_undelete:
 
 message_thread_view:
     path:     /{threadId}
-    defaults: { _controller: FOSMessageBundle:Message:thread }
+    defaults: { _controller: MessageBundle:Message:thread }
