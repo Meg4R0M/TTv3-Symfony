@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0ab6ad49-e827-4831-8791-97f7314afa14" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Users/UsersBundle/Controller/MembercpController.php" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Controller/MembercpController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/translations/messages.fr.yml" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/translations/messages.fr.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpportcheck.html.twig" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpportcheck.html.twig" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,43 +49,52 @@
       <file leaf-file-name="MembercpController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Controller/MembercpController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="555" column="57" lean-forward="false" selection-start-line="555" selection-start-column="57" selection-end-line="555" selection-end-column="57" />
+            <state relative-caret-position="174">
+              <caret line="515" column="20" lean-forward="false" selection-start-line="515" selection-start-column="20" selection-end-line="515" selection-end-column="20" />
               <folding>
                 <element signature="e#20073#20120#0#PHP" expanded="true" />
                 <element signature="e#22277#22327#0#PHP" expanded="true" />
                 <element signature="e#22707#22757#0#PHP" expanded="true" />
-                <element signature="e#24560#24579#1#PHP" expanded="true" />
+                <element signature="e#24557#24576#1#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="membercpcontact.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpcontact.html.twig">
+      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="25" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="21" selection-end-column="19" />
-              <folding />
+            <state relative-caret-position="216">
+              <caret line="159" column="31" lean-forward="true" selection-start-line="159" selection-start-column="31" selection-end-line="159" selection-end-column="31" />
+              <folding>
+                <element signature="e#9263#9266#0#Twig" expanded="true" />
+                <element signature="e#9587#9617#0#Twig" expanded="true" />
+                <element signature="e#11375#11389#0#Twig" expanded="true" />
+                <element signature="e#11595#11609#0#Twig" expanded="true" />
+                <element signature="e#11701#11723#0#Twig" expanded="true" />
+                <element signature="e#11814#11840#0#Twig" expanded="true" />
+                <element signature="e#11927#11949#0#Twig" expanded="true" />
+                <element signature="e#12032#12055#0#Twig" expanded="true" />
+                <element signature="e#12139#12163#0#Twig" expanded="true" />
+                <element signature="e#12248#12269#0#Twig" expanded="true" />
+                <element signature="e#12351#12372#0#Twig" expanded="true" />
+                <element signature="e#12462#12484#0#Twig" expanded="true" />
+                <element signature="e#12575#12596#0#Twig" expanded="true" />
+                <element signature="e#12689#12711#0#Twig" expanded="true" />
+                <element signature="e#12800#12826#0#Twig" expanded="true" />
+                <element signature="e#12913#12938#0#Twig" expanded="true" />
+                <element signature="e#13032#13056#0#Twig" expanded="true" />
+                <element signature="e#13152#13173#0#Twig" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="membercpportcheck.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpportcheck.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="29" column="33" lean-forward="false" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="messages.fr.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="messages.fr.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/translations/messages.fr.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="74" column="32" lean-forward="false" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
+            <state relative-caret-position="342">
+              <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -139,7 +148,6 @@
         <option value="$PROJECT_DIR$/src/CMS/CMSBundle/TorrentsBundle.php" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Infos/breadcrumbs.html.twig" />
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Blocks/membercpmenublock.html.twig" />
         <option value="$PROJECT_DIR$/src/Informations/InformationsBundle/Controller/InfosController.php" />
@@ -157,9 +165,10 @@
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Infos/infobar.html.twig" />
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Default/login.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Controller/MembercpController.php" />
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpportcheck.html.twig" />
+        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Controller/MembercpController.php" />
         <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/translations/messages.fr.yml" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
       </list>
     </option>
   </component>
@@ -1772,7 +1781,7 @@
       <workItem from="1485089100769" duration="1001000" />
       <workItem from="1485110733137" duration="1984000" />
       <workItem from="1485156405599" duration="361000" />
-      <workItem from="1485156901920" duration="3539000" />
+      <workItem from="1485156901920" duration="4753000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout de FOSUSerBundle">
       <created>1484397812682</created>
@@ -1792,7 +1801,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="234946000" />
+    <option name="totallyTimeSpent" value="236160000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1818,7 +1827,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24004425" sideWeight="0.49583334" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3561947" sideWeight="0.49583334" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18429486" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1926,13 +1935,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="52" column="33" lean-forward="false" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -2174,40 +2176,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpportcheck.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="29" column="33" lean-forward="false" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+          <folding>
+            <element signature="e#12#28#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpcontact.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="18" column="25" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="21" selection-end-column="19" />
+          <folding>
+            <element signature="e#12#28#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/translations/messages.fr.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Controller/MembercpController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="555" column="57" lean-forward="false" selection-start-line="555" selection-start-column="57" selection-end-line="555" selection-end-column="57" />
+        <state relative-caret-position="174">
+          <caret line="515" column="20" lean-forward="false" selection-start-line="515" selection-start-column="20" selection-end-line="515" selection-end-column="20" />
           <folding>
             <element signature="e#20073#20120#0#PHP" expanded="true" />
             <element signature="e#22277#22327#0#PHP" expanded="true" />
             <element signature="e#22707#22757#0#PHP" expanded="true" />
-            <element signature="e#24560#24579#1#PHP" expanded="true" />
+            <element signature="e#24557#24576#1#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpportcheck.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="29" column="33" lean-forward="false" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/translations/messages.fr.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="74" column="32" lean-forward="false" selection-start-line="74" selection-start-column="32" selection-end-line="74" selection-end-column="32" />
-          <folding />
+        <state relative-caret-position="216">
+          <caret line="159" column="31" lean-forward="true" selection-start-line="159" selection-start-column="31" selection-end-line="159" selection-end-column="31" />
+          <folding>
+            <element signature="e#9263#9266#0#Twig" expanded="true" />
+            <element signature="e#9587#9617#0#Twig" expanded="true" />
+            <element signature="e#11375#11389#0#Twig" expanded="true" />
+            <element signature="e#11595#11609#0#Twig" expanded="true" />
+            <element signature="e#11701#11723#0#Twig" expanded="true" />
+            <element signature="e#11814#11840#0#Twig" expanded="true" />
+            <element signature="e#11927#11949#0#Twig" expanded="true" />
+            <element signature="e#12032#12055#0#Twig" expanded="true" />
+            <element signature="e#12139#12163#0#Twig" expanded="true" />
+            <element signature="e#12248#12269#0#Twig" expanded="true" />
+            <element signature="e#12351#12372#0#Twig" expanded="true" />
+            <element signature="e#12462#12484#0#Twig" expanded="true" />
+            <element signature="e#12575#12596#0#Twig" expanded="true" />
+            <element signature="e#12689#12711#0#Twig" expanded="true" />
+            <element signature="e#12800#12826#0#Twig" expanded="true" />
+            <element signature="e#12913#12938#0#Twig" expanded="true" />
+            <element signature="e#13032#13056#0#Twig" expanded="true" />
+            <element signature="e#13152#13173#0#Twig" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

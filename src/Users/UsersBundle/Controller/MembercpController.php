@@ -569,7 +569,7 @@ class MembercpController extends Controller
     }
 
     /**
-     * Creates a form to edit a Produits entity.
+     * Creates a form to edit a Users entity.
      *
      * @param Users $user The user entity
      *
@@ -597,7 +597,7 @@ class MembercpController extends Controller
     }
 
     /**
-     * Get cuurent user ID or redirect to login page
+     * Get current user ID or redirect to login page
      *
      * @return null|object|\Symfony\Component\HttpFoundation\RedirectResponse|Users
      */

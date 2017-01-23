@@ -23,6 +23,7 @@ Email addresses do not match: Les adresses e-mail ne correspondent pas
 Passwords do not match: Les mots de passe ne correspondent pas
 
 # traduction memberCP Menu
+Member CP: PC Membre
 Personal Details: Détails personnels
 Contact Details: Infos de contact
 Preferences: Préférences
@@ -82,4 +83,5 @@ is open on: est ouvert sur
 
 # traduction Generale
 An error has occurred: Une erreur est survenue
+Home: Accueil
 
