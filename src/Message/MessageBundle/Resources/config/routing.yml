@@ -1,0 +1,33 @@
+message_inbox:
+    path:     /
+    defaults: { _controller: MessageBundle:Message:inbox }
+
+message_sent:
+    path:     /sent
+    defaults: { _controller: FOSMessageBundle:Message:sent }
+
+message_deleted:
+    path:     /deleted
+    defaults: { _controller: FOSMessageBundle:Message:deleted }
+
+message_search:
+    path:     /search
+    defaults: { _controller: FOSMessageBundle:Message:search }
+
+message_newThread:
+    path:     /new
+    defaults: { _controller: FOSMessageBundle:Message:newThread }
+
+message_delete:
+    path:     /{threadId}/delete
+    defaults: { _controller: FOSMessageBundle:Message:delete }
+    methods:  [POST, DELETE]
+
+message_undelete:
+    path:     /{threadId}/undelete
+    defaults: { _controller: FOSMessageBundle:Message:undelete }
+    methods:  [POST]
+
+message_thread_view:
+    path:     /{threadId}
+    defaults: { _controller: FOSMessageBundle:Message:thread }

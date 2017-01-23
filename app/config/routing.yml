@@ -13,6 +13,10 @@ utilisateurs:
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
 
+message:
+    resource: "@MessageBundle/Resources/config/routing.yml"
+    prefix:   /mailbox
+
 fos_message:
     resource: "@FOSMessageBundle/Resources/config/routing.xml"
-    prefix: /mailbox
+    prefix: /mailbox2

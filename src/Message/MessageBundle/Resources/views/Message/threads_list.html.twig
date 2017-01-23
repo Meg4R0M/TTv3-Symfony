@@ -17,14 +17,24 @@
         {% for thread in threads %}
 
             <div id="show_message_9925" class="comment-box">
-                <img src="http://templateshares-ue.net/tsue/styles/default/avatars/avatar_m_s.png?1485175657" alt="" title="" class="clickable avatar" id="member_info" memberid="618" />
+                {% if not userInfo.avatar == '' %}
+                    <img src="{{ asset('uploads/avatars/' ~ userInfo.avatar) }}" alt="" title="" class="clickable avatar" id="member_info" memberid="{{ userInfo.id }}" />
+                {% else %}
+                    {% if userInfo.gender == 'Male' %}
+                        <img src="{{ asset('themes/default/avatars/avatar_m_s.png') }}" alt="" title="" class="clickable avatar" id="member_info" memberid="{{ userInfo.id }}" />
+                    {% elseif userInfo.gender == 'Female' %}
+                        <img src="{{ asset('themes/default/avatars/avatar_f_s.png') }}" alt="" title="" class="clickable avatar" id="member_info" memberid="{{ userInfo.id }}" />
+                    {% else %}
+                        <img src="{{ asset('themes/default/avatars/avatar_s.png') }}" alt="" title="" class="clickable avatar" id="member_info" memberid="{{ userInfo.id }}" />
+                    {% endif %}
+                {% endif %}
 
                 <div class="floatright textAlignCenter">
                     {% if not fos_message_is_read(thread) %}<span id="unread" class="prefixButton red">({% trans from 'FOSMessageBundle' %}new{% endtrans %})</span>{% endif %}
                     <label><input type="checkbox" name="deleteMessages[]" value="9925" id="deleteMessages" /></label>
                 </div>
 
-                <div><span id="member_info" memberid="618" class="clickable"><span style="color: #6d6c6c; font-weight: bold;">{{ thread.createdBy }}</span></span></div>
+                <div><span id="member_info" memberid="{{ userInfo.id }}" class="clickable"><span style="color: #6d6c6c; font-weight: bold;">{{ thread.createdBy }}</span></span></div>
                 <div><a href="{{ url('fos_message_thread_view', {'threadId': thread.id}) }}">{{ thread.subject }}</a></div>
                 <div class="smalldate">{{ thread.createdAt|date }}</div>
             </div>

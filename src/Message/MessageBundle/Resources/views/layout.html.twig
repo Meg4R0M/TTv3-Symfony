@@ -6,9 +6,7 @@
     {% endif %}
 {% endblock %}
 
-{% block breadcrumbs %}
-    {{ render(controller('UsersBundle:Infos:breadcrumbs', {'page': { 'name': 'Mailbox', 'address': 'fos_message_inbox'}})) }}
-{% endblock %}
+{% block breadcrumbs %}{% endblock %}
 
 {% block content %}
     {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
@@ -36,5 +34,5 @@
 {% endblock %}
 
 {% block rightblocks %}
-    {{ render(controller('UsersBundle:UsersBlock:membercpmenu', {'url': 'membercp'})) }}
+    {{ render(controller('UsersBundle:UsersBlock:membercpmenu', {'url': 'messages'})) }}
 {% endblock %}

@@ -2,28 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ab6ad49-e827-4831-8791-97f7314afa14" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSMessageBundle/views/Message/deleted.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSMessageBundle/views/Message/inbox.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSMessageBundle/views/Message/newThread.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSMessageBundle/views/Message/search.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSMessageBundle/views/Message/sent.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSMessageBundle/views/Message/thread.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSMessageBundle/views/Message/threads_list.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/FOSMessageBundle/views/layout.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Message/MessageBundle/Resources/config/routing.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Message/MessageBundle/Resources/views/Message/inbox.html.twig" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/FOSMessageBundle/views/Message/inbox.html.twig" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSMessageBundle/views/Message/deleted.html.twig" afterPath="$PROJECT_DIR$/src/Message/MessageBundle/Resources/views/Message/deleted.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSMessageBundle/views/Message/newThread.html.twig" afterPath="$PROJECT_DIR$/src/Message/MessageBundle/Resources/views/Message/newThread.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSMessageBundle/views/Message/search.html.twig" afterPath="$PROJECT_DIR$/src/Message/MessageBundle/Resources/views/Message/search.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSMessageBundle/views/Message/sent.html.twig" afterPath="$PROJECT_DIR$/src/Message/MessageBundle/Resources/views/Message/sent.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSMessageBundle/views/Message/thread.html.twig" afterPath="$PROJECT_DIR$/src/Message/MessageBundle/Resources/views/Message/thread.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSMessageBundle/views/Message/threads_list.html.twig" afterPath="$PROJECT_DIR$/src/Message/MessageBundle/Resources/views/Message/threads_list.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSMessageBundle/views/layout.html.twig" afterPath="$PROJECT_DIR$/src/Message/MessageBundle/Resources/views/layout.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" afterPath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Users/UsersBundle/Entity/Users.php" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Entity/Users.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Blocks/membercpmenublock.html.twig" afterPath="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Blocks/membercpmenublock.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,76 +55,80 @@
     <favorites_list name="TTv3-Symfony" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MembercpController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Controller/MembercpController.php">
+    <leaf>
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3306">
-              <caret line="515" column="20" lean-forward="false" selection-start-line="515" selection-start-column="20" selection-end-line="515" selection-end-column="20" />
+            <state relative-caret-position="36">
+              <caret line="2" column="56" lean-forward="false" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Controller/MessageController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="28" column="39" lean-forward="false" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
               <folding>
-                <element signature="e#20073#20120#0#PHP" expanded="true" />
-                <element signature="e#22277#22327#0#PHP" expanded="true" />
-                <element signature="e#22707#22757#0#PHP" expanded="true" />
-                <element signature="e#24557#24576#1#PHP" expanded="true" />
+                <element signature="e#528#547#1#PHP" expanded="true" />
+                <element signature="e#768#807#0#PHP" expanded="true" />
+                <element signature="e#1305#1343#0#PHP" expanded="true" />
+                <element signature="e#1688#1729#0#PHP" expanded="true" />
+                <element signature="e#2365#2390#0#PHP" expanded="true" />
+                <element signature="e#2556#2596#0#PHP" expanded="true" />
+                <element signature="e#3138#3163#0#PHP" expanded="true" />
+                <element signature="e#3329#3372#0#PHP" expanded="true" />
+                <element signature="e#3966#3985#1#PHP" expanded="true" />
+                <element signature="e#4471#4490#1#PHP" expanded="true" />
+                <element signature="e#4894#4934#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/FOSMessageBundle/views/layout.html.twig">
+      <file leaf-file-name="MembercpController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Controller/MembercpController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="27" column="72" lean-forward="false" selection-start-line="27" selection-start-column="72" selection-end-line="27" selection-end-column="72" />
+            <state relative-caret-position="54">
+              <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="57" />
               <folding>
-                <element signature="e#1055#1072#0#Twig" expanded="false" />
-                <element signature="e#1317#1333#0#Twig" expanded="false" />
-                <element signature="e#1442#1461#0#Twig" expanded="false" />
-                <marker date="1485176072037" expanded="true" signature="369:1646" ph="{% block content ...%}" />
-                <marker date="1485176072037" expanded="true" signature="393:1631" ph="{% if is_granted(&quot;IS_AUTHENTICATED_REMEMBERED&quot;) ...%}" />
+                <element signature="e#47#104#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="inbox.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/FOSMessageBundle/views/Message/inbox.html.twig">
+        <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Resources/views/Message/inbox.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="109" lean-forward="false" selection-start-line="6" selection-start-column="109" selection-end-line="6" selection-end-column="109" />
+            <state relative-caret-position="72">
+              <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
               <folding>
-                <element signature="e#12#46#0#Twig" expanded="true" />
-                <element signature="e#275#322#0#Twig" expanded="true" />
+                <element signature="e#12#43#0#Twig" expanded="true" />
+                <element signature="e#450#494#0#Twig" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="threads_list.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/FOSMessageBundle/views/Message/threads_list.html.twig">
+      <file leaf-file-name="threads_list.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Resources/views/Message/threads_list.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1477">
-              <caret line="88" column="10" lean-forward="false" selection-start-line="88" selection-start-column="10" selection-end-line="88" selection-end-column="10" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#span#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="e#1443#1466#0#Twig" expanded="true" />
-                <marker date="1485176802023" expanded="false" signature="2399:2422" ph="/{threadId}" />
-                <marker date="1485176802023" expanded="false" signature="3233:3260" ph="/{threadId}/undelete" />
-                <marker date="1485176802023" expanded="false" signature="3513:3538" ph="/{threadId}/delete" />
-              </folding>
+            <state relative-caret-position="144">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="thread.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Resources/FOSMessageBundle/views/Message/thread.html.twig">
+      <file leaf-file-name="loginblock.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Blocks/loginblock.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-              <folding>
-                <element signature="e#12#46#0#Twig" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#span#0;n#div#1;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="234">
+              <caret line="13" column="68" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="70" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -155,57 +151,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Form/MembercpSignatureType.php" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpsignature.html.twig" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Entity/Media.php" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Form/MediaType.php" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Repository/AvatarRepository.php" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/DataFixtures/ORM/AvatarData.php" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Entity/Avatar.php" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Form/MembercpAvatarType.php" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Form/AvatarType.php" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpavatar.html.twig" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/DataFixtures/ORM/MoodsData.php" />
-        <option value="$PROJECT_DIR$/src/Informations/InformationsBundle/DataFixtures/ORM/NewsData.php" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Controller/UsersBlockController.php" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Blocks/loginblock.html.twig" />
-        <option value="$PROJECT_DIR$/src/CMS/CMSBundle/Controller/CMSController.php" />
-        <option value="$PROJECT_DIR$/src/CMS/CMSBundle/Controller/CMSIndexController.php" />
-        <option value="$PROJECT_DIR$/src/CMS/CMSBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/CMS/CMSBundle/Resources/config/services.yml" />
-        <option value="$PROJECT_DIR$/src/CMS/CMSBundle/Resources/views/Default/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/CMS/CMSBundle/TorrentsBundle.php" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Infos/breadcrumbs.html.twig" />
-        <option value="$PROJECT_DIR$/src/Informations/InformationsBundle/Controller/InfosController.php" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/DataFixtures/ORM/UsersData.php" />
-        <option value="$PROJECT_DIR$/app/config/parameters.yml.dist" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Default/SwiftLayout/inviteMail.html.twig" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpinvite.html.twig" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Form/SignupType.php" />
-        <option value="$PROJECT_DIR$/src/CMS/CMSBundle/Resources/views/Default/invitedUser.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Infos/infobar.html.twig" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Default/login.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpportcheck.html.twig" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Controller/MembercpController.php" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/translations/messages.fr.yml" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Resources/config/doctrine/Thread.mongodb.xml" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Resources/config/doctrine/Thread.orm.xml" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Resources/config/doctrine/ThreadMetadata.mongodb.xml" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Resources/config/doctrine/ThreadMetadata.orm.xml" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Resources/config/config.xml" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Resources/config/mongodb.xml" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Resources/config/orm.xml" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Resources/config/routing.xml" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Resources/config/spam_detection.xml" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Resources/config/validation.xml" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Resources/config/validator.xml" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Search/Finder.php" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Search/FinderInterface.php" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Search/Query.php" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Search/QueryFactory.php" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Search/QueryFactoryInterface.php" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Security/Authorizer.php" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Security/AuthorizerInterface.php" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Security/ParticipantProvider.php" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Security/ParticipantProviderInterface.php" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Sender/Sender.php" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Sender/SenderInterface.php" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/SpamDetection/AkismetSpamDetector.php" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/SpamDetection/NoopSpamDetector.php" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/SpamDetection/SpamDetectorInterface.php" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Tests/Document/ThreadDenormalizerTest.php" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Tests/EntityManager/ThreadManagerTest.php" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Tests/Model/ThreadTest.php" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Tests/Twig/Extension/MessageExtensionTest.php" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Twig/Extension/MessageExtension.php" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Util/LegacyFormHelper.php" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Validator/Authorization.php" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Validator/AuthorizationValidator.php" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Validator/ReplyAuthorization.php" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Validator/ReplyAuthorizationValidator.php" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Validator/SelfRecipient.php" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Validator/SelfRecipientValidator.php" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Validator/Spam.php" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Validator/SpamValidator.php" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/MessageBundle.php" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/FormType/NewThreadMessageFormType.php" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Resources/config/form.xml" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Resources/config/doctrine/MessageMetadata.orm.xml" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Entity/Message.php" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Entity/MessageMetadata.php" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Entity/Thread.php" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Entity/ThreadMetadata.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Entity/Users.php" />
-        <option value="$PROJECT_DIR$/app/Resources/FOSMessageBundle/views/layout.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/FOSMessageBundle/views/Message/threads_list.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/FOSMessageBundle/views/Message/inbox.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/FOSMessageBundle/views/Message/thread.html.twig" />
-        <option value="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Blocks/membercpmenublock.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Resources/views/Message/inbox.html.twig" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Controller/MessageController.php" />
+        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Resources/views/Message/threads_list.html.twig" />
       </list>
     </option>
   </component>
@@ -301,6 +297,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -337,7 +335,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="default" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -351,139 +357,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
+              <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="friendsofsymfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
+              <option name="myItemId" value="themes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
+              <option name="myItemId" value="default" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="friendsofsymfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="message-bundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MessageBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="friendsofsymfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="message-bundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MessageBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="friendsofsymfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="message-bundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MessageBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Message" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="friendsofsymfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="message-bundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MessageBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
+              <option name="myItemId" value="avatars" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -879,11 +765,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Informations" />
+              <option name="myItemId" value="Message" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="InformationsBundle" />
+              <option name="myItemId" value="MessageBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -901,11 +787,41 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Informations" />
+              <option name="myItemId" value="Message" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="InformationsBundle" />
+              <option name="myItemId" value="MessageBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TTv3-Symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TTv3-Symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Message" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MessageBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -917,7 +833,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Frames" />
+              <option name="myItemId" value="Message" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -935,235 +851,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Informations" />
+              <option name="myItemId" value="Message" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="InformationsBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Informations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InformationsBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Informations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InformationsBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Informations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InformationsBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Informations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InformationsBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataFixtures" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ORM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Informations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InformationsBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CMSBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CMSBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Frames" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CMSBundle" />
+              <option name="myItemId" value="MessageBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1193,37 +885,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CMS" />
+              <option name="myItemId" value="Message" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CMSBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CMS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CMSBundle" />
+              <option name="myItemId" value="MessageBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1249,11 +915,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CMS" />
+              <option name="myItemId" value="Message" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CMSBundle" />
+              <option name="myItemId" value="MessageBundle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1453,70 +1119,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FOSMessageBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FOSMessageBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Message" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -1535,19 +1143,19 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Message/MessageBundle/Resources/views/Message" />
+      <recent name="$PROJECT_DIR$/src/Message/MessageBundle/Resources/views" />
+      <recent name="$PROJECT_DIR$/src/Message/MessageBundle/Resources/config" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/app/Resources/FOSMessageBundle" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Message" />
       <recent name="$PROJECT_DIR$/src/Informations/InformationsBundle" />
       <recent name="$PROJECT_DIR$/src/Informations/InformationsBundle/Resources/views/Frames" />
       <recent name="$PROJECT_DIR$/src/Utilisateurs/UtilisateursBundle/Resources/views/Blocks" />
       <recent name="$PROJECT_DIR$/src/Torrents/TorrentsBundle/Resources/views/Frame" />
-      <recent name="$PROJECT_DIR$/app/Resources" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Resources/FOSMessageBundle" />
-      <recent name="$PROJECT_DIR$/web" />
-      <recent name="$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Default" />
-      <recent name="$PROJECT_DIR$/src/Users/UsersBundle/Form" />
-      <recent name="$PROJECT_DIR$/web/themes/default" />
     </key>
   </component>
   <component name="RunManager">
@@ -2073,7 +1681,8 @@
       <workItem from="1485089100769" duration="1001000" />
       <workItem from="1485110733137" duration="1984000" />
       <workItem from="1485156405599" duration="361000" />
-      <workItem from="1485156901920" duration="13443000" />
+      <workItem from="1485156901920" duration="18724000" />
+      <workItem from="1485183459920" duration="3978000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout de FOSUSerBundle">
       <created>1484397812682</created>
@@ -2093,7 +1702,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="244850000" />
+    <option name="totallyTimeSpent" value="254109000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2119,10 +1728,10 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928178" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3561947" sideWeight="0.49583334" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23561947" sideWeight="0.49583334" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18429486" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18643162" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12553419" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2151,7 +1760,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2160,448 +1769,196 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/dc6156ba-2554-4363-ba95-e575315b6d37/console.sql" />
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Tests/Model/ThreadTest.php" />
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Tests/Twig/Extension/MessageExtensionTest.php" />
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Tests/bootstrap.php" />
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Twig/Extension/MessageExtension.php" />
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Util/LegacyFormHelper.php" />
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Validator/Authorization.php" />
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Validator/AuthorizationValidator.php" />
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Validator/ReplyAuthorization.php" />
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Validator/ReplyAuthorizationValidator.php" />
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Validator/SelfRecipient.php" />
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Validator/SelfRecipientValidator.php" />
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Validator/Spam.php" />
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Validator/SpamValidator.php" />
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/.php_cs" />
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/.travis.yml" />
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/phpunit.xml.dist" />
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/security.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="35" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Controller/UsersBlockController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Controller/InfosController.php">
+    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CMS/CMSBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Informations/InformationsBundle/Controller/InfosController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="23" column="108" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpinvite.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1278">
-          <caret line="71" column="40" lean-forward="false" selection-start-line="71" selection-start-column="40" selection-end-line="71" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CMS/CMSBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/themes/default/social/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Form/MembercpType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="25" column="41" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="30" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="34" column="73" lean-forward="false" selection-start-line="34" selection-start-column="73" selection-end-line="34" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Form/SignupType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpalerts.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="20" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="21" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/36366700-ad8b-44a7-ba8d-7fd7d479b64e/console.sql" />
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Infos/infobar.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CMS/CMSBundle/Controller/CMSIndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="16" column="62" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="65" />
-          <folding>
-            <element signature="e#44#101#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Default/login.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Default/signup.html.twig" />
-    <entry file="file://$PROJECT_DIR$/src/CMS/CMSBundle/Resources/views/Default/invitedUser.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="14" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpportcheck.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="29" column="33" lean-forward="false" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
-          <folding>
-            <element signature="e#12#28#0#Twig" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercpcontact.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="25" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="21" selection-end-column="19" />
-          <folding>
-            <element signature="e#12#28#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/translations/messages.fr.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/MessageBundle.php" />
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/FormType/NewThreadMessageFormType.php" />
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Resources/config/routing.xml" />
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Resources/config/spam_detection.xml" />
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Resources/config/validation.xml" />
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Resources/config/mongodb.xml" />
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Resources/config/doctrine/Message.orm.xml" />
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Resources/config/doctrine/MessageMetadata.orm.xml" />
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Resources/config/doctrine/Thread.orm.xml" />
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Resources/config/doctrine/ThreadMetadata.orm.xml" />
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Resources/config/validator.xml" />
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/FormType/RecipientsType.php" />
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Resources/config/config.xml" />
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Resources/config/form.xml" />
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/DataTransformer/RecipientsDataTransformer.php" />
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Resources/config/orm.xml" />
     <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
-          <caret line="20" column="53" lean-forward="false" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+          <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="111" column="57" lean-forward="false" selection-start-line="111" selection-start-column="57" selection-end-line="111" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        <state relative-caret-position="378">
+          <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Entity/MessageMetadata.php">
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/message-bundle/FOS/MessageBundle/Resources/config/routing.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="34" column="66" lean-forward="false" selection-start-line="34" selection-start-column="66" selection-end-line="34" selection-end-column="66" />
-          <folding>
-            <element signature="e#6#92#0#PHP" expanded="false" />
-            <element signature="e#130#162#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Entity/Thread.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="42" column="29" lean-forward="false" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
-          <folding>
-            <element signature="e#6#92#0#PHP" expanded="false" />
-            <element signature="e#130#162#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/font-awesome.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        <state relative-caret-position="468">
+          <caret line="35" column="64" lean-forward="false" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Entity/ThreadMetadata.php">
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="34" column="42" lean-forward="false" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
-          <folding>
-            <element signature="e#6#92#0#PHP" expanded="false" />
-            <element signature="e#130#162#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Entity/Message.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-          <folding>
-            <element signature="e#6#92#0#PHP" expanded="false" />
-            <element signature="e#130#162#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSMessageBundle/views/Message/sent.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="36">
+          <caret line="2" column="56" lean-forward="false" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Default/SwiftLayout/inviteMail.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="55" column="14" lean-forward="false" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
-          <folding>
-            <marker date="1485156380858" expanded="true" signature="702:785" ph="..." />
-            <marker date="1485156380858" expanded="true" signature="714:773" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Entity/Moods.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Entity/Users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="292" column="27" lean-forward="false" selection-start-line="292" selection-start-column="27" selection-end-line="292" selection-end-column="27" />
-          <folding>
-            <element signature="e#131#179#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="44" column="32" lean-forward="false" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/DataFixtures/ORM/UsersData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="49" column="76" lean-forward="false" selection-start-line="48" selection-start-column="8" selection-end-line="50" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding>
-            <element signature="e#12#37#0#Twig" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Membercp/membercp.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="309" column="28" lean-forward="true" selection-start-line="309" selection-start-column="28" selection-end-line="309" selection-end-column="28" />
-          <folding>
-            <element signature="e#12#28#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
-          <folding>
-            <element signature="e#9513#9516#0#Twig" expanded="true" />
-            <element signature="e#9837#9867#0#Twig" expanded="true" />
-            <element signature="e#11625#11639#0#Twig" expanded="true" />
-            <element signature="e#11845#11859#0#Twig" expanded="true" />
-            <element signature="e#11951#11973#0#Twig" expanded="true" />
-            <element signature="e#12064#12090#0#Twig" expanded="true" />
-            <element signature="e#12177#12199#0#Twig" expanded="true" />
-            <element signature="e#12282#12305#0#Twig" expanded="true" />
-            <element signature="e#12389#12413#0#Twig" expanded="true" />
-            <element signature="e#12498#12519#0#Twig" expanded="true" />
-            <element signature="e#12601#12622#0#Twig" expanded="true" />
-            <element signature="e#12712#12734#0#Twig" expanded="true" />
-            <element signature="e#12825#12846#0#Twig" expanded="true" />
-            <element signature="e#12939#12961#0#Twig" expanded="true" />
-            <element signature="e#13050#13076#0#Twig" expanded="true" />
-            <element signature="e#13163#13188#0#Twig" expanded="true" />
-            <element signature="e#13282#13306#0#Twig" expanded="true" />
-            <element signature="e#13402#13423#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Controller/MembercpController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3306">
-          <caret line="515" column="20" lean-forward="false" selection-start-line="515" selection-start-column="20" selection-end-line="515" selection-end-column="20" />
-          <folding>
-            <element signature="e#20073#20120#0#PHP" expanded="true" />
-            <element signature="e#22277#22327#0#PHP" expanded="true" />
-            <element signature="e#22707#22757#0#PHP" expanded="true" />
-            <element signature="e#24557#24576#1#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSMessageBundle/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="27" column="72" lean-forward="false" selection-start-line="27" selection-start-column="72" selection-end-line="27" selection-end-column="72" />
-          <folding>
-            <element signature="e#1055#1072#0#Twig" expanded="false" />
-            <element signature="e#1317#1333#0#Twig" expanded="false" />
-            <element signature="e#1442#1461#0#Twig" expanded="false" />
-            <marker date="1485176072037" expanded="true" signature="369:1646" ph="{% block content ...%}" />
-            <marker date="1485176072037" expanded="true" signature="393:1631" ph="{% if is_granted(&quot;IS_AUTHENTICATED_REMEMBERED&quot;) ...%}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/FOSMessageBundle/views/Message/inbox.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
-          <caret line="6" column="109" lean-forward="false" selection-start-line="6" selection-start-column="109" selection-end-line="6" selection-end-column="109" />
+          <caret line="6" column="31" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Resources/views/Message/thread.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/message-bundle/FOS/MessageBundle/Controller/MessageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
           <folding>
-            <element signature="e#12#46#0#Twig" expanded="true" />
-            <element signature="e#275#322#0#Twig" expanded="true" />
+            <element signature="e#12#28#0#Twig" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSMessageBundle/views/Message/threads_list.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Resources/views/Message/inbox.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1477">
-          <caret line="88" column="10" lean-forward="false" selection-start-line="88" selection-start-column="10" selection-end-line="88" selection-end-column="10" />
+        <state relative-caret-position="72">
+          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
           <folding>
-            <element signature="n#style#0;n#span#0;n#span#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#1443#1466#0#Twig" expanded="true" />
-            <marker date="1485176802023" expanded="false" signature="2399:2422" ph="/{threadId}" />
-            <marker date="1485176802023" expanded="false" signature="3233:3260" ph="/{threadId}/undelete" />
-            <marker date="1485176802023" expanded="false" signature="3513:3538" ph="/{threadId}/delete" />
+            <element signature="e#12#43#0#Twig" expanded="true" />
+            <element signature="e#450#494#0#Twig" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Blocks/membercpmenublock.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Controller/InfosController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+        <state relative-caret-position="90">
+          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Controller/MembercpController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="57" />
           <folding>
-            <element signature="e#2991#3008#0#Twig" expanded="true" />
+            <element signature="e#47#104#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSMessageBundle/views/Message/thread.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Controller/MessageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state relative-caret-position="504">
+          <caret line="28" column="39" lean-forward="false" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
           <folding>
-            <element signature="e#12#46#0#Twig" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#span#0;n#div#1;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="e#528#547#1#PHP" expanded="true" />
+            <element signature="e#768#807#0#PHP" expanded="true" />
+            <element signature="e#1305#1343#0#PHP" expanded="true" />
+            <element signature="e#1688#1729#0#PHP" expanded="true" />
+            <element signature="e#2365#2390#0#PHP" expanded="true" />
+            <element signature="e#2556#2596#0#PHP" expanded="true" />
+            <element signature="e#3138#3163#0#PHP" expanded="true" />
+            <element signature="e#3329#3372#0#PHP" expanded="true" />
+            <element signature="e#3966#3985#1#PHP" expanded="true" />
+            <element signature="e#4471#4490#1#PHP" expanded="true" />
+            <element signature="e#4894#4934#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/views/Blocks/loginblock.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="68" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Resources/views/Message/threads_list.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
