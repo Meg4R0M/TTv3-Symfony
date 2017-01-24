@@ -1,9 +1,13 @@
 {% extends 'MessageBundle::layout.html.twig' %}
 
-{% block fos_message_content %}
+{% block breadcrumbs %}
+    {{ render(controller('UsersBundle:Infos:breadcrumbs', {'page': { 'name': 'Mailbox', 'address': 'message_inbox'}, 'section': { 'name': 'View Thread', 'address': 'message_inbox' } } ) ) }}
+{% endblock %}
 
+{% block fos_message_content %}
+    <br /><br />
     <h2>{{ thread.subject }}</h2>
-    <div id="messageTools">
+    {#<div id="messageTools">
         <div class="toolsMenu">
             <dl class="dropdown">
                 <dt><a href="javascript:void(0);"></a></dt>
@@ -16,7 +20,7 @@
                 </dd>
             </dl>
         </div>
-    </div>
+    </div>#}
 
     {% for message in thread.messages %}
         <div id="message_id_{{ message.thread.id }}">
@@ -57,6 +61,12 @@
     {#<h3>{% trans from 'FOSMessageBundle' %}reply{% endtrans %}</h3>#}
 
     {#<form action="{{ url('fos_message_thread_view', {'threadId': thread.id}) }}" method="post">#}
+    {% if not form_errors(form) == '' %}
+    <div class="error" id="show_error">
+        {{ form_errors(form) }}
+    </div>
+    <br />
+    {% endif %}
     {{ form_start(form) }}
         <div class="row">
             <div class="cell first"><label for="message">{{ form_label(form.body) }}</label></div>

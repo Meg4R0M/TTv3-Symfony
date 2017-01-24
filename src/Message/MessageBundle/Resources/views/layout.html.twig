@@ -12,17 +12,14 @@
     {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
 
         <span class="floatright">
-		    <input type="button" name="messages_delete_messages" value="Delete Selected Messages" id="messages_delete_messages" class="submit" />
-		    <input type="button" name="messages_select_all" value="Select All" id="messages_select_all" class="submit" />
+		    {#<input type="button" name="messages_delete_messages" value="Delete Selected Messages" id="messages_delete_messages" class="submit" />
+		    <input type="button" name="messages_select_all" value="Select All" id="messages_select_all" class="submit" />#}
+            <input type="button" name="messages_sent" value="{% trans from 'FOSMessageBundle' %}sent{% endtrans %}" id="messages_sent" class="submit" />
+            <input type="button" name="messages_deleted" value="{% trans from 'FOSMessageBundle' %}deleted{% endtrans %}" id="messages_deleted" class="submit" />
 	    </span>
 
-        <input type="button" name="messages_new_message" value="New Message" id="messages_new_message" class="submit" />
-        <input type="button" name="messages_view_all" value="See All Messages" id="messages_view_all" class="submit" />
-
-            <a href="{{ url('message_inbox') }}" class="submit">{% trans from 'FOSMessageBundle' %}inbox{% endtrans %}</a>
-            <a href="{{ url('message_newThread' )}}" class="submit">{% trans from 'FOSMessageBundle' %}send_new{% endtrans %}</a>
-            <a href="{{ url('message_sent') }}" class="submit">{% trans from 'FOSMessageBundle' %}sent{% endtrans %}</a>
-            <a href="{{ url('message_deleted') }}" class="submit">{% trans from 'FOSMessageBundle' %}deleted{% endtrans %}</a>
+        <input type="button" name="messages_new_message" value="{% trans from 'FOSMessageBundle' %}send_new{% endtrans %}" id="messages_new_message" class="submit" />
+        <input type="button" name="messages_view_all" value="{% trans from 'FOSMessageBundle' %}inbox{% endtrans %}" id="messages_view_all" class="submit" />
 
         {% block fos_message_content %}{% endblock %}
 

@@ -44,6 +44,7 @@ twig:
     strict_variables: "%kernel.debug%"
     globals:
         site_name: '%site_name%'
+        site_url: '%site_url%/web/app_dev.php'
 
 # Doctrine Configuration
 doctrine:
@@ -69,6 +70,8 @@ doctrine:
         auto_generate_proxy_classes: "%kernel.debug%"
         naming_strategy: doctrine.orm.naming_strategy.underscore
         auto_mapping: true
+        metadata_cache_driver: apc
+        query_cache_driver: apc
 
 # Swiftmailer Configuration
 swiftmailer:

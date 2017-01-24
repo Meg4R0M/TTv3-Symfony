@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="{{ asset('themes/default/css/extra.css') }}" type="text/css" media="screen" />
         <link rel="stylesheet" href="{{ asset('themes/default/css/ajax.css') }}" type="text/css" media="screen" />
         <link rel="stylesheet" href="{{ asset('themes/default/css/shoutbox.css') }}" type="text/css" media="screen" />
-        <link rel="stylesheet" href="{{ asset('themes/default/css/staffDropDownMenu.css') }}" type="text/css" media="screen" />
         <link rel="stylesheet" href="{{ asset('themes/default/css/upcomingReleases.css') }}" type="text/css" media="screen" />
         <link rel="stylesheet" href="{{ asset('themes/default/css/staffOnlineNow.css') }}" type="text/css" media="screen" />
         <link rel="stylesheet" href="{{ asset('themes/default/css/subtitles.css') }}" type="text/css" media="screen" />
@@ -32,6 +31,7 @@
         {% stylesheets
         '@CMSBundle/Resources/public/css_original/style.css'
         '@CMSBundle/Resources/public/css_original/menu.css'
+        '@CMSBundle/Resources/public/css_original/staffDropDownMenu.css'
         filter="cssrewrite" %}
         <link href="{{ asset_url }}" rel="stylesheet" type="text/css" />
         {% endstylesheets %}
@@ -66,19 +66,19 @@
                                     <table cellpadding="1" cellspacing="0" border="0" width="100%">
                                         <tr>
                                             <td>
-                                                <div>Keyword(s)</div>
+                                                <div>{{ 'Keyword(s)'|trans }}</div>
                                                 <input type="text" name="searchKeywords" value="" class="s" autocomplete="off" />
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                <div>Search Type</div>
-                                                <label><input type="radio" name="searchType" value="1"> Forums</label>
-                                                <label><input type="radio" name="searchType" value="2"> Torrents</label>
-                                                <label><input type="radio" name="searchType" value="3"> Downloads</label>
-                                                <label><input type="radio" name="searchType" value="4"> FAQ</label>
-                                                <label><input type="radio" name="searchType" value="5"> Members</label>
-                                                <label><input type="radio" name="searchType" value="6"> Subtitles</label>
+                                                <div>{{ 'Search Type'|trans }}</div>
+                                                <label><input type="radio" name="searchType" value="1"> {{ 'Forums'|trans }}</label>
+                                                <label><input type="radio" name="searchType" value="2"> {{ 'Torrents'|trans }}</label>
+                                                <label><input type="radio" name="searchType" value="3"> {{ 'Downloads'|trans }}</label>
+                                                <label><input type="radio" name="searchType" value="4"> {{ 'FAQ'|trans }}</label>
+                                                <label><input type="radio" name="searchType" value="5"> {{ 'Members'|trans }}</label>
+                                                <label><input type="radio" name="searchType" value="6"> {{ 'Subtitles'|trans }}</label>
                                             </td>
                                         </tr>
                                         <tr>
@@ -98,10 +98,10 @@
                     <div class="dropdown_column align_right">
                         <div class="atext">
                             <div class="memberlinks">
-                                <span>[<a href="/account.php">Profile</a>]</span>
-                                [<span id="history_link" class="clickable">History</span>]
-                                <span>[<a href="/account-logout.php" id="logout">Log out</a>]</span>
-                                <span>[<a href='/admincp.php'>AdminCP</a>]</span>
+                                <span>[<a href="{{ path('users_membercp') }}">{{ 'Profile'|trans }}</a>]</span>
+                                [<span id="history_link" class="clickable">{{ 'History'|trans }}</span>]
+                                <span>[<a href="{{ path('fos_user_security_logout') }}" id="logout">{{ 'Log out'|trans }}</a>]</span>
+                                <span>[<a href='/admincp.php'>{{ 'AdminCP'|trans }}</a>]</span>
                             </div>
                         </div>
                     </div>
@@ -116,7 +116,7 @@
                     <a href="javascript:void(0)" class="link icons-top"><i class="fa fa-commenting fa-2x" aria-hidden="true"></i></a>
                     <div class="dropdown_column align_right">
                         <div class="atext">
-                            <img src="{{ asset('themes/default/ajax/fb_ajax-loader.gif') }}" alt="" title="" class="middle"/> Messages are loading... If this appears for more than 5 seconds, click <span id="reload_messages" class="clickable">here</span> to reload.
+                            <img src="{{ asset('themes/default/ajax/fb_ajax-loader.gif') }}" alt="" title="" class="middle"/> {{ 'Messages are loading... If this appears for more than 5 seconds, click <span id="reload_messages" class="clickable">here</span> to reload.'|trans }}
                         </div>
                     </div>
                 </li>
@@ -129,7 +129,7 @@
                     <a href="javascript:void(0)" class="link icons-top"><i class="fa fa-bell fa-2x" aria-hidden="true"></i></a>
                     <div class="dropdown_column align_right">
                         <div class="atext">
-                            <img src="{{ asset('themes/default/ajax/fb_ajax-loader.gif') }}" class="middle" alt="" title="" class="middle"/> Alerts are loading... If this appears for more than 5 seconds, click <span id="reload_alerts" class="clickable">here</span> to reload.
+                            <img src="{{ asset('themes/default/ajax/fb_ajax-loader.gif') }}" class="middle" alt="" title="" class="middle"/> {{ 'Alerts are loading... If this appears for more than 5 seconds, click <span id="reload_alerts" class="clickable">here</span> to reload.'|trans }}
                         </div>
                     </div>
                 </li>
@@ -155,35 +155,35 @@
             <nav>
                 <ul id="menu">
                     <li class="nodrop"><a href="{{ path('cms') }}" class="link ">{{ 'Home'|trans }}</a></li>
-                    <li class="nodrop"><a href="/lounge.php" class="link "><span style="color: yellow">Shoutbox</span></a></li>
+                    <li class="nodrop"><a href="/lounge.php" class="link "><span style="color: yellow">{{ 'Shoutbox'|trans }}</span></a></li>
                     {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                     {% else %}
 					<li class="nodrop"><a href="{{ path('fos_user_registration_register') }}" class="link ">{{ 'Signup'|trans }}</a></li>
                     {% endif %}
                     <li class="">
-                        <a href="javascript:void(0)" class="link drop">Forums</a>
+                        <a href="javascript:void(0)" class="link drop">{{ 'Forums'|trans }}</a>
                         <div class="dropdown_column">
                             <div class="column">
-                                <a href="/forums.php">Forums</a>
-                                <a href="/forums.php">What is new?</a>
-                                <a href="/forums.php">Search Forums</a>
-                                <a href="/forums.php">Today's Posts</a>
+                                <a href="/forums.php">{{ 'Forums'|trans }}</a>
+                                <a href="/forums.php">{{ 'What is new?'|trans }}</a>
+                                <a href="/forums.php">{{ 'Search Forums'|trans }}</a>
+                                <a href="/forums.php">{{ "Today's Posts"|trans }}</a>
                             </div>
                         </div>
                     </li>
                     <li class="">
-                        <a href="/torrents.php" class="link drop">Torrents</a>
+                        <a href="/torrents.php" class="link drop">{{ 'Torrents'|trans }}</a>
                         <div class="dropdown_column">
                             <div class="column">
-                                <a href="/torrents.php">View All Torrents</a>
-                                <a href="/torrents-today.php">What is New?</a>
-                                <a href="/torrents-upload.php">Upload a Torrent</a>
-                                <a href="#">Request a Torrent</a>
-                                <a href="#">Join Our Uploaders Team</a>
-                                <a href="#">Subtitles</a>
-                                <a href="#">Bookmarked Torrents</a>
-                                <a href="#">Upcoming Releases</a>
-                                <a href="#">Downloads</a>
+                                <a href="/torrents.php">{{ 'View All Torrents'|trans }}</a>
+                                <a href="/torrents-today.php">{{ 'What is New?'|trans }}</a>
+                                <a href="/torrents-upload.php">{{ 'Upload a Torrent'|trans }}</a>
+                                <a href="#">{{ 'Request a Torrent'|trans }}</a>
+                                <a href="#">{{ 'Join Our Uploaders Team'|trans }}</a>
+                                <a href="#">{{ 'Subtitles'|trans }}</a>
+                                <a href="#">{{ 'Bookmarked Torrents'|trans }}</a>
+                                <a href="#">{{ 'Upcoming Releases'|trans }}</a>
+                                <a href="#">{{ 'Downloads'|trans }}</a>
                             </div>
                         </div>
                     </li>
@@ -207,27 +207,27 @@
                                 <a href="{{ path('users_membercp_subscribed') }}">{{ 'Subscribed Threads'|trans }}</a>
                                 <a href="{{ path('users_membercp_portcheck') }}">{{ 'Open Port Check Tool'|trans }}</a>
                                 <a href="{{ path('users_membercp_alerts') }}">{{ 'Recent Alerts'|trans }}</a>
-                                <a href="/mailbox.php">Messages</a>
+                                <a href="{{ path('message_inbox') }}">{{ 'Messages'|trans }}</a>
                             </div>
                         </div>
                     </li>
-                    <li class="nodrop"><a href="#" class="link ">Market</a></li>
-                    <li class="nodrop"><a href="/memberlist.php" class="link ">Members</a></li>
+                    <li class="nodrop"><a href="#" class="link ">{{ 'Market'|trans }}</a></li>
+                    <li class="nodrop"><a href="/memberlist.php" class="link ">{{ 'Members'|trans }}</a></li>
                     {% endif %}
-                    <li class="nodrop"><a href="/faq.php" class="link ">FAQ</a></li>
+                    <li class="nodrop"><a href="/faq.php" class="link ">{{ 'FAQ'|trans }}</a></li>
                     {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                     <li class="">
-                        <a href="#" class="link drop">Contact</a>
+                        <a href="#" class="link drop">{{ 'Contact'|trans }}</a>
                         <div class="dropdown_column">
                             <div class="column">
-                                <a href="#">Contact Staff</a>
-                                <a href="#">First Line Support</a>
-                                <a href="#">IRC</a>
+                                <a href="#">{{ 'Contact Staff'|trans }}</a>
+                                <a href="#">{{ 'First Line Support'|trans }}</a>
+                                <a href="#">{{ 'IRC'|trans }}</a>
                             </div>
                         </div>
                     </li>
                     {% endif %}
-                    <li class="nodrop"><a href="/staff.php" class="link ">Staff</a></li>
+                    <li class="nodrop"><a href="/staff.php" class="link ">{{ 'Staff'|trans }}</a></li>
                 </ul>
 
                 <div class="clear"></div>
@@ -238,72 +238,72 @@
             <!-- start #menu -->
             <div id="responsiveMenuHider">
                 <ul id="responsiveMenu" class="slimmenu">
-                    <li><a href="{{ path('cms') }}">Home</a></li>
-                    <li><a href="/lounge.php"><span style="color: yellow;">Shoutbox</span></a></li>
+                    <li><a href="{{ path('cms') }}">{{ 'Home'|trans }}</a></li>
+                    <li><a href="/lounge.php"><span style="color: yellow;">{{ 'Shoutbox'|trans }}</span></a></li>
                     {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                     {% else %}
-                    <li><a href="{{ path('fos_user_registration_register') }}">Sign-up</a></li>
+                    <li><a href="{{ path('fos_user_registration_register') }}">{{ 'Sign-up'|trans }}</a></li>
                     {% endif %}
                     <li>
-                        <a href="javascript:void(0)">Forums</a>
+                        <a href="javascript:void(0)">{{ 'Forums'|trans }}</a>
                         <ul>
-                            <li><a href="/forums.php">Forums</a></li>
-                            <li><a href="/forums.php">What is new?</a></li>
-                            <li><a href="/forums.php">Search Forums</a></li>
-                            <li><a href="/forums.php">Today's Posts</a></li>
+                            <li><a href="/forums.php">{{ 'Forums'|trans }}</a></li>
+                            <li><a href="/forums.php">{{ 'What is new?'|trans }}</a></li>
+                            <li><a href="/forums.php">{{ 'Search Forums'|trans }}</a></li>
+                            <li><a href="/forums.php">{{ "Today's Posts"|trans }}</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="/torrents.php">Torrents</a>
+                        <a href="/torrents.php">{{ 'Torrents'|trans }}</a>
                         <ul>
-                            <li><a href="/torrents.php">View All Torrents</a></li>
-                            <li><a href="/torrents-today.php">What is New?</a></li>
-                            <li><a href="/torrents-upload.php">Upload a Torrent</a></li>
-                            <li><a href="#">Request a Torrent</a></li>
-                            <li><a href="#">Join Our Uploaders Team</a></li>
-                            <li><a href="#">Subtitles</a></li>
-                            <li><a href="#">Bookmarked Torrents</a></li>
-                            <li><a href="#">Upcoming Releases</a></li>
-                            <li><a href="#">Downloads</a></li>
+                            <li><a href="/torrents.php">{{ 'View All Torrents'|trans }}</a></li>
+                            <li><a href="/torrents-today.php">{{ 'What is New?'|trans }}</a></li>
+                            <li><a href="/torrents-upload.php">{{ 'Upload a Torrent'|trans }}</a></li>
+                            <li><a href="#">{{ 'Request a Torrent'|trans }}</a></li>
+                            <li><a href="#">{{ 'Join Our Uploaders Team'|trans }}</a></li>
+                            <li><a href="#">{{ 'Subtitles'|trans }}</a></li>
+                            <li><a href="#">{{ 'Bookmarked Torrents'|trans }}</a></li>
+                            <li><a href="#">{{ 'Upcoming Releases'|trans }}</a></li>
+                            <li><a href="#">{{ 'Downloads'|trans }}</a></li>
                         </ul>
 
                     </li>
                     {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-                    <li><a href="{{ path('users_membercp') }}">Member CP</a>
+                    <li><a href="{{ path('users_membercp') }}">{{ 'Member CP'|trans }}</a>
                         <ul>
-                            <li><a href="{{ path('users_membercp') }}">Personal Details</a></li>
-                            <li><a href="{{ path('users_membercp_contact') }}">Contact Details</a></li>
-                            <li><a href="{{ path('users_membercp_preferences') }}">Preferences</a></li>
-                            <li><a href="{{ path('users_membercp_privacy') }}">Privacy</a></li>
-                            <li><a href="/membercp.php?action=password">Password</a></li>
-                            <li><a href="/membercp.php?action=signature">Signature</a></li>
-                            <li><a href="/membercp.php?action=avatar">Avatar</a></li>
-                            <li><a href="/membercp.php?action=invite">Invite Friends</a></li>
-                            <li><a href="/membercp.php?action=upgrade">Upgrade Account</a></li>
-                            <li><a href="/membercp.php?action=following">People You Follow</a></li>
-                            <li><a href="/membercp.php?action=gallery">Image Gallery</a></li>
-                            <li><a href="/membercp.php?action=performance">Performance</a></li>
-                            <li><a href="/membercp.php?action=subscribed_threads">Subscribed Threads</a></li>
-                            <li><a href="/membercp.php?action=open_port_check_tool">Open Port Check Tool</a></li>
-                            <li><a href="/membercp.php?action=alerts">Recent Alerts</a></li>
-                            <li><a href="/mailbox.php">Messages</a></li>
+                            <li><a href="{{ path('users_membercp') }}">{{ 'Personal Details'|trans }}</a></li>
+                            <li><a href="{{ path('users_membercp_contact') }}">{{ 'Contact Details'|trans }}</a></li>
+                            <li><a href="{{ path('users_membercp_preferences') }}">{{ 'Preferences'|trans }}</a></li>
+                            <li><a href="{{ path('users_membercp_privacy') }}">{{ 'Privacy'|trans }}</a></li>
+                            <li><a href="{{ path('users_membercp_password') }}">{{ 'Password'|trans }}</a></li>
+                            <li><a href="{{ path('users_membercp_signature') }}">{{ 'Signature'|trans }}</a></li>
+                            <li><a href="{{ path('users_membercp_avatar') }}">{{ 'Avatar'|trans }}</a></li>
+                            <li><a href="{{ path('users_membercp_invite') }}">{{ 'Invite Friends'|trans }}</a></li>
+                            <li><a href="{{ path('users_membercp_upgrade') }}">{{ 'Upgrade Account'|trans }}</a></li>
+                            <li><a href="{{ path('users_membercp_follow') }}">{{ 'People You Follow'|trans }}</a></li>
+                            <li><a href="{{ path('users_membercp_gallery') }}">{{ 'Image Gallery'|trans }}</a></li>
+                            <li><a href="{{ path('users_membercp_performance') }}">{{ 'Performance'|trans }}</a></li>
+                            <li><a href="{{ path('users_membercp_subscribed') }}">{{ 'Subscribed Threads'|trans }}</a></li>
+                            <li><a href="{{ path('users_membercp_portcheck') }}">{{ 'Open Port Check Tool'|trans }}</a></li>
+                            <li><a href="{{ path('users_membercp_alerts') }}">{{ 'Recent Alerts'|trans }}</a></li>
+                            <li><a href="{{ path('message_inbox') }}">{{ 'Messages'|trans }}</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Market</a></li>
-                    <li><a href="/memberlist.php">Members</a></li>
+                    <li><a href="#">{{ 'Market'|trans }}</a></li>
+                    <li><a href="/memberlist.php">{{ 'Members'|trans }}Members</a></li>
                     {% endif %}
-                    <li><a href="/faq.php">FAQ</a></li>
-                    <li><a href="#">Top 10</a></li>
+                    <li><a href="/faq.php">{{ 'FAQ'|trans }}</a></li>
+                    <li><a href="#">{{ 'Top 10'|trans }}</a></li>
                     {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
-                    <li><a href="#">Contact</a>
+                    <li><a href="#">{{ 'Contact'|trans }}</a>
                         <ul>
-                            <li><a href="#">Contact Staff</a></li>
-                            <li><a href="#">First Line Support</a></li>
-                            <li><a href="#">IRC</a></li>
+                            <li><a href="#">{{ 'Contact Staff'|trans }}</a></li>
+                            <li><a href="#">{{ 'First Line Support'|trans }}</a></li>
+                            <li><a href="#">{{ 'IRC'|trans }}</a></li>
                         </ul>
                     </li>
                     {% endif %}
-                    <li><a href="/staff.php">Staff</a></li>
+                    <li><a href="/staff.php">{{ 'Staff'|trans }}</a></li>
                 </ul>
             </div>
             <!-- end #menu -->
@@ -401,8 +401,8 @@
                     memberDST: 0,
                     stKey: "0-1475755390-fa47ce9292f5ba0019c504f1cc77748cbc51b6e5",
                     website_title: "",
-                    website_url: "",
-                    theme_dir: "themes/default/",
+                    website_url: "{{ site_url }}",
+                    theme_dir: "{{ site_url }}/../themes/default/",
                     website_active: "1",
                     website_resize_images_max_width: "665",
                     website_resize_images_max_height: "665",

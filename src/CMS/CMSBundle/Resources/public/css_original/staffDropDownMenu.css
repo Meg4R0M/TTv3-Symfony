@@ -16,7 +16,7 @@ dl.dropdown{
     position:relative;
 }
 .dropdown dt a{
-    background:url('/themes/default/buttons/manageAccount.png') no-repeat scroll left center;
+    background:url('buttons/manageAccount.png') no-repeat scroll left center;
     display:block;
     width:24px;
     height:24px;

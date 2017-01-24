@@ -20,12 +20,12 @@ message_newThread:
 
 message_delete:
     path:     /{threadId}/delete
-    defaults: { _controller: FOSMessageBundle:Message:delete }
+    defaults: { _controller: MessageBundle:Message:delete }
     methods:  [POST, DELETE]
 
 message_undelete:
     path:     /{threadId}/undelete
-    defaults: { _controller: FOSMessageBundle:Message:undelete }
+    defaults: { _controller: MessageBundle:Message:undelete }
     methods:  [POST]
 
 message_thread_view:

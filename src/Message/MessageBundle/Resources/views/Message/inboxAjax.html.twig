@@ -1,0 +1,38 @@
+<div class="atext">
+    <div class="" header="Messages">
+        <div class="message" id="show_all_messages">
+            <span class="floatright" original-title="">
+                <input name="messages_delete_messages" value="Delete Selected Messages" id="messages_delete_messages" class="submit" type="button">
+                <input name="messages_select_all" value="Select All" id="messages_select_all" class="submit" type="button">
+            </span>
+            <input name="messages_new_message" value="New Message" id="messages_new_message" class="submit" type="button">
+            <input name="messages_view_all" value="See All Messages" id="messages_view_all" class="submit" type="button">
+
+            {% for thread in threads %}
+            <div id="show_member_messages">
+                <div id="show_message_'.$arr[id].'" class="comment-box">
+                    {% if not thread.createdBy.avatar == '' %}
+                        <img src="{{ asset('uploads/avatars/' ~ thread.createdBy.avatar) }}" alt="" title="" class="clickable avatar" id="member_info" memberid="{{ thread.createdBy.id }}" />
+                    {% else %}
+                        {% if thread.createdBy.gender == 'Male' %}
+                            <img src="{{ asset('themes/default/avatars/avatar_m_s.png') }}" alt="" title="" class="clickable avatar" id="member_info" memberid="{{ thread.createdBy.id }}" />
+                        {% elseif thread.createdBy.gender == 'Female' %}
+                            <img src="{{ asset('themes/default/avatars/avatar_f_s.png') }}" alt="" title="" class="clickable avatar" id="member_info" memberid="{{ thread.createdBy.id }}" />
+                        {% else %}
+                            <img src="{{ asset('themes/default/avatars/avatar_s.png') }}" alt="" title="" class="clickable avatar" id="member_info" memberid="{{ thread.createdBy.id }}" />
+                        {% endif %}
+                    {% endif %}
+                    <div class="floatright textAlignCenter">
+                        {% if not fos_message_is_read(thread) %}<span id="unread" class="prefixButton red">({% trans from 'FOSMessageBundle' %}new{% endtrans %})</span>{% endif %}
+                        <label><input name="deleteMessages[]" value="'.$arr[id].'" id="deleteMessages" type="checkbox"></label>
+                    </div>
+                    <div>{{ thread.createdBy }}</div>
+                    <div><a href="{{ url('message_thread_view', {'threadId': thread.id}) }}" original-title="">{{ thread.subject }}</a></div>
+                    <div class="smalldate">{{ thread.createdAt|date }}</div>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>

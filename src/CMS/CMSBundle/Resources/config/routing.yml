@@ -1,3 +1,11 @@
 cms:
     path:     /
     defaults: { _controller: CMSBundle:CMS:index }
+
+cms_ajax:
+    path:    /ajax
+    defaults: { _controller: CMSBundle:CMS:ajax }
+
+cms_ajax_message:
+    path:    /ajax/messages
+    defaults: { _controller: CMSBundle:CMS:ajaxMessages }

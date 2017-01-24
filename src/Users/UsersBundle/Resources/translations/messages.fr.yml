@@ -80,10 +80,43 @@ Check: Vérifier
 is closed on: est fermé sur
 is open on: est ouvert sur
 
+# traduction Menu/Header
+Keyword(s): Mots clé(s)
+Search Type: Type de recherche
+Forums: Forums
+Torrents: Torrents
+Downloads: Téléchargements
+FAQ: FAQ
+Members: Membres
+Subtitles: Sous-titres
+Profile: Profil
+History: Historique
+Log out: Se déconnecter
+AdminCP: PC Admin
+Messages are loading... If this appears for more than 5 seconds, click <span id="reload_messages" class="clickable">here</span> to reload.: Les messages sont en cours de chargement... Si cela apparaît pendant plus de 5 secondes, cliquez <span id="reload_messages" class="clickable">ici</span> pour recharger.
+Alerts are loading... If this appears for more than 5 seconds, click <span id="reload_alerts" class="clickable">here</span> to reload.: Les alertes sont en cours de chargement... Si cela apparaît pendant plus de 5 secondes, cliquez <span id="reload_alerts" class="clickable">ici</span> pour recharger.
+Shoutbox: Shoutbox
+What is new?: Quoi de neuf?
+What is New?: Quoi de neuf?
+Search Forums: Rechercher dans les forums
+Today's Posts: Les messages d'aujourd'hui
+View All Torrents: Voir tous les torrents
+Upload a Torrent: Envoyer un torrent
+Request a Torrent: Demander un Torrent
+Join Our Uploaders Team: Joignez-vous à notre équipe
+Bookmarked Torrents: Torrents Enregistrés
+Upcoming Releases: Communiqués à venir
+Market: Marché
+Contact: Contact
+Contact Staff: Contacter le staff
+First Line Support: Support en première ligne
+IRC: IRC
+Staff: Staff
+Top 10: Top 10
+
 # traduction Generale
 An error has occurred: Une erreur est survenue
 Home: Accueil
 Messages: Messages
 Send: Envoyer
 Cancel: Annuler
-

@@ -1,4 +1,4 @@
-torrents:
+cms:
     resource: "@CMSBundle/Resources/config/routing.yml"
     prefix:   /
 

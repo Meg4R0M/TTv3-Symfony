@@ -1,10 +1,6 @@
-{% extends 'MessageBundle::layout.html.twig' %}
-
 {% block fos_message_content %}
 
-{#<h2>{% trans from 'FOSMessageBundle' %}send_new{% endtrans %}</h2>#}
-{#<form action="{{ url('fos_message_thread_new') }}" method="post">#}
-    <br /><br />
+<h2>{% trans from 'FOSMessageBundle' %}send_new{% endtrans %}</h2>
     {% if not form_errors(form.recipient) == '' %}
         <div class="error" id="show_error">
             {{ form_errors(form.recipient) }}
@@ -12,7 +8,7 @@
         <br />
     {% endif %}
 
-    {{ form_start(form) }}
+    <form action="{{ url('message_newThread') }}" method="post">
     <div class="table" id="messages_post_new_message">
         <div class="row">
             <div class="cell first"><label for="receiver_membername">{{ form_label(form.recipient) }}</label></div>
@@ -40,9 +36,10 @@
 		    <div class="cell first"></div>
 		    <div class="cell second">
 			    <input value="{{ 'Send'|trans }}" class="submit" type="submit">
-			    <input id="message_cancel" class="submit" value="{{ 'Cancel'|trans }}" onclick="$.TSUE.closedialog();return false;" type="button">
+                <button id="message_cancel" class="submit" onclick="$.TSUE.closedialog();return false;">{{ 'Cancel'|trans }}</button>
 		    </div>
 	    </div>
-        {{ form_end(form) }}
     </div>
+    {{ form_rest(form) }}
+    </form>
 {% endblock %}
