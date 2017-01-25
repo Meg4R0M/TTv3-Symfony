@@ -1,0 +1,19 @@
+{% if not shouts|length == 0 %}
+    {% for shout in shouts %}
+        <tr id="shout_$id" class="rowMemberShout">
+            <td class="sMemberDetails" style="min-width:38px; font-size: small;">
+                {{ shout.date|date('d/m/y h:m:s') }}
+            </td>
+            <td class="sMemberDetails" style="min-width:90px;" align="right">
+                <span id="member_info" memberid="{{ shout.uid }}" class="clickable"><span style="color: red;">{{ shout.name }}</span></span>&nbsp;{%  if user.warn is defined %}warn{% endif %}&nbsp;
+            </td>
+            <td class="sMemberShout" style="width: 95%;">
+                <div id="sMessageRow">
+                    <div id="smessage">&nbsp;&nbsp;{{ shout.text }}</div>
+                </div>
+            </td>
+        </tr>
+    {% endfor %}
+{% else %}
+    No shouts Actually.
+{% endif %}

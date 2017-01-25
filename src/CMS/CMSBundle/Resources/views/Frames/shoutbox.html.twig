@@ -1,7 +1,7 @@
 <div class="tableHeader">
             <div class="row">
                 <div class="cell first">
-                    <div id="shoutboxUpdating">Updating...</div>Shoutbox {#  Ajax Shoutbox #}
+                    <div id="shoutboxUpdating">Updating...</div>Shoutbox
                 </div>
             </div>
         </div>
@@ -21,8 +21,8 @@
     <div class="shoutboxButtons" id="shoutheader">
         <form id="chatForm" name="chatForm" onsubmit="return false;">
             <div class="frc">
-                <input type="hidden" name="name" id="name" value="$CURUSER['username']"/>
-                <input type="hidden" name="uid" id="uid" value="$CURUSER['id']"/>
+                <input type="hidden" name="name" id="name" value="{{ usr.username }}"/>
+                <input type="hidden" name="uid" id="uid" value="{{ usr.id }}"/>
                 <input type="text" maxlength="800" name="chatbarText" class="s" id="chatbarText" onblur="checkStatus('');" onfocus="checkStatus('active');"/>
                 <button onclick="sendComment();" type="submit" id="submit" name="submit" class="submit">SHOUT !</button>
                 <button class="submit" id="more_smilies"><i class="fa fa-smile-o" aria-hidden="true" title="smilies"></i></button>

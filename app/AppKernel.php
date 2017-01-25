@@ -23,6 +23,7 @@ class AppKernel extends Kernel
             new Informations\InformationsBundle\InformationsBundle(),
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
             new Message\MessageBundle\MessageBundle(),
+            new Shoutbox\ShoutboxBundle\ShoutboxBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

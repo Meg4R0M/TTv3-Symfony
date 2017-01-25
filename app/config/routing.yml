@@ -20,3 +20,7 @@ message:
 fos_message:
     resource: "@FOSMessageBundle/Resources/config/routing.xml"
     prefix: /mailbox2
+
+shoutbox:
+    resource: "@ShoutboxBundle/Resources/config/routing.yml"
+    prefix:   /

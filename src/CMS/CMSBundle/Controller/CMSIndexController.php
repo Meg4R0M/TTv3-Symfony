@@ -3,13 +3,14 @@
 namespace CMS\CMSBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\HttpFoundation\RedirectResponse;
 
 class CMSIndexController extends Controller
 {
     public function shoutboxAction()
     {
-        return $this->render('CMSBundle:Frames:shoutbox.html.twig');
+        $usr= $this->get('security.token_storage')->getToken()->getUser();
+        return $this->render('CMSBundle:Frames:shoutbox.html.twig', array(
+            'usr' => $usr));
     }
 
     public function fullpageLoginAction()
