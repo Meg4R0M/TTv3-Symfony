@@ -16,10 +16,18 @@ class ShoutboxController extends Controller
 
     public function getShoutboxAction()
     {
+        $usr= $this->get('security.token_storage')->getToken()->getUser();
+        if ($usr == "anon."){
+            $curuser = null;
+        } else {
+            $curuser = $usr;
+        }
         $em = $this->getDoctrine()->getManager();
-        $shouts = $em->getRepository('ShoutboxBundle:shoutbox')->findAll();
+        $shouts = $em->getRepository('ShoutboxBundle:shoutbox')->findBy(array(), array('date' => 'DESC'));
         return $this->render('ShoutboxBundle:Default:getShoutbox.html.twig', array(
-            'shouts' => $shouts
+            'shouts' => $shouts,
+            'curuser' => $curuser,
+            'color' => 'red'
         ));
     }
 

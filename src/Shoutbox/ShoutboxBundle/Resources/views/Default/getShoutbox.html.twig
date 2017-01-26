@@ -1,19 +1,38 @@
 {% if not shouts|length == 0 %}
     {% for shout in shouts %}
         <tr id="shout_$id" class="rowMemberShout">
-            <td class="sMemberDetails" style="min-width:38px; font-size: small;">
-                {{ shout.date|date('d/m/y h:m:s') }}
+            <td class="sMemberDetails" style="min-width:5%; font-size: x-small;">
+                {{ shout.date|date('d/m - h:m') }}
             </td>
-            <td class="sMemberDetails" style="min-width:90px;" align="right">
-                <span id="member_info" memberid="{{ shout.uid }}" class="clickable"><span style="color: red;">{{ shout.name }}</span></span>&nbsp;{%  if user.warn is defined %}warn{% endif %}&nbsp;
+            <td class="sMemberDetails" align="right">
+                <span id="member_info" memberid="{{ shout.uid.id }}" class="clickable"><span style="color: {{ color }};">{{ shout.name }}</span></span>{%  if shout.uid.warned is defined %}{% if not shout.uid.warned == 'no' %}&nbsp;warn&nbsp;{% endif %}{% endif %}
             </td>
-            <td class="sMemberShout" style="width: 95%;">
+            <td class="sMemberShout" style="width: 90%;">
                 <div id="sMessageRow">
                     <div id="smessage">&nbsp;&nbsp;{{ shout.text }}</div>
                 </div>
             </td>
+            <td class="sMemberShout" style="min-width:85px; float: right;">
+                <div class="sButtons">
+                    {% if is_granted('ROLE_ADMIN') %}{#or curuser == shout.uid#}
+                        <button style='font-size: 10px' class="submit" id='edit_shout' shoutid='{{ shout.id }}'><i class="fa fa-pencil" aria-hidden="true" title="edit"></i></button>
+                        <button style='font-size: 10px' class="submit" id='del_shout' shoutid='{{ shout.id }}'><i class="fa fa-times" aria-hidden="true" title="Sup"></i></button>
+                    {% endif %}
+                    <button onclick="window.location.href='mailbox.php?compose&id={{ shout.uid.id }}'" style='font-size: 10px' target="_parent" class="submit"><i class="fa fa-envelope" aria-hidden="true" title="Envoyer un MP"></i></button>
+                    &nbsp;
+                    </div>
+                </td>
+
         </tr>
     {% endfor %}
 {% else %}
-    No shouts Actually.
+    <tr id="shout_$id" class="rowMemberShout">
+        <td class="sMemberShout" style="width: 95%;">
+            <div id="sMessageRow">
+                <div id="smessage">
+                    No shouts Actually.
+                </div>
+            </div>
+        </td>
+    </tr>
 {% endif %}

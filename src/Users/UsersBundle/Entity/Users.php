@@ -1159,4 +1159,14 @@ class Users extends BaseUser implements ParticipantInterface
     {
         return $this->inviteDate;
     }
+
+    /**
+     * Get id
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
 }

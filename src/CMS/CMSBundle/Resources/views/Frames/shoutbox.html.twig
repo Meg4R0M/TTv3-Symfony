@@ -1,3 +1,4 @@
+{% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
 <div class="tableHeader">
             <div class="row">
                 <div class="cell first">
@@ -12,7 +13,7 @@
         <div class="shoutbox">
             <table class="shoutbox" id="outputList">
                 <tr>
-                    <td><div class="loader"></div></td>
+                    {{ render(controller('ShoutboxBundle:Shoutbox:getShoutbox')) }}
                 </tr>
             </table>
         </div>
@@ -40,3 +41,4 @@
         </form>
     </div>
 </div>
+{% endif %}

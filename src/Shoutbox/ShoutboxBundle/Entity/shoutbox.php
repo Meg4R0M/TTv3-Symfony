@@ -3,6 +3,7 @@
 namespace Shoutbox\ShoutboxBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Users\UsersBundle\Entity\Users;
 
 /**
  * shoutbox
@@ -24,7 +25,8 @@ class shoutbox
     /**
      * @var int
      *
-     * @ORM\ManyToOne(targetEntity="Users\UsersBundle\Entity\Users")
+     * @ORM\OneToOne(targetEntity="Users\UsersBundle\Entity\Users")
+     * @ORM\JoinColumn(name="uid", referencedColumnName="id")
      */
     private $uid;
 
