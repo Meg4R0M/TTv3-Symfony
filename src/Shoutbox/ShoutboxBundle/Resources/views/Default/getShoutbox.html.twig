@@ -1,11 +1,11 @@
 {% if not shouts|length == 0 %}
     {% for shout in shouts %}
-        <tr id="shout_$id" class="rowMemberShout">
+        <tr id="{{ shout.id }}" class="rowMemberShout">
             <td class="sMemberDetails" style="min-width:5%; font-size: x-small;">
                 {{ shout.date|date('d/m - h:m') }}
             </td>
             <td class="sMemberDetails" align="right">
-                <span id="member_info" memberid="{{ shout.uid.id }}" class="clickable"><span style="color: {{ color }};">{{ shout.name }}</span></span>{%  if shout.uid.warned is defined %}{% if not shout.uid.warned == 'no' %}&nbsp;warn&nbsp;{% endif %}{% endif %}
+                <span id="member_info" memberid="{{ shout.uid.id }}" class="clickable"><span style="color: {{ color }};">{{ shout.name }}:</span></span>{%  if shout.uid.warned is defined %}{% if not shout.uid.warned == 'no' %}&nbsp;warn&nbsp;{% endif %}{% endif %}
             </td>
             <td class="sMemberShout" style="width: 90%;">
                 <div id="sMessageRow">

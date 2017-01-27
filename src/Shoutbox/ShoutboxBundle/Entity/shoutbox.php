@@ -25,7 +25,7 @@ class shoutbox
     /**
      * @var int
      *
-     * @ORM\OneToOne(targetEntity="Users\UsersBundle\Entity\Users")
+     * @ORM\ManyToOne(targetEntity="Users\UsersBundle\Entity\Users")
      * @ORM\JoinColumn(name="uid", referencedColumnName="id")
      */
     private $uid;

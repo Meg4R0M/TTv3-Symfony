@@ -1,6 +1,7 @@
 
 var GetChaturl = "shoutbox";
 var SendChaturl = "sendshout";
+var DelChaturl = "delshout";
 var lastID = -1; //initial value will be replaced by the latest known id
 
 // initiates the two objects for sending and receiving data
@@ -14,7 +15,6 @@ function initJavaScript() {
     document.forms['chatForm'].elements['chatbarText'].setAttribute('autocomplete','off'); //this non standard attribute prevents firefox' autofill function to clash with this script
     checkStatus(''); //sets the initial value and state of the input comment
     receiveChatText(); //initiates the first data query
-    console.log(httpReceiveChat+' zest quoi ?');
 }
 
 //deletes main shout window
@@ -170,6 +170,7 @@ $(document).on('click','#del_shout',function(e){
         return false;
     }
     $.ajax({
+        url: DelChaturl,
         data:'action=del_shout&msgid='+parseInt(shoutID)+'&securitytoken='+TSUESettings['stKey'],
         success:function(serverResponse){
             $.TSUE.memberCard(serverResponse);

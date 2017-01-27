@@ -1,7 +1,11 @@
-cms_shoutbox_get:
+shoutbox_get:
     path:     /shoutbox/{lastId}/{rand}
     defaults: { _controller: ShoutboxBundle:Shoutbox:getShoutbox }
 
-cms_shoutbox_send:
+shoutbox_send:
     path:     /sendshout
     defaults: { _controller: ShoutboxBundle:Shoutbox:sendShoutbox }
+
+shoutbox_del:
+    path:     /delshout
+    defaults: { _controller: ShoutboxBundle:Shoutbox:delShoutbox}

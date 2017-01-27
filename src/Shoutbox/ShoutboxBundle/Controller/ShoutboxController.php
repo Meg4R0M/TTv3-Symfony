@@ -3,6 +3,7 @@
 namespace Shoutbox\ShoutboxBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Shoutbox\ShoutboxBundle\Entity\shoutbox;
@@ -53,6 +54,27 @@ class ShoutboxController extends Controller
             return new Response('OK', 200);
         }else{
             throw $this->createNotFoundException('This page does not exist');
+        }
+    }
+
+    public function delShoutboxAction (Request $request)
+    {
+        $idShout = $request->request->get('msgid');
+        $em = $this->getDoctrine()->getManager();
+        $shout = $em->getRepository('ShoutboxBundle:shoutbox')->findOneBy(array('id' => $idShout));
+        if ($shout){
+            $em->remove($shout);
+            $em->flush();
+            /*return new Response(null, 200);*/
+            return $this->render('ShoutboxBundle:Default:delShoutboxAjax.html.twig', array(
+                'type' => 'done',
+                'message' => 'Ce shout a été supprimé avec succés'
+            ));
+        }else{
+            return $this->render('ShoutboxBundle:Default:delShoutboxAjax.html.twig', array(
+                'type' => 'error',
+                'message' => 'Ce shout a été supprimé avec succés'
+            ));
         }
     }
 }
