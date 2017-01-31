@@ -66,15 +66,15 @@ class ShoutboxController extends Controller
             $em->remove($shout);
             $em->flush();
             /*return new Response(null, 200);*/
-            return $this->render('ShoutboxBundle:Default:delShoutboxAjax.html.twig', array(
+            /*return $this->render('ShoutboxBundle:Default:delShoutboxAjax.html.twig', array(
                 'type' => 'done',
                 'message' => 'Ce shout a été supprimé avec succés'
-            ));
+            ));*/
+
+            return new Response('OK', 200);
         }else{
-            return $this->render('ShoutboxBundle:Default:delShoutboxAjax.html.twig', array(
-                'type' => 'error',
-                'message' => 'Ce shout a été supprimé avec succés'
-            ));
+            return new Response('NOPE', 200);
         }
     }
+
 }

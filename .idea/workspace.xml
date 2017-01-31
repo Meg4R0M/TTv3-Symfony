@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ab6ad49-e827-4831-8791-97f7314afa14" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Shoutbox/ShoutboxBundle/Resources/views/Default/delShoutboxAjax.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/alertify.core.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/alertify.default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/alertify.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Shoutbox/ShoutboxBundle/Resources/views/Default/delShoutboxAjax.html.twig" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TTv3_Symfony.iml" afterPath="$PROJECT_DIR$/TTv3_Symfony.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CMS/CMSBundle/Resources/views/Frames/shoutbox.html.twig" afterPath="$PROJECT_DIR$/src/CMS/CMSBundle/Resources/views/Frames/shoutbox.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Shoutbox/ShoutboxBundle/Controller/ShoutboxController.php" afterPath="$PROJECT_DIR$/src/Shoutbox/ShoutboxBundle/Controller/ShoutboxController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Shoutbox/ShoutboxBundle/Entity/shoutbox.php" afterPath="$PROJECT_DIR$/src/Shoutbox/ShoutboxBundle/Entity/shoutbox.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Shoutbox/ShoutboxBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/Shoutbox/ShoutboxBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Shoutbox/ShoutboxBundle/Resources/views/Default/getShoutbox.html.twig" afterPath="$PROJECT_DIR$/src/Shoutbox/ShoutboxBundle/Resources/views/Default/getShoutbox.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/shoutbox.js" afterPath="$PROJECT_DIR$/web/js/shoutbox.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/tt.js" afterPath="$PROJECT_DIR$/web/js/tt.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,77 +44,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ShoutboxController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ShoutboxController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Shoutbox/ShoutboxBundle/Controller/ShoutboxController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="67" column="47" lean-forward="false" selection-start-line="67" selection-start-column="47" selection-end-line="67" selection-end-column="47" />
+            <state relative-caret-position="432">
+              <caret line="75" column="37" lean-forward="false" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="37" />
               <folding>
                 <element signature="e#54#111#0#PHP" expanded="true" />
-                <element signature="e#420#463#1#PHP" expanded="true" />
-                <element signature="e#895#941#0#PHP" expanded="true" />
-                <element signature="e#2367#2417#0#PHP" expanded="true" />
-                <element signature="e#2591#2641#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="delShoutboxAjax.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Shoutbox/ShoutboxBundle/Resources/views/Default/delShoutboxAjax.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MessageController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Controller/MessageController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1935">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CMSController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CMS/CMSBundle/Controller/CMSController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="57" column="22" lean-forward="false" selection-start-line="56" selection-start-column="16" selection-end-line="59" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="74" column="9" lean-forward="false" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shoutbox.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="shoutbox.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/js/shoutbox.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="175" column="27" lean-forward="false" selection-start-line="175" selection-start-column="19" selection-end-line="175" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tt.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/tt.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="395" column="75" lean-forward="false" selection-start-line="395" selection-start-column="75" selection-end-line="395" selection-end-column="75" />
+            <state relative-caret-position="378">
+              <caret line="178" column="13" lean-forward="false" selection-start-line="178" selection-start-column="13" selection-end-line="178" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -120,15 +71,35 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="36">
               <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shoutbox.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CMS/CMSBundle/Resources/views/Frames/shoutbox.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
-                <element signature="e#157#198#0#HTML" expanded="true" />
-                <element signature="e#416#443#0#HTML" expanded="true" />
-                <element signature="e#643#662#0#HTML" expanded="true" />
-                <element signature="e#855#892#0#HTML" expanded="true" />
-                <element signature="e#1046#1069#0#HTML" expanded="true" />
-                <element signature="e#1228#1251#0#HTML" expanded="true" />
-                <element signature="e#1510#1533#0#HTML" expanded="true" />
-                <element signature="e#1846#1865#0#HTML" expanded="true" />
+                <marker date="1485771337800" expanded="true" signature="0:1884" ph="{% if is_granted(&quot;IS_AUTHENTICATED_REMEMBERED&quot;) ...%}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tt.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/js/tt.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="398" column="81" lean-forward="false" selection-start-line="397" selection-start-column="1" selection-end-line="398" selection-end-column="86" />
+              <folding>
+                <marker date="1485771754897" expanded="true" signature="13337:13349" ph="..." />
+                <marker date="1485771754897" expanded="true" signature="34439:34541" ph="..." />
+                <marker date="1485771754897" expanded="true" signature="35218:35266" ph="..." />
+                <marker date="1485771754897" expanded="true" signature="35344:35487" ph="..." />
+                <marker date="1485771754897" expanded="true" signature="40222:40228" ph="&amp;nbsp;" />
+                <marker date="1485771754897" expanded="true" signature="40228:40234" ph="&amp;nbsp;" />
               </folding>
             </state>
           </provider>
@@ -156,7 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Message/MessageBundle/Validator/SelfRecipientValidator.php" />
         <option value="$PROJECT_DIR$/src/Message/MessageBundle/Validator/Spam.php" />
         <option value="$PROJECT_DIR$/src/Message/MessageBundle/Validator/SpamValidator.php" />
         <option value="$PROJECT_DIR$/src/Message/MessageBundle/MessageBundle.php" />
@@ -168,8 +138,6 @@
         <option value="$PROJECT_DIR$/src/Message/MessageBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Message/MessageBundle/Controller/MessageController.php" />
         <option value="$PROJECT_DIR$/src/Message/MessageBundle/Resources/views/Message/inboxAjax.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
-        <option value="$PROJECT_DIR$/web/js/tt.js" />
         <option value="$PROJECT_DIR$/src/Message/MessageBundle/Resources/views/Message/newThread.html.twig" />
         <option value="$PROJECT_DIR$/src/Message/MessageBundle/Resources/views/Message/newThreadAjax.html.twig" />
         <option value="$PROJECT_DIR$/src/Message/MessageBundle/Resources/views/Message/threads_list.html.twig" />
@@ -179,7 +147,6 @@
         <option value="$PROJECT_DIR$/src/CMS/CMSBundle/Resources/public/css_original/staffDropDownMenu.css" />
         <option value="$PROJECT_DIR$/web/js/messages.js" />
         <option value="$PROJECT_DIR$/src/Message/MessageBundle/Resources/views/Message/thread.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/src/Chat/ChatBundle/Controller/AjaxController.php" />
         <option value="$PROJECT_DIR$/src/Chat/ChatBundle/Entity/Messages.php" />
@@ -203,10 +170,14 @@
         <option value="$PROJECT_DIR$/src/Shoutbox/ShoutboxBundle/Resources/views/Default/getShoutbox.html.twig" />
         <option value="$PROJECT_DIR$/src/Shoutbox/ShoutboxBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/CMS/CMSBundle/Controller/CMSController.php" />
-        <option value="$PROJECT_DIR$/web/js/shoutbox.js" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/Shoutbox/ShoutboxBundle/Resources/views/Default/delShoutboxAjax.html.twig" />
-        <option value="$PROJECT_DIR$/src/Shoutbox/ShoutboxBundle/Controller/ShoutboxController.php" />
         <option value="$PROJECT_DIR$/src/CMS/CMSBundle/Resources/views/Frames/shoutbox.html.twig" />
+        <option value="$PROJECT_DIR$/web/js/tt.js" />
+        <option value="$PROJECT_DIR$/web/themes/default/css/shoutbox.css" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/Shoutbox/ShoutboxBundle/Controller/ShoutboxController.php" />
+        <option value="$PROJECT_DIR$/web/js/shoutbox.js" />
       </list>
     </option>
   </component>
@@ -302,7 +273,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -326,28 +296,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TTv3-Symfony" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="uploads" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="avatars" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -475,7 +423,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bundles" />
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="font-awesome.css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NestingTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TTv3-Symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TTv3-Symfony" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1579,6 +1549,7 @@
       </pane>
       <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1596,19 +1567,19 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/css" />
+      <recent name="$PROJECT_DIR$/web/js" />
+      <recent name="$PROJECT_DIR$/src/CMS/CMSBundle/Resources/views/Frames" />
+      <recent name="$PROJECT_DIR$/src/Chat/ChatBundle" />
+      <recent name="$PROJECT_DIR$/web/Resources/public/css_original" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/Shoutbox/ShoutboxBundle/Resources/views/Default" />
       <recent name="$PROJECT_DIR$/src/CMS/CMSBundle/Resources/public/css_original" />
       <recent name="$PROJECT_DIR$/src/Message" />
       <recent name="$PROJECT_DIR$/src/Informations/InformationsBundle" />
       <recent name="$PROJECT_DIR$/src/Informations/InformationsBundle/Resources/views/Frames" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/CMS/CMSBundle/Resources/views/Frames" />
-      <recent name="$PROJECT_DIR$/src/Chat/ChatBundle" />
-      <recent name="$PROJECT_DIR$/web/Resources/public/css_original" />
-      <recent name="$PROJECT_DIR$/src/Message/MessageBundle/Resources/views/Message" />
-      <recent name="$PROJECT_DIR$/web/themes/default/ajax" />
     </key>
   </component>
   <component name="RunManager">
@@ -2140,6 +2111,7 @@
       <workItem from="1485243008480" duration="22451000" />
       <workItem from="1485329479616" duration="5775000" />
       <workItem from="1485337976261" duration="37783000" />
+      <workItem from="1485768782894" duration="9153000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout de FOSUSerBundle">
       <created>1484397812682</created>
@@ -2159,7 +2131,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="329914000" />
+    <option name="totallyTimeSpent" value="339067000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2188,7 +2160,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28761062" sideWeight="0.49583334" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1923077" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19444445" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10683761" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2233,79 +2205,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/themes/default/css/tinymce_ui.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CMS/CMSBundle/Resources/public/css_original/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5216">
-          <caret line="1635" column="41" lean-forward="false" selection-start-line="1635" selection-start-column="41" selection-end-line="1635" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CMS/CMSBundle/Resources/public/css_original/menu.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-702">
-          <caret line="6" column="33" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CMS/CMSBundle/Resources/public/css_original/staffDropDownMenu.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="15" lean-forward="false" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Resources/views/Message/thread.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Resources/views/Message/inbox.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="8" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/messages.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="100" column="33" lean-forward="true" selection-start-line="100" selection-start-column="33" selection-end-line="100" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="229" column="83" lean-forward="false" selection-start-line="229" selection-start-column="83" selection-end-line="229" selection-end-column="83" />
-          <folding>
-            <element signature="e#7041#7055#0#Twig" expanded="false" />
-            <element signature="e#7258#7282#0#Twig" expanded="false" />
-            <element signature="e#13912#13925#0#Twig" expanded="false" />
-            <element signature="e#18042#18065#0#Twig" expanded="false" />
-            <element signature="e#18154#18178#0#Twig" expanded="false" />
-            <element signature="e#18268#18289#0#Twig" expanded="false" />
-            <element signature="e#18376#18397#0#Twig" expanded="false" />
-            <element signature="e#18492#18514#0#Twig" expanded="false" />
-            <element signature="e#18610#18631#0#Twig" expanded="false" />
-            <element signature="e#18729#18751#0#Twig" expanded="false" />
-            <element signature="e#18845#18871#0#Twig" expanded="false" />
-            <element signature="e#18963#18988#0#Twig" expanded="false" />
-            <element signature="e#19087#19111#0#Twig" expanded="false" />
-            <element signature="e#19212#19233#0#Twig" expanded="false" />
-            <element signature="e#19327#19340#0#Twig" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6989">
@@ -2320,21 +2219,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chat/ChatBundle/ChatBundle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="44" lean-forward="false" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Chat/ChatBundle/ChatBundle.php" />
     <entry file="file://$PROJECT_DIR$/src/Users/UsersBundle/Resources/translations/messages.fr.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -2342,45 +2227,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chat/ChatBundle/Entity/Messages.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1899">
-          <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chat/ChatBundle/ChatBundle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chat/ChatBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chat/ChatBundle/EventListener/DynamicRelationSubscriber.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chat/ChatBundle/Form/ChatType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Chat/ChatBundle/Entity/Messages.php" />
+    <entry file="file://$PROJECT_DIR$/src/Chat/ChatBundle/ChatBundle.php" />
+    <entry file="file://$PROJECT_DIR$/src/Chat/ChatBundle/Resources/config/routing.yml" />
+    <entry file="file://$PROJECT_DIR$/src/Chat/ChatBundle/EventListener/DynamicRelationSubscriber.php" />
+    <entry file="file://$PROJECT_DIR$/src/Chat/ChatBundle/Form/ChatType.php" />
     <entry file="file://$PROJECT_DIR$/web/themes/default/css/ajax.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="477">
@@ -2389,27 +2240,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chat/ChatBundle/Controller/AjaxController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="13" column="34" lean-forward="false" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chat/ChatBundle/Entity/MessagesRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="42" column="16" lean-forward="false" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Chat/ChatBundle/Controller/AjaxController.php" />
+    <entry file="file://$PROJECT_DIR$/src/Chat/ChatBundle/Entity/MessagesRepository.php" />
     <entry file="file://$PROJECT_DIR$/app/config/services.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2417,22 +2253,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="24" column="54" lean-forward="false" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CMS/CMSBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="57" lean-forward="false" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="15" lean-forward="false" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -2483,7 +2303,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2509,9 +2328,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#12#37#0#Twig" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2519,7 +2335,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2527,7 +2342,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="14" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2536,17 +2350,7 @@
         <state relative-caret-position="198">
           <caret line="11" column="23" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="11" selection-end-column="29" />
           <folding>
-            <element signature="e#333#374#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CMS/CMSBundle/Controller/CMSIndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-          <folding>
-            <element signature="e#296#333#0#PHP" expanded="true" />
+            <element signature="e#333#374#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2559,13 +2363,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Shoutbox/ShoutboxBundle/Entity/shoutbox.php">
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="24" column="7" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+        <state relative-caret-position="1332">
+          <caret line="74" column="9" lean-forward="false" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="45" lean-forward="false" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Shoutbox/ShoutboxBundle/Resources/views/Default/getShoutbox.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CMS/CMSBundle/Resources/views/Frames/shoutbox.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <element signature="e#50#82#0#PHP" expanded="true" />
+            <marker date="1485771337800" expanded="true" signature="0:1884" ph="{% if is_granted(&quot;IS_AUTHENTICATED_REMEMBERED&quot;) ...%}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="15" lean-forward="false" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2577,17 +2421,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+    <entry file="file://$PROJECT_DIR$/web/themes/default/css/shoutbox.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="74" column="9" lean-forward="false" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+        <state relative-caret-position="513">
+          <caret line="119" column="1" lean-forward="true" selection-start-line="119" selection-start-column="1" selection-end-line="119" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CMS/CMSBundle/Controller/CMSController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
+        <state relative-caret-position="972">
           <caret line="57" column="22" lean-forward="false" selection-start-line="56" selection-start-column="16" selection-end-line="59" selection-end-column="19" />
           <folding />
         </state>
@@ -2595,57 +2439,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Message/MessageBundle/Controller/MessageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1935">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/shoutbox.js">
+    <entry file="file://$PROJECT_DIR$/src/CMS/CMSBundle/Controller/CMSIndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="175" column="27" lean-forward="false" selection-start-line="175" selection-start-column="19" selection-end-line="175" selection-end-column="29" />
+        <state relative-caret-position="216">
+          <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/tt.js">
+    <entry file="file://$PROJECT_DIR$/src/CMS/CMSBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="395" column="75" lean-forward="false" selection-start-line="395" selection-start-column="75" selection-end-line="395" selection-end-column="75" />
+        <state relative-caret-position="180">
+          <caret line="10" column="57" lean-forward="false" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Shoutbox/ShoutboxBundle/Resources/views/Default/delShoutboxAjax.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Shoutbox/ShoutboxBundle/ShoutboxBundle.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Shoutbox/ShoutboxBundle/Resources/views/Default/getShoutbox.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Shoutbox/ShoutboxBundle/Resources/config/services.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-          <folding>
-            <element signature="e#157#198#0#HTML" expanded="true" />
-            <element signature="e#416#443#0#HTML" expanded="true" />
-            <element signature="e#643#662#0#HTML" expanded="true" />
-            <element signature="e#855#892#0#HTML" expanded="true" />
-            <element signature="e#1046#1069#0#HTML" expanded="true" />
-            <element signature="e#1228#1251#0#HTML" expanded="true" />
-            <element signature="e#1510#1533#0#HTML" expanded="true" />
-            <element signature="e#1846#1865#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CMS/CMSBundle/Resources/views/Frames/shoutbox.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Shoutbox/ShoutboxBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="15" column="83" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="83" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2658,17 +2493,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/tt.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="398" column="81" lean-forward="false" selection-start-line="397" selection-start-column="1" selection-end-line="398" selection-end-column="86" />
+          <folding>
+            <marker date="1485771754897" expanded="true" signature="13337:13349" ph="..." />
+            <marker date="1485771754897" expanded="true" signature="34439:34541" ph="..." />
+            <marker date="1485771754897" expanded="true" signature="35218:35266" ph="..." />
+            <marker date="1485771754897" expanded="true" signature="35344:35487" ph="..." />
+            <marker date="1485771754897" expanded="true" signature="40222:40228" ph="&amp;nbsp;" />
+            <marker date="1485771754897" expanded="true" signature="40228:40234" ph="&amp;nbsp;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/alertify.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10764">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/alertify.core.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Shoutbox/ShoutboxBundle/Resources/views/Default/delShoutboxAjax.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="31" column="71" lean-forward="false" selection-start-line="31" selection-start-column="71" selection-end-line="31" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Shoutbox/ShoutboxBundle/Controller/ShoutboxController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="67" column="47" lean-forward="false" selection-start-line="67" selection-start-column="47" selection-end-line="67" selection-end-column="47" />
+        <state relative-caret-position="432">
+          <caret line="75" column="37" lean-forward="false" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="37" />
           <folding>
             <element signature="e#54#111#0#PHP" expanded="true" />
-            <element signature="e#420#463#1#PHP" expanded="true" />
-            <element signature="e#895#941#0#PHP" expanded="true" />
-            <element signature="e#2367#2417#0#PHP" expanded="true" />
-            <element signature="e#2591#2641#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Shoutbox/ShoutboxBundle/Entity/shoutbox.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="75" column="21" lean-forward="true" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/shoutbox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="178" column="13" lean-forward="false" selection-start-line="178" selection-start-column="13" selection-end-line="178" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>

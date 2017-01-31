@@ -173,8 +173,10 @@ $(document).on('click','#del_shout',function(e){
         url: DelChaturl,
         data:'action=del_shout&msgid='+parseInt(shoutID)+'&securitytoken='+TSUESettings['stKey'],
         success:function(serverResponse){
-            $.TSUE.memberCard(serverResponse);
-            $.TSUE.memberInfoCache[shoutID]=serverResponse;
+            console.log(serverResponse);
+            if (serverResponse === 'OK'){
+                alertify.alert("Shout deleted !");
+            }
         }
     });
     return false;
