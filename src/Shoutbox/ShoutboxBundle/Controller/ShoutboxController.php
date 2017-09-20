@@ -10,20 +10,16 @@ use Shoutbox\ShoutboxBundle\Entity\shoutbox;
 
 class ShoutboxController extends Controller
 {
-    public function shoutboxAction()
-    {
-        return $this->render('ShoutboxBundle:Default:Shoutbox.html.twig');
-    }
-
     public function getShoutboxAction()
     {
         $usr= $this->get('security.token_storage')->getToken()->getUser();
+        $em = $this->getDoctrine()->getManager();
         if ($usr == "anon."){
             $curuser = null;
         } else {
             $curuser = $usr;
         }
-        $em = $this->getDoctrine()->getManager();
+
         $shouts = $em->getRepository('ShoutboxBundle:shoutbox')->findBy(array(), array('date' => 'DESC'));
         return $this->render('ShoutboxBundle:Default:getShoutbox.html.twig', array(
             'shouts' => $shouts,

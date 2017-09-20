@@ -12,7 +12,7 @@
     <div id="shoutbox_list">
         <div class="shoutbox">
             <table class="shoutbox" id="outputList">
-
+                {{ render(controller('ShoutboxBundle:Shoutbox:getShoutbox')) }}
             </table>
         </div>
     </div>
