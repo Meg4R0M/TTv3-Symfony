@@ -14,7 +14,7 @@
             </td>
             <td class="sMemberShout" style="min-width:85px; float: right;">
                 <div class="sButtons">
-                    {% if is_granted('ROLE_ADMIN') %}{#or curuser == shout.uid#}
+                    {% if is_granted('ROLE_ADMIN') or curuser.0.id == shout.uid.id %}
                         <button style='font-size: 10px' class="submit" id='edit_shout' shoutid='{{ shout.id }}'><i class="fa fa-pencil" aria-hidden="true" title="edit"></i></button>
                         <button style='font-size: 10px' class="submit" id='del_shout' shoutid='{{ shout.id }}'><i class="fa fa-times" aria-hidden="true" title="Sup"></i></button>
                     {% endif %}

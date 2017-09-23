@@ -2,14 +2,17 @@
 
 namespace Shoutbox\ShoutboxBundle\Controller;
 
+use Shoutbox\ShoutboxBundle\Entity\shoutbox;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Shoutbox\ShoutboxBundle\Entity\shoutbox;
 
 class ShoutboxController extends Controller
 {
+    /**
+     * @return Response
+     */
     public function getShoutboxAction()
     {
         $usr= $this->get('security.token_storage')->getToken()->getUser();
@@ -17,10 +20,13 @@ class ShoutboxController extends Controller
         if ($usr == "anon."){
             $curuser = null;
         } else {
-            $curuser = $usr;
+            //TODO Check Username and search him in DB
+            //TODO Return userinfos to view
+            $curuser = $em->getRepository('UsersBundle:Users')->findUserIdByUsername(''.$usr.'');
         }
 
         $shouts = $em->getRepository('ShoutboxBundle:shoutbox')->findBy(array(), array('date' => 'DESC'));
+
         return $this->render('ShoutboxBundle:Default:getShoutbox.html.twig', array(
             'shouts' => $shouts,
             'curuser' => $curuser,
@@ -28,6 +34,10 @@ class ShoutboxController extends Controller
         ));
     }
 
+    /**
+     * @param Request $request
+     * @return Response
+     */
     public function sendShoutboxAction(Request $request)
     {
         if ($request->isMethod('post')) {
@@ -53,6 +63,10 @@ class ShoutboxController extends Controller
         }
     }
 
+    /**
+     * @param Request $request
+     * @return Response
+     */
     public function delShoutboxAction (Request $request)
     {
         $idShout = $request->request->get('msgid');
@@ -61,11 +75,6 @@ class ShoutboxController extends Controller
         if ($shout){
             $em->remove($shout);
             $em->flush();
-            /*return new Response(null, 200);*/
-            /*return $this->render('ShoutboxBundle:Default:delShoutboxAjax.html.twig', array(
-                'type' => 'done',
-                'message' => 'Ce shout a été supprimé avec succés'
-            ));*/
 
             return new Response('OK', 200);
         }else{
