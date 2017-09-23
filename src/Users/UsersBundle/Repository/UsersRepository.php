@@ -13,11 +13,11 @@ use Doctrine\ORM\Query;
  */
 class UsersRepository extends EntityRepository
 {
-    public function findUserByUsername($usr)
+    public function findUserIdByUsername($usr)
     {
         return $this->getEntityManager()
             ->createQuery(
-                'SELECT u FROM UsersBundle:Users u WHERE u.username = :'.$usr
+                'SELECT u.id FROM UsersBundle:Users u WHERE u.username = :username'
             )
             ->setParameter('username', $usr)
             ->getResult();

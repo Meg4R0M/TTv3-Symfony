@@ -19,7 +19,7 @@ use Symfony\Component\HttpFoundation\Request;
  *
  * @package UsersBundle\Entity
  *
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="Users\UsersBundle\Repository\UsersRepository")
  * @ORM\Table(name="`users`")
  */
 class Users extends BaseUser implements ParticipantInterface
