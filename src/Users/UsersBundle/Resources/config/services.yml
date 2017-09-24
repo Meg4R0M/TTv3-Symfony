@@ -2,3 +2,7 @@ services:
 #    utilisateurs.example:
 #        class: Utilisateurs\UtilisateursBundle\Example
 #        arguments: ["@service_id", "plain_value", "%parameter%"]
+    app.form.registration:
+        class: Users\UsersBundle\Form\RegistrationType
+        tags:
+            - { name: form.type, alias: app_user_registration }

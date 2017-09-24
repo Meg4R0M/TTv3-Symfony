@@ -1,3 +1,7 @@
+users_registration:
+    path:     /register
+    defaults: { _controller: UsersBundle:Registration:register }
+
 users_membercp:
     path:     /membercp
     defaults: { _controller: UsersBundle:Membercp:membercp }

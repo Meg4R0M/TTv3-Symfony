@@ -162,7 +162,7 @@ class Users extends BaseUser implements ParticipantInterface
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="invite_date", type="datetime", options={"default"="CURRENT_TIMESTAMP"})
+     * @ORM\Column(name="invite_date", type="datetime", nullable=true)
      */
     private $inviteDate;
 

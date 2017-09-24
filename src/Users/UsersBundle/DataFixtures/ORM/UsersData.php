@@ -41,14 +41,12 @@ class UsersData extends AbstractFixture implements OrderedFixtureInterface, Cont
         $user->setPasskey('');
         $user->setStylesheet(0);
         $user->setAge(new \DateTime('1970-00-00'));
+        $user->setInviteDate(new \DateTime('1970-00-00'));
         $user->setTitle('');
         $user->setClient('');
         $user->setSignature('');
-        $user->setTeam('');
-        $user->setTzoffset('');
-        $em = $this->container->get('Doctrine')->getManager();
-        $mood = $em->getRepository('UsersBundle:Moods')->findOneBy(array('id' => 1));
-        $user->setMoods($mood);
+        $user->setTeam(0);
+        $user->setTzoffset(0);
         $userManager->updateUser($user, true);
     }
 
