@@ -2,6 +2,10 @@ cms:
     resource: "@CMSBundle/Resources/config/routing.yml"
     prefix:   /
 
+forums:
+    resource: "@ForumsBundle/Resources/config/routing.yml"
+    prefix:   /forums
+
 informations:
     resource: "@InformationsBundle/Resources/config/routing.yml"
     prefix:   /
@@ -19,7 +23,7 @@ message:
 
 fos_message:
     resource: "@FOSMessageBundle/Resources/config/routing.xml"
-    prefix: /mailbox2
+    prefix:   /mailbox2
 
 shoutbox:
     resource: "@ShoutboxBundle/Resources/config/routing.yml"

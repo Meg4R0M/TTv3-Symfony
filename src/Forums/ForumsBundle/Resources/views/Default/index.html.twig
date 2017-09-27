@@ -1,0 +1,20 @@
+{% if ForumsCats|length != 0 %}
+
+    {% if Forums|length !=0 %}
+        {{ dump(Forums) }}
+        {% for Forum in Forums %}
+            blah
+        {% endfor %}
+        {% if ForumsPosts|length !=0 %}
+
+        {% else %}
+            Pas de posts pour ce sujet.
+        {% endif %}
+
+    {% else %}
+        Pas de sujets dans cette categorie.
+    {% endif %}
+
+{% else %}
+    Pas de categories disponibles.
+{% endif %}

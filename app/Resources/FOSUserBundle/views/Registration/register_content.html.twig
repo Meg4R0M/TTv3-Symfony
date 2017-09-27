@@ -12,87 +12,100 @@
 {% endblock %}
 
 {% block content %}
-<div class='widget'>
+    <h4>
+        <span class='floatright'>
+            <img src='{{ asset('themes/default/buttons/refresh.png') }}' alt='Refresh' title='Refresh'
+                 rel='refreshregister' class='clickable middle'/>
+        </span>
+        <img src='{{ asset('themes/default/forums/mix/bullet_toggle_minus.png') }}' alt='' title='' rel='register'
+             id='toggle' class='middle pointer'/>
+        {{ 'registration.submit'|trans }}
+    </h4>
+    <div class='widget'>
 
-    {% if error is defined %}
-        <div class="error" id="show_error">
-            <b>{{ 'An error has occurred'|trans }}</b><br />
-            {{ error|trans }}
-        </div>
-        <br />
-    {% endif %}
-
-    {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
-    <div class="table">
-
-        <div class="row">
-            <div class="cell"><label for="registerbox_membername">{{ form_label(form.username) }}</label></div>
-            <div class="cell"><label for="registerbox_memberage">{{ form_label(form.age) }}</label></div>
-        </div>
-
-        <div class="row">
-            <div class="cell">
-                {{ form_widget(form.username, {'attr': {'class': 's', 'accesskey': "m", 'title': 'Must be between 3-20 characters. Allowed characters: a-z A-Z 0-9'}}) }}
+        {% if error is defined %}
+            <div class="error" id="show_error">
+                <b>{{ 'An error has occurred'|trans }}</b><br/>
+                {{ error|trans }}
             </div>
-            <div class="cell">
-                {{ form_widget(form.age, {'attr': {'class': 's', 'accesskey': "d", 'title': 'Please select your birth of day. Example: 22/03/1980'}}) }}
-            </div>
-        </div>
+            <br/>
+        {% endif %}
 
-        <div class="row">
-            <div class="cell"><label for="registerbox_memberemail">{{ form_label(form.email.first) }}</label></div>
-            <div class="cell"><label for="registerbox_memberemailconfirm">{{ form_label(form.email.second) }}</label></div>
-        </div>
+        {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
+        <div class="table">
 
-        <div class="row">
-            <div class="cell">
-                {{ form_widget(form.email.first, {'attr': {'class': 's', 'accesskey': "e", 'title': 'Please enter a valid Email Address. We won\'t send you any marketing material.'}}) }}
+            <div class="row">
+                <div class="cell"><label for="registerbox_membername">{{ form_label(form.username) }}</label></div>
+                <div class="cell"><label for="registerbox_memberage">{{ form_label(form.age) }}</label></div>
             </div>
-            <div class="cell">
-                {{ form_widget(form.email.second, {'attr': {'class': 's', 'accesskey': "f", 'title': 'Enter your Email Address again.'}}) }}
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="cell"><label for="registerbox_memberpassword">{{ form_label(form.plainPassword.first) }}</label></div>
-            <div class="cell"><label for="registerbox_memberrepeatpassword">{{ form_label(form.plainPassword.second) }}</label></div>
-        </div>
-
-        <div class="row">
-            <div class="cell">
-                {{ form_widget(form.plainPassword.first, {'attr': {'class': 's', 'accesskey': "p", 'title': 'Try to make it hard to guess. Must be at least 5 characters.'}}) }}
-            </div>
-            <div class="cell">
-                {{ form_widget(form.plainPassword.second, {'attr': {'class': 's', 'accesskey': "c", 'title': 'Enter your Password again.'}}) }}
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="cell"><label for="registerbox_membergender">{{ form_label(form.gender) }}</label></div>
-            <div class="cell"><label for="registerbox_membertimezone">{{ form_label(form.tzoffset) }}</label></div>
-        </div>
-
-        <div class="row">
-            <div class="cell">
-                {{ form_widget(form.gender) }}
-            </div>
-            <div class="cell">
-                {{ form_widget(form.tzoffset, {'attr': {'class': 's'}}) }}
-            </div>
-        </div>
-
-        <div class="tableFooter">
             <div class="row">
                 <div class="cell">
-                    <input type="submit" value="{{ 'registration.submit'|trans }}" class="submit" />
-                    <input type="reset" value="Clear" class="submit" id="signup-buttons" />
+                    {{ form_widget(form.username, {'attr': {'class': 's', 'accesskey': "m", 'title': 'Must be between 3-20 characters. Allowed characters: a-z A-Z 0-9'}}) }}
+                </div>
+                <div class="cell">
+                    {{ form_widget(form.age, {'attr': {'class': 's', 'accesskey': "d", 'title': 'Please select your birth of day. Example: 22/03/1980'}}) }}
                 </div>
             </div>
-        </div>
 
+            <div class="row">
+                <div class="cell"><label for="registerbox_memberemail">{{ form_label(form.email.first) }}</label></div>
+                <div class="cell"><label
+                            for="registerbox_memberemailconfirm">{{ form_label(form.email.second) }}</label></div>
+            </div>
+
+            <div class="row">
+                <div class="cell">
+                    {{ form_widget(form.email.first, {'attr': {'class': 's', 'accesskey': "e", 'title': 'Please enter a valid Email Address. We won\'t send you any marketing material.'}}) }}
+                </div>
+                <div class="cell">
+                    {{ form_widget(form.email.second, {'attr': {'class': 's', 'accesskey': "f", 'title': 'Enter your Email Address again.'}}) }}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="cell"><label
+                            for="registerbox_memberpassword">{{ form_label(form.plainPassword.first) }}</label></div>
+                <div class="cell"><label
+                            for="registerbox_memberrepeatpassword">{{ form_label(form.plainPassword.second) }}</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="cell">
+                    {{ form_widget(form.plainPassword.first, {'attr': {'class': 's', 'accesskey': "p", 'title': 'Try to make it hard to guess. Must be at least 5 characters.'}}) }}
+                </div>
+                <div class="cell">
+                    {{ form_widget(form.plainPassword.second, {'attr': {'class': 's', 'accesskey': "c", 'title': 'Enter your Password again.'}}) }}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="cell"><label for="registerbox_membergender">{{ form_label(form.gender) }}</label></div>
+                <div class="cell"><label for="registerbox_membertimezone">{{ form_label(form.tzoffset) }}</label></div>
+            </div>
+
+            <div class="row">
+                <div class="cell">
+                    {{ form_widget(form.gender) }}
+                </div>
+                <div class="cell">
+                    {{ form_widget(form.tzoffset, {'attr': {'class': 's'}}) }}
+                </div>
+            </div>
+
+            <div class="tableFooter">
+                <div class="row">
+                    <div class="cell">
+                        <input type="submit" value="{{ 'registration.submit'|trans }}" class="submit"/>
+                        <input type="reset" value="Clear" class="submit" id="signup-buttons"/>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        {{ form_end(form) }}
     </div>
-    {{ form_end(form) }}
-</div>
 {% endblock %}
 
 {% block rightblocks %}

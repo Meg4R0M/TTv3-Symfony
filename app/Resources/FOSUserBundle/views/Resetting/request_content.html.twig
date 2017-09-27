@@ -1,11 +1,61 @@
 {% trans_default_domain 'FOSUserBundle' %}
+{% extends "::base.html.twig" %}
 
-<form action="{{ path('fos_user_resetting_send_email') }}" method="POST" class="fos_user_resetting_request">
-    <div>
-        <label for="username">{{ 'resetting.request.username'|trans }}</label>
-        <input type="text" id="username" name="username" required="required" />
+{% block infobar %}
+    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+        {{ render(controller('UsersBundle:Infos:infobar')) }}
+    {% endif %}
+{% endblock %}
+
+{% block breadcrumbs %}
+    {{ render(controller('UsersBundle:Infos:breadcrumbs')) }}
+{% endblock %}
+
+{% block content %}
+    <h4>
+        <span class='floatright'>
+            <img src='{{ asset('themes/default/buttons/refresh.png') }}' alt='Refresh' title='Refresh' rel='refreshregister' class='clickable middle'/>
+        </span>
+        <img src='{{ asset('themes/default/forums/mix/bullet_toggle_minus.png') }}' alt='' title='' rel='register' id='toggle' class='middle pointer'/>
+        {{ 'resetting.request.submit'|trans }}
+    </h4>
+
+    <div class='widget'>
+
+        {% if error is defined %}
+            <div class="error" id="show_error">
+                <b>{{ 'An error has occurred'|trans }}</b><br/>
+                {{ error|trans }}
+            </div>
+            <br/>
+        {% endif %}
+
+        <form action="{{ path('fos_user_resetting_send_email') }}" method="POST" class="fos_user_resetting_request">
+            <div class="table">
+                <div class="row">
+                    <div class="cell">
+                        <label for="recoverbox_membername">{{ 'resetting.request.username'|trans }}</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="cell">
+                        <input type="text" id="recoverbox_membername" name="username" required="required" class="s" accesskey="r"/>
+                    </div>
+                </div>
+                <div class="tableFooter">
+                    <div class="row">
+                        <div class="cell">
+                            <input type="submit" value="{{ 'resetting.request.submit'|trans }}" class="submit" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </form>
     </div>
-    <div>
-        <input type="submit" value="{{ 'resetting.request.submit'|trans }}" />
-    </div>
-</form>
+{% endblock %}
+
+{% block rightblocks %}
+    {{ render(controller('UsersBundle:UsersBlock:login')) }}
+    {{ render(controller('UsersBundle:UsersBlock:membersonline')) }}
+{% endblock %}
