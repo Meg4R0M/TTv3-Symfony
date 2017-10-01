@@ -1,6 +1,6 @@
 <?php
 
-namespace Informations\InformationsBundle\DataFixtures\ORM;
+namespace Forums\ForumsBundle\DataFixtures\ORM;
 
 use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;

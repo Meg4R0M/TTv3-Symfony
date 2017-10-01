@@ -1,6 +1,6 @@
 <?php
 
-namespace Informations\InformationsBundle\DataFixtures\ORM;
+namespace Forums\ForumsBundle\DataFixtures\ORM;
 
 use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
@@ -48,7 +48,7 @@ class ForumsData extends AbstractFixture implements OrderedFixtureInterface
         $forums4->setMinclassread(1);
         $forums4->setMinclasswrite(1);
         $forums4->setGuestRead('yes');
-        $forums4->setCategory(3);
+        $forums4->setCategory(2);
         $manager->persist($forums4);
 
         $forums5 = new Forums();
@@ -58,7 +58,7 @@ class ForumsData extends AbstractFixture implements OrderedFixtureInterface
         $forums5->setMinclassread(1);
         $forums5->setMinclasswrite(1);
         $forums5->setGuestRead('yes');
-        $forums5->setCategory(3);
+        $forums5->setCategory(2);
         $manager->persist($forums5);
 
         $forums6 = new Forums();
@@ -68,7 +68,7 @@ class ForumsData extends AbstractFixture implements OrderedFixtureInterface
         $forums6->setMinclassread(1);
         $forums6->setMinclasswrite(1);
         $forums6->setGuestRead('yes');
-        $forums6->setCategory(3);
+        $forums6->setCategory(2);
         $manager->persist($forums6);
 
         $forums7 = new Forums();
@@ -78,7 +78,7 @@ class ForumsData extends AbstractFixture implements OrderedFixtureInterface
         $forums7->setMinclassread(1);
         $forums7->setMinclasswrite(1);
         $forums7->setGuestRead('yes');
-        $forums7->setCategory(3);
+        $forums7->setCategory(2);
         $manager->persist($forums7);
 
         $forums8 = new Forums();
@@ -88,7 +88,7 @@ class ForumsData extends AbstractFixture implements OrderedFixtureInterface
         $forums8->setMinclassread(1);
         $forums8->setMinclasswrite(1);
         $forums8->setGuestRead('yes');
-        $forums8->setCategory(3);
+        $forums8->setCategory(2);
         $manager->persist($forums8);
 
         $manager->flush();

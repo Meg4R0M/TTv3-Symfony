@@ -1,20 +1,63 @@
-{% if ForumsCats|length != 0 %}
+{% extends "::base.html.twig" %}
 
-    {% if Forums|length !=0 %}
-        {{ dump(Forums) }}
-        {% for Forum in Forums %}
-            blah
-        {% endfor %}
-        {% if ForumsPosts|length !=0 %}
-
-        {% else %}
-            Pas de posts pour ce sujet.
-        {% endif %}
-
-    {% else %}
-        Pas de sujets dans cette categorie.
+{% block infobar %}
+    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+        {{ render(controller('UsersBundle:Infos:infobar')) }}
     {% endif %}
+{% endblock %}
 
-{% else %}
-    Pas de categories disponibles.
-{% endif %}
+{% block breadcrumbs %}
+    {{ render(controller('UsersBundle:Infos:breadcrumbs')) }}
+{% endblock %}
+
+{% block content %}
+    {% if ForumsCats|length != 0 %}
+        {{ dump(ForumsCats) }}
+        <ul>
+            {% for ForumsCat in ForumsCats %}
+                <li><h1>{{ ForumsCat.name }}</h1></li>
+                <li>
+                    <ul>
+                        {% if Forums|length !=0 %}
+                            {{ dump(Forums) }}
+
+                            {% for Forum in Forums %}
+                                {% if Forum.category == ForumsCat.id %}
+                                    <li><strong>{{ Forum.name }}</strong><br/>{{ Forum.decription }}</li>
+                                    <ol>
+                                        {% if ForumsTopics|length !=0 %}
+                                            {{ dump(ForumsTopics) }}
+
+                                            {% for ForumsTopic in ForumsTopics %}
+                                                {% if ForumsTopic.forumid == Forum.id %}
+                                                    <li>{{ ForumsTopic.subject }}</li>
+                                                {% endif %}
+                                            {% endfor %}
+
+                                        {% else %}
+                                            <li> -- Pas de posts pour ce sujet.</li>
+                                        {% endif %}
+                                    </ol>
+                                {% endif %}
+
+                            {% endfor %}
+                        {% else %}
+                            Pas de sujets dans cette categorie.
+                        {% endif %}
+                    </ul>
+                </li>
+                {# End Forumscat loop #}
+            {% endfor %}
+        </ul>
+    {% else %}
+        Pas de categories disponibles.
+    {% endif %}
+{% endblock %}
+
+{% block rightblocks %}
+    {{ render(controller('UsersBundle:UsersBlock:login')) }}
+    {{ render(controller('UsersBundle:UsersBlock:donate')) }}
+    {{ render(controller('UsersBundle:UsersBlock:stats')) }}
+    {{ render(controller('UsersBundle:UsersBlock:membersonline')) }}
+    {{ render(controller('UsersBundle:UsersBlock:membersonline24')) }}
+{% endblock %}
