@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block breadcrumbs %}
-    {{ render(controller('UsersBundle:Infos:breadcrumbs')) }}
+    {{ render(controller('UsersBundle:Infos:breadcrumbs', { "page": { "address": "forums_homepage", "name": "Forums"}})) }}
 {% endblock %}
 
 {% block content %}
@@ -18,9 +18,9 @@
                 <tr>
                     <th colspan="3" class="forumTableHeader">
                         <span class="floatright" original-title="">
-                            <img src="Forums%20%7C%20Templateshares%20Ultimate%20Edition%20%7C%20TSUE_fichiers/bullet_toggle_minus.png" alt="" title="" rel="forumList{{ ForumsCat.id }}" id="toggle" class="middle pointer">
+                            <img src="{{ asset('themes/default/forums/mix/bullet_toggle_minus.png') }}" alt="" title="" rel="forumList{{ ForumsCat.id }}" id="toggle" class="middle pointer">
                         </span>
-                        <a href="http://templateshares-ue.net/tsue/?p=forums&amp;pid=502&amp;fid=1" title="">{{ ForumsCat.name }}</a>
+                        <a href="?p=forums&amp;pid=502&amp;fid=1" title="">{{ ForumsCat.name }}</a>
                     </th>
                 </tr>
                 <tr class="forumTableSubHeader">
@@ -50,11 +50,11 @@
                             {% endif %}
                             <tr class="forumList " id="forumList{{ Forum.category.id }}">
                                 <td align="center">
-                                    <img src="Forums%20%7C%20Templateshares%20Ultimate%20Edition%20%7C%20TSUE_fichiers/Announcement_32x32.png" alt="" original-title="" rel="resized_by_tsue" border="0">
+                                    <img src="{{ asset('themes/default/forums/Announcement_32x32.png') }}" alt="" original-title="" rel="resized_by_tsue" border="0">
                                 </td>
                                 <td data-th="Forum">
-                                    <span class="floatright" original-title=""><a href="http://templateshares-ue.net/tsue/?p=forums&amp;pid=11&amp;action=rss&amp;fid=3" class="rssIcon middle" rel="3" original-title=""></a></span>
-                                    <a href="http://templateshares-ue.net/tsue/?p=forums&amp;pid=11&amp;fid=3" rel="" id="3" original-title="">{{ Forum.name }}</a>
+                                    <span class="floatright" original-title=""><a href="?p=forums&amp;pid=11&amp;action=rss&amp;fid=3" class="rssIcon middle" rel="3" original-title=""></a></span>
+                                    <a href="?p=forums&amp;pid=11&amp;fid=3" rel="" id="3" original-title="">{{ Forum.name }}</a>
                                     <div class="forum_description">
                                         {{ Forum.decription }}
                                         <div class="forum_stats">
@@ -71,8 +71,8 @@
                                                         <div class="last_post_info">
                                                             <a href="#" original-title="">{{ ForumsPost.body }}</a>
                                                             <span class="last_post_span" original-title="">
-                                                                <span id="member_info" memberid="1" class="clickable" original-title="">xam</span>
-                                                                09-07-2014 09:32
+                                                                <span id="member_info" memberid="{{ ForumsPost.userid.id }}" class="clickable" original-title="">{{ ForumsPost.userid.username }}</span>
+                                                                - {{ ForumsPost.added|date('d-m-Y') }}
                                                             </span>
                                                         </div>
                                                     </td>
