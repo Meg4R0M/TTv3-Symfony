@@ -24,7 +24,8 @@ class ForumsTopics
     /**
      * @var int
      *
-     * @ORM\Column(name="userid", type="integer")
+     * @ORM\ManyToOne(targetEntity="Users\UsersBundle\Entity\Users")
+     * @ORM\JoinColumn(name="userid", referencedColumnName="id")
      */
     private $userid;
 
@@ -45,7 +46,8 @@ class ForumsTopics
     /**
      * @var int
      *
-     * @ORM\Column(name="forumid", type="integer")
+     * @ORM\ManyToOne(targetEntity="Forums\ForumsBundle\Entity\Forums")
+     * @ORM\JoinColumn(name="forumid", referencedColumnName="id")
      */
     private $forumid;
 

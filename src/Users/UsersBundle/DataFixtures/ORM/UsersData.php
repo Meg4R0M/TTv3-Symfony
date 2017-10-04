@@ -48,6 +48,8 @@ class UsersData extends AbstractFixture implements OrderedFixtureInterface, Cont
         $user->setTeam(0);
         $user->setTzoffset(0);
         $userManager->updateUser($user, true);
+
+        $this->addReference('user1', $user);
     }
 
     /**

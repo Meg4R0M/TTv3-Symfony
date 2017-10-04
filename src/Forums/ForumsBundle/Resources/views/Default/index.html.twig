@@ -12,43 +12,96 @@
 
 {% block content %}
     {% if ForumsCats|length != 0 %}
-        {{ dump(ForumsCats) }}
-        <ul>
-            {% for ForumsCat in ForumsCats %}
-                <li><h1>{{ ForumsCat.name }}</h1></li>
-                <li>
-                    <ul>
-                        {% if Forums|length !=0 %}
-                            {{ dump(Forums) }}
+        {% for ForumsCat in ForumsCats %}
+            <table class="forumTable">
+                <tbody>
+                <tr>
+                    <th colspan="3" class="forumTableHeader">
+                        <span class="floatright" original-title="">
+                            <img src="Forums%20%7C%20Templateshares%20Ultimate%20Edition%20%7C%20TSUE_fichiers/bullet_toggle_minus.png" alt="" title="" rel="forumList{{ ForumsCat.id }}" id="toggle" class="middle pointer">
+                        </span>
+                        <a href="http://templateshares-ue.net/tsue/?p=forums&amp;pid=502&amp;fid=1" title="">{{ ForumsCat.name }}</a>
+                    </th>
+                </tr>
+                <tr class="forumTableSubHeader">
+                    <th class="f_icon"></th>
+                    <th class="f_title">Forum</th>
+                    <th class="f_last">Last Message</th>
+                </tr>
+                {% if Forums|length !=0 %}
+                    {% for Forum in Forums %}
+                        {% if Forum.category.id == ForumsCat.id %}
+                            {% set NbTopics = 0 %}
+                            {% set NbPosts = 0 %}
+                            {% if ForumsTopics|length !=0 %}
+                                {# Calcul du nombre de sujets dans cette categorie #}
+                                {% for ForumsTopic in ForumsTopics %}
+                                    {% if ForumsTopic.forumid.id == Forum.id %}
+                                        {% set NbTopics = NbTopics +1 %}
+                                        {# Calcul du nombre de posts dans ce Sujet #}
+                                        {% if ForumsPosts|length !=0 %}
+                                            {% for ForumsPost in ForumsPosts %}
+                                                {% set NbPosts = NbPosts +1 %}
+                                            {% endfor %}
+                                        {% endif %}
+                                    {% endif %}
+                                {% endfor %}
 
-                            {% for Forum in Forums %}
-                                {% if Forum.category == ForumsCat.id %}
-                                    <li><strong>{{ Forum.name }}</strong><br/>{{ Forum.decription }}</li>
-                                    <ol>
-                                        {% if ForumsTopics|length !=0 %}
-                                            {{ dump(ForumsTopics) }}
-
-                                            {% for ForumsTopic in ForumsTopics %}
-                                                {% if ForumsTopic.forumid == Forum.id %}
-                                                    <li>{{ ForumsTopic.subject }}</li>
+                            {% endif %}
+                            <tr class="forumList " id="forumList{{ Forum.category.id }}">
+                                <td align="center">
+                                    <img src="Forums%20%7C%20Templateshares%20Ultimate%20Edition%20%7C%20TSUE_fichiers/Announcement_32x32.png" alt="" original-title="" rel="resized_by_tsue" border="0">
+                                </td>
+                                <td data-th="Forum">
+                                    <span class="floatright" original-title=""><a href="http://templateshares-ue.net/tsue/?p=forums&amp;pid=11&amp;action=rss&amp;fid=3" class="rssIcon middle" rel="3" original-title=""></a></span>
+                                    <a href="http://templateshares-ue.net/tsue/?p=forums&amp;pid=11&amp;fid=3" rel="" id="3" original-title="">{{ Forum.name }}</a>
+                                    <div class="forum_description">
+                                        {{ Forum.decription }}
+                                        <div class="forum_stats">
+                                            Threads: {{ NbTopics }} Replies: {{ NbPosts }}
+                                        </div>
+                                    </div>
+                                </td>
+                                {% if ForumsTopics|length !=0 %}
+                                    {% for ForumsTopic in ForumsTopics %}
+                                        {% if ForumsPosts|length !=0 and ForumsTopic.forumid.id == Forum.id %}
+                                            {% for ForumsPost in ForumsPosts %}
+                                                {% if ForumsPost.TopicId.id == ForumsTopic.id %}
+                                                    <td data-th="Last Message">
+                                                        <div class="last_post_info">
+                                                            <a href="#" original-title="">{{ ForumsPost.body }}</a>
+                                                            <span class="last_post_span" original-title="">
+                                                                <span id="member_info" memberid="1" class="clickable" original-title="">xam</span>
+                                                                09-07-2014 09:32
+                                                            </span>
+                                                        </div>
+                                                    </td>
                                                 {% endif %}
                                             {% endfor %}
-
-                                        {% else %}
-                                            <li> -- Pas de posts pour ce sujet.</li>
+                                        {% elseif NbPosts == 0 and loop.index == 1 %}
+                                            <td data-th="Last Message">
+                                                <div class="last_post_info">
+                                                    <a href="#" original-title="">Pas de Message</a>
+                                                    <span class="last_post_span" original-title="">
+                                                        <span id="member_info" memberid="1" class="clickable" original-title="">---</span>
+                                                        ---
+                                                    </span>
+                                                </div>
+                                            </td>
                                         {% endif %}
-                                    </ol>
+                                    {% endfor %}
                                 {% endif %}
-
-                            {% endfor %}
-                        {% else %}
-                            Pas de sujets dans cette categorie.
+                            </tr>
                         {% endif %}
-                    </ul>
-                </li>
-                {# End Forumscat loop #}
-            {% endfor %}
-        </ul>
+
+                    {% endfor %}
+                {% else %}
+                    Pas de sujets dans cette categorie.
+                {% endif %}
+                </tbody>
+            </table>
+            {# End Forumscat loop #}
+        {% endfor %}
     {% else %}
         Pas de categories disponibles.
     {% endif %}

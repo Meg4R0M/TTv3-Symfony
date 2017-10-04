@@ -93,5 +93,10 @@ class ForumsCategories
     {
         return $this->sort;
     }
+
+    public function __toString()
+    {
+        return $this->getName();
+    }
 }
 

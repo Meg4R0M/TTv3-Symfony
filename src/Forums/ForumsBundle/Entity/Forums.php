@@ -66,7 +66,8 @@ class Forums
     /**
      * @var int
      *
-     * @ORM\Column(name="category", type="smallint")
+     * @ORM\ManyToOne(targetEntity="Forums\ForumsBundle\Entity\ForumsCategories")
+     * @ORM\JoinColumn(name="category", referencedColumnName="id")
      */
     private $category;
 

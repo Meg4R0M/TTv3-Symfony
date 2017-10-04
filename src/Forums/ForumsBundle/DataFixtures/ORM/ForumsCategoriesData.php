@@ -23,6 +23,9 @@ class ForumsCategoriesData extends AbstractFixture implements OrderedFixtureInte
 
         $manager->flush();
 
+        $this->addReference('fcat1', $fcats1);
+        $this->addReference('fcat2', $fcats2);
+
     }
 
     public function getOrder()

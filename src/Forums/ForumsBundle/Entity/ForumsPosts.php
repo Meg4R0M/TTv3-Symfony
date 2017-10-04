@@ -24,14 +24,16 @@ class ForumsPosts
     /**
      * @var int
      *
-     * @ORM\Column(name="topicid", type="integer")
+     * @ORM\ManyToOne(targetEntity="Forums\ForumsBundle\Entity\ForumsTopics")
+     * @ORM\JoinColumn(name="topicid", referencedColumnName="id")
      */
     private $topicid;
 
     /**
      * @var int
      *
-     * @ORM\Column(name="userid", type="integer")
+     * @ORM\ManyToOne(targetEntity="Users\UsersBundle\Entity\Users")
+     * @ORM\JoinColumn(name="userid", referencedColumnName="id")
      */
     private $userid;
 
@@ -52,7 +54,8 @@ class ForumsPosts
     /**
      * @var int
      *
-     * @ORM\Column(name="editedby", type="integer")
+     * @ORM\ManyToOne(targetEntity="Users\UsersBundle\Entity\Users")
+     * @ORM\JoinColumn(name="editedby", referencedColumnName="id", nullable=true)
      */
     private $editedby;
 

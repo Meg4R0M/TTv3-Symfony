@@ -18,7 +18,7 @@ class ForumsData extends AbstractFixture implements OrderedFixtureInterface
         $forums1->setMinclassread(1);
         $forums1->setMinclasswrite(1);
         $forums1->setGuestRead('yes');
-        $forums1->setCategory(1);
+        $forums1->setCategory($this->getReference('fcat1'));
         $manager->persist($forums1);
 
         $forums2 = new Forums();
@@ -28,7 +28,7 @@ class ForumsData extends AbstractFixture implements OrderedFixtureInterface
         $forums2->setMinclassread(1);
         $forums2->setMinclasswrite(1);
         $forums2->setGuestRead('yes');
-        $forums2->setCategory(1);
+        $forums2->setCategory($this->getReference('fcat1'));
         $manager->persist($forums2);
 
         $forums3 = new Forums();
@@ -38,7 +38,7 @@ class ForumsData extends AbstractFixture implements OrderedFixtureInterface
         $forums3->setMinclassread(1);
         $forums3->setMinclasswrite(1);
         $forums3->setGuestRead('yes');
-        $forums3->setCategory(1);
+        $forums3->setCategory($this->getReference('fcat1'));
         $manager->persist($forums3);
 
         $forums4 = new Forums();
@@ -48,7 +48,7 @@ class ForumsData extends AbstractFixture implements OrderedFixtureInterface
         $forums4->setMinclassread(1);
         $forums4->setMinclasswrite(1);
         $forums4->setGuestRead('yes');
-        $forums4->setCategory(2);
+        $forums4->setCategory($this->getReference('fcat2'));
         $manager->persist($forums4);
 
         $forums5 = new Forums();
@@ -58,7 +58,7 @@ class ForumsData extends AbstractFixture implements OrderedFixtureInterface
         $forums5->setMinclassread(1);
         $forums5->setMinclasswrite(1);
         $forums5->setGuestRead('yes');
-        $forums5->setCategory(2);
+        $forums5->setCategory($this->getReference('fcat2'));
         $manager->persist($forums5);
 
         $forums6 = new Forums();
@@ -68,7 +68,7 @@ class ForumsData extends AbstractFixture implements OrderedFixtureInterface
         $forums6->setMinclassread(1);
         $forums6->setMinclasswrite(1);
         $forums6->setGuestRead('yes');
-        $forums6->setCategory(2);
+        $forums6->setCategory($this->getReference('fcat2'));
         $manager->persist($forums6);
 
         $forums7 = new Forums();
@@ -78,7 +78,7 @@ class ForumsData extends AbstractFixture implements OrderedFixtureInterface
         $forums7->setMinclassread(1);
         $forums7->setMinclasswrite(1);
         $forums7->setGuestRead('yes');
-        $forums7->setCategory(2);
+        $forums7->setCategory($this->getReference('fcat2'));
         $manager->persist($forums7);
 
         $forums8 = new Forums();
@@ -88,10 +88,19 @@ class ForumsData extends AbstractFixture implements OrderedFixtureInterface
         $forums8->setMinclassread(1);
         $forums8->setMinclasswrite(1);
         $forums8->setGuestRead('yes');
-        $forums8->setCategory(2);
+        $forums8->setCategory($this->getReference('fcat2'));
         $manager->persist($forums8);
 
         $manager->flush();
+
+        $this->addReference('forums1', $forums1);
+        $this->addReference('forums2', $forums2);
+        $this->addReference('forums3', $forums3);
+        $this->addReference('forums4', $forums4);
+        $this->addReference('forums5', $forums5);
+        $this->addReference('forums6', $forums6);
+        $this->addReference('forums7', $forums7);
+        $this->addReference('forums8', $forums8);
 
     }
 
