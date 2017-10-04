@@ -4,7 +4,7 @@ cms:
 
 forums:
     resource: "@ForumsBundle/Resources/config/routing.yml"
-    prefix:   /forums
+    prefix:   /
 
 informations:
     resource: "@InformationsBundle/Resources/config/routing.yml"

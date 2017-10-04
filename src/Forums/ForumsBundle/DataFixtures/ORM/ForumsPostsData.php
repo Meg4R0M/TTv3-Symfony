@@ -47,6 +47,15 @@ class ForumsPostsData extends AbstractFixture implements OrderedFixtureInterface
         $forumsPosts4->setEditedat(new \DateTime('now'));
         $manager->persist($forumsPosts4);
 
+        $forumsPosts5 = new ForumsPosts();
+        $forumsPosts5->setTopicid($this->getReference('forumsTopic1'));
+        $forumsPosts5->setUserid($this->getReference('user1'));
+        $forumsPosts5->setAdded(new \DateTime('now'));
+        $forumsPosts5->setBody('testing the new forums - second entry');
+        $forumsPosts5->setEditedby($this->getReference('user1'));
+        $forumsPosts5->setEditedat(new \DateTime('now'));
+        $manager->persist($forumsPosts5);
+
         $manager->flush();
 
     }

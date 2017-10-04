@@ -53,8 +53,8 @@
                                     <img src="{{ asset('themes/default/forums/Announcement_32x32.png') }}" alt="" original-title="" rel="resized_by_tsue" border="0">
                                 </td>
                                 <td data-th="Forum">
-                                    <span class="floatright" original-title=""><a href="?p=forums&amp;pid=11&amp;action=rss&amp;fid=3" class="rssIcon middle" rel="3" original-title=""></a></span>
-                                    <a href="?p=forums&amp;pid=11&amp;fid=3" rel="" id="3" original-title="">{{ Forum.name }}</a>
+                                    <span class="floatright" original-title=""><a href="?p=forums&amp;pid=11&amp;action=rss&amp;fid=3" class="rssIcon middle" rel="{{ Forum.id }}" original-title=""></a></span>
+                                    <a href="{{ path('forums_show', {"id": Forum.id }) }}" rel="" id="{{ Forum.id }}" original-title="">{{ Forum.name }}</a>
                                     <div class="forum_description">
                                         {{ Forum.decription }}
                                         <div class="forum_stats">
@@ -66,7 +66,7 @@
                                     {% for ForumsTopic in ForumsTopics %}
                                         {% if ForumsPosts|length !=0 and ForumsTopic.forumid.id == Forum.id %}
                                             {% for ForumsPost in ForumsPosts %}
-                                                {% if ForumsPost.TopicId.id == ForumsTopic.id %}
+                                                {% if ForumsPost.TopicId.id == ForumsTopic.id and loop.last %}
                                                     <td data-th="Last Message">
                                                         <div class="last_post_info">
                                                             <a href="#" original-title="">{{ ForumsPost.body }}</a>

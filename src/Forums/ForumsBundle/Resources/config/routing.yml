@@ -1,3 +1,5 @@
-forums_homepage:
-    path:     /
-    defaults: { _controller: ForumsBundle:Forums:index }
+forums_forums:
+    resource: "@ForumsBundle/Resources/config/routing/forums.yml"
+    prefix:   /forums
+
+

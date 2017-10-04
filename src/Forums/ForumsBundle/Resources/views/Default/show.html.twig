@@ -1,0 +1,111 @@
+{% extends "::base.html.twig" %}
+
+{% block infobar %}
+    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+        {{ render(controller('UsersBundle:Infos:infobar')) }}
+    {% endif %}
+{% endblock %}
+
+{% block breadcrumbs %}
+    {{ render(controller('UsersBundle:Infos:breadcrumbs', { "page": { "address": "forums_homepage", "name": "Forums"}})) }}
+{% endblock %}
+
+{% block content %}
+<div id="threadListHome">
+    <table class="forumTable">
+        <tr>
+            <th colspan="5" class="forumTableHeader">{{ forum.name }}</th>
+        </tr>
+
+        <tr class="forumTableSubHeader">
+            <th class="t_icon"> </th>
+            <th class="t_title">Title</th>
+            <th class="t_replies">Replies</th>
+            <th class="t_views">Views</th>
+            <th class="t_last">Last Message</th>
+        </tr>
+        
+        {% if forumTopics|length != 0 %}
+            {% for forumTopic in forumTopics %}
+                <tr class="threadList" id="thread_2854">
+                    {% if forumTopic.userid.avatar is not null %}
+                        {% set AvatarSrc = forumTopic.userid.avatar %}
+                    {% else %}
+                        {% set AvatarSrc = asset('themes/default/avatars/avatar_s.png') %}
+                    {% endif %}
+                    <td align="center" class="threadListAvatar"><img src="{{ AvatarSrc }}" alt="" title="" class="clickable avatar" id="member_info" memberid="{{ forumTopic.userid.id }}" /></td>
+                    <td data-th="Title">
+                        <div id="icons">
+                            <span class="{% if forumTopic.sticky != 0 %}sticky{% endif %}" title="Sticky"></span>
+                            <span class="{% if forumTopic.locked != 0 %}locked{% endif %}" title="Locked"></span>
+                            {# a mettre en place #}<span class="" title="Poll"></span>
+                        </div>
+                        <span class="prefixButton green">Prefix à creer BDD</span>
+                        <a href="?p=forums&amp;pid=11&amp;fid=3&amp;tid=2854" threadid="{{ forumTopic.id }}" forumid="{{ forumTopic.forumid.id }}" rel="" title="">{{ forumTopic.subject }}</a>
+
+                        <div class="small"><span id="member_info" memberid="{{ forumTopic.userid.id }}" class="clickable">{{ forumTopic.userid.username }}</span>, 09-07-2014 09:23</div>
+                    </td>
+                    {% set Replies = 0 %}
+                    {% for forumPost in forumPosts %}
+                        {% if forumPost.TopicId.id == forumTopic.id %}
+                            {% set Replies = Replies + 1 %}
+                        {% endif %}
+                    {% endfor %}
+                    <td data-th="Replies">{{ Replies }}</td>
+                    <td data-th="Views">{{ forumTopic.views }}</td>
+                    <td data-th="Last Message">
+                        {% for forumPost in forumPosts %}
+                            {% if forumPost.TopicId.id == forumTopic.id and loop.last %}
+                                <div class="last_post_info">
+                                    <a href="?p=forums&amp;pid=11&amp;fid=0&amp;tid=0&amp;goLast=true">{{ forumPost.body }}</a>
+                                    <span class="last_post_span"><span id="member_info" memberid="{{ forumPost.userid.id }}" class="clickable">{{ forumPost.userid.username }}</span> {{ forumPost.added|date('d-m-Y h:m') }}</span>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </td>
+                </tr>
+            {% endfor %}
+        {% else %}
+            <tr class="threadList" id="thread_0">
+                <td align="center" class="threadListAvatar"></td>
+                <td data-th="Title">
+                    <div id="icons">
+                        <span class="sticky" title="Sticky"></span>
+                        <span class="" title="Locked"></span>
+                        <span class="" title="Poll"></span>
+                    </div>
+                    <span class="prefixButton green">---</span>
+                    Aucuns sujet dans ce forum
+                    <div class="small"><span id="member_info" memberid="0" class="clickable">---</span>, ---</div>
+                </td>
+                <td data-th="Replies">0</td>
+                <td data-th="Views">0</td>
+                <td data-th="Last Message">
+                    <div class="last_post_info">
+                        <a href="#"></a>
+                        <span class="last_post_span"><span id="member_info" memberid="0" class="clickable">---</span> ---</span>
+                    </div>
+                </td>
+            </tr>
+        {% endif %}
+
+    </table>
+</div>
+
+    <ul>
+        <li>
+            <a href="{{ path('forums_homepage') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('forums_edit', { 'id': forum.id }) }}">Edit</a>
+        </li>
+    </ul>
+{% endblock %}
+
+{% block rightblocks %}
+    {{ render(controller('UsersBundle:UsersBlock:login')) }}
+    {{ render(controller('UsersBundle:UsersBlock:donate')) }}
+    {{ render(controller('UsersBundle:UsersBlock:stats')) }}
+    {{ render(controller('UsersBundle:UsersBlock:membersonline')) }}
+    {{ render(controller('UsersBundle:UsersBlock:membersonline24')) }}
+{% endblock %}

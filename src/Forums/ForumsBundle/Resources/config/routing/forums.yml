@@ -1,0 +1,24 @@
+forums_homepage:
+    path:     /
+    defaults: { _controller: "ForumsBundle:Forums:index" }
+    methods:  GET
+
+forums_show:
+    path:     /{id}/show
+    defaults: { _controller: "ForumsBundle:Forums:show" }
+    methods:  GET
+
+forums_new:
+    path:     /new
+    defaults: { _controller: "ForumsBundle:Forums:new" }
+    methods:  [GET, POST]
+
+forums_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "ForumsBundle:Forums:edit" }
+    methods:  [GET, POST]
+
+forums_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "ForumsBundle:Forums:delete" }
+    methods:  DELETE
