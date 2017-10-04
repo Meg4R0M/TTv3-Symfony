@@ -36,7 +36,7 @@ class ForumsController extends Controller
      */
     public function newAction(Request $request)
     {
-        $forum = new Forum();
+        $forum = new Forums();
         $form = $this->createForm('Forums\ForumsBundle\Form\ForumsType', $forum);
         $form->handleRequest($request);
 
@@ -48,7 +48,7 @@ class ForumsController extends Controller
             return $this->redirectToRoute('forums_show', array('id' => $forum->getId()));
         }
 
-        return $this->render('forums/new.html.twig', array(
+        return $this->render('ForumsBundle:Forums:new.html.twig', array(
             'forum' => $forum,
             'form' => $form->createView(),
         ));
@@ -58,15 +58,15 @@ class ForumsController extends Controller
      * Finds and displays a forum entity.
      *
      */
-    public function showAction($id)
+    public function showAction(Forums $forum)
     {
         $em=$this->getDoctrine();
-        $forums = $em->getRepository('ForumsBundle:Forums')->findOneBy(array('id' => $id));
-        $forumsTopics = $em->getRepository('ForumsBundle:ForumsTopics')->findBy(array('forumid' => $id));
+        $forums = $em->getRepository('ForumsBundle:Forums')->findOneBy(array('id' => $forum->getId()));
+        $forumsTopics = $em->getRepository('ForumsBundle:ForumsTopics')->findBy(array('forumid' => $forum->getId()));
         $forumsPosts = $em->getRepository('ForumsBundle:ForumsPosts')->findAll();
         //$deleteForm = $this->createDeleteForm($forum);'delete_form' => $deleteForm->createView(),
 
-        return $this->render('ForumsBundle:Default:show.html.twig', array(
+        return $this->render('ForumsBundle:Forums:show.html.twig', array(
             'forum' => $forums,
             'forumTopics' => $forumsTopics,
             'forumPosts' => $forumsPosts,
@@ -89,7 +89,7 @@ class ForumsController extends Controller
             return $this->redirectToRoute('forums_edit', array('id' => $forum->getId()));
         }
 
-        return $this->render('forums/edit.html.twig', array(
+        return $this->render('ForumsBundle:Forums:edit.html.twig', array(
             'forum' => $forum,
             'edit_form' => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
@@ -111,7 +111,7 @@ class ForumsController extends Controller
             $em->flush();
         }
 
-        return $this->redirectToRoute('forums_index');
+        return $this->redirectToRoute('forums_homepage');
     }
 
     /**

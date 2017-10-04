@@ -65,8 +65,24 @@
                                 {% if ForumsTopics|length !=0 %}
                                     {% for ForumsTopic in ForumsTopics %}
                                         {% if ForumsPosts|length !=0 and ForumsTopic.forumid.id == Forum.id %}
+                                            {% set PostLoop = 0 %}
                                             {% for ForumsPost in ForumsPosts %}
-                                                {% if ForumsPost.TopicId.id == ForumsTopic.id and loop.last %}
+                                                {% if ForumsPost.TopicId.id == ForumsTopic.id %}
+                                                    {% set PostLoop = PostLoop + 1 %}
+                                                {% endif %}
+                                            {% endfor %}
+                                            {% for ForumsPost in ForumsPosts %}
+                                                {% if ForumsPost.TopicId.id == ForumsTopic.id and PostLoop > 1 and loop.last %}
+                                                    <td data-th="Last Message">
+                                                        <div class="last_post_info">
+                                                            <a href="#" original-title="">{{ ForumsPost.body }}</a>
+                                                            <span class="last_post_span" original-title="">
+                                                                <span id="member_info" memberid="{{ ForumsPost.userid.id }}" class="clickable" original-title="">{{ ForumsPost.userid.username }}</span>
+                                                                - {{ ForumsPost.added|date('d-m-Y') }}
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                {% elseif ForumsPost.TopicId.id == ForumsTopic.id and PostLoop == 1 %}
                                                     <td data-th="Last Message">
                                                         <div class="last_post_info">
                                                             <a href="#" original-title="">{{ ForumsPost.body }}</a>
